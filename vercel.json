@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "app/api/analyze/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/revise/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/read-document/route.ts": {
+      "maxDuration": 30
+    }
+  }
+}

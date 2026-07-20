@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AgentFlow
 
-## Getting Started
+Multi-agent document approval system powered by YandexGPT. Upload a contract or specification — four AI experts (Lawyer, Finance, Security, PM) review it sequentially and produce a structured verdict.
 
-First, run the development server:
+## Demo
+
+Deploy to Vercel **without API keys** — the app runs in demo mode with pre-generated responses.
+
+With `YC_API_KEY` and `YC_FOLDER_ID` configured, the app uses real YandexGPT.
+
+## Features
+
+- Sequential 4-agent pipeline with individual prompts and context passing
+- Structured output: approved / rejected / revision + comments and issues
+- Document upload (.txt, .docx) or paste text
+- Auto-generated corrected contract with before/after diff view
+- Review history (localStorage)
+- Export report as Markdown or PDF
+- Demo fallback when Yandex Cloud credentials are missing
+
+## Quick start
 
 ```bash
+git clone <repo-url>
+cd doc-ai-flow
+npm install
+cp .env.example .env.local   # optional — works without keys in demo mode
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) and click **«Загрузить пример»**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production (real YandexGPT)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. [Yandex Cloud Console](https://console.cloud.yandex.ru) — create service account with role `ai.languageModels.user`
+2. Create API key, copy folder ID
+3. Add to `.env.local`:
 
-## Learn More
+```env
+YC_API_KEY=your_api_key
+YC_FOLDER_ID=your_folder_id
+YANDEX_CLOUD_MODEL=yandexgpt-5.1/latest
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Tech stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Technology | Purpose |
+|------------|---------|
+| Next.js 14 (App Router) | Framework |
+| TypeScript (strict) | Types |
+| Tailwind CSS | UI |
+| Zustand | State + persist |
+| YandexGPT API | LLM |
+| Vitest | Unit tests |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Architecture
+
+```mermaid
+flowchart LR
+  User[User] --> UI[ReviewView]
+  UI --> Store[Zustand]
+  Store --> Runner[Pipeline Runner]
+  Runner --> Analyze["/api/analyze"]
+  Analyze --> Demo{Demo mode?}
+  Demo -->|yes| Mock[Sample responses]
+  Demo -->|no| YGPT[YandexGPT]
+  Analyze --> Store
+  Store --> Revise["/api/revise"]
+  Revise --> Diff[Diff view]
+```
+
+### Design decisions
+
+1. **Sequential pipeline** — each agent sees previous experts' comments for coherent review
+2. **JSON parser + retry** — structured LLM output with automatic retry on parse failure
+3. **Patch-fallback for revise** — if full rewrite fails, model returns find/replace JSON patches applied locally
+
+## API routes
+
+| Route | Method | Description |
+|-------|--------|-------------|
+| `/api/analyze` | POST | Single agent analysis |
+| `/api/revise` | POST | Generate corrected document |
+| `/api/read-document` | POST | Parse uploaded .txt/.docx |
+| `/api/demo-status` | GET | `{ demo: boolean }` |
+
+## Project structure
+
+```
+app/
+  api/                    # analyze, revise, read-document, demo-status
+  page.tsx
+components/
+  review/                 # ReviewView (main screen)
+  document/               # CorrectedDocumentModal, DocumentDiffView
+  demo/                   # DemoBanner
+  pipeline/               # AgentPipeline, PipelineSummary
+lib/
+  agents/                 # prompts, parser, patch revision
+  demo/                   # sample contract, isDemoMode
+  diff/                   # line diff
+  yandex-gpt/             # API client
+store/                    # Zustand stores
+```
+
+## Scripts
+
+```bash
+npm run dev        # development
+npm run build      # production build
+npm run test       # vitest
+npm run ts:check   # typecheck
+```
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push to GitHub
+2. Import in [Vercel](https://vercel.com)
+3. **Demo only:** deploy without env vars
+4. **Production:** add `YC_API_KEY`, `YC_FOLDER_ID`, optionally `YANDEX_CLOUD_MODEL`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+MIT
