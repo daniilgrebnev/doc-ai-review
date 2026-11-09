@@ -18,23 +18,20 @@ import {
   LLM_INPUT_MAX_CHARS,
   MIN_DOCUMENT_LENGTH,
   REVISE_MAX_TOKENS,
-  YANDEX_CLOUD_MODEL,
-  resolveModel,
 } from "@/lib/constants";
 import { getStatusLabel } from "@/lib/pipeline/verdict";
 import { truncateText } from "@/lib/utils";
-import { complete } from "@/lib/yandex-gpt/client";
-import { YandexGptError } from "@/lib/yandex-gpt/types";
+import { complete, getDefaultModel } from "@/lib/claude/client";
+import { LlmError } from "@/lib/claude/types";
 import type { AgentResult } from "@/types/agent";
 
 const REVISE_ATTEMPTS: Array<{
   systemPrompt: string;
   variant: "default" | "template" | "minimal";
-  temperature: number;
 }> = [
-  { systemPrompt: SYSTEM_PROMPT_REVISE, variant: "default", temperature: 0.2 },
-  { systemPrompt: SYSTEM_PROMPT_REVISE_STRICT, variant: "template", temperature: 0.1 },
-  { systemPrompt: SYSTEM_PROMPT_REVISE_MINIMAL, variant: "minimal", temperature: 0.05 },
+  { systemPrompt: SYSTEM_PROMPT_REVISE, variant: "default" },
+  { systemPrompt: SYSTEM_PROMPT_REVISE_STRICT, variant: "template" },
+  { systemPrompt: SYSTEM_PROMPT_REVISE_MINIMAL, variant: "minimal" },
 ];
 
 function buildRemarksMessage(agentResults: AgentResult[]): string {
@@ -66,20 +63,15 @@ async function tryFullRewrite(
   for (const attempt of REVISE_ATTEMPTS) {
     const userMessage = buildReviseUserMessage(document, remarks, attempt.variant);
 
-    const { text, model: usedModel } = await complete(
+    const { text, model: usedModel, refused } = await complete(
       [
         { role: "system", text: attempt.systemPrompt },
         { role: "user", text: userMessage },
       ],
-      {
-        model,
-        temperature: attempt.temperature,
-        maxTokens: REVISE_MAX_TOKENS,
-        fallbackOn404: true,
-      }
+      { model, maxTokens: REVISE_MAX_TOKENS }
     );
 
-    if (isRefusalText(text)) continue;
+    if (refused || isRefusalText(text)) continue;
 
     const parsed = parseRevisedText(text);
     if (parsed) return { text: parsed, model: usedModel };
@@ -95,20 +87,15 @@ async function tryPatchRewrite(
 ): Promise<{ text: string; model: string } | null> {
   const userMessage = buildPatchUserMessage(document, remarks);
 
-  const { text, model: usedModel } = await complete(
+  const { text, model: usedModel, refused } = await complete(
     [
       { role: "system", text: SYSTEM_PROMPT_REVISE_PATCHES },
       { role: "user", text: userMessage },
     ],
-    {
-      model,
-      temperature: 0.1,
-      maxTokens: REVISE_MAX_TOKENS,
-      fallbackOn404: true,
-    }
+    { model, maxTokens: REVISE_MAX_TOKENS }
   );
 
-  if (isRefusalText(text)) return null;
+  if (refused || isRefusalText(text)) return null;
 
   const patches = parseTextPatches(text);
   if (patches.length === 0) return null;
@@ -123,7 +110,7 @@ async function generateRevisedText(
   fullDocument: string,
   remarks: string
 ): Promise<{ text: string; model: string } | null> {
-  const model = resolveModel(process.env.YANDEX_CLOUD_MODEL, YANDEX_CLOUD_MODEL);
+  const model = getDefaultModel();
   const llmDocument = truncateText(fullDocument, LLM_INPUT_MAX_CHARS);
 
   const fullRewrite = await tryFullRewrite(llmDocument, remarks, model);
@@ -201,7 +188,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ revisedText: result.text, model: result.model });
   } catch (error) {
-    if (error instanceof YandexGptError) {
+    if (error instanceof LlmError) {
       const status = error.statusCode ?? 500;
       return NextResponse.json({ error: error.message }, { status });
     }

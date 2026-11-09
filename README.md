@@ -1,12 +1,12 @@
 # AgentFlow
 
-Multi-agent document approval system powered by YandexGPT. Upload a contract or specification — four AI experts (Lawyer, Finance, Security, PM) review it sequentially and produce a structured verdict.
+Multi-agent document approval system powered by Claude (Anthropic). Upload a contract or specification — four AI experts (Lawyer, Finance, Security, PM) review it sequentially and produce a structured verdict.
 
 ## Demo
 
 Deploy to Vercel **without API keys** — the app runs in demo mode with pre-generated responses.
 
-With `YC_API_KEY` and `YC_FOLDER_ID` configured, the app uses real YandexGPT.
+With `ANTHROPIC_API_KEY` configured, the app uses Claude (`claude-opus-5-5` by default).
 
 ## Features
 
@@ -16,7 +16,7 @@ With `YC_API_KEY` and `YC_FOLDER_ID` configured, the app uses real YandexGPT.
 - Auto-generated corrected contract with before/after diff view
 - Review history (localStorage)
 - Export report as Markdown or PDF
-- Demo fallback when Yandex Cloud credentials are missing
+- Demo fallback when `ANTHROPIC_API_KEY` is missing
 
 ## Quick start
 
@@ -30,17 +30,19 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) and click **«Загрузить пример»**.
 
-### Production (real YandexGPT)
+### Production (Claude)
 
-1. [Yandex Cloud Console](https://console.cloud.yandex.ru) — create service account with role `ai.languageModels.user`
-2. Create API key, copy folder ID
-3. Add to `.env.local`:
+1. Create an API key in the [Claude Console](https://platform.claude.com/settings/keys)
+2. Add to `.env.local`:
 
 ```env
-YC_API_KEY=your_api_key
-YC_FOLDER_ID=your_folder_id
-YANDEX_CLOUD_MODEL=yandexgpt-5.1/latest
+ANTHROPIC_API_KEY=your_api_key
+# optional
+ANTHROPIC_MODEL=claude-opus-5-5   # or claude-sonnet-5-5 / claude-haiku-5-5
+ANTHROPIC_EFFORT=medium           # low | medium | high | xhigh | max
 ```
+
+Requests use the official `@anthropic-ai/sdk` with streaming, adaptive thinking (always on for Opus 5.5, depth set by `effort`) and server-side refusal fallback (`fallbacks: "default"`).
 
 ## Tech stack
 
@@ -50,7 +52,7 @@ YANDEX_CLOUD_MODEL=yandexgpt-5.1/latest
 | TypeScript (strict) | Types |
 | Tailwind CSS | UI |
 | Zustand | State + persist |
-| YandexGPT API | LLM |
+| Claude API (`@anthropic-ai/sdk`) | LLM |
 | Vitest | Unit tests |
 
 ## Architecture
@@ -63,7 +65,7 @@ flowchart LR
   Runner --> Analyze["/api/analyze"]
   Analyze --> Demo{Demo mode?}
   Demo -->|yes| Mock[Sample responses]
-  Demo -->|no| YGPT[YandexGPT]
+  Demo -->|no| Claude[Claude API]
   Analyze --> Store
   Store --> Revise["/api/revise"]
   Revise --> Diff[Diff view]
@@ -99,7 +101,7 @@ lib/
   agents/                 # prompts, parser, patch revision
   demo/                   # sample contract, isDemoMode
   diff/                   # line diff
-  yandex-gpt/             # API client
+  claude/                 # Claude API client
 store/                    # Zustand stores
 ```
 
@@ -117,7 +119,7 @@ npm run ts:check   # typecheck
 1. Push to GitHub
 2. Import in [Vercel](https://vercel.com)
 3. **Demo only:** deploy without env vars
-4. **Production:** add `YC_API_KEY`, `YC_FOLDER_ID`, optionally `YANDEX_CLOUD_MODEL`
+4. **Production:** add `ANTHROPIC_API_KEY`, optionally `ANTHROPIC_MODEL` and `ANTHROPIC_EFFORT`
 
 ## License
 

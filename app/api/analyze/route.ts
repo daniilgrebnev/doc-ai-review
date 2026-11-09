@@ -12,14 +12,14 @@ import {
 } from "@/lib/agents/refusal";
 import {
   ANALYZE_MAX_TOKENS,
-  ANALYZE_TEMPERATURE,
   LLM_INPUT_MAX_CHARS,
   MIN_DOCUMENT_LENGTH,
 } from "@/lib/constants";
 import { getStatusLabel } from "@/lib/pipeline/verdict";
 import { truncateText } from "@/lib/utils";
-import { complete } from "@/lib/yandex-gpt/client";
-import { YandexGptError } from "@/lib/yandex-gpt/types";
+import { complete } from "@/lib/claude/client";
+import type { CompleteResult } from "@/lib/claude/types";
+import { LlmError } from "@/lib/claude/types";
 import type { AgentResult } from "@/types/agent";
 
 const RETRY_PROMPT =
@@ -38,6 +38,10 @@ function buildPreviousContext(previousResults: AgentResult[]): string {
   if (!lines.length) return "";
 
   return `\n\nЗамечания предыдущих экспертов:\n${lines.join("\n")}`;
+}
+
+function isRefused(result: CompleteResult): boolean {
+  return result.refused || isRefusalText(result.text);
 }
 
 function refusalResult(agentId: string): AgentResult {
@@ -61,13 +65,11 @@ async function analyzeWithRetry(
     { role: "user" as const, text: userMessage },
   ];
 
-  const { text } = await complete(messages, {
-    temperature: ANALYZE_TEMPERATURE,
-    maxTokens: ANALYZE_MAX_TOKENS,
-  });
+  const first = await complete(messages, { maxTokens: ANALYZE_MAX_TOKENS });
+  const text = first.text;
 
-  if (isRefusalText(text)) {
-    const { text: retryText } = await complete(
+  if (isRefused(first)) {
+    const retry = await complete(
       [
         {
           role: "system",
@@ -75,14 +77,14 @@ async function analyzeWithRetry(
         },
         { role: "user", text: userMessage },
       ],
-      { temperature: 0.1, maxTokens: ANALYZE_MAX_TOKENS }
+      { maxTokens: ANALYZE_MAX_TOKENS }
     );
 
-    if (isRefusalText(retryText)) {
+    if (isRefused(retry)) {
       return refusalResult(agentId);
     }
 
-    const retryResult = parseAgentResponse(agentId, retryText);
+    const retryResult = parseAgentResponse(agentId, retry.text);
     if (retryResult.status !== "error") {
       return retryResult;
     }
@@ -99,19 +101,19 @@ async function analyzeWithRetry(
       console.error("[analyze] parse failed, raw:", text.slice(0, 500));
     }
 
-    const { text: retryText } = await complete(
+    const retry = await complete(
       [
         { role: "system", text: `${systemPrompt}\n\n${RETRY_PROMPT}` },
         { role: "user", text: userMessage },
       ],
-      { temperature: 0.1, maxTokens: ANALYZE_MAX_TOKENS }
+      { maxTokens: ANALYZE_MAX_TOKENS }
     );
 
-    if (isRefusalText(retryText)) {
+    if (isRefused(retry)) {
       return refusalResult(agentId);
     }
 
-    result = parseAgentResponse(agentId, retryText);
+    result = parseAgentResponse(agentId, retry.text);
   }
 
   return result;
@@ -185,7 +187,7 @@ export async function POST(request: Request) {
       errorKind: result.errorKind,
     });
   } catch (error) {
-    if (error instanceof YandexGptError) {
+    if (error instanceof LlmError) {
       const status = error.statusCode ?? 500;
       return NextResponse.json({ error: error.message }, { status });
     }

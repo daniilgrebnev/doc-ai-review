@@ -3,23 +3,20 @@ import { isDemoMode } from "@/lib/demo/is-demo-mode";
 import { getDemoAnalyzeResult, getDemoReviseResult, SAMPLE_CONTRACT_TEXT } from "@/lib/demo/sample-contract";
 
 describe("isDemoMode", () => {
-  const originalKey = process.env.YC_API_KEY;
-  const originalFolder = process.env.YC_FOLDER_ID;
+  const originalKey = process.env.ANTHROPIC_API_KEY;
 
   afterEach(() => {
-    process.env.YC_API_KEY = originalKey;
-    process.env.YC_FOLDER_ID = originalFolder;
+    if (originalKey === undefined) delete process.env.ANTHROPIC_API_KEY;
+    else process.env.ANTHROPIC_API_KEY = originalKey;
   });
 
-  it("returns true when credentials missing", () => {
-    delete process.env.YC_API_KEY;
-    delete process.env.YC_FOLDER_ID;
+  it("returns true when API key missing", () => {
+    delete process.env.ANTHROPIC_API_KEY;
     expect(isDemoMode()).toBe(true);
   });
 
-  it("returns false when credentials set", () => {
-    process.env.YC_API_KEY = "test-key";
-    process.env.YC_FOLDER_ID = "b1gtest";
+  it("returns false when API key set", () => {
+    process.env.ANTHROPIC_API_KEY = "test-key";
     expect(isDemoMode()).toBe(false);
   });
 });

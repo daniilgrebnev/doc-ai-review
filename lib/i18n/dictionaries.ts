@@ -42,8 +42,8 @@ const en: Dict = {
   "verdict.approvedCount": "Approved: {approved} of {total}",
 
   "demo.banner":
-    "Running in demo mode with sample responses. Add Yandex Cloud credentials to use real YandexGPT.",
-  "demo.bannerHint": "See README for YC_API_KEY and YC_FOLDER_ID setup.",
+    "Running in demo mode with sample responses. Add ANTHROPIC_API_KEY to use Claude.",
+  "demo.bannerHint": "See README for ANTHROPIC_API_KEY setup.",
 
   "review.document": "Document",
   "review.loadSample": "Load sample",
@@ -153,8 +153,8 @@ const ru: Dict = {
   "verdict.approvedCount": "Согласовано: {approved} из {total}",
 
   "demo.banner":
-    "Демо-режим с готовыми ответами. Добавьте учётные данные Yandex Cloud для реального YandexGPT.",
-  "demo.bannerHint": "Подробности по YC_API_KEY и YC_FOLDER_ID — в README.",
+    "Демо-режим с готовыми ответами. Добавьте ANTHROPIC_API_KEY, чтобы подключить Claude.",
+  "demo.bannerHint": "Подробности по ANTHROPIC_API_KEY — в README.",
 
   "review.document": "Документ",
   "review.loadSample": "Загрузить пример",

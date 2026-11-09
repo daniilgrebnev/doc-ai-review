@@ -1,4 +1,4 @@
-/** Demo mode when Yandex Cloud credentials are not configured */
+/** Demo mode when the Anthropic API key is not configured */
 export function isDemoMode(): boolean {
-  return !process.env.YC_API_KEY || !process.env.YC_FOLDER_ID;
+  return !process.env.ANTHROPIC_API_KEY;
 }

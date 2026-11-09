@@ -5,7 +5,7 @@ import { RotateCcw } from "lucide-react";
 import { DocumentDiffView } from "@/components/document/DocumentDiffView";
 import { isRefusalText, REFUSAL_REVISE_MESSAGE } from "@/lib/agents/refusal";
 import { computeLineDiff } from "@/lib/diff/line-diff";
-import { formatModelLabel } from "@/lib/yandex-gpt/model-uri";
+import { formatModelLabel } from "@/lib/claude/models";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
 import { LoadingSpinner } from "@/components/ui/LoadingSpinner";
