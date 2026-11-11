@@ -7,6 +7,8 @@ import { buildCheckUserMessage, CHECK_SYSTEM_PROMPT } from "@/lib/check/prompt";
 import { parseFindings } from "@/lib/check/parse";
 import type { CheckEvent, Finding } from "@/lib/check/types";
 import { llmComplete } from "@/lib/llm/complete";
+import { logCheckRun, type CheckRunLog, type RunAttempt } from "@/lib/db/runs";
+import { getRequestCountry } from "@/lib/llm/geo";
 import { formatModelLabel } from "@/lib/llm/model-label";
 import { getProvidersForRequest, resolveProvider } from "@/lib/llm/providers";
 import type { ProviderId } from "@/lib/llm/types";
@@ -46,28 +48,46 @@ export async function POST(request: Request) {
       const send = (e: CheckEvent) => controller.enqueue(enc.encode(JSON.stringify(e) + "\n"));
       const t0 = Date.now();
       const since = () => Date.now() - t0;
+      // Итог запуска для лога в БД, дописывается по ходу
+      const run: Omit<CheckRunLog, "durationMs"> = {
+        route: "check",
+        status: "failed",
+        text,
+        providerRequested: typeof body.provider === "string" ? body.provider : undefined,
+        country: getRequestCountry(headers),
+      };
+      const attempts: RunAttempt[] = [];
 
       try {
         if (text.length < CHECK_MIN_CHARS) {
+          run.status = "input_error";
+          run.error = "too short";
           send({ type: "error", kind: "input", message: "The text is too short to be a contract." });
           return;
         }
         if (text.length > CHECK_MAX_CHARS) {
           const pages = Math.ceil(text.length / 3000);
+          run.status = "input_error";
+          run.error = "too long";
           send({ type: "error", kind: "input", message: `This text is about ${pages} pages long. The demo checks up to 5 pages.` });
           return;
         }
 
         const resolution = resolveProvider(body.provider, headers);
         if (resolution.kind === "error") {
+          run.status = resolution.status === 403 ? "blocked" : "failed";
+          run.error = resolution.message;
           send({ type: "error", kind: resolution.status === 403 ? "blocked" : "failed", message: resolution.message });
           return;
         }
         if (resolution.kind === "demo") {
+          run.status = "no_model";
           send({ type: "error", kind: "no-model", message: "No model is configured on the server." });
           return;
         }
 
+        run.providerRequested = resolution.provider;
+        run.clauses = countClauses(text);
         send({ type: "step", step: { id: "read", text: `Read the contract · ${countClauses(text)} clauses`, status: "done", ms: since() } });
 
         const { providers } = getProvidersForRequest(headers);
@@ -85,6 +105,7 @@ export async function POST(request: Request) {
           const label = formatModelLabel(info?.model ?? provider);
           const stepId = `ask-${provider}`;
           send({ type: "step", step: { id: stepId, text: `Check against 7 requirements · ${label}`, status: "running" } });
+          const attemptStart = Date.now();
           try {
             answer = await withTimeout(
               llmComplete(
@@ -100,9 +121,16 @@ export async function POST(request: Request) {
             findings = parseFindings(answer.text, text);
             if (!findings) throw new Error("unparsable answer");
             used = provider;
+            attempts.push({ provider, ok: true, ms: Date.now() - attemptStart });
             send({ type: "step", step: { id: stepId, text: `Check against 7 requirements · ${label}`, status: "done", ms: since() } });
             break;
           } catch (error) {
+            attempts.push({
+              provider,
+              ok: false,
+              ms: Date.now() - attemptStart,
+              error: error instanceof Error ? error.message.slice(0, 300) : String(error),
+            });
             const why = error instanceof Error && error.message === "timeout" ? "did not answer in time" : "failed";
             send({ type: "step", step: { id: stepId, text: `${label} ${why}`, status: "failed", ms: since() } });
             if (process.env.NODE_ENV === "development") console.error("[check]", provider, error);
@@ -110,6 +138,7 @@ export async function POST(request: Request) {
         }
 
         if (!answer || !findings || !used) {
+          run.error = "no model answered";
           send({ type: "error", kind: "failed", message: "No model answered." });
           return;
         }
@@ -117,6 +146,17 @@ export async function POST(request: Request) {
         for (const finding of findings) send({ type: "finding", finding });
 
         const exact = findings.filter((f) => f.exact).length;
+        Object.assign(run, {
+          status: "ok",
+          provider: used,
+          model: answer.model,
+          fallbackFrom: used !== resolution.provider ? resolution.provider : undefined,
+          findingsCount: findings.length,
+          findingsExact: exact,
+          inputTokens: answer.usage.inputTokens,
+          outputTokens: answer.usage.outputTokens,
+          modelMs: attempts[attempts.length - 1]?.ms,
+        });
         send({ type: "step", step: { id: "verify", text: `Verify quotes against the text · ${exact} of ${findings.length} exact`, status: "done", ms: since() } });
         send({
           type: "done",
@@ -129,9 +169,12 @@ export async function POST(request: Request) {
         });
       } catch (error) {
         if (process.env.NODE_ENV === "development") console.error("[check]", error);
+        run.status = "failed";
+        run.error = error instanceof Error ? error.message.slice(0, 300) : "internal error";
         send({ type: "error", kind: "failed", message: "Internal error." });
       } finally {
         controller.close();
+        await logCheckRun({ ...run, attempts: attempts.length ? attempts : undefined, durationMs: since() });
       }
     },
   });
