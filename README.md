@@ -1,6 +1,6 @@
 # AgentFlow
 
-Multi-agent document approval system powered by Claude (Anthropic) or YandexGPT. Upload a contract or specification — four AI experts (Lawyer, Finance, Security, PM) review it sequentially and produce a structured verdict.
+Multi-agent document approval system powered by Claude (Anthropic), YandexGPT or DeepSeek. Upload a contract or specification — four AI experts (Lawyer, Finance, Security, PM) review it sequentially and produce a structured verdict.
 
 ## Demo
 
@@ -49,6 +49,8 @@ YC_API_KEY=your_api_key
 YC_FOLDER_ID=your_folder_id
 YANDEX_CLOUD_MODEL=yandexgpt-5.1/latest
 ```
+
+DeepSeek: `DEEPSEEK_API_KEY`, optionally `DEEPSEEK_MODEL` (`deepseek-chat` by default).
 
 Geo lock: `CLAUDE_BLOCKED_COUNTRIES` (default `RU`). If the country is unknown in production, Claude is blocked too. Locally set `GEO_COUNTRY_OVERRIDE=RU` to test the lock.
 
@@ -114,6 +116,7 @@ lib/
   diff/                   # line diff
   claude/                 # Claude API client
   yandex-gpt/             # YandexGPT API client
+  deepseek/               # DeepSeek API client (OpenAI-compatible)
   llm/                    # provider selection, geo lock, unified complete()
 store/                    # Zustand stores
 ```

@@ -8,6 +8,7 @@ const ENV_KEYS = [
   "YC_FOLDER_ID",
   "GEO_COUNTRY_OVERRIDE",
   "CLAUDE_BLOCKED_COUNTRIES",
+  "DEEPSEEK_API_KEY",
 ] as const;
 
 const saved: Record<string, string | undefined> = {};
@@ -66,7 +67,10 @@ describe("providers", () => {
   it("defaults to Claude outside Russia", () => {
     const res = getProvidersForRequest(de);
     expect(res.defaultProvider).toBe("claude");
-    expect(res.providers.every((p) => p.available)).toBe(true);
+    expect(res.providers.find((p) => p.id === "deepseek")).toMatchObject({
+      configured: false,
+      available: false,
+    });
   });
 
   it("offers only YandexGPT in Russia", () => {
@@ -88,6 +92,11 @@ describe("providers", () => {
     delete process.env.YC_API_KEY;
     expect(resolveProvider(undefined, de)).toEqual({ kind: "demo" });
     expect(getProvidersForRequest(de).demo).toBe(true);
+  });
+
+  it("enables DeepSeek when key is set, also in Russia", () => {
+    process.env.DEEPSEEK_API_KEY = "k";
+    expect(resolveProvider("deepseek", ru)).toEqual({ kind: "provider", provider: "deepseek" });
   });
 
   it("rejects unknown provider", () => {

@@ -1,4 +1,4 @@
-export const PROVIDER_IDS = ["claude", "yandex"] as const;
+export const PROVIDER_IDS = ["claude", "yandex", "deepseek"] as const;
 export type ProviderId = (typeof PROVIDER_IDS)[number];
 
 export function isProviderId(value: unknown): value is ProviderId {

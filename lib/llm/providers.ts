@@ -1,15 +1,18 @@
 import { getDefaultModel as getClaudeModel } from "@/lib/claude/client";
 import { YANDEX_CLOUD_MODEL, resolveModel } from "@/lib/constants";
+import { getDeepSeekModel } from "@/lib/deepseek/client";
 import { getRequestCountry, isClaudeGeoBlocked } from "@/lib/llm/geo";
 import type { ProviderId, ProviderInfo, ProvidersResponse } from "@/lib/llm/types";
 
 export function isProviderConfigured(id: ProviderId): boolean {
   if (id === "claude") return Boolean(process.env.ANTHROPIC_API_KEY);
+  if (id === "deepseek") return Boolean(process.env.DEEPSEEK_API_KEY);
   return Boolean(process.env.YC_API_KEY && process.env.YC_FOLDER_ID);
 }
 
 export function getProviderModel(id: ProviderId): string {
   if (id === "claude") return getClaudeModel();
+  if (id === "deepseek") return getDeepSeekModel();
   return resolveModel(process.env.YANDEX_CLOUD_MODEL, YANDEX_CLOUD_MODEL);
 }
 
@@ -27,6 +30,14 @@ export function getProvidersForRequest(headers: Headers): ProvidersResponse {
       available: false,
     },
     {
+      id: "deepseek",
+      label: "DeepSeek",
+      model: getProviderModel("deepseek"),
+      configured: isProviderConfigured("deepseek"),
+      geoBlocked: false,
+      available: false,
+    },
+    {
       id: "claude",
       label: "Claude",
       model: getProviderModel("claude"),
@@ -37,8 +48,8 @@ export function getProvidersForRequest(headers: Headers): ProvidersResponse {
   ];
   for (const p of providers) p.available = p.configured && !p.geoBlocked;
 
-  // По умолчанию Claude, если доступен, иначе YandexGPT
-  const preferred: ProviderId[] = ["claude", "yandex"];
+  // По умолчанию Claude, если доступен, иначе YandexGPT, затем DeepSeek
+  const preferred: ProviderId[] = ["claude", "yandex", "deepseek"];
   const defaultProvider =
     preferred.find((id) => providers.find((p) => p.id === id)?.available) ?? null;
 
@@ -60,7 +71,7 @@ export function resolveProvider(requested: unknown, headers: Headers): ProviderR
 
   const info = providers.find((p) => p.id === requested);
   if (!info) {
-    return { kind: "error", status: 400, message: "Неизвестная модель. Допустимые: claude, yandex" };
+    return { kind: "error", status: 400, message: "Неизвестная модель. Допустимые: claude, yandex, deepseek" };
   }
   if (info.geoBlocked) {
     return { kind: "error", status: 403, message: "Claude недоступен в вашем регионе. Выберите YandexGPT." };

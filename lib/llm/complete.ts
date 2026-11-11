@@ -8,6 +8,7 @@ import {
   YANDEX_ANALYZE_MAX_TOKENS,
   YANDEX_REVISE_MAX_TOKENS,
 } from "@/lib/constants";
+import { complete as completeDeepSeek } from "@/lib/deepseek/client";
 import { getProviderModel } from "@/lib/llm/providers";
 import type { ProviderId } from "@/lib/llm/types";
 import { complete as completeYandex } from "@/lib/yandex-gpt/client";
@@ -30,6 +31,14 @@ export async function llmComplete(
   if (provider === "claude") {
     return completeClaude(messages, {
       maxTokens: options.purpose === "revise" ? REVISE_MAX_TOKENS : ANALYZE_MAX_TOKENS,
+    });
+  }
+
+  if (provider === "deepseek") {
+    return completeDeepSeek(messages, {
+      // deepseek-chat: максимум 8K выходных токенов
+      maxTokens: options.purpose === "revise" ? 8000 : 4000,
+      temperature: options.temperature ?? ANALYZE_TEMPERATURE,
     });
   }
 
