@@ -54,6 +54,8 @@ DeepSeek: `DEEPSEEK_API_KEY`, optionally `DEEPSEEK_MODEL` (`deepseek-chat` by de
 
 Geo lock: `CLAUDE_BLOCKED_COUNTRIES` (default `RU`). If the country is unknown in production, Claude is blocked too. Locally set `GEO_COUNTRY_OVERRIDE=RU` to test the lock.
 
+Site geo block: `SITE_BLOCKED_COUNTRIES` (default `UA`, empty string turns it off). Requests from these countries get a 404 page on every route, including the API.
+
 Claude requests use the official `@anthropic-ai/sdk` with streaming, adaptive thinking (depth set by `effort`) and, for Sonnet/Opus, server-side refusal fallback (`fallbacks: "default"`; Haiku has none).
 
 ## Tech stack

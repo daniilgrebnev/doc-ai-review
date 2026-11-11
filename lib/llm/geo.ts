@@ -29,6 +29,24 @@ export function getClaudeBlockedCountries(): string[] {
     .filter(Boolean);
 }
 
+const DEFAULT_SITE_BLOCKED_COUNTRIES = ["UA"];
+
+/** Страны, для которых весь сайт отдаёт 404 (SITE_BLOCKED_COUNTRIES, по умолчанию UA; пустая строка — выкл.) */
+export function getSiteBlockedCountries(): string[] {
+  const raw = process.env.SITE_BLOCKED_COUNTRIES;
+  if (raw === undefined) return DEFAULT_SITE_BLOCKED_COUNTRIES;
+  return raw
+    .split(",")
+    .map((c) => c.trim().toUpperCase())
+    .filter(Boolean);
+}
+
+/** Весь сайт закрыт, если страна в списке. Неизвестная страна — пропускаем. */
+export function isSiteGeoBlocked(country: string | null): boolean {
+  if (!country) return false;
+  return getSiteBlockedCountries().includes(country);
+}
+
 /**
  * Claude заблокирован, если страна в списке. Если страну определить не удалось:
  * в продакшене блокируем (fail closed — лучше перестраховаться), локально разрешаем.
