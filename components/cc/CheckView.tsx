@@ -1,0 +1,263 @@
+"use client";
+
+import { Lock } from "lucide-react";
+import { useEffect, useState } from "react";
+import { DEFECTS } from "@/lib/check/catalog";
+import { getExample } from "@/lib/check/examples";
+import type { DefectCode } from "@/lib/check/types";
+import { generateContract, type Beneficiary, type GeneratedContract } from "@/lib/generator";
+import { formatModelLabel } from "@/lib/llm/model-label";
+import { cn } from "@/lib/utils";
+import { Page } from "@/components/cc/Header";
+import { LiveRun, type LiveRunProps } from "@/components/cc/LiveRun";
+import { providerReason, useProvidersStore } from "@/store/useProvidersStore";
+import { useAgentFlowStore } from "@/store/useAgentFlowStore";
+
+const LEVEL_HINTS = ["honest, no traps", "one trap", "two traps", "three traps", "four traps", "five traps"];
+const VENDOR: Record<string, string> = { yandex: "Yandex Cloud", claude: "Anthropic", deepseek: "DeepSeek" };
+const MAX_CHARS = 15_000;
+
+type Run = Omit<LiveRunProps, "onBack">;
+
+export function CheckView({ exampleId }: { exampleId?: string }) {
+  const [run, setRun] = useState<Run | null>(() => {
+    const ex = getExample(exampleId);
+    return ex ? { title: ex.title, subtitle: ex.subtitle, text: ex.text, exampleId: ex.id } : null;
+  });
+
+  return (
+    <Page>
+      {run ? <LiveRun key={run.text} {...run} onBack={() => setRun(null)} /> : <CheckForm onStart={setRun} />}
+    </Page>
+  );
+}
+
+function CheckForm({ onStart }: { onStart: (r: Run) => void }) {
+  const [source, setSource] = useState<"generate" | "paste">("generate");
+  const [level, setLevel] = useState(3);
+  const [defects, setDefects] = useState<DefectCode[]>([]);
+  const [beneficiary, setBeneficiary] = useState<Beneficiary>("contractor");
+  const [seed, setSeed] = useState("");
+  const [text, setText] = useState("");
+  const { providers, load, choose } = useProvidersStore();
+  const provider = useAgentFlowStore((s) => s.provider);
+
+  useEffect(() => {
+    void load();
+    setSeed(String(1000 + Math.floor(Math.random() * 9000)));
+  }, [load]);
+
+  const toggleDefect = (code: DefectCode) =>
+    setDefects((d) => (d.includes(code) ? d.filter((x) => x !== code) : [...d, code]));
+
+  const noModel = providers.length > 0 && !providers.some((p) => p.available);
+  const tooLong = text.length > MAX_CHARS;
+  const canStart = source === "generate" ? Boolean(seed) : text.trim().length >= 200 && !tooLong;
+
+  const start = () => {
+    if (source === "generate") {
+      const c: GeneratedContract = generateContract({ level, beneficiary, defects, seed: Number(seed) || 1 });
+      onStart({ title: c.title, subtitle: `Generated · level ${c.params.level} · seed ${seed}`, text: c.text, answerKey: c.key });
+    } else {
+      onStart({ title: "Your contract", text: text.trim() });
+    }
+  };
+
+  return (
+    <main className="mx-auto box-border flex w-full max-w-[680px] flex-1 flex-col gap-2 px-4 pb-16 pt-10 sm:px-6 sm:pt-12">
+      <h1 className="m-0 text-[28px] font-bold tracking-tight">Check a contract</h1>
+      <p className="mb-4 text-ink-2">
+        Generate a contract with known traps, or paste your own text. A generated contract comes with an answer key, so you see what the agent
+        missed.
+      </p>
+
+      <div role="tablist" aria-label="Source" className="mb-2 inline-flex gap-1 self-start rounded-lg bg-[#ECEAE4] p-1">
+        {(
+          [
+            ["generate", "Generate"],
+            ["paste", "Paste text"],
+          ] as const
+        ).map(([id, label]) => (
+          <button
+            key={id}
+            type="button"
+            role="tab"
+            aria-selected={source === id}
+            onClick={() => setSource(id)}
+            className={cn(
+              "min-h-[40px] rounded-md px-3.5 text-sm text-muted",
+              source === id && "bg-white font-semibold text-ink shadow-[0_0_0_1px_var(--line-2)]"
+            )}
+          >
+            {label}
+          </button>
+        ))}
+        <button type="button" role="tab" aria-selected={false} disabled className="min-h-[40px] cursor-not-allowed rounded-md px-3.5 text-sm text-[#8D9098]">
+          Upload PDF · later
+        </button>
+      </div>
+
+      {source === "generate" ? (
+        <>
+          <Field label="Contract type">
+            <div role="radiogroup" aria-label="Contract type" className="flex flex-wrap gap-2">
+              <Chip on role="radio">Services</Chip>
+              <Chip on={false} role="radio" disabled>
+                NDA · later
+              </Chip>
+            </div>
+          </Field>
+          <Field label="How rigged" hint={`${level} · ${LEVEL_HINTS[level]}`}>
+            <div role="radiogroup" aria-label="How rigged" className="flex flex-wrap gap-1.5">
+              {[0, 1, 2, 3, 4, 5].map((n) => (
+                <button
+                  key={n}
+                  type="button"
+                  role="radio"
+                  aria-checked={n === level}
+                  onClick={() => setLevel(n)}
+                  className={cn(
+                    "inline-flex h-11 w-11 items-center justify-center rounded-lg border border-line-2 bg-white font-mono text-sm",
+                    n === level && "border-ink bg-ink text-white"
+                  )}
+                >
+                  {n}
+                </button>
+              ))}
+            </div>
+          </Field>
+          {level > 0 && (
+            <Field label="Traps" hint="Any, or pick the ones to include">
+              <div className="flex flex-wrap gap-1.5">
+                <Chip on={defects.length === 0} onClick={() => setDefects([])}>
+                  Any
+                </Chip>
+                {DEFECTS.map((d) => (
+                  <Chip key={d.code} on={defects.includes(d.code)} onClick={() => toggleDefect(d.code)}>
+                    <span className="font-mono text-xs text-muted">{d.code}</span>
+                    {d.name}
+                  </Chip>
+                ))}
+              </div>
+            </Field>
+          )}
+          <details className="border-t border-line py-3.5">
+            <summary className="min-h-[28px] cursor-pointer text-sm text-ink-2">More settings: who benefits, seed</summary>
+            <div className="flex flex-wrap gap-4 pt-3">
+              <label className="flex flex-col gap-1.5 text-[13px] font-semibold">
+                Traps benefit
+                <select
+                  value={beneficiary}
+                  onChange={(e) => setBeneficiary(e.target.value as Beneficiary)}
+                  className="min-h-[44px] min-w-[200px] rounded-lg border border-line-2 bg-white px-3 text-[15px] font-normal"
+                >
+                  <option value="contractor">Contractor</option>
+                  <option value="client">Client</option>
+                </select>
+              </label>
+              <label className="flex flex-col gap-1.5 text-[13px] font-semibold">
+                Seed
+                <input
+                  value={seed}
+                  inputMode="numeric"
+                  onChange={(e) => setSeed(e.target.value.replace(/\D/g, "").slice(0, 9))}
+                  className="min-h-[44px] w-[140px] rounded-lg border border-line-2 bg-white px-3 font-mono text-[15px] font-normal"
+                />
+              </label>
+            </div>
+          </details>
+        </>
+      ) : (
+        <Field label="Contract text" htmlFor="contract-text">
+          <textarea
+            id="contract-text"
+            rows={12}
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            placeholder="Paste up to 5 pages of contract text"
+            className="w-full resize-y rounded-lg border border-line-2 bg-white px-3 py-2.5 font-serif leading-relaxed"
+          />
+          <span className={cn("text-[13px]", tooLong ? "font-semibold text-bad" : "text-muted")}>
+            {tooLong
+              ? `About ${Math.ceil(text.length / 3000)} pages. The demo checks up to 5 pages.`
+              : "Up to 5 pages. The text is not stored and is not written to traces."}
+          </span>
+        </Field>
+      )}
+
+      <Field label="Model">
+        <div role="radiogroup" aria-label="Model" className="flex flex-col gap-2">
+          {providers.map((p) => {
+            const reason = providerReason(p);
+            return (
+              <label
+                key={p.id}
+                className={cn(
+                  "flex min-h-[52px] cursor-pointer items-center gap-3 rounded-lg border border-line-2 bg-white px-3.5",
+                  !p.available && "cursor-not-allowed bg-well",
+                  p.id === provider && "border-ink"
+                )}
+              >
+                <input type="radio" name="model" checked={p.id === provider} disabled={!p.available} onChange={() => choose(p.id)} />
+                <span className="flex flex-1 flex-col">
+                  <strong className={cn("text-sm", !p.available && "text-muted")}>{formatModelLabel(p.model)}</strong>
+                  <span className="text-[13px] text-muted">{reason ?? VENDOR[p.id] ?? p.label}</span>
+                </span>
+                {!p.available && <Lock size={16} className="text-muted" aria-hidden="true" />}
+              </label>
+            );
+          })}
+        </div>
+      </Field>
+
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-3 border-t border-line pt-5">
+        <button
+          type="button"
+          onClick={start}
+          disabled={!canStart || noModel}
+          className="inline-flex min-h-[44px] items-center rounded-lg bg-ink px-5 text-sm font-semibold text-white hover:bg-[#2B2E36] disabled:cursor-not-allowed disabled:opacity-40"
+        >
+          {source === "generate" ? "Generate and check" : "Check"}
+        </button>
+        <span className="text-[13px] text-muted">{noModel ? "No model is available. Ready-made examples still work." : "Usually 5–20 s"}</span>
+      </div>
+    </main>
+  );
+}
+
+function Field({ label, hint, htmlFor, children }: { label: string; hint?: string; htmlFor?: string; children: React.ReactNode }) {
+  return (
+    <div className="flex flex-col gap-2 border-t border-line py-4">
+      <span className="flex items-baseline gap-2.5">
+        {htmlFor ? (
+          <label htmlFor={htmlFor} className="text-[13px] font-semibold">
+            {label}
+          </label>
+        ) : (
+          <span className="text-[13px] font-semibold">{label}</span>
+        )}
+        {hint && <span className="text-[13px] text-muted">{hint}</span>}
+      </span>
+      {children}
+    </div>
+  );
+}
+
+function Chip({ on, children, onClick, disabled, role }: { on: boolean; children: React.ReactNode; onClick?: () => void; disabled?: boolean; role?: string }) {
+  return (
+    <button
+      type="button"
+      role={role}
+      aria-checked={role === "radio" ? on : undefined}
+      aria-pressed={role ? undefined : on}
+      disabled={disabled}
+      onClick={onClick}
+      className={cn(
+        "inline-flex min-h-[36px] items-center gap-1.5 rounded-full border border-line-2 bg-white px-3 text-[13px] disabled:cursor-not-allowed disabled:text-[#8D9098]",
+        on && "border-ink shadow-[inset_0_0_0_1px_var(--ink)]"
+      )}
+    >
+      {children}
+    </button>
+  );
+}

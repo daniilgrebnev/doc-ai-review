@@ -1,48 +1,31 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
 export const metadata: Metadata = {
-  title: "AgentFlow — Document Approval",
+  title: "Contract Check",
   description:
-    "Multi-agent document approval. Lawyer, finance, security, and PM experts review your document sequentially.",
+    "An AI agent finds traps in a contract, backs every finding with an exact quote and measures its own quality.",
   openGraph: {
-    title: "AgentFlow — Document Approval",
-    description:
-      "Four AI experts review contracts and specs sequentially and return a structured verdict.",
+    title: "Contract Check",
+    description: "Finds traps in a contract and shows exactly where they are.",
     type: "website",
     locale: "en_US",
-    images: [{ url: "/og.svg", width: 1200, height: 630, alt: "AgentFlow" }],
-  },
-  icons: {
-    icon: "/favicon.svg",
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+        />
+      </head>
+      <body className="min-h-screen antialiased">{children}</body>
     </html>
   );
 }
