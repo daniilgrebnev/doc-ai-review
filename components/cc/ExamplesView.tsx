@@ -60,6 +60,12 @@ export function ExamplesView() {
         <Link href={`/check?example=${ex.id}`} className="inline-flex min-h-[44px] items-center text-sm font-semibold no-underline">
           {otherModel ? `Re-check with ${otherModel} →` : "Re-check live →"}
         </Link>
+        <Link
+          href="/check"
+          className="my-1.5 inline-flex min-h-[40px] items-center rounded-lg bg-ink px-4 text-sm font-semibold text-white no-underline hover:bg-[#2B2E36] hover:text-white"
+        >
+          Try it free
+        </Link>
       </div>
 
       <ResultLayout
