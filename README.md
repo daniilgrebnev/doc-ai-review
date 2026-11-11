@@ -6,7 +6,7 @@ Multi-agent document approval system powered by Claude (Anthropic). Upload a con
 
 Deploy to Vercel **without API keys** — the app runs in demo mode with pre-generated responses.
 
-With `ANTHROPIC_API_KEY` configured, the app uses Claude (`claude-opus-5-5` by default).
+With `ANTHROPIC_API_KEY` configured, the app uses Claude (`claude-haiku-5-5` by default).
 
 ## Features
 
@@ -38,11 +38,11 @@ Open [http://localhost:3000](http://localhost:3000) and click **«Загрузи
 ```env
 ANTHROPIC_API_KEY=your_api_key
 # optional
-ANTHROPIC_MODEL=claude-opus-5-5   # or claude-sonnet-5-5 / claude-haiku-5-5
+ANTHROPIC_MODEL=claude-haiku-5-5  # or claude-sonnet-5-5 / claude-opus-5-5
 ANTHROPIC_EFFORT=medium           # low | medium | high | xhigh | max
 ```
 
-Requests use the official `@anthropic-ai/sdk` with streaming, adaptive thinking (always on for Opus 5.5, depth set by `effort`) and server-side refusal fallback (`fallbacks: "default"`).
+Requests use the official `@anthropic-ai/sdk` with streaming, adaptive thinking (depth set by `effort`) and, for Sonnet/Opus, server-side refusal fallback (`fallbacks: "default"`; Haiku has none).
 
 ## Tech stack
 

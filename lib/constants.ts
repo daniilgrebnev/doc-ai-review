@@ -6,12 +6,12 @@ export const MAX_FILE_SIZE = 5 * 1024 * 1024;
 export const API_TIMEOUT = 120_000;
 
 /** Модель Claude по умолчанию (переопределяется ANTHROPIC_MODEL) */
-export const CLAUDE_DEFAULT_MODEL = "claude-opus-5-5";
+export const CLAUDE_DEFAULT_MODEL = "claude-haiku-5-5";
 
 /** Глубина рассуждений по умолчанию (переопределяется ANTHROPIC_EFFORT) */
 export const CLAUDE_DEFAULT_EFFORT = "medium" as const;
 
-/** Лимиты вывода с запасом: у Claude Opus 5.5 рассуждения всегда включены и тоже тратят выходные токены */
+/** Лимиты вывода с запасом: у современных моделей Claude рассуждения включены по умолчанию и тоже тратят выходные токены */
 export const ANALYZE_MAX_TOKENS = 8000;
 export const REVISE_MAX_TOKENS = 32000;
 export const AGENT_DELAY_MS = 300;

@@ -23,6 +23,10 @@ export function getDefaultModel(): string {
   return process.env.ANTHROPIC_MODEL?.trim() || CLAUDE_DEFAULT_MODEL;
 }
 
+function supportsServerFallback(model: string): boolean {
+  return !model.startsWith("claude-haiku");
+}
+
 export async function complete(
   messages: LlmMessage[],
   options: LlmOptions = {}
@@ -36,10 +40,12 @@ export async function complete(
     .map((m) => m.text)
     .join("\n\n");
 
+  const model = options.model ?? getDefaultModel();
+
   try {
     // Стриминг + finalMessage: длинные ответы (revise) не упираются в HTTP-таймауты
     const stream = getClient().beta.messages.stream({
-      model: options.model ?? getDefaultModel(),
+      model,
       max_tokens: options.maxTokens ?? ANALYZE_MAX_TOKENS,
       system: system || undefined,
       messages: [{ role: "user", content: userText }],
@@ -48,9 +54,11 @@ export async function complete(
           options.effort ??
           resolveEffort(process.env.ANTHROPIC_EFFORT, CLAUDE_DEFAULT_EFFORT),
       },
-      // При отказе классификатора безопасности запрос автоматически повторяется на рекомендованной модели
-      betas: ["server-side-fallback-2026-07-01"],
-      fallbacks: "default",
+      // При отказе классификатора безопасности запрос повторяется на рекомендованной модели.
+      // У Haiku server-side fallback нет, поэтому параметр отправляется только для остальных моделей.
+      ...(supportsServerFallback(model)
+        ? { betas: ["server-side-fallback-2026-07-01"], fallbacks: "default" as const }
+        : {}),
     });
 
     const message = await stream.finalMessage();
