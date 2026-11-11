@@ -6,5 +6,7 @@ describe("formatModelLabel", () => {
     expect(formatModelLabel("claude-haiku-5-5")).toBe("Claude Haiku 5.5");
     expect(formatModelLabel("yandexgpt-5.1")).toBe("YandexGPT 5.1");
     expect(formatModelLabel("demo")).toBe("Demo");
+    expect(formatModelLabel("deepseek-chat")).toBe("DeepSeek V3");
+    expect(formatModelLabel("deepseek-flash")).toBe("DeepSeek Flash");
   });
 });

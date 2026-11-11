@@ -9,7 +9,10 @@ export function formatModelLabel(model: string): string {
       "deepseek-chat": "DeepSeek V3",
       "deepseek-reasoner": "DeepSeek R1",
     };
-    return labels[slug] ?? slug;
+    if (labels[slug]) return labels[slug];
+    // deepseek-flash → DeepSeek Flash
+    const rest = slug.replace(/^deepseek-?/, "");
+    return rest ? `DeepSeek ${rest.charAt(0).toUpperCase()}${rest.slice(1)}` : "DeepSeek";
   }
   return formatClaudeLabel(slug);
 }
