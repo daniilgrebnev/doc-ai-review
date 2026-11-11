@@ -139,7 +139,11 @@ function Content({ data }: { data: MonitoringData }) {
                     {r.fallbackFrom && <span className="block text-xs text-muted">fallback from {r.fallbackFrom}</span>}
                   </td>
                   <td className={cn(td, "text-right font-mono")}>
-                    {r.findingsCount == null ? "—" : `${r.findingsCount}${r.findingsExact != null ? ` (${r.findingsExact} exact)` : ""}`}
+                    {r.findingsCount == null
+                      ? "—"
+                      : r.route === "generate"
+                        ? `${r.findingsCount} traps${r.findingsExact != null ? ` (${r.findingsExact} verified)` : ""}`
+                        : `${r.findingsCount}${r.findingsExact != null ? ` (${r.findingsExact} exact)` : ""}`}
                   </td>
                   <td className={cn(td, "text-right font-mono")}>
                     {r.inputTokens == null ? "—" : `${fmtInt(r.inputTokens)} / ${fmtInt(r.outputTokens ?? 0)}`}
