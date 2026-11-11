@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { CascadePanel } from "@/components/cc/CascadePanel";
 import { LimitBanner } from "@/components/cc/LimitBanner";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getDefect } from "@/lib/check/catalog";
 import { getExample } from "@/lib/check/examples";
 import { spansOverlap } from "@/lib/check/spans";
+import type { CascadeState } from "@/lib/check/cascade";
 import type { CheckEvent, CheckStep, Finding } from "@/lib/check/types";
 import type { AnswerKeyItem } from "@/lib/generator";
 import { formatModelLabel } from "@/lib/llm/model-label";
@@ -48,6 +50,7 @@ export function LiveRun({ title, subtitle, text, exampleId, answerKey, onBack }:
   const [status, setStatus] = useState<Status>("running");
   const [error, setError] = useState<{ kind: string; message: string } | null>(null);
   const [meta, setMeta] = useState<DoneMeta | null>(null);
+  const [cascade, setCascade] = useState<CascadeState | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const [elapsed, setElapsed] = useState(0);
   const [run, setRun] = useState(0);
@@ -62,6 +65,7 @@ export function LiveRun({ title, subtitle, text, exampleId, answerKey, onBack }:
     setStatus("running");
     setError(null);
     setMeta(null);
+    setCascade(null);
     setSelected(null);
     const t0 = Date.now();
     const tick = setInterval(() => setElapsed(Date.now() - t0), 100);
@@ -75,6 +79,8 @@ export function LiveRun({ title, subtitle, text, exampleId, answerKey, onBack }:
           next[i] = e.step;
           return next;
         });
+      } else if (e.type === "cascade") {
+        setCascade(e.cascade);
       } else if (e.type === "finding") {
         setFindings((prev) => [...prev, e.finding]);
       } else if (e.type === "done") {
@@ -205,6 +211,8 @@ export function LiveRun({ title, subtitle, text, exampleId, answerKey, onBack }:
         side={
           <>
             {status === "error" && error && <ErrorBox kind={error.kind} message={error.message} exampleId={exampleId} onRetry={() => setRun((r) => r + 1)} onBack={onBack} />}
+
+            {status !== "skipped" && cascade && <CascadePanel cascade={cascade} />}
 
             {status !== "skipped" && (
               <section className="flex flex-col gap-2">

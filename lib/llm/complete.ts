@@ -1,5 +1,5 @@
 import { complete as completeClaude } from "@/lib/claude/client";
-import type { CompleteResult, LlmMessage } from "@/lib/claude/types";
+import type { CompleteResult, LlmEffort, LlmMessage } from "@/lib/claude/types";
 import { LlmError } from "@/lib/claude/types";
 import {
   ANALYZE_MAX_TOKENS,
@@ -20,6 +20,10 @@ export interface LlmCompleteOptions {
   purpose: CompletionPurpose;
   /** Для YandexGPT; Claude температуру не принимает */
   temperature?: number;
+  /** Переопределить модель провайдера (каскад: уровень 2 на более сильной модели) */
+  model?: string;
+  /** Глубина рассуждений Claude (каскад: low на уровне 1, medium на уровне 2) */
+  effort?: LlmEffort;
 }
 
 /** Единая точка вызова LLM: Claude или YandexGPT */
@@ -30,12 +34,15 @@ export async function llmComplete(
 ): Promise<CompleteResult> {
   if (provider === "claude") {
     return completeClaude(messages, {
+      model: options.model,
+      effort: options.effort,
       maxTokens: options.purpose === "revise" ? REVISE_MAX_TOKENS : ANALYZE_MAX_TOKENS,
     });
   }
 
   if (provider === "deepseek") {
     return completeDeepSeek(messages, {
+      model: options.model,
       // deepseek-chat: максимум 8K выходных токенов
       maxTokens: options.purpose === "revise" ? 8000 : 4000,
       temperature: options.temperature ?? ANALYZE_TEMPERATURE,
@@ -44,7 +51,7 @@ export async function llmComplete(
 
   try {
     const result = await completeYandex(messages, {
-      model: getProviderModel("yandex"),
+      model: options.model ?? getProviderModel("yandex"),
       temperature: options.temperature ?? ANALYZE_TEMPERATURE,
       maxTokens:
         options.purpose === "revise" ? YANDEX_REVISE_MAX_TOKENS : YANDEX_ANALYZE_MAX_TOKENS,

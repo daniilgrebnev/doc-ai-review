@@ -18,7 +18,7 @@ interface DeepSeekResponse {
 
 export async function complete(
   messages: LlmMessage[],
-  options: { maxTokens: number; temperature?: number }
+  options: { maxTokens: number; temperature?: number; model?: string }
 ): Promise<CompleteResult> {
   const apiKey = process.env.DEEPSEEK_API_KEY;
   if (!apiKey) {
@@ -36,7 +36,7 @@ export async function complete(
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: getDeepSeekModel(),
+        model: options.model ?? getDeepSeekModel(),
         messages: messages.map((m) => ({ role: m.role, content: m.text })),
         max_tokens: options.maxTokens,
         temperature: options.temperature,
@@ -56,7 +56,7 @@ export async function complete(
 
     return {
       text,
-      model: data.model || getDeepSeekModel(),
+      model: data.model || options.model || getDeepSeekModel(),
       usage: {
         inputTokens: data.usage?.prompt_tokens ?? 0,
         outputTokens: data.usage?.completion_tokens ?? 0,

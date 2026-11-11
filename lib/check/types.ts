@@ -1,4 +1,5 @@
 /** Contract Check: data model of a finding (see ТЗ, F2) */
+import type { CascadeState } from "@/lib/check/cascade";
 
 export type FindingVerdict = "violation" | "risk" | "compliant";
 
@@ -22,6 +23,8 @@ export interface Finding {
   spans: Array<[number, number]>;
   /** Every quote was found verbatim in the text */
   exact: boolean;
+  /** Cascade level that produced the finding: 1 = cheap pass, 2 = re-check of uncertain points */
+  level?: 1 | 2;
 }
 
 export interface CheckStep {
@@ -35,6 +38,7 @@ export interface CheckStep {
 export type CheckEvent =
   | { type: "step"; step: CheckStep }
   | { type: "finding"; finding: Finding }
+  | { type: "cascade"; cascade: CascadeState }
   | {
       type: "done";
       provider: string;
@@ -43,6 +47,7 @@ export type CheckEvent =
       inputTokens: number;
       outputTokens: number;
       fallbackFrom?: string;
+      costUsd?: number | null;
     }
   | { type: "error"; kind: "input" | "failed" | "blocked" | "no-model" | "limit"; message: string };
 
