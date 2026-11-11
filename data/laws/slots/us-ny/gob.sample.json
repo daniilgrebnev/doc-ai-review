@@ -1,0 +1,554 @@
+[
+ {
+  "slotId": "us-ny:gob:5-501",
+  "uid": "a6111f1f-f611-56e4-a9c4-6041c805154a",
+  "parentSlotId": null,
+  "kind": "article",
+  "number": "5-501",
+  "title": "Rate of interest; usury forbidden",
+  "articleTitle": "N.Y. GOB § 5-501 Rate of interest; usury forbidden",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 5 Interest and Usury; Brokerage On Loans"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "us-ny:gob:5-501:1",
+   "us-ny:gob:5-501:2",
+   "us-ny:gob:5-501:3",
+   "us-ny:gob:5-501:4",
+   "us-ny:gob:5-501:4-a",
+   "us-ny:gob:5-501:5",
+   "us-ny:gob:5-501:6",
+   "us-ny:gob:5-501:7"
+  ],
+  "amendments": [],
+  "text": "",
+  "hash": null,
+  "pieces": []
+ },
+ {
+  "slotId": "us-ny:gob:5-501:1",
+  "uid": "f71ce123-cc6b-5667-9dda-cdaf900a4a5e",
+  "parentSlotId": "us-ny:gob:5-501",
+  "kind": "subdivision",
+  "number": "1",
+  "title": "Rate of interest; usury forbidden",
+  "articleTitle": "N.Y. GOB § 5-501 Rate of interest; usury forbidden",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 5 Interest and Usury; Brokerage On Loans"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "1. The rate of interest, as computed pursuant to this title, upon the loan or forbearance of any money, goods, or things in action, except as provided in subdivisions five and six of this section or as otherwise provided by law, shall be six per centum per annum unless a different rate is prescribed in section fourteen-a of the banking law.",
+  "hash": "7a41d596e9cbcd68",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-501:1#1",
+    "order": 1,
+    "text": "1. The rate of interest, as computed pursuant to this title, upon the loan or forbearance of any money, goods, or things in action, except as provided in subdivisions five and six of this section or as otherwise provided by law, shall be six per centum per annum unless a different rate is prescribed in section fourteen-a of the banking law.",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 1: 1. The rate of interest, as computed pursuant to this title, upon the loan or forbearance of any money, goods, or things in action, except as provided in subdivisions five and six of this section or as otherwise provided by law, shall be six per centum per annum unless a different rate is prescribed in section fourteen-a of the banking law."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:gob:5-501:2",
+  "uid": "1f07b959-2252-5258-a334-4042b12cd66e",
+  "parentSlotId": "us-ny:gob:5-501",
+  "kind": "subdivision",
+  "number": "2",
+  "title": "Rate of interest; usury forbidden",
+  "articleTitle": "N.Y. GOB § 5-501 Rate of interest; usury forbidden",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 5 Interest and Usury; Brokerage On Loans"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "2. No person or corporation shall, directly or indirectly, charge, take or receive any money, goods or things in action as interest on the loan or forbearance of any money, goods or things in action at a rate exceeding the rate above prescribed. The amount charged, taken or received as interest shall include any and all amounts paid or payable, directly or indirectly, by any person, to or for the account of the lender in consideration for making the loan or forbearance as defined by the superintendent of financial services pursuant to subdivision three of section fourteen-a of the banking law except such fee as may be fixed by the commissioner of taxation and finance as the cost of servicing loans made by the property and liability insurance security fund.",
+  "hash": "2c5020be68819cbe",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-501:2#1",
+    "order": 1,
+    "text": "2. No person or corporation shall, directly or indirectly, charge, take or receive any money, goods or things in action as interest on the loan or forbearance of any money, goods or things in action at a rate exceeding the rate above prescribed. The amount charged, taken or received as interest shall include any and all amounts paid or payable, directly or indirectly, by any person, to or for the account of the lender in consideration for making the loan or forbearance as defined by the superintendent of financial services pursuant to subdivision three of section fourteen-a of the banking law except such fee as may be fixed by the commissioner of taxation and finance as the cost of servicing loans made by the property and liability insurance security fund.",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 2: 2. No person or corporation shall, directly or indirectly, charge, take or receive any money, goods or things in action as interest on the loan or forbearance of any money, goods or things in action at a rate exceeding the rate above prescribed. The amount charged, taken or received as interest shall include any and all amounts paid or payable, directly or indirectly, by any person, to or for the account of the lender in consideration for making the loan or forbearance as defined by the superintendent of financial services pursuant to subdivision three of section fourteen-a of the banking law except such fee as may be fixed by the commissioner of taxation and finance as the cost of servicing loans made by the property and liability insurance security fund."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:gob:5-501:3",
+  "uid": "76fa3f2e-a45f-54d0-bab2-aea9b731fef0",
+  "parentSlotId": "us-ny:gob:5-501",
+  "kind": "subdivision",
+  "number": "3",
+  "title": "Rate of interest; usury forbidden",
+  "articleTitle": "N.Y. GOB § 5-501 Rate of interest; usury forbidden",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 5 Interest and Usury; Brokerage On Loans"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "us-ny:gob:5-501:3:a",
+   "us-ny:gob:5-501:3:b"
+  ],
+  "amendments": [],
+  "text": "3. If the rate of interest charged, taken or received on any loan or forbearance secured primarily by either (i) an interest in real property improved by a one to six family residence occupied by the owner or (ii) certificates of stock or other evidence of an ownership interest in a corporation or partnership formed for the purpose of the cooperative ownership of real estate taken as security for a loan under subdivision five of section one hundred three of the banking law, subdivision eight-a of section two hundred thirty-five of such law or subdivision two-a of section three hundred eighty of such law, exceeds six per centum per annum,",
+  "hash": "3db21b44b5bdf4d5",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-501:3#1",
+    "order": 1,
+    "text": "3. If the rate of interest charged, taken or received on any loan or forbearance secured primarily by either (i) an interest in real property improved by a one to six family residence occupied by the owner or (ii) certificates of stock or other evidence of an ownership interest in a corporation or partnership formed for the purpose of the cooperative ownership of real estate taken as security for a loan under subdivision five of section one hundred three of the banking law, subdivision eight-a of section two hundred thirty-five of such law or subdivision two-a of section three hundred eighty of such law, exceeds six per centum per annum,",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 3: 3. If the rate of interest charged, taken or received on any loan or forbearance secured primarily by either (i) an interest in real property improved by a one to six family residence occupied by the owner or (ii) certificates of stock or other evidence of an ownership interest in a corporation or partnership formed for the purpose of the cooperative ownership of real estate taken as security for a loan under subdivision five of section one hundred three of the banking law, subdivision eight-a of section two hundred thirty-five of such law or subdivision two-a of section three hundred eighty of such law, exceeds six per centum per annum,"
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:gob:5-501:3:a",
+  "uid": "9fac6e34-c061-588e-8469-f4dcd517a767",
+  "parentSlotId": "us-ny:gob:5-501:3",
+  "kind": "paragraph",
+  "number": "a",
+  "title": "Rate of interest; usury forbidden",
+  "articleTitle": "N.Y. GOB § 5-501 Rate of interest; usury forbidden",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 5 Interest and Usury; Brokerage On Loans"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a. in the case of a loan referred to by clause (i) of this subdivision, the term of such loan or forbearance may extend five years beyond the maximum maturity of such loan otherwise prescribed by law, and",
+  "hash": "e1827e5361c151c8",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-501:3:a#1",
+    "order": 1,
+    "text": "a. in the case of a loan referred to by clause (i) of this subdivision, the term of such loan or forbearance may extend five years beyond the maximum maturity of such loan otherwise prescribed by law, and",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 3, par. a: a. in the case of a loan referred to by clause (i) of this subdivision, the term of such loan or forbearance may extend five years beyond the maximum maturity of such loan otherwise prescribed by law, and"
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:gob:5-501:3:b",
+  "uid": "14ea8ad5-ace5-5dfe-9f10-4be820f03bf1",
+  "parentSlotId": "us-ny:gob:5-501:3",
+  "kind": "paragraph",
+  "number": "b",
+  "title": "Rate of interest; usury forbidden",
+  "articleTitle": "N.Y. GOB § 5-501 Rate of interest; usury forbidden",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 5 Interest and Usury; Brokerage On Loans"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b. notwithstanding any other provision of law, the unpaid balance of the loan or forbearance may be prepaid, in whole or in part, at any time. If prepayment is made on or after one year from the date the loan or forbearance is made, no penalty may be imposed. If prepayment is made prior to such time, no penalty may be imposed unless provision therefor is expressly made in the loan contract, provided that no penalty may be imposed if prohibited by sections six-l and six-m of the banking law. In all cases, the right of prepayment shall be stated in the instrument evidencing the loan or forbearance, provided, however, that the provisions of this subdivision shall not apply to the extent such provisions are inconsistent with any federal law or regulation.",
+  "hash": "7606347313554cdb",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-501:3:b#1",
+    "order": 1,
+    "text": "b. notwithstanding any other provision of law, the unpaid balance of the loan or forbearance may be prepaid, in whole or in part, at any time. If prepayment is made on or after one year from the date the loan or forbearance is made, no penalty may be imposed. If prepayment is made prior to such time, no penalty may be imposed unless provision therefor is expressly made in the loan contract, provided that no penalty may be imposed if prohibited by sections six-l and six-m of the banking law. In all cases, the right of prepayment shall be stated in the instrument evidencing the loan or forbearance, provided, however, that the provisions of this subdivision shall not apply to the extent such provisions are inconsistent with any federal law or regulation.",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 3, par. b: b. notwithstanding any other provision of law, the unpaid balance of the loan or forbearance may be prepaid, in whole or in part, at any time. If prepayment is made on or after one year from the date the loan or forbearance is made, no penalty may be imposed. If prepayment is made prior to such time, no penalty may be imposed unless provision therefor is expressly made in the loan contract, provided that no penalty may be imposed if prohibited by sections six-l and six-m of the banking law. In all cases, the right of prepayment shall be stated in the instrument evidencing the loan or forbearance, provided, however, that the provisions of this subdivision shall not apply to the extent such provisions are inconsistent with any federal law or regulation."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:gob:5-501:4",
+  "uid": "e20e82ed-04e8-5682-9b0d-6bf3ad439aa1",
+  "parentSlotId": "us-ny:gob:5-501",
+  "kind": "subdivision",
+  "number": "4",
+  "title": "Rate of interest; usury forbidden",
+  "articleTitle": "N.Y. GOB § 5-501 Rate of interest; usury forbidden",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 5 Interest and Usury; Brokerage On Loans"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "4. Except as otherwise provided by law, interest shall not be charged, taken or received on any loan or forbearance at a rate exceeding such rate of interest as may be authorized by law at the time the loan or forbearance is made, whether or not the loan or forbearance is made pursuant to a prior contract or commitment providing for a greater rate of interest, provided, however, that no change in the rate of interest prescribed in section fourteen-a of the banking law shall affect (a) the validity of a loan or forbearance made before the date such rate becomes effective, or (b) the enforceability of such loan or forbearance in accordance with its terms, except that if any loan or forbearance provides for an increase in the rate of interest during the term of such loan or forbearance, the increased rate shall not exceed such rate of interest as may have been authorized by law at the time such loan or forbearance was made.",
+  "hash": "816592b45d7b2a46",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-501:4#1",
+    "order": 1,
+    "text": "4.",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 4: 4."
+   },
+   {
+    "pieceId": "us-ny:gob:5-501:4#2",
+    "order": 2,
+    "text": "Except as otherwise provided by law, interest shall not be charged, taken or received on any loan or forbearance at a rate exceeding such rate of interest as may be authorized by law at the time the loan or forbearance is made, whether or not the loan or forbearance is made pursuant to a prior contract or commitment providing for a greater rate of interest, provided, however, that no change in the rate of interest prescribed in section fourteen-a of the banking law shall affect (a) the validity of a loan or forbearance made before the date such rate becomes effective, or (b) the enforceability of such loan or forbearance in accordance with its terms, except that if any loan or forbearance provides for an increase in the rate of interest during the term of such loan or forbearance,",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 4: Except as otherwise provided by law, interest shall not be charged, taken or received on any loan or forbearance at a rate exceeding such rate of interest as may be authorized by law at the time the loan or forbearance is made, whether or not the loan or forbearance is made pursuant to a prior contract or commitment providing for a greater rate of interest, provided, however, that no change in the rate of interest prescribed in section fourteen-a of the banking law shall affect (a) the validity of a loan or forbearance made before the date such rate becomes effective, or (b) the enforceability of such loan or forbearance in accordance with its terms, except that if any loan or forbearance provides for an increase in the rate of interest during the term of such loan or forbearance,"
+   },
+   {
+    "pieceId": "us-ny:gob:5-501:4#3",
+    "order": 3,
+    "text": "the increased rate shall not exceed such rate of interest as may have been authorized by law at the time such loan or forbearance was made.",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 4: the increased rate shall not exceed such rate of interest as may have been authorized by law at the time such loan or forbearance was made."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:gob:5-501:4-a",
+  "uid": "47917686-e687-58ab-a338-6e9eebad58fb",
+  "parentSlotId": "us-ny:gob:5-501",
+  "kind": "subdivision",
+  "number": "4-a",
+  "title": "Rate of interest; usury forbidden",
+  "articleTitle": "N.Y. GOB § 5-501 Rate of interest; usury forbidden",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 5 Interest and Usury; Brokerage On Loans"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "4-a. Notwithstanding the provisions of subdivision four of this section, a loan or forbearance repayable on demand may provide for changes, reflecting variations in lending rates, from time to time in the rate of interest payable on such loan or forbearance up to the rate of interest authorized by law at the time of such change and in such case the rate of interest may be so changed in accordance with the terms of the contract or loan commitment relating thereto; provided, however, that the rate of interest charged, taken or received on such a loan or forbearance shall not exceed the rate of interest authorized by law as it may subsequently be reduced from time to time; and further provided, however, that in no event shall such a loan or forbearance by subject to an authorized rate of interest less than that applicable at the time such loan or forbearance was made. The provisions of this subdivision shall apply only to a loan or forbearance repayable on demand which has an initial principal of more than five thousand dollars and which the borrower has the right to repay at any time in whole or in part, together with accrued interest on the principal so repaid, without any penalty. With respect to a loan or forbearance covered by this subdivision, the lender shall disclose to the borrower in writing not less often than annually the amount of interest accrued or payable as of the date of such disclosure and the manner by which such amount was computed.",
+  "hash": "523714df3a29664f",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-501:4-a#1",
+    "order": 1,
+    "text": "4-a. Notwithstanding the provisions of subdivision four of this section, a loan or forbearance repayable on demand may provide for changes, reflecting variations in lending rates, from time to time in the rate of interest payable on such loan or forbearance up to the rate of interest authorized by law at the time of such change and in such case the rate of interest may be so changed in accordance with the terms of the contract or loan commitment relating thereto; provided, however, that the rate of interest charged, taken or received on such a loan or forbearance shall not exceed the rate of interest authorized by law as it may subsequently be reduced from time to time;",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 4-a: 4-a. Notwithstanding the provisions of subdivision four of this section, a loan or forbearance repayable on demand may provide for changes, reflecting variations in lending rates, from time to time in the rate of interest payable on such loan or forbearance up to the rate of interest authorized by law at the time of such change and in such case the rate of interest may be so changed in accordance with the terms of the contract or loan commitment relating thereto; provided, however, that the rate of interest charged, taken or received on such a loan or forbearance shall not exceed the rate of interest authorized by law as it may subsequently be reduced from time to time;"
+   },
+   {
+    "pieceId": "us-ny:gob:5-501:4-a#2",
+    "order": 2,
+    "text": "and further provided, however, that in no event shall such a loan or forbearance by subject to an authorized rate of interest less than that applicable at the time such loan or forbearance was made. The provisions of this subdivision shall apply only to a loan or forbearance repayable on demand which has an initial principal of more than five thousand dollars and which the borrower has the right to repay at any time in whole or in part, together with accrued interest on the principal so repaid, without any penalty. With respect to a loan or forbearance covered by this subdivision, the lender shall disclose to the borrower in writing not less often than annually the amount of interest accrued or payable as of the date of such disclosure and the manner by which such amount was computed.",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 4-a: and further provided, however, that in no event shall such a loan or forbearance by subject to an authorized rate of interest less than that applicable at the time such loan or forbearance was made. The provisions of this subdivision shall apply only to a loan or forbearance repayable on demand which has an initial principal of more than five thousand dollars and which the borrower has the right to repay at any time in whole or in part, together with accrued interest on the principal so repaid, without any penalty. With respect to a loan or forbearance covered by this subdivision, the lender shall disclose to the borrower in writing not less often than annually the amount of interest accrued or payable as of the date of such disclosure and the manner by which such amount was computed."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:gob:5-501:5",
+  "uid": "b8ee9147-df2a-5ee1-b4f7-b8edd33411d4",
+  "parentSlotId": "us-ny:gob:5-501",
+  "kind": "subdivision",
+  "number": "5",
+  "title": "Rate of interest; usury forbidden",
+  "articleTitle": "N.Y. GOB § 5-501 Rate of interest; usury forbidden",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 5 Interest and Usury; Brokerage On Loans"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "5. No law regulating the maximum rate of interest which may be charged, taken or received shall apply to any loan or forbearance insured by the federal housing commissioner or for which a commitment to insure has been made by the federal housing commissioner or to any loan or forbearance insured or guaranteed pursuant to the provisions of an act of congress entitled \"Servicemen's Readjustment Act of 1944.\"",
+  "hash": "26a8c39c499671ce",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-501:5#1",
+    "order": 1,
+    "text": "5. No law regulating the maximum rate of interest which may be charged, taken or received shall apply to any loan or forbearance insured by the federal housing commissioner or for which a commitment to insure has been made by the federal housing commissioner or to any loan or forbearance insured or guaranteed pursuant to the provisions of an act of congress entitled \"Servicemen's Readjustment Act of 1944.\"",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 5: 5. No law regulating the maximum rate of interest which may be charged, taken or received shall apply to any loan or forbearance insured by the federal housing commissioner or for which a commitment to insure has been made by the federal housing commissioner or to any loan or forbearance insured or guaranteed pursuant to the provisions of an act of congress entitled \"Servicemen's Readjustment Act of 1944.\""
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:gob:5-501:6",
+  "uid": "3c753ea4-a4eb-57db-bf6b-87a62a430e81",
+  "parentSlotId": "us-ny:gob:5-501",
+  "kind": "subdivision",
+  "number": "6",
+  "title": "Rate of interest; usury forbidden",
+  "articleTitle": "N.Y. GOB § 5-501 Rate of interest; usury forbidden",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 5 Interest and Usury; Brokerage On Loans"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "us-ny:gob:5-501:6:b"
+  ],
+  "amendments": [],
+  "text": "6. a. No law regulating the maximum rate of interest which may be charged, taken or received, except section 190.40 and section 190.42 of the penal law, shall apply to any loan or forbearance in the amount of two hundred fifty thousand dollars or more, other than a loan or a forbearance secured primarily by an interest in real property improved by a one or two family residence. A loan of two hundred fifty thousand dollars or more which is to be advanced in installments pursuant to a written agreement by a lender shall be deemed to be a single loan for the total amount which the lender has agreed to advance pursuant to such agreement on the terms and conditions provided therein.",
+  "hash": "84e499aaad66ae05",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-501:6#1",
+    "order": 1,
+    "text": "6. a. No law regulating the maximum rate of interest which may be charged, taken or received, except section 190.40 and section 190.42 of the penal law, shall apply to any loan or forbearance in the amount of two hundred fifty thousand dollars or more, other than a loan or a forbearance secured primarily by an interest in real property improved by a one or two family residence. A loan of two hundred fifty thousand dollars or more which is to be advanced in installments pursuant to a written agreement by a lender shall be deemed to be a single loan for the total amount which the lender has agreed to advance pursuant to such agreement on the terms and conditions provided therein.",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 6: 6. a. No law regulating the maximum rate of interest which may be charged, taken or received, except section 190.40 and section 190.42 of the penal law, shall apply to any loan or forbearance in the amount of two hundred fifty thousand dollars or more, other than a loan or a forbearance secured primarily by an interest in real property improved by a one or two family residence. A loan of two hundred fifty thousand dollars or more which is to be advanced in installments pursuant to a written agreement by a lender shall be deemed to be a single loan for the total amount which the lender has agreed to advance pursuant to such agreement on the terms and conditions provided therein."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:gob:5-501:6:b",
+  "uid": "5a9f0450-f7b7-5cc4-9735-bc192cabccf5",
+  "parentSlotId": "us-ny:gob:5-501:6",
+  "kind": "paragraph",
+  "number": "b",
+  "title": "Rate of interest; usury forbidden",
+  "articleTitle": "N.Y. GOB § 5-501 Rate of interest; usury forbidden",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 5 Interest and Usury; Brokerage On Loans"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b. No law regulating the maximum rate of interest which may be charged, taken or received, including section 190.40 and section 190.42 of the penal law, shall apply to any loan or forbearance in the amount of two million five hundred thousand dollars or more. Loans or forbearances aggregating two million five hundred thousand dollars or more which are to be made or advanced to any one borrower in one or more installments pursuant to a written agreement by one or more lenders shall be deemed to be a single loan or forbearance for the total amount which the lender or lenders have agreed to advance or make pursuant to such agreement on the terms and conditions provided therein.",
+  "hash": "2963544a192170a9",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-501:6:b#1",
+    "order": 1,
+    "text": "b. No law regulating the maximum rate of interest which may be charged, taken or received, including section 190.40 and section 190.42 of the penal law, shall apply to any loan or forbearance in the amount of two million five hundred thousand dollars or more. Loans or forbearances aggregating two million five hundred thousand dollars or more which are to be made or advanced to any one borrower in one or more installments pursuant to a written agreement by one or more lenders shall be deemed to be a single loan or forbearance for the total amount which the lender or lenders have agreed to advance or make pursuant to such agreement on the terms and conditions provided therein.",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 6, par. b: b. No law regulating the maximum rate of interest which may be charged, taken or received, including section 190.40 and section 190.42 of the penal law, shall apply to any loan or forbearance in the amount of two million five hundred thousand dollars or more. Loans or forbearances aggregating two million five hundred thousand dollars or more which are to be made or advanced to any one borrower in one or more installments pursuant to a written agreement by one or more lenders shall be deemed to be a single loan or forbearance for the total amount which the lender or lenders have agreed to advance or make pursuant to such agreement on the terms and conditions provided therein."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:gob:5-501:7",
+  "uid": "29a65b36-12d2-545e-942a-7ac741c644f0",
+  "parentSlotId": "us-ny:gob:5-501",
+  "kind": "subdivision",
+  "number": "7",
+  "title": "Rate of interest; usury forbidden",
+  "articleTitle": "N.Y. GOB § 5-501 Rate of interest; usury forbidden",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 5 Interest and Usury; Brokerage On Loans"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-501",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "7. Except as otherwise expressly provided by law, in the event of prepayment in full of a loan, any refund of unearned interest to which the borrower may be entitled may not be computed by a sum of the balances or similar method but must be determined according to a generally accepted actuarial method.",
+  "hash": "bb60d107209da90d",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-501:7#1",
+    "order": 1,
+    "text": "7. Except as otherwise expressly provided by law, in the event of prepayment in full of a loan, any refund of unearned interest to which the borrower may be entitled may not be computed by a sum of the balances or similar method but must be determined according to a generally accepted actuarial method.",
+    "embedText": "N.Y. GOB § 5-501 Rate of interest; usury forbidden, subd. 7: 7. Except as otherwise expressly provided by law, in the event of prepayment in full of a loan, any refund of unearned interest to which the borrower may be entitled may not be computed by a sum of the balances or similar method but must be determined according to a generally accepted actuarial method."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:gob:5-1401",
+  "uid": "7ee0d1d7-6497-5c39-a18c-746929613c88",
+  "parentSlotId": null,
+  "kind": "article",
+  "number": "5-1401",
+  "title": "Choice of law",
+  "articleTitle": "N.Y. GOB § 5-1401 Choice of law",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2018-08-31",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 14 Enforceability of Clauses Respecting Choice of Law and Choice of Forum In Certain Transactions"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-1401",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "us-ny:gob:5-1401:1",
+   "us-ny:gob:5-1401:2"
+  ],
+  "amendments": [],
+  "text": "",
+  "hash": null,
+  "pieces": []
+ },
+ {
+  "slotId": "us-ny:gob:5-1401:1",
+  "uid": "29ed5a0f-8b9f-5b81-a37a-1ff3d11854b1",
+  "parentSlotId": "us-ny:gob:5-1401",
+  "kind": "subdivision",
+  "number": "1",
+  "title": "Choice of law",
+  "articleTitle": "N.Y. GOB § 5-1401 Choice of law",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2018-08-31",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 14 Enforceability of Clauses Respecting Choice of Law and Choice of Forum In Certain Transactions"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-1401",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "1. The parties to any contract, agreement or undertaking, contingent or otherwise, in consideration of, or relating to any obligation arising out of a transaction covering in the aggregate not less than two hundred fifty thousand dollars, including a transaction otherwise covered by subsection (a) of section 1--301 of the uniform commercial code, may agree that the law of this state shall govern their rights and duties in whole or in part, whether or not such contract, agreement or undertaking bears a reasonable relation to this state. This section shall not apply to any contract, agreement or undertaking (a) for labor or personal services, (b) relating to any transaction for personal, family or household services, or (c) to the extent provided to the contrary in subsection (c) of section 1--301 of the uniform commercial code.",
+  "hash": "cf4fadf4d504d67d",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-1401:1#1",
+    "order": 1,
+    "text": "1. The parties to any contract, agreement or undertaking, contingent or otherwise, in consideration of, or relating to any obligation arising out of a transaction covering in the aggregate not less than two hundred fifty thousand dollars, including a transaction otherwise covered by subsection (a) of section 1--301 of the uniform commercial code, may agree that the law of this state shall govern their rights and duties in whole or in part, whether or not such contract, agreement or undertaking bears a reasonable relation to this state.",
+    "embedText": "N.Y. GOB § 5-1401 Choice of law, subd. 1: 1. The parties to any contract, agreement or undertaking, contingent or otherwise, in consideration of, or relating to any obligation arising out of a transaction covering in the aggregate not less than two hundred fifty thousand dollars, including a transaction otherwise covered by subsection (a) of section 1--301 of the uniform commercial code, may agree that the law of this state shall govern their rights and duties in whole or in part, whether or not such contract, agreement or undertaking bears a reasonable relation to this state."
+   },
+   {
+    "pieceId": "us-ny:gob:5-1401:1#2",
+    "order": 2,
+    "text": "This section shall not apply to any contract, agreement or undertaking (a) for labor or personal services, (b) relating to any transaction for personal, family or household services, or (c) to the extent provided to the contrary in subsection (c) of section 1--301 of the uniform commercial code.",
+    "embedText": "N.Y. GOB § 5-1401 Choice of law, subd. 1: This section shall not apply to any contract, agreement or undertaking (a) for labor or personal services, (b) relating to any transaction for personal, family or household services, or (c) to the extent provided to the contrary in subsection (c) of section 1--301 of the uniform commercial code."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:gob:5-1401:2",
+  "uid": "21c7df64-d9cd-59ea-b9e0-571f8c98b202",
+  "parentSlotId": "us-ny:gob:5-1401",
+  "kind": "subdivision",
+  "number": "2",
+  "title": "Choice of law",
+  "articleTitle": "N.Y. GOB § 5-1401 Choice of law",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY General Obligations Law",
+  "lawPart": null,
+  "act": "New York General Obligations Law",
+  "edition": "active 2018-08-31",
+  "path": [
+   "Article 5 Creation, Definition and Enforcement of Contractual Obligations",
+   "Title 14 Enforceability of Clauses Respecting Choice of Law and Choice of Forum In Certain Transactions"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/GOB/5-1401",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "2. Nothing contained in this section shall be construed to limit or deny the enforcement of any provision respecting choice of law in any other contract, agreement or undertaking.",
+  "hash": "20f7e2217866f14e",
+  "pieces": [
+   {
+    "pieceId": "us-ny:gob:5-1401:2#1",
+    "order": 1,
+    "text": "2. Nothing contained in this section shall be construed to limit or deny the enforcement of any provision respecting choice of law in any other contract, agreement or undertaking.",
+    "embedText": "N.Y. GOB § 5-1401 Choice of law, subd. 2: 2. Nothing contained in this section shall be construed to limit or deny the enforcement of any provision respecting choice of law in any other contract, agreement or undertaking."
+   }
+  ]
+ }
+]

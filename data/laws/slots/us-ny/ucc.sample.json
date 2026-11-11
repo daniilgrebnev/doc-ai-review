@@ -1,0 +1,531 @@
+[
+ {
+  "slotId": "us-ny:ucc:2-718",
+  "uid": "6b5101ad-4591-52f0-9ec2-d4f48cb8d510",
+  "parentSlotId": null,
+  "kind": "article",
+  "number": "2-718",
+  "title": "Liquidation or Limitation of Damages; Deposits",
+  "articleTitle": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-718",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "us-ny:ucc:2-718:1",
+   "us-ny:ucc:2-718:2",
+   "us-ny:ucc:2-718:3",
+   "us-ny:ucc:2-718:4"
+  ],
+  "amendments": [],
+  "text": "",
+  "hash": null,
+  "pieces": []
+ },
+ {
+  "slotId": "us-ny:ucc:2-718:1",
+  "uid": "caa4bd5d-a8d0-5792-8ad7-a4e943010b51",
+  "parentSlotId": "us-ny:ucc:2-718",
+  "kind": "subdivision",
+  "number": "1",
+  "title": "Liquidation or Limitation of Damages; Deposits",
+  "articleTitle": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-718",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(1) Damages for breach by either party may be liquidated in the agreement but only at an amount which is reasonable in the light of the anticipated or actual harm caused by the breach, the difficulties of proof of loss, and the inconvenience or nonfeasibility of otherwise obtaining an adequate remedy. A term fixing unreasonably large liquidated damages is void as a penalty.",
+  "hash": "2dacc518f49db225",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-718:1#1",
+    "order": 1,
+    "text": "(1) Damages for breach by either party may be liquidated in the agreement but only at an amount which is reasonable in the light of the anticipated or actual harm caused by the breach, the difficulties of proof of loss, and the inconvenience or nonfeasibility of otherwise obtaining an adequate remedy. A term fixing unreasonably large liquidated damages is void as a penalty.",
+    "embedText": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits, subd. 1: (1) Damages for breach by either party may be liquidated in the agreement but only at an amount which is reasonable in the light of the anticipated or actual harm caused by the breach, the difficulties of proof of loss, and the inconvenience or nonfeasibility of otherwise obtaining an adequate remedy. A term fixing unreasonably large liquidated damages is void as a penalty."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:ucc:2-718:2",
+  "uid": "44144683-e5e7-53e8-9556-f4f8c090d5c2",
+  "parentSlotId": "us-ny:ucc:2-718",
+  "kind": "subdivision",
+  "number": "2",
+  "title": "Liquidation or Limitation of Damages; Deposits",
+  "articleTitle": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-718",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "us-ny:ucc:2-718:2:a",
+   "us-ny:ucc:2-718:2:b"
+  ],
+  "amendments": [],
+  "text": "(2) Where the seller justifiably withholds delivery of goods because of the buyer's breach, the buyer is entitled to restitution of any amount by which the sum of his payments exceeds",
+  "hash": "b87339617c6b32a9",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-718:2#1",
+    "order": 1,
+    "text": "(2) Where the seller justifiably withholds delivery of goods because of the buyer's breach, the buyer is entitled to restitution of any amount by which the sum of his payments exceeds",
+    "embedText": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits, subd. 2: (2) Where the seller justifiably withholds delivery of goods because of the buyer's breach, the buyer is entitled to restitution of any amount by which the sum of his payments exceeds"
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:ucc:2-718:2:a",
+  "uid": "4468e78c-73b6-5540-bc39-b95f7cf166aa",
+  "parentSlotId": "us-ny:ucc:2-718:2",
+  "kind": "paragraph",
+  "number": "a",
+  "title": "Liquidation or Limitation of Damages; Deposits",
+  "articleTitle": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-718",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(a) the amount to which the seller is entitled by virtue of terms liquidating the seller's damages in accordance with subsection (1), or",
+  "hash": "82895faf0aac3e2f",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-718:2:a#1",
+    "order": 1,
+    "text": "(a) the amount to which the seller is entitled by virtue of terms liquidating the seller's damages in accordance with subsection (1), or",
+    "embedText": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits, subd. 2, par. a: (a) the amount to which the seller is entitled by virtue of terms liquidating the seller's damages in accordance with subsection (1), or"
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:ucc:2-718:2:b",
+  "uid": "a7733ca8-c565-556e-9c9e-213b4eb19ad5",
+  "parentSlotId": "us-ny:ucc:2-718:2",
+  "kind": "paragraph",
+  "number": "b",
+  "title": "Liquidation or Limitation of Damages; Deposits",
+  "articleTitle": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-718",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(b) in the absence of such terms, twenty per cent of the value of the total performance for which the buyer is obligated under the contract or $500, whichever is smaller.",
+  "hash": "09328e50b9060ae8",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-718:2:b#1",
+    "order": 1,
+    "text": "(b) in the absence of such terms, twenty per cent of the value of the total performance for which the buyer is obligated under the contract or $500, whichever is smaller.",
+    "embedText": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits, subd. 2, par. b: (b) in the absence of such terms, twenty per cent of the value of the total performance for which the buyer is obligated under the contract or $500, whichever is smaller."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:ucc:2-718:3",
+  "uid": "83672dc1-c5d5-5ca9-9e7d-5f4d1dd6b913",
+  "parentSlotId": "us-ny:ucc:2-718",
+  "kind": "subdivision",
+  "number": "3",
+  "title": "Liquidation or Limitation of Damages; Deposits",
+  "articleTitle": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-718",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "us-ny:ucc:2-718:3:a",
+   "us-ny:ucc:2-718:3:b"
+  ],
+  "amendments": [],
+  "text": "(3) The buyer's right to restitution under subsection (2) is subject to offset to the extent that the seller establishes",
+  "hash": "aaf6db9774d78454",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-718:3#1",
+    "order": 1,
+    "text": "(3) The buyer's right to restitution under subsection (2) is subject to offset to the extent that the seller establishes",
+    "embedText": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits, subd. 3: (3) The buyer's right to restitution under subsection (2) is subject to offset to the extent that the seller establishes"
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:ucc:2-718:3:a",
+  "uid": "15d19bef-de47-554b-b163-edd65f99eec5",
+  "parentSlotId": "us-ny:ucc:2-718:3",
+  "kind": "paragraph",
+  "number": "a",
+  "title": "Liquidation or Limitation of Damages; Deposits",
+  "articleTitle": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-718",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(a) a right to recover damages under the provisions of this Article other than subsection (1), and",
+  "hash": "e4970c91d039a526",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-718:3:a#1",
+    "order": 1,
+    "text": "(a) a right to recover damages under the provisions of this Article other than subsection (1), and",
+    "embedText": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits, subd. 3, par. a: (a) a right to recover damages under the provisions of this Article other than subsection (1), and"
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:ucc:2-718:3:b",
+  "uid": "ad4add15-fdd8-58f8-bacb-834af6afcc32",
+  "parentSlotId": "us-ny:ucc:2-718:3",
+  "kind": "paragraph",
+  "number": "b",
+  "title": "Liquidation or Limitation of Damages; Deposits",
+  "articleTitle": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-718",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(b) the amount or value of any benefits received by the buyer directly or indirectly by reason of the contract.",
+  "hash": "7fe4b049237ae86d",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-718:3:b#1",
+    "order": 1,
+    "text": "(b) the amount or value of any benefits received by the buyer directly or indirectly by reason of the contract.",
+    "embedText": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits, subd. 3, par. b: (b) the amount or value of any benefits received by the buyer directly or indirectly by reason of the contract."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:ucc:2-718:4",
+  "uid": "9a1da134-b64e-589b-9135-9e7699598d83",
+  "parentSlotId": "us-ny:ucc:2-718",
+  "kind": "subdivision",
+  "number": "4",
+  "title": "Liquidation or Limitation of Damages; Deposits",
+  "articleTitle": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-718",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(4) Where a seller has received payment in goods their reasonable value or the proceeds of their resale shall be treated as payments for the purposes of subsection (2); but if the seller has notice of the buyer's breach before reselling goods received in part performance, his resale is subject to the conditions laid down in this Article on resale by an aggrieved seller (Section 2--706).",
+  "hash": "fc953078d48084bb",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-718:4#1",
+    "order": 1,
+    "text": "(4) Where a seller has received payment in goods their reasonable value or the proceeds of their resale shall be treated as payments for the purposes of subsection (2); but if the seller has notice of the buyer's breach before reselling goods received in part performance, his resale is subject to the conditions laid down in this Article on resale by an aggrieved seller (Section 2--706).",
+    "embedText": "N.Y. UCC § 2-718 Liquidation or Limitation of Damages; Deposits, subd. 4: (4) Where a seller has received payment in goods their reasonable value or the proceeds of their resale shall be treated as payments for the purposes of subsection (2); but if the seller has notice of the buyer's breach before reselling goods received in part performance, his resale is subject to the conditions laid down in this Article on resale by an aggrieved seller (Section 2--706)."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:ucc:2-719",
+  "uid": "288a4f76-8862-5348-9a32-12edbd5cdc62",
+  "parentSlotId": null,
+  "kind": "article",
+  "number": "2-719",
+  "title": "Contractual Modification or Limitation of Remedy",
+  "articleTitle": "N.Y. UCC § 2-719 Contractual Modification or Limitation of Remedy",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-719",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "us-ny:ucc:2-719:1",
+   "us-ny:ucc:2-719:2",
+   "us-ny:ucc:2-719:3"
+  ],
+  "amendments": [],
+  "text": "",
+  "hash": null,
+  "pieces": []
+ },
+ {
+  "slotId": "us-ny:ucc:2-719:1",
+  "uid": "c0bfd6c2-210a-532e-9ffb-d001c599494d",
+  "parentSlotId": "us-ny:ucc:2-719",
+  "kind": "subdivision",
+  "number": "1",
+  "title": "Contractual Modification or Limitation of Remedy",
+  "articleTitle": "N.Y. UCC § 2-719 Contractual Modification or Limitation of Remedy",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-719",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "us-ny:ucc:2-719:1:a",
+   "us-ny:ucc:2-719:1:b"
+  ],
+  "amendments": [],
+  "text": "(1) Subject to the provisions of subsections (2) and (3) of this section and of the preceding section on liquidation and limitation of damages,",
+  "hash": "96118127f3788473",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-719:1#1",
+    "order": 1,
+    "text": "(1) Subject to the provisions of subsections (2) and (3) of this section and of the preceding section on liquidation and limitation of damages,",
+    "embedText": "N.Y. UCC § 2-719 Contractual Modification or Limitation of Remedy, subd. 1: (1) Subject to the provisions of subsections (2) and (3) of this section and of the preceding section on liquidation and limitation of damages,"
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:ucc:2-719:1:a",
+  "uid": "b33b3b71-0872-5714-a194-77e0ba66ca2a",
+  "parentSlotId": "us-ny:ucc:2-719:1",
+  "kind": "paragraph",
+  "number": "a",
+  "title": "Contractual Modification or Limitation of Remedy",
+  "articleTitle": "N.Y. UCC § 2-719 Contractual Modification or Limitation of Remedy",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-719",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(a) the agreement may provide for remedies in addition to or in substitution for those provided in this Article and may limit or alter the measure of damages recoverable under this Article, as by limiting the buyer's remedies to return of the goods and repayment of the price or to repair and replacement of non-conforming goods or parts; and",
+  "hash": "32f646f18712429f",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-719:1:a#1",
+    "order": 1,
+    "text": "(a) the agreement may provide for remedies in addition to or in substitution for those provided in this Article and may limit or alter the measure of damages recoverable under this Article, as by limiting the buyer's remedies to return of the goods and repayment of the price or to repair and replacement of non-conforming goods or parts; and",
+    "embedText": "N.Y. UCC § 2-719 Contractual Modification or Limitation of Remedy, subd. 1, par. a: (a) the agreement may provide for remedies in addition to or in substitution for those provided in this Article and may limit or alter the measure of damages recoverable under this Article, as by limiting the buyer's remedies to return of the goods and repayment of the price or to repair and replacement of non-conforming goods or parts; and"
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:ucc:2-719:1:b",
+  "uid": "16900ba3-ab68-50cf-b75d-d286ac1efafc",
+  "parentSlotId": "us-ny:ucc:2-719:1",
+  "kind": "paragraph",
+  "number": "b",
+  "title": "Contractual Modification or Limitation of Remedy",
+  "articleTitle": "N.Y. UCC § 2-719 Contractual Modification or Limitation of Remedy",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-719",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(b) resort to a remedy as provided is optional unless the remedy is expressly agreed to be exclusive, in which case it is the sole remedy.",
+  "hash": "f0bc91ed431868dc",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-719:1:b#1",
+    "order": 1,
+    "text": "(b) resort to a remedy as provided is optional unless the remedy is expressly agreed to be exclusive, in which case it is the sole remedy.",
+    "embedText": "N.Y. UCC § 2-719 Contractual Modification or Limitation of Remedy, subd. 1, par. b: (b) resort to a remedy as provided is optional unless the remedy is expressly agreed to be exclusive, in which case it is the sole remedy."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:ucc:2-719:2",
+  "uid": "ccf70a07-3275-5ae7-9f8b-4eb47ba32fdc",
+  "parentSlotId": "us-ny:ucc:2-719",
+  "kind": "subdivision",
+  "number": "2",
+  "title": "Contractual Modification or Limitation of Remedy",
+  "articleTitle": "N.Y. UCC § 2-719 Contractual Modification or Limitation of Remedy",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-719",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(2) Where circumstances cause an exclusive or limited remedy to fail of its essential purpose, remedy may be had as provided in this Act.",
+  "hash": "714dd2e711c22f72",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-719:2#1",
+    "order": 1,
+    "text": "(2) Where circumstances cause an exclusive or limited remedy to fail of its essential purpose, remedy may be had as provided in this Act.",
+    "embedText": "N.Y. UCC § 2-719 Contractual Modification or Limitation of Remedy, subd. 2: (2) Where circumstances cause an exclusive or limited remedy to fail of its essential purpose, remedy may be had as provided in this Act."
+   }
+  ]
+ },
+ {
+  "slotId": "us-ny:ucc:2-719:3",
+  "uid": "dd3ae7f2-497f-5d36-b7bf-0fdc31d8fe2e",
+  "parentSlotId": "us-ny:ucc:2-719",
+  "kind": "subdivision",
+  "number": "3",
+  "title": "Contractual Modification or Limitation of Remedy",
+  "articleTitle": "N.Y. UCC § 2-719 Contractual Modification or Limitation of Remedy",
+  "summary": null,
+  "jurisdiction": "US-NY",
+  "lang": "en",
+  "law": "NY Uniform Commercial Code",
+  "lawPart": null,
+  "act": "New York Uniform Commercial Code",
+  "edition": "active 2014-09-22",
+  "path": [
+   "Article 2 Sales",
+   "Part 7 Remedies"
+  ],
+  "sourceUrl": "https://www.nysenate.gov/legislation/laws/UCC/2-719",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(3) Consequential damages may be limited or excluded unless the limitation or exclusion is unconscionable. Limitation of consequential damages for injury to the person in the case of consumer goods is prima facie unconscionable but limitation of damages where the loss is commercial is not.",
+  "hash": "22022d63f90e2b9d",
+  "pieces": [
+   {
+    "pieceId": "us-ny:ucc:2-719:3#1",
+    "order": 1,
+    "text": "(3) Consequential damages may be limited or excluded unless the limitation or exclusion is unconscionable. Limitation of consequential damages for injury to the person in the case of consumer goods is prima facie unconscionable but limitation of damages where the loss is commercial is not.",
+    "embedText": "N.Y. UCC § 2-719 Contractual Modification or Limitation of Remedy, subd. 3: (3) Consequential damages may be limited or excluded unless the limitation or exclusion is unconscionable. Limitation of consequential damages for injury to the person in the case of consumer goods is prima facie unconscionable but limitation of damages where the loss is commercial is not."
+   }
+  ]
+ }
+]

@@ -1,0 +1,2065 @@
+[
+ {
+  "slotId": "de:bgb:286",
+  "uid": "019f814c-1360-51fb-82ef-58eb7c9de839",
+  "parentSlotId": null,
+  "kind": "article",
+  "number": "286",
+  "title": "Verzug des Schuldners",
+  "articleTitle": "BGB § 286 Verzug des Schuldners",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 1 Inhalt der Schuldverhältnisse",
+   "Titel 1 Verpflichtung zur Leistung"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__286.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:286:1",
+   "de:bgb:286:2",
+   "de:bgb:286:3",
+   "de:bgb:286:4",
+   "de:bgb:286:5"
+  ],
+  "amendments": [],
+  "text": "",
+  "hash": null,
+  "pieces": []
+ },
+ {
+  "slotId": "de:bgb:286:1",
+  "uid": "ac206b18-2113-55d9-bbf5-5a5818e0a878",
+  "parentSlotId": "de:bgb:286",
+  "kind": "paragraph",
+  "number": "1",
+  "title": "Verzug des Schuldners",
+  "articleTitle": "BGB § 286 Verzug des Schuldners",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 1 Inhalt der Schuldverhältnisse",
+   "Titel 1 Verpflichtung zur Leistung"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__286.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(1) Leistet der Schuldner auf eine Mahnung des Gläubigers nicht, die nach dem Eintritt der Fälligkeit erfolgt, so kommt er durch die Mahnung in Verzug. Der Mahnung stehen die Erhebung der Klage auf die Leistung sowie die Zustellung eines Mahnbescheids im Mahnverfahren gleich.",
+  "hash": "bc729d20ae0a8315",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:286:1#1",
+    "order": 1,
+    "text": "(1) Leistet der Schuldner auf eine Mahnung des Gläubigers nicht, die nach dem Eintritt der Fälligkeit erfolgt, so kommt er durch die Mahnung in Verzug. Der Mahnung stehen die Erhebung der Klage auf die Leistung sowie die Zustellung eines Mahnbescheids im Mahnverfahren gleich.",
+    "embedText": "BGB § 286 Verzug des Schuldners, Abs. 1: (1) Leistet der Schuldner auf eine Mahnung des Gläubigers nicht, die nach dem Eintritt der Fälligkeit erfolgt, so kommt er durch die Mahnung in Verzug. Der Mahnung stehen die Erhebung der Klage auf die Leistung sowie die Zustellung eines Mahnbescheids im Mahnverfahren gleich."
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:286:2",
+  "uid": "482c595b-3ab6-527b-b5b6-bd0d7f508ade",
+  "parentSlotId": "de:bgb:286",
+  "kind": "paragraph",
+  "number": "2",
+  "title": "Verzug des Schuldners",
+  "articleTitle": "BGB § 286 Verzug des Schuldners",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 1 Inhalt der Schuldverhältnisse",
+   "Titel 1 Verpflichtung zur Leistung"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__286.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:286:2:1",
+   "de:bgb:286:2:2",
+   "de:bgb:286:2:3",
+   "de:bgb:286:2:4"
+  ],
+  "amendments": [],
+  "text": "(2) Der Mahnung bedarf es nicht, wenn",
+  "hash": "fb2f058e0d537f3f",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:286:2#1",
+    "order": 1,
+    "text": "(2) Der Mahnung bedarf es nicht, wenn",
+    "embedText": "BGB § 286 Verzug des Schuldners, Abs. 2: (2) Der Mahnung bedarf es nicht, wenn"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:286:2:1",
+  "uid": "7c77a155-2c71-5020-9fb6-1a62ab9e1eac",
+  "parentSlotId": "de:bgb:286:2",
+  "kind": "number",
+  "number": "1",
+  "title": "Verzug des Schuldners",
+  "articleTitle": "BGB § 286 Verzug des Schuldners",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 1 Inhalt der Schuldverhältnisse",
+   "Titel 1 Verpflichtung zur Leistung"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__286.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "1. für die Leistung eine Zeit nach dem Kalender bestimmt ist,",
+  "hash": "e5e5851bba4952ee",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:286:2:1#1",
+    "order": 1,
+    "text": "1. für die Leistung eine Zeit nach dem Kalender bestimmt ist,",
+    "embedText": "BGB § 286 Verzug des Schuldners, Abs. 2, Nr. 1: 1. für die Leistung eine Zeit nach dem Kalender bestimmt ist,"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:286:2:2",
+  "uid": "cf75d8d4-30b9-5706-bd59-6cb595ac21ae",
+  "parentSlotId": "de:bgb:286:2",
+  "kind": "number",
+  "number": "2",
+  "title": "Verzug des Schuldners",
+  "articleTitle": "BGB § 286 Verzug des Schuldners",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 1 Inhalt der Schuldverhältnisse",
+   "Titel 1 Verpflichtung zur Leistung"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__286.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "2. der Leistung ein Ereignis vorauszugehen hat und eine angemessene Zeit für die Leistung in der Weise bestimmt ist, dass sie sich von dem Ereignis an nach dem Kalender berechnen lässt,",
+  "hash": "102022f5717c99d1",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:286:2:2#1",
+    "order": 1,
+    "text": "2. der Leistung ein Ereignis vorauszugehen hat und eine angemessene Zeit für die Leistung in der Weise bestimmt ist, dass sie sich von dem Ereignis an nach dem Kalender berechnen lässt,",
+    "embedText": "BGB § 286 Verzug des Schuldners, Abs. 2, Nr. 2: 2. der Leistung ein Ereignis vorauszugehen hat und eine angemessene Zeit für die Leistung in der Weise bestimmt ist, dass sie sich von dem Ereignis an nach dem Kalender berechnen lässt,"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:286:2:3",
+  "uid": "4524867e-c593-5fe0-8576-30e534de0d32",
+  "parentSlotId": "de:bgb:286:2",
+  "kind": "number",
+  "number": "3",
+  "title": "Verzug des Schuldners",
+  "articleTitle": "BGB § 286 Verzug des Schuldners",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 1 Inhalt der Schuldverhältnisse",
+   "Titel 1 Verpflichtung zur Leistung"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__286.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "3. der Schuldner die Leistung ernsthaft und endgültig verweigert,",
+  "hash": "dcbe2600eb67693e",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:286:2:3#1",
+    "order": 1,
+    "text": "3. der Schuldner die Leistung ernsthaft und endgültig verweigert,",
+    "embedText": "BGB § 286 Verzug des Schuldners, Abs. 2, Nr. 3: 3. der Schuldner die Leistung ernsthaft und endgültig verweigert,"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:286:2:4",
+  "uid": "f31a9da9-d3d9-56a1-8e4c-4e6c4de46843",
+  "parentSlotId": "de:bgb:286:2",
+  "kind": "number",
+  "number": "4",
+  "title": "Verzug des Schuldners",
+  "articleTitle": "BGB § 286 Verzug des Schuldners",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 1 Inhalt der Schuldverhältnisse",
+   "Titel 1 Verpflichtung zur Leistung"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__286.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "4. aus besonderen Gründen unter Abwägung der beiderseitigen Interessen der sofortige Eintritt des Verzugs gerechtfertigt ist.",
+  "hash": "adc9fdfeecae7e89",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:286:2:4#1",
+    "order": 1,
+    "text": "4. aus besonderen Gründen unter Abwägung der beiderseitigen Interessen der sofortige Eintritt des Verzugs gerechtfertigt ist.",
+    "embedText": "BGB § 286 Verzug des Schuldners, Abs. 2, Nr. 4: 4. aus besonderen Gründen unter Abwägung der beiderseitigen Interessen der sofortige Eintritt des Verzugs gerechtfertigt ist."
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:286:3",
+  "uid": "ea485694-116c-506e-a64a-74b169871c22",
+  "parentSlotId": "de:bgb:286",
+  "kind": "paragraph",
+  "number": "3",
+  "title": "Verzug des Schuldners",
+  "articleTitle": "BGB § 286 Verzug des Schuldners",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 1 Inhalt der Schuldverhältnisse",
+   "Titel 1 Verpflichtung zur Leistung"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__286.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(3) Der Schuldner einer Entgeltforderung kommt spätestens in Verzug, wenn er nicht innerhalb von 30 Tagen nach Fälligkeit und Zugang einer Rechnung oder gleichwertigen Zahlungsaufstellung leistet; dies gilt gegenüber einem Schuldner, der Verbraucher ist, nur, wenn auf diese Folgen in der Rechnung oder Zahlungsaufstellung besonders hingewiesen worden ist. Wenn der Zeitpunkt des Zugangs der Rechnung oder Zahlungsaufstellung unsicher ist, kommt der Schuldner, der nicht Verbraucher ist, spätestens 30 Tage nach Fälligkeit und Empfang der Gegenleistung in Verzug.",
+  "hash": "546e79be0fe14ae8",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:286:3#1",
+    "order": 1,
+    "text": "(3) Der Schuldner einer Entgeltforderung kommt spätestens in Verzug, wenn er nicht innerhalb von 30 Tagen nach Fälligkeit und Zugang einer Rechnung oder gleichwertigen Zahlungsaufstellung leistet; dies gilt gegenüber einem Schuldner, der Verbraucher ist, nur, wenn auf diese Folgen in der Rechnung oder Zahlungsaufstellung besonders hingewiesen worden ist. Wenn der Zeitpunkt des Zugangs der Rechnung oder Zahlungsaufstellung unsicher ist, kommt der Schuldner, der nicht Verbraucher ist, spätestens 30 Tage nach Fälligkeit und Empfang der Gegenleistung in Verzug.",
+    "embedText": "BGB § 286 Verzug des Schuldners, Abs. 3: (3) Der Schuldner einer Entgeltforderung kommt spätestens in Verzug, wenn er nicht innerhalb von 30 Tagen nach Fälligkeit und Zugang einer Rechnung oder gleichwertigen Zahlungsaufstellung leistet; dies gilt gegenüber einem Schuldner, der Verbraucher ist, nur, wenn auf diese Folgen in der Rechnung oder Zahlungsaufstellung besonders hingewiesen worden ist. Wenn der Zeitpunkt des Zugangs der Rechnung oder Zahlungsaufstellung unsicher ist, kommt der Schuldner, der nicht Verbraucher ist, spätestens 30 Tage nach Fälligkeit und Empfang der Gegenleistung in Verzug."
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:286:4",
+  "uid": "2bd0cee3-d373-58ed-a208-8aeef397bcf1",
+  "parentSlotId": "de:bgb:286",
+  "kind": "paragraph",
+  "number": "4",
+  "title": "Verzug des Schuldners",
+  "articleTitle": "BGB § 286 Verzug des Schuldners",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 1 Inhalt der Schuldverhältnisse",
+   "Titel 1 Verpflichtung zur Leistung"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__286.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(4) Der Schuldner kommt nicht in Verzug, solange die Leistung infolge eines Umstands unterbleibt, den er nicht zu vertreten hat.",
+  "hash": "1e82d89e0eace7da",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:286:4#1",
+    "order": 1,
+    "text": "(4) Der Schuldner kommt nicht in Verzug, solange die Leistung infolge eines Umstands unterbleibt, den er nicht zu vertreten hat.",
+    "embedText": "BGB § 286 Verzug des Schuldners, Abs. 4: (4) Der Schuldner kommt nicht in Verzug, solange die Leistung infolge eines Umstands unterbleibt, den er nicht zu vertreten hat."
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:286:5",
+  "uid": "a63f8191-878b-5bfb-adb8-efc6370031f6",
+  "parentSlotId": "de:bgb:286",
+  "kind": "paragraph",
+  "number": "5",
+  "title": "Verzug des Schuldners",
+  "articleTitle": "BGB § 286 Verzug des Schuldners",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 1 Inhalt der Schuldverhältnisse",
+   "Titel 1 Verpflichtung zur Leistung"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__286.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(5) Für eine von den Absätzen 1 bis 3 abweichende Vereinbarung über den Eintritt des Verzugs gilt § 271a Absatz 1 bis 5 entsprechend.",
+  "hash": "d96d7f3bc5dea20e",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:286:5#1",
+    "order": 1,
+    "text": "(5) Für eine von den Absätzen 1 bis 3 abweichende Vereinbarung über den Eintritt des Verzugs gilt § 271a Absatz 1 bis 5 entsprechend.",
+    "embedText": "BGB § 286 Verzug des Schuldners, Abs. 5: (5) Für eine von den Absätzen 1 bis 3 abweichende Vereinbarung über den Eintritt des Verzugs gilt § 271a Absatz 1 bis 5 entsprechend."
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309",
+  "uid": "2772b299-be98-5066-abad-6ac3bc8378a6",
+  "parentSlotId": null,
+  "kind": "article",
+  "number": "309",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:309:1",
+   "de:bgb:309:2",
+   "de:bgb:309:3",
+   "de:bgb:309:4",
+   "de:bgb:309:5",
+   "de:bgb:309:6",
+   "de:bgb:309:7",
+   "de:bgb:309:8",
+   "de:bgb:309:9",
+   "de:bgb:309:10",
+   "de:bgb:309:11",
+   "de:bgb:309:12",
+   "de:bgb:309:13",
+   "de:bgb:309:14",
+   "de:bgb:309:15"
+  ],
+  "amendments": [],
+  "text": "Auch soweit eine Abweichung von den gesetzlichen Vorschriften zulässig ist, ist in Allgemeinen Geschäftsbedingungen unwirksam",
+  "hash": "df797513ac382432",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309#1",
+    "order": 1,
+    "text": "Auch soweit eine Abweichung von den gesetzlichen Vorschriften zulässig ist, ist in Allgemeinen Geschäftsbedingungen unwirksam",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit: Auch soweit eine Abweichung von den gesetzlichen Vorschriften zulässig ist, ist in Allgemeinen Geschäftsbedingungen unwirksam"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:1",
+  "uid": "83c4fa11-0928-57c1-9060-1a94777306c4",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "1",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "1. (Kurzfristige Preiserhöhungen) eine Bestimmung, welche die Erhöhung des Entgelts für Waren oder Leistungen vorsieht, die innerhalb von vier Monaten nach Vertragsschluss geliefert oder erbracht werden sollen; dies gilt nicht bei Waren oder Leistungen, die im Rahmen von Dauerschuldverhältnissen geliefert oder erbracht werden;",
+  "hash": "6658fce8a56fcbac",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:1#1",
+    "order": 1,
+    "text": "1. (Kurzfristige Preiserhöhungen) eine Bestimmung, welche die Erhöhung des Entgelts für Waren oder Leistungen vorsieht, die innerhalb von vier Monaten nach Vertragsschluss geliefert oder erbracht werden sollen; dies gilt nicht bei Waren oder Leistungen, die im Rahmen von Dauerschuldverhältnissen geliefert oder erbracht werden;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 1: 1. (Kurzfristige Preiserhöhungen) eine Bestimmung, welche die Erhöhung des Entgelts für Waren oder Leistungen vorsieht, die innerhalb von vier Monaten nach Vertragsschluss geliefert oder erbracht werden sollen; dies gilt nicht bei Waren oder Leistungen, die im Rahmen von Dauerschuldverhältnissen geliefert oder erbracht werden;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:2",
+  "uid": "861cc6fc-356d-5feb-ab0f-0d01bdcb428c",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "2",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:309:2:a",
+   "de:bgb:309:2:b"
+  ],
+  "amendments": [],
+  "text": "2. (Leistungsverweigerungsrechte) eine Bestimmung, durch die",
+  "hash": "03312fd04d44826f",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:2#1",
+    "order": 1,
+    "text": "2. (Leistungsverweigerungsrechte) eine Bestimmung, durch die",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 2: 2. (Leistungsverweigerungsrechte) eine Bestimmung, durch die"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:2:a",
+  "uid": "9dde8db8-54d9-5270-b9ec-c15714fa6590",
+  "parentSlotId": "de:bgb:309:2",
+  "kind": "letter",
+  "number": "a",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) das Leistungsverweigerungsrecht, das dem Vertragspartner des Verwenders nach § 320 zusteht, ausgeschlossen oder eingeschränkt wird oder",
+  "hash": "b30876d07e1c1973",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:2:a#1",
+    "order": 1,
+    "text": "a) das Leistungsverweigerungsrecht, das dem Vertragspartner des Verwenders nach § 320 zusteht, ausgeschlossen oder eingeschränkt wird oder",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 2, Buchst. a: a) das Leistungsverweigerungsrecht, das dem Vertragspartner des Verwenders nach § 320 zusteht, ausgeschlossen oder eingeschränkt wird oder"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:2:b",
+  "uid": "53aa2310-dbbb-5c68-baae-bcbeea139abd",
+  "parentSlotId": "de:bgb:309:2",
+  "kind": "letter",
+  "number": "b",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b) ein dem Vertragspartner des Verwenders zustehendes Zurückbehaltungsrecht, soweit es auf demselben Vertragsverhältnis beruht, ausgeschlossen oder eingeschränkt, insbesondere von der Anerkennung von Mängeln durch den Verwender abhängig gemacht wird;",
+  "hash": "f5114d5cab24770d",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:2:b#1",
+    "order": 1,
+    "text": "b) ein dem Vertragspartner des Verwenders zustehendes Zurückbehaltungsrecht, soweit es auf demselben Vertragsverhältnis beruht, ausgeschlossen oder eingeschränkt, insbesondere von der Anerkennung von Mängeln durch den Verwender abhängig gemacht wird;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 2, Buchst. b: b) ein dem Vertragspartner des Verwenders zustehendes Zurückbehaltungsrecht, soweit es auf demselben Vertragsverhältnis beruht, ausgeschlossen oder eingeschränkt, insbesondere von der Anerkennung von Mängeln durch den Verwender abhängig gemacht wird;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:3",
+  "uid": "2f1549f0-a39a-570b-bd97-4eb2bde7a6fa",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "3",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "3. (Aufrechnungsverbot) eine Bestimmung, durch die dem Vertragspartner des Verwenders die Befugnis genommen wird, mit einer unbestrittenen oder rechtskräftig festgestellten Forderung aufzurechnen;",
+  "hash": "f4736e1ec2fb5e05",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:3#1",
+    "order": 1,
+    "text": "3. (Aufrechnungsverbot) eine Bestimmung, durch die dem Vertragspartner des Verwenders die Befugnis genommen wird, mit einer unbestrittenen oder rechtskräftig festgestellten Forderung aufzurechnen;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 3: 3. (Aufrechnungsverbot) eine Bestimmung, durch die dem Vertragspartner des Verwenders die Befugnis genommen wird, mit einer unbestrittenen oder rechtskräftig festgestellten Forderung aufzurechnen;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:4",
+  "uid": "120e34a9-4018-5c09-9a3a-2ef1d91cf886",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "4",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "4. (Mahnung, Fristsetzung) eine Bestimmung, durch die der Verwender von der gesetzlichen Obliegenheit freigestellt wird, den anderen Vertragsteil zu mahnen oder ihm eine Frist für die Leistung oder Nacherfüllung zu setzen;",
+  "hash": "7678130ceab67680",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:4#1",
+    "order": 1,
+    "text": "4. (Mahnung, Fristsetzung) eine Bestimmung, durch die der Verwender von der gesetzlichen Obliegenheit freigestellt wird, den anderen Vertragsteil zu mahnen oder ihm eine Frist für die Leistung oder Nacherfüllung zu setzen;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 4: 4. (Mahnung, Fristsetzung) eine Bestimmung, durch die der Verwender von der gesetzlichen Obliegenheit freigestellt wird, den anderen Vertragsteil zu mahnen oder ihm eine Frist für die Leistung oder Nacherfüllung zu setzen;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:5",
+  "uid": "12ddd8d8-5dc6-52a0-9a61-939f0b449078",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "5",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:309:5:a",
+   "de:bgb:309:5:b"
+  ],
+  "amendments": [],
+  "text": "5. (Pauschalierung von Schadensersatzansprüchen) die Vereinbarung eines pauschalierten Anspruchs des Verwenders auf Schadensersatz oder Ersatz einer Wertminderung, wenn",
+  "hash": "ceee34607fa45850",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:5#1",
+    "order": 1,
+    "text": "5. (Pauschalierung von Schadensersatzansprüchen) die Vereinbarung eines pauschalierten Anspruchs des Verwenders auf Schadensersatz oder Ersatz einer Wertminderung, wenn",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 5: 5. (Pauschalierung von Schadensersatzansprüchen) die Vereinbarung eines pauschalierten Anspruchs des Verwenders auf Schadensersatz oder Ersatz einer Wertminderung, wenn"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:5:a",
+  "uid": "6a40a639-8063-5b33-a370-b66997d3616d",
+  "parentSlotId": "de:bgb:309:5",
+  "kind": "letter",
+  "number": "a",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) die Pauschale den in den geregelten Fällen nach dem gewöhnlichen Lauf der Dinge zu erwartenden Schaden oder die gewöhnlich eintretende Wertminderung übersteigt oder",
+  "hash": "4b6122d9d3c9917b",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:5:a#1",
+    "order": 1,
+    "text": "a) die Pauschale den in den geregelten Fällen nach dem gewöhnlichen Lauf der Dinge zu erwartenden Schaden oder die gewöhnlich eintretende Wertminderung übersteigt oder",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 5, Buchst. a: a) die Pauschale den in den geregelten Fällen nach dem gewöhnlichen Lauf der Dinge zu erwartenden Schaden oder die gewöhnlich eintretende Wertminderung übersteigt oder"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:5:b",
+  "uid": "46804791-a518-5230-b610-a5c3af5972ed",
+  "parentSlotId": "de:bgb:309:5",
+  "kind": "letter",
+  "number": "b",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b) dem anderen Vertragsteil nicht ausdrücklich der Nachweis gestattet wird, ein Schaden oder eine Wertminderung sei überhaupt nicht entstanden oder wesentlich niedriger als die Pauschale;",
+  "hash": "f5c29c6b5a1cb50b",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:5:b#1",
+    "order": 1,
+    "text": "b) dem anderen Vertragsteil nicht ausdrücklich der Nachweis gestattet wird, ein Schaden oder eine Wertminderung sei überhaupt nicht entstanden oder wesentlich niedriger als die Pauschale;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 5, Buchst. b: b) dem anderen Vertragsteil nicht ausdrücklich der Nachweis gestattet wird, ein Schaden oder eine Wertminderung sei überhaupt nicht entstanden oder wesentlich niedriger als die Pauschale;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:6",
+  "uid": "9ce76567-628b-5490-aee8-47c4fab0812b",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "6",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "6. (Vertragsstrafe) eine Bestimmung, durch die dem Verwender für den Fall der Nichtabnahme oder verspäteten Abnahme der Leistung, des Zahlungsverzugs oder für den Fall, dass der andere Vertragsteil sich vom Vertrag löst, Zahlung einer Vertragsstrafe versprochen wird;",
+  "hash": "d81cbdf99ac5b231",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:6#1",
+    "order": 1,
+    "text": "6. (Vertragsstrafe) eine Bestimmung, durch die dem Verwender für den Fall der Nichtabnahme oder verspäteten Abnahme der Leistung, des Zahlungsverzugs oder für den Fall, dass der andere Vertragsteil sich vom Vertrag löst, Zahlung einer Vertragsstrafe versprochen wird;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 6: 6. (Vertragsstrafe) eine Bestimmung, durch die dem Verwender für den Fall der Nichtabnahme oder verspäteten Abnahme der Leistung, des Zahlungsverzugs oder für den Fall, dass der andere Vertragsteil sich vom Vertrag löst, Zahlung einer Vertragsstrafe versprochen wird;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:7",
+  "uid": "e2572394-da76-5088-95f4-f607ab51deb5",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "7",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:309:7:a",
+   "de:bgb:309:7:b"
+  ],
+  "amendments": [],
+  "text": "7. (Haftungsausschluss bei Verletzung von Leben, Körper, Gesundheit und bei grobem Verschulden) die Buchstaben a und b gelten nicht für Haftungsbeschränkungen in den nach Maßgabe des Personenbeförderungsgesetzes genehmigten Beförderungsbedingungen und Tarifvorschriften der Straßenbahnen, Obusse und Kraftfahrzeuge im Linienverkehr, soweit sie nicht zum Nachteil des Fahrgasts von der Verordnung über die Allgemeinen Beförderungsbedingungen für den Straßenbahn- und Obusverkehr sowie den Linienverkehr mit Kraftfahrzeugen vom 27. Februar 1970 abweichen; Buchstabe b gilt nicht für Haftungsbeschränkungen für staatlich genehmigte Lotterie- oder Ausspielverträge;",
+  "hash": "d17d523492badf67",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:7#1",
+    "order": 1,
+    "text": "7. (Haftungsausschluss bei Verletzung von Leben, Körper, Gesundheit und bei grobem Verschulden) die Buchstaben a und b gelten nicht für Haftungsbeschränkungen in den nach Maßgabe des Personenbeförderungsgesetzes genehmigten Beförderungsbedingungen und Tarifvorschriften der Straßenbahnen, Obusse und Kraftfahrzeuge im Linienverkehr, soweit sie nicht zum Nachteil des Fahrgasts von der Verordnung über die Allgemeinen Beförderungsbedingungen für den Straßenbahn- und Obusverkehr sowie den Linienverkehr mit Kraftfahrzeugen vom 27. Februar 1970 abweichen; Buchstabe b gilt nicht für Haftungsbeschränkungen für staatlich genehmigte Lotterie- oder Ausspielverträge;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 7: 7. (Haftungsausschluss bei Verletzung von Leben, Körper, Gesundheit und bei grobem Verschulden) die Buchstaben a und b gelten nicht für Haftungsbeschränkungen in den nach Maßgabe des Personenbeförderungsgesetzes genehmigten Beförderungsbedingungen und Tarifvorschriften der Straßenbahnen, Obusse und Kraftfahrzeuge im Linienverkehr, soweit sie nicht zum Nachteil des Fahrgasts von der Verordnung über die Allgemeinen Beförderungsbedingungen für den Straßenbahn- und Obusverkehr sowie den Linienverkehr mit Kraftfahrzeugen vom 27. Februar 1970 abweichen; Buchstabe b gilt nicht für Haftungsbeschränkungen für staatlich genehmigte Lotterie- oder Ausspielverträge;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:7:a",
+  "uid": "1dfe2490-c278-5ee6-ae8e-b78a8578f615",
+  "parentSlotId": "de:bgb:309:7",
+  "kind": "letter",
+  "number": "a",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) (Verletzung von Leben, Körper, Gesundheit) ein Ausschluss oder eine Begrenzung der Haftung für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit, die auf einer fahrlässigen Pflichtverletzung des Verwenders oder einer vorsätzlichen oder fahrlässigen Pflichtverletzung eines gesetzlichen Vertreters oder Erfüllungsgehilfen des Verwenders beruhen;",
+  "hash": "78e5bb20e5c04717",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:7:a#1",
+    "order": 1,
+    "text": "a) (Verletzung von Leben, Körper, Gesundheit) ein Ausschluss oder eine Begrenzung der Haftung für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit, die auf einer fahrlässigen Pflichtverletzung des Verwenders oder einer vorsätzlichen oder fahrlässigen Pflichtverletzung eines gesetzlichen Vertreters oder Erfüllungsgehilfen des Verwenders beruhen;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 7, Buchst. a: a) (Verletzung von Leben, Körper, Gesundheit) ein Ausschluss oder eine Begrenzung der Haftung für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit, die auf einer fahrlässigen Pflichtverletzung des Verwenders oder einer vorsätzlichen oder fahrlässigen Pflichtverletzung eines gesetzlichen Vertreters oder Erfüllungsgehilfen des Verwenders beruhen;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:7:b",
+  "uid": "cee90dc5-f03e-594c-a9af-debe95b10de1",
+  "parentSlotId": "de:bgb:309:7",
+  "kind": "letter",
+  "number": "b",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b) (Grobes Verschulden) ein Ausschluss oder eine Begrenzung der Haftung für sonstige Schäden, die auf einer grob fahrlässigen Pflichtverletzung des Verwenders oder auf einer vorsätzlichen oder grob fahrlässigen Pflichtverletzung eines gesetzlichen Vertreters oder Erfüllungsgehilfen des Verwenders beruhen;",
+  "hash": "72a35a3d07a19cba",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:7:b#1",
+    "order": 1,
+    "text": "b) (Grobes Verschulden) ein Ausschluss oder eine Begrenzung der Haftung für sonstige Schäden, die auf einer grob fahrlässigen Pflichtverletzung des Verwenders oder auf einer vorsätzlichen oder grob fahrlässigen Pflichtverletzung eines gesetzlichen Vertreters oder Erfüllungsgehilfen des Verwenders beruhen;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 7, Buchst. b: b) (Grobes Verschulden) ein Ausschluss oder eine Begrenzung der Haftung für sonstige Schäden, die auf einer grob fahrlässigen Pflichtverletzung des Verwenders oder auf einer vorsätzlichen oder grob fahrlässigen Pflichtverletzung eines gesetzlichen Vertreters oder Erfüllungsgehilfen des Verwenders beruhen;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:8",
+  "uid": "0c7687e8-a1e7-544f-94c5-e6e3d434f72a",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "8",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:309:8:a",
+   "de:bgb:309:8:b"
+  ],
+  "amendments": [],
+  "text": "8. (Sonstige Haftungsausschlüsse bei Pflichtverletzung)",
+  "hash": "ac0e658a361ad2ed",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:8#1",
+    "order": 1,
+    "text": "8. (Sonstige Haftungsausschlüsse bei Pflichtverletzung)",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 8: 8. (Sonstige Haftungsausschlüsse bei Pflichtverletzung)"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:8:a",
+  "uid": "87a87aa6-6fcd-5de5-ac2b-c9d05bf42458",
+  "parentSlotId": "de:bgb:309:8",
+  "kind": "letter",
+  "number": "a",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) (Ausschluss des Rechts, sich vom Vertrag zu lösen) eine Bestimmung, die bei einer vom Verwender zu vertretenden, nicht in einem Mangel der Kaufsache oder des Werkes bestehenden Pflichtverletzung das Recht des anderen Vertragsteils, sich vom Vertrag zu lösen, ausschließt oder einschränkt; dies gilt nicht für die in der Nummer 7 bezeichneten Beförderungsbedingungen und Tarifvorschriften unter den dort genannten Voraussetzungen;",
+  "hash": "589425302d0a1dd2",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:8:a#1",
+    "order": 1,
+    "text": "a) (Ausschluss des Rechts, sich vom Vertrag zu lösen) eine Bestimmung, die bei einer vom Verwender zu vertretenden, nicht in einem Mangel der Kaufsache oder des Werkes bestehenden Pflichtverletzung das Recht des anderen Vertragsteils, sich vom Vertrag zu lösen, ausschließt oder einschränkt; dies gilt nicht für die in der Nummer 7 bezeichneten Beförderungsbedingungen und Tarifvorschriften unter den dort genannten Voraussetzungen;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 8, Buchst. a: a) (Ausschluss des Rechts, sich vom Vertrag zu lösen) eine Bestimmung, die bei einer vom Verwender zu vertretenden, nicht in einem Mangel der Kaufsache oder des Werkes bestehenden Pflichtverletzung das Recht des anderen Vertragsteils, sich vom Vertrag zu lösen, ausschließt oder einschränkt; dies gilt nicht für die in der Nummer 7 bezeichneten Beförderungsbedingungen und Tarifvorschriften unter den dort genannten Voraussetzungen;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:8:b",
+  "uid": "66d7fb28-e52e-5454-a481-ed76346a057d",
+  "parentSlotId": "de:bgb:309:8",
+  "kind": "letter",
+  "number": "b",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:309:8:b:aa",
+   "de:bgb:309:8:b:bb",
+   "de:bgb:309:8:b:cc",
+   "de:bgb:309:8:b:dd",
+   "de:bgb:309:8:b:ee",
+   "de:bgb:309:8:b:ff"
+  ],
+  "amendments": [],
+  "text": "b) (Mängel) eine Bestimmung, durch die bei Verträgen über Lieferungen neu hergestellter Sachen und über Werkleistungen",
+  "hash": "88d4ba4d49f5e84e",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:8:b#1",
+    "order": 1,
+    "text": "b) (Mängel) eine Bestimmung, durch die bei Verträgen über Lieferungen neu hergestellter Sachen und über Werkleistungen",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 8, Buchst. b: b) (Mängel) eine Bestimmung, durch die bei Verträgen über Lieferungen neu hergestellter Sachen und über Werkleistungen"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:8:b:aa",
+  "uid": "2500f6d3-5f14-5918-ba60-ac8d0c12ef1e",
+  "parentSlotId": "de:bgb:309:8:b",
+  "kind": "letter",
+  "number": "aa",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "aa) (Ausschluss und Verweisung auf Dritte) die Ansprüche gegen den Verwender wegen eines Mangels insgesamt oder bezüglich einzelner Teile ausgeschlossen, auf die Einräumung von Ansprüchen gegen Dritte beschränkt oder von der vorherigen gerichtlichen Inanspruchnahme Dritter abhängig gemacht werden;",
+  "hash": "987e929c6f1c9351",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:8:b:aa#1",
+    "order": 1,
+    "text": "aa) (Ausschluss und Verweisung auf Dritte) die Ansprüche gegen den Verwender wegen eines Mangels insgesamt oder bezüglich einzelner Teile ausgeschlossen, auf die Einräumung von Ansprüchen gegen Dritte beschränkt oder von der vorherigen gerichtlichen Inanspruchnahme Dritter abhängig gemacht werden;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 8, Buchst. b, Doppelbuchst. aa: aa) (Ausschluss und Verweisung auf Dritte) die Ansprüche gegen den Verwender wegen eines Mangels insgesamt oder bezüglich einzelner Teile ausgeschlossen, auf die Einräumung von Ansprüchen gegen Dritte beschränkt oder von der vorherigen gerichtlichen Inanspruchnahme Dritter abhängig gemacht werden;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:8:b:bb",
+  "uid": "90f3bcad-2bbe-5542-ab11-7ff002bed05b",
+  "parentSlotId": "de:bgb:309:8:b",
+  "kind": "letter",
+  "number": "bb",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "bb) (Beschränkung auf Nacherfüllung) die Ansprüche gegen den Verwender insgesamt oder bezüglich einzelner Teile auf ein Recht auf Nacherfüllung beschränkt werden, sofern dem anderen Vertragsteil nicht ausdrücklich das Recht vorbehalten wird, bei Fehlschlagen der Nacherfüllung zu mindern oder, wenn nicht eine Bauleistung Gegenstand der Mängelhaftung ist, nach seiner Wahl vom Vertrag zurückzutreten;",
+  "hash": "04c6637a25bc8a81",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:8:b:bb#1",
+    "order": 1,
+    "text": "bb) (Beschränkung auf Nacherfüllung) die Ansprüche gegen den Verwender insgesamt oder bezüglich einzelner Teile auf ein Recht auf Nacherfüllung beschränkt werden, sofern dem anderen Vertragsteil nicht ausdrücklich das Recht vorbehalten wird, bei Fehlschlagen der Nacherfüllung zu mindern oder, wenn nicht eine Bauleistung Gegenstand der Mängelhaftung ist, nach seiner Wahl vom Vertrag zurückzutreten;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 8, Buchst. b, Doppelbuchst. bb: bb) (Beschränkung auf Nacherfüllung) die Ansprüche gegen den Verwender insgesamt oder bezüglich einzelner Teile auf ein Recht auf Nacherfüllung beschränkt werden, sofern dem anderen Vertragsteil nicht ausdrücklich das Recht vorbehalten wird, bei Fehlschlagen der Nacherfüllung zu mindern oder, wenn nicht eine Bauleistung Gegenstand der Mängelhaftung ist, nach seiner Wahl vom Vertrag zurückzutreten;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:8:b:cc",
+  "uid": "a359d1a5-e30e-5fee-a8f0-f739b96272bd",
+  "parentSlotId": "de:bgb:309:8:b",
+  "kind": "letter",
+  "number": "cc",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "cc) (Aufwendungen bei Nacherfüllung) die Verpflichtung des Verwenders ausgeschlossen oder beschränkt wird, die zum Zweck der Nacherfüllung erforderlichen Aufwendungen nach § 439 Absatz 2 und 3 oder § 635 Absatz 2 zu tragen oder zu ersetzen;",
+  "hash": "afe7eef9331aadf6",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:8:b:cc#1",
+    "order": 1,
+    "text": "cc) (Aufwendungen bei Nacherfüllung) die Verpflichtung des Verwenders ausgeschlossen oder beschränkt wird, die zum Zweck der Nacherfüllung erforderlichen Aufwendungen nach § 439 Absatz 2 und 3 oder § 635 Absatz 2 zu tragen oder zu ersetzen;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 8, Buchst. b, Doppelbuchst. cc: cc) (Aufwendungen bei Nacherfüllung) die Verpflichtung des Verwenders ausgeschlossen oder beschränkt wird, die zum Zweck der Nacherfüllung erforderlichen Aufwendungen nach § 439 Absatz 2 und 3 oder § 635 Absatz 2 zu tragen oder zu ersetzen;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:8:b:dd",
+  "uid": "05c4662d-1e93-570a-a501-dbc3fad79fb2",
+  "parentSlotId": "de:bgb:309:8:b",
+  "kind": "letter",
+  "number": "dd",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "dd) (Vorenthalten der Nacherfüllung) der Verwender die Nacherfüllung von der vorherigen Zahlung des vollständigen Entgelts oder eines unter Berücksichtigung des Mangels unverhältnismäßig hohen Teils des Entgelts abhängig macht;",
+  "hash": "0a967f0ea25bdd28",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:8:b:dd#1",
+    "order": 1,
+    "text": "dd) (Vorenthalten der Nacherfüllung) der Verwender die Nacherfüllung von der vorherigen Zahlung des vollständigen Entgelts oder eines unter Berücksichtigung des Mangels unverhältnismäßig hohen Teils des Entgelts abhängig macht;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 8, Buchst. b, Doppelbuchst. dd: dd) (Vorenthalten der Nacherfüllung) der Verwender die Nacherfüllung von der vorherigen Zahlung des vollständigen Entgelts oder eines unter Berücksichtigung des Mangels unverhältnismäßig hohen Teils des Entgelts abhängig macht;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:8:b:ee",
+  "uid": "c3b4011e-89ac-543f-a516-88f66cf541a6",
+  "parentSlotId": "de:bgb:309:8:b",
+  "kind": "letter",
+  "number": "ee",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "ee) (Ausschlussfrist für Mängelanzeige) der Verwender dem anderen Vertragsteil für die Anzeige nicht offensichtlicher Mängel eine Ausschlussfrist setzt, die kürzer ist als die nach dem Doppelbuchstaben ff zulässige Frist;",
+  "hash": "25934d183f543627",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:8:b:ee#1",
+    "order": 1,
+    "text": "ee) (Ausschlussfrist für Mängelanzeige) der Verwender dem anderen Vertragsteil für die Anzeige nicht offensichtlicher Mängel eine Ausschlussfrist setzt, die kürzer ist als die nach dem Doppelbuchstaben ff zulässige Frist;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 8, Buchst. b, Doppelbuchst. ee: ee) (Ausschlussfrist für Mängelanzeige) der Verwender dem anderen Vertragsteil für die Anzeige nicht offensichtlicher Mängel eine Ausschlussfrist setzt, die kürzer ist als die nach dem Doppelbuchstaben ff zulässige Frist;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:8:b:ff",
+  "uid": "8f66c74e-9899-53db-b446-0a2580fe90b1",
+  "parentSlotId": "de:bgb:309:8:b",
+  "kind": "letter",
+  "number": "ff",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "ff) (Erleichterung der Verjährung) die Verjährung von Ansprüchen gegen den Verwender wegen eines Mangels in den Fällen des § 438 Abs. 1 Nr. 2 und des § 634a Abs. 1 Nr. 2 erleichtert oder in den sonstigen Fällen eine weniger als ein Jahr betragende Verjährungsfrist ab dem gesetzlichen Verjährungsbeginn erreicht wird;",
+  "hash": "a686da47718f0998",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:8:b:ff#1",
+    "order": 1,
+    "text": "ff) (Erleichterung der Verjährung) die Verjährung von Ansprüchen gegen den Verwender wegen eines Mangels in den Fällen des § 438 Abs. 1 Nr. 2 und des § 634a Abs. 1 Nr. 2 erleichtert oder in den sonstigen Fällen eine weniger als ein Jahr betragende Verjährungsfrist ab dem gesetzlichen Verjährungsbeginn erreicht wird;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 8, Buchst. b, Doppelbuchst. ff: ff) (Erleichterung der Verjährung) die Verjährung von Ansprüchen gegen den Verwender wegen eines Mangels in den Fällen des § 438 Abs. 1 Nr. 2 und des § 634a Abs. 1 Nr. 2 erleichtert oder in den sonstigen Fällen eine weniger als ein Jahr betragende Verjährungsfrist ab dem gesetzlichen Verjährungsbeginn erreicht wird;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:9",
+  "uid": "c43fd330-46d5-561c-9589-4d36c4e6f269",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "9",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:309:9:a",
+   "de:bgb:309:9:b",
+   "de:bgb:309:9:c"
+  ],
+  "amendments": [],
+  "text": "9. bei einem Vertragsverhältnis, das die regelmäßige Lieferung von Waren oder die regelmäßige Erbringung von Dienst- oder Werkleistungen durch den Verwender zum Gegenstand hat, dies gilt nicht für Verträge über die Lieferung zusammengehörig verkaufter Sachen sowie für Versicherungsverträge;",
+  "hash": "5e4cd29fba36e14f",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:9#1",
+    "order": 1,
+    "text": "9. bei einem Vertragsverhältnis, das die regelmäßige Lieferung von Waren oder die regelmäßige Erbringung von Dienst- oder Werkleistungen durch den Verwender zum Gegenstand hat, dies gilt nicht für Verträge über die Lieferung zusammengehörig verkaufter Sachen sowie für Versicherungsverträge;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 9: 9. bei einem Vertragsverhältnis, das die regelmäßige Lieferung von Waren oder die regelmäßige Erbringung von Dienst- oder Werkleistungen durch den Verwender zum Gegenstand hat, dies gilt nicht für Verträge über die Lieferung zusammengehörig verkaufter Sachen sowie für Versicherungsverträge;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:9:a",
+  "uid": "454cd6e2-ef37-587e-8300-f3568ac91bad",
+  "parentSlotId": "de:bgb:309:9",
+  "kind": "letter",
+  "number": "a",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) eine den anderen Vertragsteil länger als zwei Jahre bindende Laufzeit des Vertrags,",
+  "hash": "f3003595b611b83f",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:9:a#1",
+    "order": 1,
+    "text": "a) eine den anderen Vertragsteil länger als zwei Jahre bindende Laufzeit des Vertrags,",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 9, Buchst. a: a) eine den anderen Vertragsteil länger als zwei Jahre bindende Laufzeit des Vertrags,"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:9:b",
+  "uid": "ce4a13bb-927e-5680-85a7-a794e88a4ec9",
+  "parentSlotId": "de:bgb:309:9",
+  "kind": "letter",
+  "number": "b",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b) eine den anderen Vertragsteil bindende stillschweigende Verlängerung des Vertragsverhältnisses, es sei denn das Vertragsverhältnis wird nur auf unbestimmte Zeit verlängert und dem anderen Vertragsteil wird das Recht eingeräumt, das verlängerte Vertragsverhältnis jederzeit mit einer Frist von höchstens einem Monat zu kündigen, oder",
+  "hash": "6771ed1b800119c0",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:9:b#1",
+    "order": 1,
+    "text": "b) eine den anderen Vertragsteil bindende stillschweigende Verlängerung des Vertragsverhältnisses, es sei denn das Vertragsverhältnis wird nur auf unbestimmte Zeit verlängert und dem anderen Vertragsteil wird das Recht eingeräumt, das verlängerte Vertragsverhältnis jederzeit mit einer Frist von höchstens einem Monat zu kündigen, oder",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 9, Buchst. b: b) eine den anderen Vertragsteil bindende stillschweigende Verlängerung des Vertragsverhältnisses, es sei denn das Vertragsverhältnis wird nur auf unbestimmte Zeit verlängert und dem anderen Vertragsteil wird das Recht eingeräumt, das verlängerte Vertragsverhältnis jederzeit mit einer Frist von höchstens einem Monat zu kündigen, oder"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:9:c",
+  "uid": "bd85cf33-42f7-5aad-98dd-b1db22570e3a",
+  "parentSlotId": "de:bgb:309:9",
+  "kind": "letter",
+  "number": "c",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "c) eine zu Lasten des anderen Vertragsteils längere Kündigungsfrist als einen Monat vor Ablauf der zunächst vorgesehenen Vertragsdauer;",
+  "hash": "f4b16584b88c4543",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:9:c#1",
+    "order": 1,
+    "text": "c) eine zu Lasten des anderen Vertragsteils längere Kündigungsfrist als einen Monat vor Ablauf der zunächst vorgesehenen Vertragsdauer;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 9, Buchst. c: c) eine zu Lasten des anderen Vertragsteils längere Kündigungsfrist als einen Monat vor Ablauf der zunächst vorgesehenen Vertragsdauer;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:10",
+  "uid": "0e4092ba-fefc-5d59-b6dc-88dddd2e84b5",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "10",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:309:10:a",
+   "de:bgb:309:10:b"
+  ],
+  "amendments": [],
+  "text": "10. (Wechsel des Vertragspartners) eine Bestimmung, wonach bei Kauf-, Darlehens-, Dienst- oder Werkverträgen ein Dritter anstelle des Verwenders in die sich aus dem Vertrag ergebenden Rechte und Pflichten eintritt oder eintreten kann, es sei denn, in der Bestimmung wird",
+  "hash": "f7bf897878996c5a",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:10#1",
+    "order": 1,
+    "text": "10. (Wechsel des Vertragspartners) eine Bestimmung, wonach bei Kauf-, Darlehens-, Dienst- oder Werkverträgen ein Dritter anstelle des Verwenders in die sich aus dem Vertrag ergebenden Rechte und Pflichten eintritt oder eintreten kann, es sei denn, in der Bestimmung wird",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 10: 10. (Wechsel des Vertragspartners) eine Bestimmung, wonach bei Kauf-, Darlehens-, Dienst- oder Werkverträgen ein Dritter anstelle des Verwenders in die sich aus dem Vertrag ergebenden Rechte und Pflichten eintritt oder eintreten kann, es sei denn, in der Bestimmung wird"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:10:a",
+  "uid": "0035f74e-6700-5ecc-b38f-463fa8808192",
+  "parentSlotId": "de:bgb:309:10",
+  "kind": "letter",
+  "number": "a",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) der Dritte namentlich bezeichnet oder",
+  "hash": "4a6597c7eba2bcd2",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:10:a#1",
+    "order": 1,
+    "text": "a) der Dritte namentlich bezeichnet oder",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 10, Buchst. a: a) der Dritte namentlich bezeichnet oder"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:10:b",
+  "uid": "a4bd4b11-1ea2-5d2c-a966-85968a63e42b",
+  "parentSlotId": "de:bgb:309:10",
+  "kind": "letter",
+  "number": "b",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b) dem anderen Vertragsteil das Recht eingeräumt, sich vom Vertrag zu lösen;",
+  "hash": "a2aed687e2e2b063",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:10:b#1",
+    "order": 1,
+    "text": "b) dem anderen Vertragsteil das Recht eingeräumt, sich vom Vertrag zu lösen;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 10, Buchst. b: b) dem anderen Vertragsteil das Recht eingeräumt, sich vom Vertrag zu lösen;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:11",
+  "uid": "f9ce4106-e4eb-5850-b2e1-1b194c3b8118",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "11",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:309:11:a",
+   "de:bgb:309:11:b"
+  ],
+  "amendments": [],
+  "text": "11. (Haftung des Abschlussvertreters) eine Bestimmung, durch die der Verwender einem Vertreter, der den Vertrag für den anderen Vertragsteil abschließt, auferlegt;",
+  "hash": "d2c93b4164bba3b3",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:11#1",
+    "order": 1,
+    "text": "11. (Haftung des Abschlussvertreters) eine Bestimmung, durch die der Verwender einem Vertreter, der den Vertrag für den anderen Vertragsteil abschließt, auferlegt;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 11: 11. (Haftung des Abschlussvertreters) eine Bestimmung, durch die der Verwender einem Vertreter, der den Vertrag für den anderen Vertragsteil abschließt, auferlegt;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:11:a",
+  "uid": "e71e4237-d5bb-502e-b775-a42e55df590f",
+  "parentSlotId": "de:bgb:309:11",
+  "kind": "letter",
+  "number": "a",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) ohne hierauf gerichtete ausdrückliche und gesonderte Erklärung eine eigene Haftung oder Einstandspflicht oder",
+  "hash": "15551c2a079201ca",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:11:a#1",
+    "order": 1,
+    "text": "a) ohne hierauf gerichtete ausdrückliche und gesonderte Erklärung eine eigene Haftung oder Einstandspflicht oder",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 11, Buchst. a: a) ohne hierauf gerichtete ausdrückliche und gesonderte Erklärung eine eigene Haftung oder Einstandspflicht oder"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:11:b",
+  "uid": "d2202e05-5724-5c23-8bf3-7b8d224475b8",
+  "parentSlotId": "de:bgb:309:11",
+  "kind": "letter",
+  "number": "b",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b) im Falle vollmachtsloser Vertretung eine über § 179 hinausgehende Haftung",
+  "hash": "343fe5e482d23a76",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:11:b#1",
+    "order": 1,
+    "text": "b) im Falle vollmachtsloser Vertretung eine über § 179 hinausgehende Haftung",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 11, Buchst. b: b) im Falle vollmachtsloser Vertretung eine über § 179 hinausgehende Haftung"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:12",
+  "uid": "057cba81-94a4-565b-b85d-179dd1fd2bab",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "12",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:309:12:a",
+   "de:bgb:309:12:b"
+  ],
+  "amendments": [],
+  "text": "12. (Beweislast) eine Bestimmung, durch die der Verwender die Beweislast zum Nachteil des anderen Vertragsteils ändert, insbesondere indem er Buchstabe b gilt nicht für Empfangsbekenntnisse, die gesondert unterschrieben oder mit einer gesonderten qualifizierten elektronischen Signatur versehen sind;",
+  "hash": "b5ed4fd16e851871",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:12#1",
+    "order": 1,
+    "text": "12. (Beweislast) eine Bestimmung, durch die der Verwender die Beweislast zum Nachteil des anderen Vertragsteils ändert, insbesondere indem er Buchstabe b gilt nicht für Empfangsbekenntnisse, die gesondert unterschrieben oder mit einer gesonderten qualifizierten elektronischen Signatur versehen sind;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 12: 12. (Beweislast) eine Bestimmung, durch die der Verwender die Beweislast zum Nachteil des anderen Vertragsteils ändert, insbesondere indem er Buchstabe b gilt nicht für Empfangsbekenntnisse, die gesondert unterschrieben oder mit einer gesonderten qualifizierten elektronischen Signatur versehen sind;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:12:a",
+  "uid": "205d5a54-ade0-55fe-afa0-233fe97b70f3",
+  "parentSlotId": "de:bgb:309:12",
+  "kind": "letter",
+  "number": "a",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) diesem die Beweislast für Umstände auferlegt, die im Verantwortungsbereich des Verwenders liegen, oder",
+  "hash": "dd3de75f3afbaa47",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:12:a#1",
+    "order": 1,
+    "text": "a) diesem die Beweislast für Umstände auferlegt, die im Verantwortungsbereich des Verwenders liegen, oder",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 12, Buchst. a: a) diesem die Beweislast für Umstände auferlegt, die im Verantwortungsbereich des Verwenders liegen, oder"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:12:b",
+  "uid": "dcac829b-22c8-5b82-931e-5ad1bc1741da",
+  "parentSlotId": "de:bgb:309:12",
+  "kind": "letter",
+  "number": "b",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b) den anderen Vertragsteil bestimmte Tatsachen bestätigen lässt;",
+  "hash": "8de8fdafae4ca28e",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:12:b#1",
+    "order": 1,
+    "text": "b) den anderen Vertragsteil bestimmte Tatsachen bestätigen lässt;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 12, Buchst. b: b) den anderen Vertragsteil bestimmte Tatsachen bestätigen lässt;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:13",
+  "uid": "43f7f043-b1cb-51b4-95ae-324f38fbc979",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "13",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:309:13:a",
+   "de:bgb:309:13:b",
+   "de:bgb:309:13:c"
+  ],
+  "amendments": [],
+  "text": "13. (Form von Anzeigen und Erklärungen) eine Bestimmung, durch die Anzeigen oder Erklärungen, die dem Verwender oder einem Dritten gegenüber abzugeben sind, gebunden werden",
+  "hash": "a10ed828927b05d6",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:13#1",
+    "order": 1,
+    "text": "13. (Form von Anzeigen und Erklärungen) eine Bestimmung, durch die Anzeigen oder Erklärungen, die dem Verwender oder einem Dritten gegenüber abzugeben sind, gebunden werden",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 13: 13. (Form von Anzeigen und Erklärungen) eine Bestimmung, durch die Anzeigen oder Erklärungen, die dem Verwender oder einem Dritten gegenüber abzugeben sind, gebunden werden"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:13:a",
+  "uid": "4739dfd3-3f9b-5722-b9ff-a11d0439e414",
+  "parentSlotId": "de:bgb:309:13",
+  "kind": "letter",
+  "number": "a",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) an eine strengere Form als die schriftliche Form in einem Vertrag, für den durch Gesetz notarielle Beurkundung vorgeschrieben ist oder",
+  "hash": "0e2dc0081be92895",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:13:a#1",
+    "order": 1,
+    "text": "a) an eine strengere Form als die schriftliche Form in einem Vertrag, für den durch Gesetz notarielle Beurkundung vorgeschrieben ist oder",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 13, Buchst. a: a) an eine strengere Form als die schriftliche Form in einem Vertrag, für den durch Gesetz notarielle Beurkundung vorgeschrieben ist oder"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:13:b",
+  "uid": "c96caa68-9246-5825-bd89-3e065aba6275",
+  "parentSlotId": "de:bgb:309:13",
+  "kind": "letter",
+  "number": "b",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b) an eine strengere Form als die Textform in anderen als den in Buchstabe a genannten Verträgen oder",
+  "hash": "906230233e7aae11",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:13:b#1",
+    "order": 1,
+    "text": "b) an eine strengere Form als die Textform in anderen als den in Buchstabe a genannten Verträgen oder",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 13, Buchst. b: b) an eine strengere Form als die Textform in anderen als den in Buchstabe a genannten Verträgen oder"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:13:c",
+  "uid": "802ab0ca-6389-5203-880c-49450ed25f7f",
+  "parentSlotId": "de:bgb:309:13",
+  "kind": "letter",
+  "number": "c",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "c) an besondere Zugangserfordernisse;",
+  "hash": "6ebd84c5de521c9e",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:13:c#1",
+    "order": 1,
+    "text": "c) an besondere Zugangserfordernisse;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 13, Buchst. c: c) an besondere Zugangserfordernisse;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:14",
+  "uid": "fb15f173-9a38-5f22-8fff-0af0e255c207",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "14",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "14. (Klageverzicht) eine Bestimmung, wonach der andere Vertragsteil seine Ansprüche gegen den Verwender gerichtlich nur geltend machen darf, nachdem er eine gütliche Einigung in einem Verfahren zur außergerichtlichen Streitbeilegung versucht hat;",
+  "hash": "20c029db3bbfe1ff",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:14#1",
+    "order": 1,
+    "text": "14. (Klageverzicht) eine Bestimmung, wonach der andere Vertragsteil seine Ansprüche gegen den Verwender gerichtlich nur geltend machen darf, nachdem er eine gütliche Einigung in einem Verfahren zur außergerichtlichen Streitbeilegung versucht hat;",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 14: 14. (Klageverzicht) eine Bestimmung, wonach der andere Vertragsteil seine Ansprüche gegen den Verwender gerichtlich nur geltend machen darf, nachdem er eine gütliche Einigung in einem Verfahren zur außergerichtlichen Streitbeilegung versucht hat;"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:15",
+  "uid": "43e84069-1bb6-5fb3-9a41-ece8b69fbcb6",
+  "parentSlotId": "de:bgb:309",
+  "kind": "number",
+  "number": "15",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:309:15:a",
+   "de:bgb:309:15:b"
+  ],
+  "amendments": [],
+  "text": "15. (Abschlagszahlungen und Sicherheitsleistung) eine Bestimmung, nach der der Verwender bei einem Werkvertrag",
+  "hash": "9ced4c944b29ec65",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:15#1",
+    "order": 1,
+    "text": "15. (Abschlagszahlungen und Sicherheitsleistung) eine Bestimmung, nach der der Verwender bei einem Werkvertrag",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 15: 15. (Abschlagszahlungen und Sicherheitsleistung) eine Bestimmung, nach der der Verwender bei einem Werkvertrag"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:15:a",
+  "uid": "8e2a7a0b-71e3-55fc-a940-72bbc401dd1f",
+  "parentSlotId": "de:bgb:309:15",
+  "kind": "letter",
+  "number": "a",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) für Teilleistungen Abschlagszahlungen vom anderen Vertragsteil verlangen kann, die wesentlich höher sind als die nach § 632a Absatz 1 und § 650m Absatz 1 zu leistenden Abschlagszahlungen, oder",
+  "hash": "cd9ef45c4831bb4a",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:15:a#1",
+    "order": 1,
+    "text": "a) für Teilleistungen Abschlagszahlungen vom anderen Vertragsteil verlangen kann, die wesentlich höher sind als die nach § 632a Absatz 1 und § 650m Absatz 1 zu leistenden Abschlagszahlungen, oder",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 15, Buchst. a: a) für Teilleistungen Abschlagszahlungen vom anderen Vertragsteil verlangen kann, die wesentlich höher sind als die nach § 632a Absatz 1 und § 650m Absatz 1 zu leistenden Abschlagszahlungen, oder"
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:309:15:b",
+  "uid": "fd76dea9-9622-5eee-8caa-d7744c451565",
+  "parentSlotId": "de:bgb:309:15",
+  "kind": "letter",
+  "number": "b",
+  "title": "Klauselverbote ohne Wertungsmöglichkeit",
+  "articleTitle": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 2 Gestaltung rechtsgeschäftlicher Schuldverhältnisse durch Allgemeine Geschäftsbedingungen"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__309.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b) die Sicherheitsleistung nach § 650m Absatz 2 nicht oder nur in geringerer Höhe leisten muss.",
+  "hash": "3b607fcf84067fe5",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:309:15:b#1",
+    "order": 1,
+    "text": "b) die Sicherheitsleistung nach § 650m Absatz 2 nicht oder nur in geringerer Höhe leisten muss.",
+    "embedText": "BGB § 309 Klauselverbote ohne Wertungsmöglichkeit, Nr. 15, Buchst. b: b) die Sicherheitsleistung nach § 650m Absatz 2 nicht oder nur in geringerer Höhe leisten muss."
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:343",
+  "uid": "40766f1c-56bd-55e6-8f73-b61a5fe75502",
+  "parentSlotId": null,
+  "kind": "article",
+  "number": "343",
+  "title": "Herabsetzung der Strafe",
+  "articleTitle": "BGB § 343 Herabsetzung der Strafe",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 3 Schuldverhältnisse aus Verträgen",
+   "Titel 4 Draufgabe, Vertragsstrafe"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__343.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "de:bgb:343:1",
+   "de:bgb:343:2"
+  ],
+  "amendments": [],
+  "text": "",
+  "hash": null,
+  "pieces": []
+ },
+ {
+  "slotId": "de:bgb:343:1",
+  "uid": "f9baf85a-4eef-56fb-988b-ff5ecc14bd05",
+  "parentSlotId": "de:bgb:343",
+  "kind": "paragraph",
+  "number": "1",
+  "title": "Herabsetzung der Strafe",
+  "articleTitle": "BGB § 343 Herabsetzung der Strafe",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 3 Schuldverhältnisse aus Verträgen",
+   "Titel 4 Draufgabe, Vertragsstrafe"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__343.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(1) Ist eine verwirkte Strafe unverhältnismäßig hoch, so kann sie auf Antrag des Schuldners durch Urteil auf den angemessenen Betrag herabgesetzt werden. Bei der Beurteilung der Angemessenheit ist jedes berechtigte Interesse des Gläubigers, nicht bloß das Vermögensinteresse, in Betracht zu ziehen. Nach der Entrichtung der Strafe ist die Herabsetzung ausgeschlossen.",
+  "hash": "e4f4252153e3ab00",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:343:1#1",
+    "order": 1,
+    "text": "(1) Ist eine verwirkte Strafe unverhältnismäßig hoch, so kann sie auf Antrag des Schuldners durch Urteil auf den angemessenen Betrag herabgesetzt werden. Bei der Beurteilung der Angemessenheit ist jedes berechtigte Interesse des Gläubigers, nicht bloß das Vermögensinteresse, in Betracht zu ziehen. Nach der Entrichtung der Strafe ist die Herabsetzung ausgeschlossen.",
+    "embedText": "BGB § 343 Herabsetzung der Strafe, Abs. 1: (1) Ist eine verwirkte Strafe unverhältnismäßig hoch, so kann sie auf Antrag des Schuldners durch Urteil auf den angemessenen Betrag herabgesetzt werden. Bei der Beurteilung der Angemessenheit ist jedes berechtigte Interesse des Gläubigers, nicht bloß das Vermögensinteresse, in Betracht zu ziehen. Nach der Entrichtung der Strafe ist die Herabsetzung ausgeschlossen."
+   }
+  ]
+ },
+ {
+  "slotId": "de:bgb:343:2",
+  "uid": "ca9633ef-c61b-52fb-9f85-1dc88ddba26f",
+  "parentSlotId": "de:bgb:343",
+  "kind": "paragraph",
+  "number": "2",
+  "title": "Herabsetzung der Strafe",
+  "articleTitle": "BGB § 343 Herabsetzung der Strafe",
+  "summary": null,
+  "jurisdiction": "DE",
+  "lang": "de",
+  "law": "BGB",
+  "lawPart": null,
+  "act": "Bürgerliches Gesetzbuch, neugefasst 2.1.2002 (BGBl. I S. 42)",
+  "edition": "zuletzt geändert durch Art. 6 G v. 23.7.2026 I Nr. 226",
+  "path": [
+   "Buch 2 Recht der Schuldverhältnisse",
+   "Abschnitt 3 Schuldverhältnisse aus Verträgen",
+   "Titel 4 Draufgabe, Vertragsstrafe"
+  ],
+  "sourceUrl": "https://www.gesetze-im-internet.de/bgb/__343.html",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(2) Das Gleiche gilt auch außer in den Fällen der §§ 339, 342, wenn jemand eine Strafe für den Fall verspricht, dass er eine Handlung vornimmt oder unterlässt.",
+  "hash": "69cda2b49c0e38a8",
+  "pieces": [
+   {
+    "pieceId": "de:bgb:343:2#1",
+    "order": 1,
+    "text": "(2) Das Gleiche gilt auch außer in den Fällen der §§ 339, 342, wenn jemand eine Strafe für den Fall verspricht, dass er eine Handlung vornimmt oder unterlässt.",
+    "embedText": "BGB § 343 Herabsetzung der Strafe, Abs. 2: (2) Das Gleiche gilt auch außer in den Fällen der §§ 339, 342, wenn jemand eine Strafe für den Fall verspricht, dass er eine Handlung vornimmt oder unterlässt."
+   }
+  ]
+ }
+]

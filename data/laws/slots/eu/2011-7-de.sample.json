@@ -1,0 +1,527 @@
+[
+ {
+  "slotId": "eu:2011-7@de:3",
+  "uid": "3f794b68-cb07-5df6-b998-262f145307f4",
+  "parentSlotId": null,
+  "kind": "article",
+  "number": "3",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "eu:2011-7@de:3:1",
+   "eu:2011-7@de:3:2",
+   "eu:2011-7@de:3:3",
+   "eu:2011-7@de:3:4",
+   "eu:2011-7@de:3:5"
+  ],
+  "amendments": [],
+  "text": "",
+  "hash": null,
+  "pieces": []
+ },
+ {
+  "slotId": "eu:2011-7@de:3:1",
+  "uid": "d4bed74a-b08d-5169-b8e4-6c774657b87d",
+  "parentSlotId": "eu:2011-7@de:3",
+  "kind": "paragraph",
+  "number": "1",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "eu:2011-7@de:3:1:a",
+   "eu:2011-7@de:3:1:b"
+  ],
+  "amendments": [],
+  "text": "(1) Die Mitgliedstaaten stellen sicher, dass im Geschäftsverkehr zwischen Unternehmen der Gläubiger Anspruch auf Verzugszinsen hat, ohne dass es einer Mahnung bedarf, wenn folgende Bedingungen erfüllt sind:",
+  "hash": "cfc45d7370291c79",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:1#1",
+    "order": 1,
+    "text": "(1) Die Mitgliedstaaten stellen sicher, dass im Geschäftsverkehr zwischen Unternehmen der Gläubiger Anspruch auf Verzugszinsen hat, ohne dass es einer Mahnung bedarf, wenn folgende Bedingungen erfüllt sind:",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 1: (1) Die Mitgliedstaaten stellen sicher, dass im Geschäftsverkehr zwischen Unternehmen der Gläubiger Anspruch auf Verzugszinsen hat, ohne dass es einer Mahnung bedarf, wenn folgende Bedingungen erfüllt sind:"
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:1:a",
+  "uid": "afdbdb58-0691-5fff-8330-9dcd62eb29b4",
+  "parentSlotId": "eu:2011-7@de:3:1",
+  "kind": "point",
+  "number": "a",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) Der Gläubiger hat seine vertraglichen und gesetzlichen Verpflichtungen erfüllt, und",
+  "hash": "8e0ab6348fffe994",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:1:a#1",
+    "order": 1,
+    "text": "a) Der Gläubiger hat seine vertraglichen und gesetzlichen Verpflichtungen erfüllt, und",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 1, point a: a) Der Gläubiger hat seine vertraglichen und gesetzlichen Verpflichtungen erfüllt, und"
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:1:b",
+  "uid": "8d020671-24ff-542c-81d7-efb35ab13cc2",
+  "parentSlotId": "eu:2011-7@de:3:1",
+  "kind": "point",
+  "number": "b",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b) der Gläubiger hat den fälligen Betrag nicht rechtzeitig erhalten, es sei denn, dass der Schuldner für den Zahlungsverzug nicht verantwortlich ist.",
+  "hash": "2b72dfaf2fcbce0e",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:1:b#1",
+    "order": 1,
+    "text": "b) der Gläubiger hat den fälligen Betrag nicht rechtzeitig erhalten, es sei denn, dass der Schuldner für den Zahlungsverzug nicht verantwortlich ist.",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 1, point b: b) der Gläubiger hat den fälligen Betrag nicht rechtzeitig erhalten, es sei denn, dass der Schuldner für den Zahlungsverzug nicht verantwortlich ist."
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:2",
+  "uid": "d26dea97-acbd-5ac3-8b11-2c8e4c7e2599",
+  "parentSlotId": "eu:2011-7@de:3",
+  "kind": "paragraph",
+  "number": "2",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "eu:2011-7@de:3:2:a",
+   "eu:2011-7@de:3:2:b"
+  ],
+  "amendments": [],
+  "text": "(2) Die Mitgliedstaaten stellen sicher, dass folgender Bezugszinssatz angewendet wird:",
+  "hash": "c6830c703f9d6e71",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:2#1",
+    "order": 1,
+    "text": "(2) Die Mitgliedstaaten stellen sicher, dass folgender Bezugszinssatz angewendet wird:",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 2: (2) Die Mitgliedstaaten stellen sicher, dass folgender Bezugszinssatz angewendet wird:"
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:2:a",
+  "uid": "585f431b-6fff-5488-bd4d-a8d0cc43f2e5",
+  "parentSlotId": "eu:2011-7@de:3:2",
+  "kind": "point",
+  "number": "a",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) für das erste Halbjahr des betreffenden Jahres der am 1. Januar dieses Jahres geltende Zinssatz;",
+  "hash": "5bc507bef00f7efc",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:2:a#1",
+    "order": 1,
+    "text": "a) für das erste Halbjahr des betreffenden Jahres der am 1. Januar dieses Jahres geltende Zinssatz;",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 2, point a: a) für das erste Halbjahr des betreffenden Jahres der am 1. Januar dieses Jahres geltende Zinssatz;"
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:2:b",
+  "uid": "56ae435f-70c4-53ea-a008-b4674579b628",
+  "parentSlotId": "eu:2011-7@de:3:2",
+  "kind": "point",
+  "number": "b",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "b) für das zweite Halbjahr des betreffenden Jahres der am 1. Juli dieses Jahres geltende Zinssatz.",
+  "hash": "b08828d7cbd5709c",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:2:b#1",
+    "order": 1,
+    "text": "b) für das zweite Halbjahr des betreffenden Jahres der am 1. Juli dieses Jahres geltende Zinssatz.",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 2, point b: b) für das zweite Halbjahr des betreffenden Jahres der am 1. Juli dieses Jahres geltende Zinssatz."
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:3",
+  "uid": "9de59a8b-e852-5caf-84eb-eeee2119df4d",
+  "parentSlotId": "eu:2011-7@de:3",
+  "kind": "paragraph",
+  "number": "3",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "eu:2011-7@de:3:3:a",
+   "eu:2011-7@de:3:3:b"
+  ],
+  "amendments": [],
+  "text": "(3) Für die Fälle, in denen die in Absatz 1 genannten Bedingungen erfüllt sind, stellen die Mitgliedstaaten Folgendes sicher:",
+  "hash": "ebc60cd2696870f4",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:3#1",
+    "order": 1,
+    "text": "(3) Für die Fälle, in denen die in Absatz 1 genannten Bedingungen erfüllt sind, stellen die Mitgliedstaaten Folgendes sicher:",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 3: (3) Für die Fälle, in denen die in Absatz 1 genannten Bedingungen erfüllt sind, stellen die Mitgliedstaaten Folgendes sicher:"
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:3:a",
+  "uid": "fd815478-18c9-5f24-959c-357d85222774",
+  "parentSlotId": "eu:2011-7@de:3:3",
+  "kind": "point",
+  "number": "a",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "a) Der Gläubiger hat Anspruch auf Verzugszinsen ab dem Tag, der auf den vertraglich festgelegten Zahlungstermin oder das vertraglich festgelegte Ende der Zahlungsfrist folgt.",
+  "hash": "f2af5f6909317b94",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:3:a#1",
+    "order": 1,
+    "text": "a) Der Gläubiger hat Anspruch auf Verzugszinsen ab dem Tag, der auf den vertraglich festgelegten Zahlungstermin oder das vertraglich festgelegte Ende der Zahlungsfrist folgt.",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 3, point a: a) Der Gläubiger hat Anspruch auf Verzugszinsen ab dem Tag, der auf den vertraglich festgelegten Zahlungstermin oder das vertraglich festgelegte Ende der Zahlungsfrist folgt."
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:3:b",
+  "uid": "87a9fc86-7286-54be-b2b2-4168ca014232",
+  "parentSlotId": "eu:2011-7@de:3:3",
+  "kind": "point",
+  "number": "b",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [
+   "eu:2011-7@de:3:3:b:i",
+   "eu:2011-7@de:3:3:b:ii",
+   "eu:2011-7@de:3:3:b:iii",
+   "eu:2011-7@de:3:3:b:iv"
+  ],
+  "amendments": [],
+  "text": "b) Ist der Zahlungstermin oder die Zahlungsfrist nicht vertraglich festgelegt, so hat der Gläubiger Anspruch auf Verzugszinsen nach Ablauf einer der folgenden Fristen:",
+  "hash": "014b53fb3fd7c4dc",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:3:b#1",
+    "order": 1,
+    "text": "b) Ist der Zahlungstermin oder die Zahlungsfrist nicht vertraglich festgelegt, so hat der Gläubiger Anspruch auf Verzugszinsen nach Ablauf einer der folgenden Fristen:",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 3, point b: b) Ist der Zahlungstermin oder die Zahlungsfrist nicht vertraglich festgelegt, so hat der Gläubiger Anspruch auf Verzugszinsen nach Ablauf einer der folgenden Fristen:"
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:3:b:i",
+  "uid": "d3a4310c-d0bc-548b-b9c8-a77cb751a890",
+  "parentSlotId": "eu:2011-7@de:3:3:b",
+  "kind": "subpoint",
+  "number": "i",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "i) 30 Kalendertage nach dem Zeitpunkt des Eingangs der Rechnung oder einer gleichwertigen Zahlungsaufforderung beim Schuldner;",
+  "hash": "214a000889563088",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:3:b:i#1",
+    "order": 1,
+    "text": "i) 30 Kalendertage nach dem Zeitpunkt des Eingangs der Rechnung oder einer gleichwertigen Zahlungsaufforderung beim Schuldner;",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 3, point b, point i: i) 30 Kalendertage nach dem Zeitpunkt des Eingangs der Rechnung oder einer gleichwertigen Zahlungsaufforderung beim Schuldner;"
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:3:b:ii",
+  "uid": "7b900f68-7c17-57b4-b308-25e468e8b02e",
+  "parentSlotId": "eu:2011-7@de:3:3:b",
+  "kind": "subpoint",
+  "number": "ii",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "ii) wenn der Zeitpunkt des Eingangs der Rechnung oder einer gleichwertigen Zahlungsaufforderung unsicher ist, 30 Kalendertage nach dem Zeitpunkt des Empfangs der Waren oder Dienstleistungen;",
+  "hash": "0e980c3ba9b5729a",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:3:b:ii#1",
+    "order": 1,
+    "text": "ii) wenn der Zeitpunkt des Eingangs der Rechnung oder einer gleichwertigen Zahlungsaufforderung unsicher ist, 30 Kalendertage nach dem Zeitpunkt des Empfangs der Waren oder Dienstleistungen;",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 3, point b, point ii: ii) wenn der Zeitpunkt des Eingangs der Rechnung oder einer gleichwertigen Zahlungsaufforderung unsicher ist, 30 Kalendertage nach dem Zeitpunkt des Empfangs der Waren oder Dienstleistungen;"
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:3:b:iii",
+  "uid": "bfb3e0a9-6cfe-5309-a121-1093a5223ee8",
+  "parentSlotId": "eu:2011-7@de:3:3:b",
+  "kind": "subpoint",
+  "number": "iii",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "iii) wenn der Schuldner die Rechnung oder die gleichwertige Zahlungsaufforderung vor dem Empfang der Waren oder Dienstleistungen erhält, 30 Kalendertage nach dem Zeitpunkt des Empfangs der Waren oder Dienstleistungen;",
+  "hash": "be17a1641317bf54",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:3:b:iii#1",
+    "order": 1,
+    "text": "iii) wenn der Schuldner die Rechnung oder die gleichwertige Zahlungsaufforderung vor dem Empfang der Waren oder Dienstleistungen erhält, 30 Kalendertage nach dem Zeitpunkt des Empfangs der Waren oder Dienstleistungen;",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 3, point b, point iii: iii) wenn der Schuldner die Rechnung oder die gleichwertige Zahlungsaufforderung vor dem Empfang der Waren oder Dienstleistungen erhält, 30 Kalendertage nach dem Zeitpunkt des Empfangs der Waren oder Dienstleistungen;"
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:3:b:iv",
+  "uid": "8135564e-56eb-5225-b533-53eb87c81417",
+  "parentSlotId": "eu:2011-7@de:3:3:b",
+  "kind": "subpoint",
+  "number": "iv",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "iv) wenn ein Abnahme- oder Überprüfungsverfahren, durch das die Übereinstimmung der Waren oder Dienstleistungen mit dem Vertrag festgestellt werden soll, gesetzlich oder vertraglich vorgesehen ist und wenn der Schuldner die Rechnung oder eine gleichwertige Zahlungsaufforderung vor oder zu dem Zeitpunkt, zu dem die Abnahme oder Überprüfung erfolgt, erhält, 30 Kalendertage nach letzterem Zeitpunkt.",
+  "hash": "caf8bb250fdec45d",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:3:b:iv#1",
+    "order": 1,
+    "text": "iv) wenn ein Abnahme- oder Überprüfungsverfahren, durch das die Übereinstimmung der Waren oder Dienstleistungen mit dem Vertrag festgestellt werden soll, gesetzlich oder vertraglich vorgesehen ist und wenn der Schuldner die Rechnung oder eine gleichwertige Zahlungsaufforderung vor oder zu dem Zeitpunkt, zu dem die Abnahme oder Überprüfung erfolgt, erhält, 30 Kalendertage nach letzterem Zeitpunkt.",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 3, point b, point iv: iv) wenn ein Abnahme- oder Überprüfungsverfahren, durch das die Übereinstimmung der Waren oder Dienstleistungen mit dem Vertrag festgestellt werden soll, gesetzlich oder vertraglich vorgesehen ist und wenn der Schuldner die Rechnung oder eine gleichwertige Zahlungsaufforderung vor oder zu dem Zeitpunkt, zu dem die Abnahme oder Überprüfung erfolgt, erhält, 30 Kalendertage nach letzterem Zeitpunkt."
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:4",
+  "uid": "28d3a818-f8f9-5ccf-8aa6-be0132ff9201",
+  "parentSlotId": "eu:2011-7@de:3",
+  "kind": "paragraph",
+  "number": "4",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(4) Ist ein Abnahme- oder Überprüfungsverfahren vorgesehen, durch das die Übereinstimmung der Waren oder Dienstleistungen mit dem Vertrag festgestellt werden soll, so stellen die Mitgliedstaaten sicher, dass die Höchstdauer dieses Verfahrens nicht mehr als 30 Kalendertage ab dem Zeitpunkt des Empfangs der Waren oder Dienstleistungen beträgt, es sei denn im Vertrag wurde ausdrücklich etwas anderes vereinbart und vorausgesetzt, dass dies für den Gläubiger nicht grob nachteilig im Sinne von Artikel 7 ist.",
+  "hash": "6561389cc69e7498",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:4#1",
+    "order": 1,
+    "text": "(4) Ist ein Abnahme- oder Überprüfungsverfahren vorgesehen, durch das die Übereinstimmung der Waren oder Dienstleistungen mit dem Vertrag festgestellt werden soll, so stellen die Mitgliedstaaten sicher, dass die Höchstdauer dieses Verfahrens nicht mehr als 30 Kalendertage ab dem Zeitpunkt des Empfangs der Waren oder Dienstleistungen beträgt, es sei denn im Vertrag wurde ausdrücklich etwas anderes vereinbart und vorausgesetzt, dass dies für den Gläubiger nicht grob nachteilig im Sinne von Artikel 7 ist.",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 4: (4) Ist ein Abnahme- oder Überprüfungsverfahren vorgesehen, durch das die Übereinstimmung der Waren oder Dienstleistungen mit dem Vertrag festgestellt werden soll, so stellen die Mitgliedstaaten sicher, dass die Höchstdauer dieses Verfahrens nicht mehr als 30 Kalendertage ab dem Zeitpunkt des Empfangs der Waren oder Dienstleistungen beträgt, es sei denn im Vertrag wurde ausdrücklich etwas anderes vereinbart und vorausgesetzt, dass dies für den Gläubiger nicht grob nachteilig im Sinne von Artikel 7 ist."
+   }
+  ]
+ },
+ {
+  "slotId": "eu:2011-7@de:3:5",
+  "uid": "5e06008a-5817-5d5b-93e5-c4e3521c70dd",
+  "parentSlotId": "eu:2011-7@de:3",
+  "kind": "paragraph",
+  "number": "5",
+  "title": "Geschäftsverkehr zwischen Unternehmen",
+  "articleTitle": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen",
+  "summary": null,
+  "jurisdiction": "EU",
+  "lang": "de",
+  "law": "Directive 2011/7/EU",
+  "lawPart": null,
+  "act": "Directive 2011/7/EU",
+  "edition": "original text, OJ L 48, 23.2.2011",
+  "path": [],
+  "sourceUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32011L0007",
+  "requirements": [],
+  "repealed": false,
+  "children": [],
+  "amendments": [],
+  "text": "(5) Die Mitgliedstaaten stellen sicher, dass die vertraglich festgelegte Zahlungsfrist 60 Kalendertage nicht überschreitet, es sei denn im Vertrag wurde ausdrücklich etwas anderes vereinbart und vorausgesetzt, dass dies für den Gläubiger nicht grob nachteilig im Sinne von Artikel 7 ist.",
+  "hash": "6914a7150176fb2c",
+  "pieces": [
+   {
+    "pieceId": "eu:2011-7@de:3:5#1",
+    "order": 1,
+    "text": "(5) Die Mitgliedstaaten stellen sicher, dass die vertraglich festgelegte Zahlungsfrist 60 Kalendertage nicht überschreitet, es sei denn im Vertrag wurde ausdrücklich etwas anderes vereinbart und vorausgesetzt, dass dies für den Gläubiger nicht grob nachteilig im Sinne von Artikel 7 ist.",
+    "embedText": "Directive 2011/7/EU, Art. 3 Geschäftsverkehr zwischen Unternehmen, para. 5: (5) Die Mitgliedstaaten stellen sicher, dass die vertraglich festgelegte Zahlungsfrist 60 Kalendertage nicht überschreitet, es sei denn im Vertrag wurde ausdrücklich etwas anderes vereinbart und vorausgesetzt, dass dies für den Gläubiger nicht grob nachteilig im Sinne von Artikel 7 ist."
+   }
+  ]
+ }
+]
