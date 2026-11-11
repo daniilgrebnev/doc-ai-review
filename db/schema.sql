@@ -23,3 +23,10 @@ CREATE TABLE IF NOT EXISTS check_runs (
   model_ms      integer,
   country       text
 );
+
+-- Лимит бесплатных запусков на клиента (sha256 от User-Agent + IP)
+ALTER TABLE check_runs ADD COLUMN IF NOT EXISTS client_hash text;
+ALTER TABLE check_runs DROP CONSTRAINT IF EXISTS check_runs_status_check;
+ALTER TABLE check_runs ADD CONSTRAINT check_runs_status_check
+  CHECK (status IN ('ok','failed','input_error','blocked','no_model','limited'));
+CREATE INDEX IF NOT EXISTS check_runs_client_hash_idx ON check_runs (client_hash) WHERE attempts IS NOT NULL;

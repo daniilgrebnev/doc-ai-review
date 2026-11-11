@@ -7,7 +7,7 @@ import { createHash } from "node:crypto";
 import { neon } from "@neondatabase/serverless";
 import { computeCostUsd } from "@/lib/db/pricing";
 
-export type RunStatus = "ok" | "failed" | "input_error" | "blocked" | "no_model";
+export type RunStatus = "ok" | "failed" | "input_error" | "blocked" | "no_model" | "limited";
 
 export interface RunAttempt {
   provider: string;
@@ -34,6 +34,8 @@ export interface CheckRunLog {
   durationMs: number;
   modelMs?: number;
   country?: string | null;
+  /** sha256(User-Agent + IP), для лимита запусков */
+  clientHash?: string;
 }
 
 /** Первая непустая строка документа — обычно заголовок договора */
@@ -46,7 +48,7 @@ export async function logCheckRun(run: CheckRunLog): Promise<void> {
   const url = process.env.DATABASE_URL;
   if (!url) return;
   try {
-    const sql = neon(url);
+    const sql = neon(url, { fetchOptions: { cache: "no-store" } });
     const cost =
       run.model && run.inputTokens != null && run.outputTokens != null
         ? computeCostUsd(run.model, run.inputTokens, run.outputTokens)
@@ -56,7 +58,7 @@ export async function logCheckRun(run: CheckRunLog): Promise<void> {
         route, status, error, doc_sha256, doc_chars, doc_clauses, doc_title,
         provider_requested, provider, model, fallback_from, attempts,
         findings_count, findings_exact, input_tokens, output_tokens, cost_usd,
-        duration_ms, model_ms, country
+        duration_ms, model_ms, country, client_hash
       ) VALUES (
         ${run.route}, ${run.status}, ${run.error ?? null},
         ${run.text ? createHash("sha256").update(run.text).digest("hex") : null},
@@ -65,7 +67,7 @@ export async function logCheckRun(run: CheckRunLog): Promise<void> {
         ${run.fallbackFrom ?? null}, ${run.attempts ? JSON.stringify(run.attempts) : null},
         ${run.findingsCount ?? null}, ${run.findingsExact ?? null},
         ${run.inputTokens ?? null}, ${run.outputTokens ?? null}, ${cost},
-        ${run.durationMs}, ${run.modelMs ?? null}, ${run.country ?? null}
+        ${run.durationMs}, ${run.modelMs ?? null}, ${run.country ?? null}, ${run.clientHash ?? null}
       )`;
   } catch (error) {
     console.error("[db] failed to log check run", error);

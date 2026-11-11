@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { LimitBanner } from "@/components/cc/LimitBanner";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getDefect } from "@/lib/check/catalog";
 import { getExample } from "@/lib/check/examples";
@@ -301,6 +302,7 @@ function AnswerKeyBox({ answerKey, findings, skipped }: { answerKey: AnswerKeyIt
 }
 
 function ErrorBox({ kind, message, exampleId, onRetry, onBack }: { kind: string; message: string; exampleId?: string; onRetry: () => void; onBack: () => void }) {
+  if (kind === "limit") return <LimitBanner />;
   if (kind === "input") {
     return (
       <section className="flex flex-col gap-2 rounded-lg border border-line bg-white p-5">

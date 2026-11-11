@@ -10,6 +10,7 @@ import { generateContract, type Beneficiary } from "@/lib/generator";
 import { formatModelLabel } from "@/lib/llm/model-label";
 import { cn } from "@/lib/utils";
 import { Page } from "@/components/cc/Header";
+import { LimitBanner } from "@/components/cc/LimitBanner";
 import { LiveRun, type LiveRunProps } from "@/components/cc/LiveRun";
 import { providerReason, useProvidersStore } from "@/store/useProvidersStore";
 import { useAgentFlowStore } from "@/store/useAgentFlowStore";
@@ -56,6 +57,15 @@ function CheckForm({ onStart }: { onStart: (r: Run) => void }) {
   const canStart = source === "generate" ? Boolean(seed) : text.trim().length >= 200 && !tooLong;
 
   const [generating, setGenerating] = useState(false);
+  const [quota, setQuota] = useState<{ limit: number | null; remaining?: number } | null>(null);
+
+  useEffect(() => {
+    fetch("/api/quota")
+      .then((r) => r.json())
+      .then(setQuota)
+      .catch(() => setQuota(null));
+  }, []);
+  const limited = quota?.limit != null && quota.remaining === 0;
 
   const start = async () => {
     if (source === "generate") {
@@ -67,7 +77,11 @@ function CheckForm({ onStart }: { onStart: (r: Run) => void }) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ ...params, provider }),
         });
-        const data = (await res.json()) as GenerateResponse & { error?: string };
+        const data = (await res.json()) as GenerateResponse & { error?: string; code?: string };
+        if (res.status === 429 && data.code === "limit") {
+          setQuota((q) => ({ limit: q?.limit ?? null, remaining: 0 }));
+          return;
+        }
         if (!res.ok || !data.contract) throw new Error(data.error || `HTTP ${res.status}`);
         const c = data.contract;
         const by = data.source === "model" && data.model ? formatModelLabel(data.model) : "template";
@@ -91,6 +105,16 @@ function CheckForm({ onStart }: { onStart: (r: Run) => void }) {
         Generate a contract with known traps, or paste your own text. A generated contract comes with an answer key, so you see what the agent
         missed.
       </p>
+
+      {limited ? (
+        <div className="mb-4">
+          <LimitBanner limit={quota?.limit} />
+        </div>
+      ) : quota?.limit != null && quota.remaining != null ? (
+        <p className="m-0 mb-2 text-[13px] text-muted">
+          {quota.remaining} of {quota.limit} free model runs left
+        </p>
+      ) : null}
 
       <div role="tablist" aria-label="Source" className="mb-2 inline-flex gap-1 self-start rounded-lg bg-[#ECEAE4] p-1">
         {(
@@ -235,7 +259,7 @@ function CheckForm({ onStart }: { onStart: (r: Run) => void }) {
         <button
           type="button"
           onClick={() => void start()}
-          disabled={!canStart || noModel || generating}
+          disabled={!canStart || noModel || generating || limited}
           className="inline-flex min-h-[44px] items-center rounded-lg bg-ink px-5 text-sm font-semibold text-white hover:bg-[#2B2E36] disabled:cursor-not-allowed disabled:opacity-40"
         >
           {generating ? "Writing the contract…" : source === "generate" ? "Generate and check" : "Check"}

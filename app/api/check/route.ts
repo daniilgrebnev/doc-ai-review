@@ -8,6 +8,7 @@ import { parseFindings } from "@/lib/check/parse";
 import type { CheckEvent, Finding } from "@/lib/check/types";
 import { llmComplete } from "@/lib/llm/complete";
 import { logCheckRun, type CheckRunLog, type RunAttempt } from "@/lib/db/runs";
+import { getClientHash, getQuota, LIMIT_MESSAGE } from "@/lib/db/quota";
 import { getRequestCountry } from "@/lib/llm/geo";
 import { formatModelLabel } from "@/lib/llm/model-label";
 import { getProvidersForRequest, resolveProvider } from "@/lib/llm/providers";
@@ -55,6 +56,7 @@ export async function POST(request: Request) {
         text,
         providerRequested: typeof body.provider === "string" ? body.provider : undefined,
         country: getRequestCountry(headers),
+        clientHash: getClientHash(headers),
       };
       const attempts: RunAttempt[] = [];
 
@@ -83,6 +85,13 @@ export async function POST(request: Request) {
         if (resolution.kind === "demo") {
           run.status = "no_model";
           send({ type: "error", kind: "no-model", message: "No model is configured on the server." });
+          return;
+        }
+
+        const quota = await getQuota(headers);
+        if (quota?.exceeded) {
+          run.status = "limited";
+          send({ type: "error", kind: "limit", message: LIMIT_MESSAGE });
           return;
         }
 

@@ -44,7 +44,7 @@ export type CheckEvent =
       outputTokens: number;
       fallbackFrom?: string;
     }
-  | { type: "error"; kind: "input" | "failed" | "blocked" | "no-model"; message: string };
+  | { type: "error"; kind: "input" | "failed" | "blocked" | "no-model" | "limit"; message: string };
 
 export interface ContractExample {
   id: string;

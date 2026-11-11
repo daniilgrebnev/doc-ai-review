@@ -69,7 +69,7 @@ function toTotals(r: Record<string, unknown> | undefined): Totals {
 export async function getMonitoringData(limit = 100): Promise<MonitoringData | null> {
   const url = process.env.DATABASE_URL;
   if (!url) return null;
-  const sql = neon(url);
+  const sql = neon(url, { fetchOptions: { cache: "no-store" } });
   const safeLimit = Math.min(Math.max(Math.trunc(limit) || 100, 1), 500);
 
   const [totals, day, byModel, byRoute, runs] = await Promise.all([

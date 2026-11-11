@@ -18,6 +18,7 @@ const STATUS_LABEL: Record<string, string> = {
   input_error: "bad input",
   blocked: "geo blocked",
   no_model: "no model",
+  limited: "over limit",
 };
 
 function Stats({ t, label }: { t: Totals; label: string }) {

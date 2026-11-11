@@ -16,6 +16,7 @@ import {
 } from "@/lib/generator/llm";
 import type { CompleteResult } from "@/lib/claude/types";
 import { llmComplete } from "@/lib/llm/complete";
+import { getClientHash, getQuota, LIMIT_MESSAGE } from "@/lib/db/quota";
 import { getRequestCountry } from "@/lib/llm/geo";
 import { getProvidersForRequest, resolveProvider } from "@/lib/llm/providers";
 import type { ProviderId } from "@/lib/llm/types";
@@ -71,6 +72,7 @@ export async function POST(request: Request) {
     status: "failed",
     providerRequested: typeof body.provider === "string" ? body.provider : undefined,
     country: getRequestCountry(headers),
+    clientHash: getClientHash(headers),
   };
   const attempts: RunAttempt[] = [];
   let contractText = "";
@@ -81,6 +83,14 @@ export async function POST(request: Request) {
       run.status = resolution.status === 403 ? "blocked" : "failed";
       run.error = resolution.message;
       return NextResponse.json({ error: resolution.message }, { status: resolution.status });
+    }
+
+    if (resolution.kind === "provider") {
+      const quota = await getQuota(headers);
+      if (quota?.exceeded) {
+        run.status = "limited";
+        return NextResponse.json({ error: LIMIT_MESSAGE, code: "limit" }, { status: 429 });
+      }
     }
 
     const { providers } = getProvidersForRequest(headers);
