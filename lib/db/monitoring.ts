@@ -20,6 +20,20 @@ export interface RunRow {
   costUsd: number | null;
   durationMs: number;
   modelMs: number | null;
+  cascade: CascadeSummary | null;
+}
+
+/** Короткая сводка каскада моделей для строки запроса */
+export interface CascadeSummary {
+  levels: Array<{ level: number; model: string; effort?: string; status: string; costUsd?: number; scope?: string }>;
+  disputes: number;
+}
+
+export interface CascadeStats {
+  checks: number;
+  escalated: number;
+  l1CostUsd: number;
+  l2CostUsd: number;
 }
 
 export interface Totals {
@@ -47,11 +61,32 @@ export interface MonitoringData {
   last24h: Totals;
   byModel: ModelTotals[];
   byRoute: Array<{ route: string; runs: number; costUsd: number }>;
+  cascade: CascadeStats;
   runs: RunRow[];
 }
 
 const n = (v: unknown) => (v == null ? 0 : Number(v));
 const nn = (v: unknown) => (v == null ? null : Number(v));
+
+function toCascade(raw: unknown): CascadeSummary | null {
+  if (!raw || typeof raw !== "object") return null;
+  const c = raw as { levels?: unknown; triage?: { disputes?: unknown[] } };
+  if (!Array.isArray(c.levels)) return null;
+  return {
+    levels: c.levels.map((l) => {
+      const v = l as Record<string, unknown>;
+      return {
+        level: n(v.level),
+        model: String(v.model ?? ""),
+        effort: typeof v.effort === "string" ? v.effort : undefined,
+        status: String(v.status ?? ""),
+        costUsd: typeof v.costUsd === "number" ? v.costUsd : undefined,
+        scope: typeof v.scope === "string" ? v.scope : undefined,
+      };
+    }),
+    disputes: Array.isArray(c.triage?.disputes) ? c.triage.disputes.length : 0,
+  };
+}
 
 function toTotals(r: Record<string, unknown> | undefined): Totals {
   return {
@@ -72,7 +107,7 @@ export async function getMonitoringData(limit = 100): Promise<MonitoringData | n
   const sql = neon(url, { fetchOptions: { cache: "no-store" } });
   const safeLimit = Math.min(Math.max(Math.trunc(limit) || 100, 1), 500);
 
-  const [totals, day, byModel, byRoute, runs] = await Promise.all([
+  const [totals, day, byModel, byRoute, runs, cascade] = await Promise.all([
     sql`SELECT count(*) runs, count(*) FILTER (WHERE status = 'ok') ok,
           sum(input_tokens) input_tokens, sum(output_tokens) output_tokens, sum(cost_usd) cost_usd,
           percentile_cont(0.5) WITHIN GROUP (ORDER BY model_ms) p50_ms,
@@ -89,8 +124,13 @@ export async function getMonitoringData(limit = 100): Promise<MonitoringData | n
         FROM check_runs WHERE model IS NOT NULL GROUP BY model ORDER BY count(*) DESC`,
     sql`SELECT route, count(*) runs, coalesce(sum(cost_usd), 0) cost_usd FROM check_runs GROUP BY route ORDER BY route`,
     sql`SELECT id, created_at, route, status, error, doc_title, doc_chars, doc_clauses, provider, model, fallback_from,
-          findings_count, findings_exact, input_tokens, output_tokens, cost_usd, duration_ms, model_ms
+          findings_count, findings_exact, input_tokens, output_tokens, cost_usd, duration_ms, model_ms, cascade
         FROM check_runs ORDER BY id DESC LIMIT ${safeLimit}`,
+    sql`SELECT count(*) checks,
+          count(*) FILTER (WHERE cascade->'levels'->1->>'status' = 'done') escalated,
+          coalesce(sum((cascade->'levels'->0->>'costUsd')::numeric), 0) l1_cost,
+          coalesce(sum((cascade->'levels'->1->>'costUsd')::numeric), 0) l2_cost
+        FROM check_runs WHERE cascade IS NOT NULL`,
   ]);
 
   return {
@@ -105,6 +145,12 @@ export async function getMonitoringData(limit = 100): Promise<MonitoringData | n
       costUsd: n(r.cost_usd),
       avgMs: n(r.avg_ms),
     })),
+    cascade: {
+      checks: n(cascade[0]?.checks),
+      escalated: n(cascade[0]?.escalated),
+      l1CostUsd: n(cascade[0]?.l1_cost),
+      l2CostUsd: n(cascade[0]?.l2_cost),
+    },
     byRoute: byRoute.map((r) => ({ route: String(r.route), runs: n(r.runs), costUsd: n(r.cost_usd) })),
     runs: runs.map((r) => ({
       id: n(r.id),
@@ -125,6 +171,7 @@ export async function getMonitoringData(limit = 100): Promise<MonitoringData | n
       costUsd: nn(r.cost_usd),
       durationMs: n(r.duration_ms),
       modelMs: nn(r.model_ms),
+      cascade: toCascade(r.cascade),
     })),
   };
 }

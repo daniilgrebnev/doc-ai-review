@@ -43,6 +43,44 @@ function Stats({ t, label }: { t: Totals; label: string }) {
   );
 }
 
+function CascadeBlock({ c }: { c: MonitoringData["cascade"] }) {
+  const total = c.l1CostUsd + c.l2CostUsd;
+  const items: Array<[string, string]> = [
+    [`${c.escalated} of ${fmtInt(c.checks)}`, `checks went to level 2 · ${c.checks ? Math.round((c.escalated / c.checks) * 100) : 0}%`],
+    [fmtUsd(c.l1CostUsd), "level 1 cost"],
+    [fmtUsd(c.l2CostUsd), `level 2 cost · ${total ? Math.round((c.l2CostUsd / total) * 100) : 0}% of cascade spend`],
+  ];
+  return (
+    <section aria-label="Model cascade" className="flex flex-col gap-2">
+      <h2 className="m-0 text-sm font-semibold text-muted">Model cascade</h2>
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-x-8">
+        {items.map(([value, caption]) => (
+          <div key={caption} className="flex flex-col gap-0.5 border-t border-ink py-4">
+            <span className="font-mono text-[28px] font-medium leading-tight tracking-tight">{value}</span>
+            <span className="text-[13px] text-muted">{caption}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function CascadeLine({ c }: { c: NonNullable<MonitoringData["runs"][number]["cascade"]> }) {
+  return (
+    <span className="block text-xs text-muted">
+      {c.levels
+        .map((l) => {
+          const name = `L${l.level} ${formatModelLabel(l.model)}${l.effort ? ` ${l.effort}` : ""}`;
+          if (l.status === "skipped") return `${name}: skipped`;
+          if (l.status !== "done") return `${name}: ${l.status}`;
+          return `${name}: ${fmtUsd(l.costUsd ?? null)}`;
+        })
+        .join(" · ")}
+      {c.disputes > 0 ? ` · ${c.disputes} disputed` : ""}
+    </span>
+  );
+}
+
 const th = "whitespace-nowrap border-b border-line-2 px-3 py-2.5 font-semibold";
 const td = "whitespace-nowrap border-b border-line px-3 py-2.5";
 
@@ -58,6 +96,8 @@ function Content({ data }: { data: MonitoringData }) {
     <>
       <Stats t={data.last24h} label="Last 24 hours" />
       <Stats t={data.totals} label="All time" />
+
+      {data.cascade.checks > 0 && <CascadeBlock c={data.cascade} />}
 
       <section className="flex flex-col gap-3.5">
         <div className="flex flex-wrap items-baseline gap-3">
@@ -138,12 +178,13 @@ function Content({ data }: { data: MonitoringData }) {
                   <td className={td}>
                     {r.model ? formatModelLabel(r.model) : "—"}
                     {r.fallbackFrom && <span className="block text-xs text-muted">fallback from {r.fallbackFrom}</span>}
+                    {r.cascade && <CascadeLine c={r.cascade} />}
                   </td>
                   <td className={cn(td, "text-right font-mono")}>
                     {r.findingsCount == null
                       ? "—"
                       : r.route === "generate"
-                        ? `${r.findingsCount} traps${r.findingsExact != null ? ` (${r.findingsExact} verified)` : ""}`
+                        ? `${r.findingsCount} trap${r.findingsCount === 1 ? "" : "s"}${r.findingsExact != null ? ` (${r.findingsExact} verified)` : ""}`
                         : `${r.findingsCount}${r.findingsExact != null ? ` (${r.findingsExact} exact)` : ""}`}
                   </td>
                   <td className={cn(td, "text-right font-mono")}>
