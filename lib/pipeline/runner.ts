@@ -1,5 +1,6 @@
 import { getSortedAgents } from "@/lib/agents/config";
 import { AGENT_DELAY_MS } from "@/lib/constants";
+import type { ProviderId } from "@/lib/llm/types";
 import type { AgentResult } from "@/types/agent";
 
 type ProgressCallback = (
@@ -14,6 +15,7 @@ function delay(ms: number): Promise<void> {
 
 export async function runAgentPipeline(
   documentText: string,
+  provider: ProviderId | null,
   onProgress: ProgressCallback
 ): Promise<AgentResult[]> {
   const agents = getSortedAgents();
@@ -30,6 +32,7 @@ export async function runAgentPipeline(
           agentId: agent.id,
           documentText,
           previousResults: results,
+          provider,
         }),
       });
 

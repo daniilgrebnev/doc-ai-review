@@ -12,26 +12,25 @@ import {
 } from "@/lib/agents/prompts/revise";
 import { isRefusalText, REFUSAL_REVISE_MESSAGE } from "@/lib/agents/refusal";
 import { demoDelay } from "@/lib/demo/delay";
-import { isDemoMode } from "@/lib/demo/is-demo-mode";
 import { getDemoReviseResult } from "@/lib/demo/sample-contract";
-import {
-  LLM_INPUT_MAX_CHARS,
-  MIN_DOCUMENT_LENGTH,
-  REVISE_MAX_TOKENS,
-} from "@/lib/constants";
+import { LLM_INPUT_MAX_CHARS, MIN_DOCUMENT_LENGTH } from "@/lib/constants";
 import { getStatusLabel } from "@/lib/pipeline/verdict";
 import { truncateText } from "@/lib/utils";
-import { complete, getDefaultModel } from "@/lib/claude/client";
 import { LlmError } from "@/lib/claude/types";
+import { llmComplete } from "@/lib/llm/complete";
+import { resolveProvider } from "@/lib/llm/providers";
+import type { ProviderId } from "@/lib/llm/types";
 import type { AgentResult } from "@/types/agent";
 
 const REVISE_ATTEMPTS: Array<{
   systemPrompt: string;
   variant: "default" | "template" | "minimal";
+  /** Используется только YandexGPT */
+  temperature: number;
 }> = [
-  { systemPrompt: SYSTEM_PROMPT_REVISE, variant: "default" },
-  { systemPrompt: SYSTEM_PROMPT_REVISE_STRICT, variant: "template" },
-  { systemPrompt: SYSTEM_PROMPT_REVISE_MINIMAL, variant: "minimal" },
+  { systemPrompt: SYSTEM_PROMPT_REVISE, variant: "default", temperature: 0.2 },
+  { systemPrompt: SYSTEM_PROMPT_REVISE_STRICT, variant: "template", temperature: 0.1 },
+  { systemPrompt: SYSTEM_PROMPT_REVISE_MINIMAL, variant: "minimal", temperature: 0.05 },
 ];
 
 function buildRemarksMessage(agentResults: AgentResult[]): string {
@@ -58,17 +57,18 @@ function buildRemarksMessage(agentResults: AgentResult[]): string {
 async function tryFullRewrite(
   document: string,
   remarks: string,
-  model: string
+  provider: ProviderId
 ): Promise<{ text: string; model: string } | null> {
   for (const attempt of REVISE_ATTEMPTS) {
     const userMessage = buildReviseUserMessage(document, remarks, attempt.variant);
 
-    const { text, model: usedModel, refused } = await complete(
+    const { text, model: usedModel, refused } = await llmComplete(
+      provider,
       [
         { role: "system", text: attempt.systemPrompt },
         { role: "user", text: userMessage },
       ],
-      { model, maxTokens: REVISE_MAX_TOKENS }
+      { purpose: "revise", temperature: attempt.temperature }
     );
 
     if (refused || isRefusalText(text)) continue;
@@ -83,16 +83,17 @@ async function tryFullRewrite(
 async function tryPatchRewrite(
   document: string,
   remarks: string,
-  model: string
+  provider: ProviderId
 ): Promise<{ text: string; model: string } | null> {
   const userMessage = buildPatchUserMessage(document, remarks);
 
-  const { text, model: usedModel, refused } = await complete(
+  const { text, model: usedModel, refused } = await llmComplete(
+    provider,
     [
       { role: "system", text: SYSTEM_PROMPT_REVISE_PATCHES },
       { role: "user", text: userMessage },
     ],
-    { model, maxTokens: REVISE_MAX_TOKENS }
+    { purpose: "revise", temperature: 0.1 }
   );
 
   if (refused || isRefusalText(text)) return null;
@@ -107,13 +108,13 @@ async function tryPatchRewrite(
 }
 
 async function generateRevisedText(
+  provider: ProviderId,
   fullDocument: string,
   remarks: string
 ): Promise<{ text: string; model: string } | null> {
-  const model = getDefaultModel();
   const llmDocument = truncateText(fullDocument, LLM_INPUT_MAX_CHARS);
 
-  const fullRewrite = await tryFullRewrite(llmDocument, remarks, model);
+  const fullRewrite = await tryFullRewrite(llmDocument, remarks, provider);
   if (fullRewrite) {
     if (llmDocument.length < fullDocument.length) {
       return {
@@ -124,7 +125,7 @@ async function generateRevisedText(
     return fullRewrite;
   }
 
-  return tryPatchRewrite(fullDocument, remarks, model);
+  return tryPatchRewrite(fullDocument, remarks, provider);
 }
 
 export async function POST(request: Request) {
@@ -132,6 +133,7 @@ export async function POST(request: Request) {
     const body = (await request.json()) as {
       documentText?: string;
       agentResults?: AgentResult[];
+      provider?: string;
     };
 
     const { documentText, agentResults } = body;
@@ -168,7 +170,13 @@ export async function POST(request: Request) {
       );
     }
 
-    if (isDemoMode()) {
+    const resolution = resolveProvider(body.provider, request.headers);
+
+    if (resolution.kind === "error") {
+      return NextResponse.json({ error: resolution.message }, { status: resolution.status });
+    }
+
+    if (resolution.kind === "demo") {
       await demoDelay(1200 + Math.random() * 800);
       const demo = getDemoReviseResult();
       return NextResponse.json({
@@ -177,7 +185,7 @@ export async function POST(request: Request) {
       });
     }
 
-    const result = await generateRevisedText(trimmedText, remarks);
+    const result = await generateRevisedText(resolution.provider, trimmedText, remarks);
 
     if (!result) {
       return NextResponse.json(

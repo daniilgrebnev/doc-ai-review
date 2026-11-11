@@ -3,7 +3,6 @@ import { getAgentById, isValidAgentId } from "@/lib/agents/config";
 import { parseAgentResponse } from "@/lib/agents/parser";
 import { getPromptByAgentId } from "@/lib/agents/prompts";
 import { demoDelay } from "@/lib/demo/delay";
-import { isDemoMode } from "@/lib/demo/is-demo-mode";
 import { getDemoAnalyzeResult } from "@/lib/demo/sample-contract";
 import {
   isRefusalText,
@@ -11,15 +10,16 @@ import {
   REFUSAL_USER_MESSAGE,
 } from "@/lib/agents/refusal";
 import {
-  ANALYZE_MAX_TOKENS,
   LLM_INPUT_MAX_CHARS,
   MIN_DOCUMENT_LENGTH,
 } from "@/lib/constants";
 import { getStatusLabel } from "@/lib/pipeline/verdict";
 import { truncateText } from "@/lib/utils";
-import { complete } from "@/lib/claude/client";
 import type { CompleteResult } from "@/lib/claude/types";
 import { LlmError } from "@/lib/claude/types";
+import { llmComplete } from "@/lib/llm/complete";
+import { resolveProvider } from "@/lib/llm/providers";
+import type { ProviderId } from "@/lib/llm/types";
 import type { AgentResult } from "@/types/agent";
 
 const RETRY_PROMPT =
@@ -56,6 +56,7 @@ function refusalResult(agentId: string): AgentResult {
 }
 
 async function analyzeWithRetry(
+  provider: ProviderId,
   agentId: string,
   systemPrompt: string,
   userMessage: string
@@ -65,11 +66,12 @@ async function analyzeWithRetry(
     { role: "user" as const, text: userMessage },
   ];
 
-  const first = await complete(messages, { maxTokens: ANALYZE_MAX_TOKENS });
+  const first = await llmComplete(provider, messages, { purpose: "analyze" });
   const text = first.text;
 
   if (isRefused(first)) {
-    const retry = await complete(
+    const retry = await llmComplete(
+      provider,
       [
         {
           role: "system",
@@ -77,7 +79,7 @@ async function analyzeWithRetry(
         },
         { role: "user", text: userMessage },
       ],
-      { maxTokens: ANALYZE_MAX_TOKENS }
+      { purpose: "analyze", temperature: 0.1 }
     );
 
     if (isRefused(retry)) {
@@ -101,12 +103,13 @@ async function analyzeWithRetry(
       console.error("[analyze] parse failed, raw:", text.slice(0, 500));
     }
 
-    const retry = await complete(
+    const retry = await llmComplete(
+      provider,
       [
         { role: "system", text: `${systemPrompt}\n\n${RETRY_PROMPT}` },
         { role: "user", text: userMessage },
       ],
-      { maxTokens: ANALYZE_MAX_TOKENS }
+      { purpose: "analyze", temperature: 0.1 }
     );
 
     if (isRefused(retry)) {
@@ -125,6 +128,7 @@ export async function POST(request: Request) {
       agentId?: string;
       documentText?: string;
       previousResults?: AgentResult[];
+      provider?: string;
     };
 
     const { agentId, documentText, previousResults = [] } = body;
@@ -152,7 +156,13 @@ export async function POST(request: Request) {
       );
     }
 
-    if (isDemoMode()) {
+    const resolution = resolveProvider(body.provider, request.headers);
+
+    if (resolution.kind === "error") {
+      return NextResponse.json({ error: resolution.message }, { status: resolution.status });
+    }
+
+    if (resolution.kind === "demo") {
       await demoDelay(800 + Math.random() * 700);
       const result = getDemoAnalyzeResult(agentId);
       return NextResponse.json({
@@ -176,7 +186,7 @@ export async function POST(request: Request) {
     const previousContext = buildPreviousContext(previousResults);
     const userMessage = `Проанализируй следующий документ:\n\n${truncatedDocument}${previousContext}`;
 
-    const result = await analyzeWithRetry(agentId, systemPrompt, userMessage);
+    const result = await analyzeWithRetry(resolution.provider, agentId, systemPrompt, userMessage);
 
     return NextResponse.json({
       agentId: result.agentId,

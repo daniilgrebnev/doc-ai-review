@@ -3,6 +3,7 @@
 import { create } from "zustand";
 import { getSortedAgents } from "@/lib/agents/config";
 import { runAgentPipeline } from "@/lib/pipeline/runner";
+import type { ProviderId } from "@/lib/llm/types";
 import type { AgentResult, PipelineStatus, ReviewRecord } from "@/types/agent";
 import type { UploadedFile } from "@/types/document";
 
@@ -15,6 +16,9 @@ interface AgentFlowState {
   pipelineError: string | null;
   elapsedSeconds: number;
   revisedText: string | null;
+  /** Выбранная нейросеть; null — сервер выберет сам (или демо) */
+  provider: ProviderId | null;
+  setProvider: (provider: ProviderId | null) => void;
   setDocumentText: (text: string) => void;
   setUploadedFile: (file: UploadedFile | null) => void;
   setAgentResult: (agentId: string, result: AgentResult) => void;
@@ -63,6 +67,9 @@ export const useAgentFlowStore = create<AgentFlowState>((set, get) => ({
   pipelineError: null,
   elapsedSeconds: 0,
   revisedText: null,
+  provider: null,
+
+  setProvider: (provider) => set({ provider, revisedText: null }),
 
   setDocumentText: (text) =>
     set((state) => ({
@@ -121,7 +128,7 @@ export const useAgentFlowStore = create<AgentFlowState>((set, get) => ({
   },
 
   runPipeline: async () => {
-    const { documentText, pipelineStatus } = get();
+    const { documentText, pipelineStatus, provider } = get();
 
     if (pipelineStatus === "running") return;
 
@@ -139,7 +146,7 @@ export const useAgentFlowStore = create<AgentFlowState>((set, get) => ({
     }, 1000);
 
     try {
-      await runAgentPipeline(documentText, (agentId, phase, result) => {
+      await runAgentPipeline(documentText, provider, (agentId, phase, result) => {
         if (phase === "processing") {
           set({ currentAgentId: agentId });
           set((state) => ({
@@ -188,7 +195,7 @@ export const useAgentFlowStore = create<AgentFlowState>((set, get) => ({
   },
 
   retryAgent: async (agentId) => {
-    const { documentText, agentResults, pipelineStatus } = get();
+    const { documentText, agentResults, pipelineStatus, provider } = get();
     if (!documentText.trim()) return;
 
     const previousResults = Object.values(agentResults).filter(
@@ -214,7 +221,7 @@ export const useAgentFlowStore = create<AgentFlowState>((set, get) => ({
       const response = await fetch("/api/analyze", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ agentId, documentText, previousResults }),
+        body: JSON.stringify({ agentId, documentText, previousResults, provider }),
       });
 
       if (!response.ok) {

@@ -3,16 +3,26 @@ import { isDemoMode } from "@/lib/demo/is-demo-mode";
 import { getDemoAnalyzeResult, getDemoReviseResult, SAMPLE_CONTRACT_TEXT } from "@/lib/demo/sample-contract";
 
 describe("isDemoMode", () => {
-  const originalKey = process.env.ANTHROPIC_API_KEY;
+  const keys = ["ANTHROPIC_API_KEY", "YC_API_KEY", "YC_FOLDER_ID"] as const;
+  const original = keys.map((k) => process.env[k]);
 
   afterEach(() => {
-    if (originalKey === undefined) delete process.env.ANTHROPIC_API_KEY;
-    else process.env.ANTHROPIC_API_KEY = originalKey;
+    keys.forEach((k, i) => {
+      if (original[i] === undefined) delete process.env[k];
+      else process.env[k] = original[i];
+    });
   });
 
-  it("returns true when API key missing", () => {
-    delete process.env.ANTHROPIC_API_KEY;
+  it("returns true when no API keys configured", () => {
+    keys.forEach((k) => delete process.env[k]);
     expect(isDemoMode()).toBe(true);
+  });
+
+  it("returns false when only YandexGPT configured", () => {
+    delete process.env.ANTHROPIC_API_KEY;
+    process.env.YC_API_KEY = "k";
+    process.env.YC_FOLDER_ID = "f";
+    expect(isDemoMode()).toBe(false);
   });
 
   it("returns false when API key set", () => {

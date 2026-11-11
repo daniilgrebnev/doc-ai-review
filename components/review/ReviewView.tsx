@@ -13,6 +13,8 @@ import { Button } from "@/components/ui/Button";
 import { ErrorAlert } from "@/components/ui/ErrorAlert";
 import { useToast } from "@/components/ui/Toast";
 import { DemoBanner } from "@/components/demo/DemoBanner";
+import { ProviderSelector } from "@/components/review/ProviderSelector";
+import type { ProviderInfo, ProvidersResponse } from "@/lib/llm/types";
 import { SAMPLE_CONTRACT_TEXT } from "@/lib/demo/sample-contract";
 import { useAgentFlowStore } from "@/store/useAgentFlowStore";
 
@@ -28,12 +30,15 @@ export function ReviewView() {
   const setUploadedFile = useAgentFlowStore((s) => s.setUploadedFile);
   const runPipeline = useAgentFlowStore((s) => s.runPipeline);
   const resetPipeline = useAgentFlowStore((s) => s.resetPipeline);
+  const provider = useAgentFlowStore((s) => s.provider);
+  const setProvider = useAgentFlowStore((s) => s.setProvider);
   const { toast } = useToast();
   const prevStatus = useRef(pipelineStatus);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const [fileError, setFileError] = useState<string | null>(null);
   const [isDemo, setIsDemo] = useState(false);
+  const [providers, setProviders] = useState<ProviderInfo[]>([]);
 
   const isRunning = pipelineStatus === "running";
   const canStart = documentText.trim().length >= MIN_DOCUMENT_LENGTH && !isRunning;
@@ -47,11 +52,17 @@ export function ReviewView() {
     : null;
 
   useEffect(() => {
-    void fetch("/api/demo-status")
+    void fetch("/api/providers")
       .then((r) => r.json())
-      .then((data: { demo?: boolean }) => setIsDemo(Boolean(data.demo)))
+      .then((data: ProvidersResponse) => {
+        setIsDemo(Boolean(data.demo));
+        setProviders(data.providers ?? []);
+        const current = useAgentFlowStore.getState().provider;
+        const currentOk = data.providers?.some((p) => p.id === current && p.available);
+        if (!currentOk) setProvider(data.defaultProvider);
+      })
       .catch(() => setIsDemo(false));
-  }, []);
+  }, [setProvider]);
 
   useEffect(() => {
     if (prevStatus.current !== "completed" && pipelineStatus === "completed") {
@@ -168,6 +179,17 @@ export function ReviewView() {
           )}
           disabled={isRunning}
         />
+
+        {!isDemo && (
+          <div className="mt-3">
+            <ProviderSelector
+              providers={providers}
+              value={provider}
+              onChange={setProvider}
+              disabled={isRunning}
+            />
+          </div>
+        )}
 
         <div className="mt-3 flex items-center justify-between gap-3">
           <span className="text-xs text-muted">

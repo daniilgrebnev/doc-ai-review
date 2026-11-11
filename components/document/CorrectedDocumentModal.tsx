@@ -5,7 +5,7 @@ import { RotateCcw } from "lucide-react";
 import { DocumentDiffView } from "@/components/document/DocumentDiffView";
 import { isRefusalText, REFUSAL_REVISE_MESSAGE } from "@/lib/agents/refusal";
 import { computeLineDiff } from "@/lib/diff/line-diff";
-import { formatModelLabel } from "@/lib/claude/models";
+import { formatModelLabel } from "@/lib/llm/model-label";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
 import { LoadingSpinner } from "@/components/ui/LoadingSpinner";
@@ -29,6 +29,7 @@ export function CorrectedDocumentModal({
   const revisedText = useAgentFlowStore((s) => s.revisedText);
   const setRevisedText = useAgentFlowStore((s) => s.setRevisedText);
   const setDocumentText = useAgentFlowStore((s) => s.setDocumentText);
+  const provider = useAgentFlowStore((s) => s.provider);
   const { toast } = useToast();
 
   const [loading, setLoading] = useState(false);
@@ -57,7 +58,7 @@ export function CorrectedDocumentModal({
         const response = await fetch("/api/revise", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ documentText: originalText, agentResults }),
+          body: JSON.stringify({ documentText: originalText, agentResults, provider }),
         });
 
         const data = (await response.json()) as {
@@ -91,7 +92,7 @@ export function CorrectedDocumentModal({
         setLoading(false);
       }
     },
-    [originalText, agentResults, revisedText, setRevisedText]
+    [originalText, agentResults, revisedText, setRevisedText, provider]
   );
 
   const handleReload = () => {
