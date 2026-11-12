@@ -53,7 +53,12 @@ CREATE INDEX IF NOT EXISTS law_pieces_slot_idx ON law_pieces (slot_id);
 CREATE INDEX IF NOT EXISTS law_pieces_jur_idx ON law_pieces (jurisdiction, lang);
 CREATE INDEX IF NOT EXISTS law_pieces_tsv_idx ON law_pieces USING gin (tsv);
 
--- Vectors come once the embedding model is chosen (dimension depends on it), e.g.:
---   CREATE EXTENSION IF NOT EXISTS vector;
---   ALTER TABLE law_pieces ADD COLUMN embedding vector(1024), ADD COLUMN embedding_model text;
---   CREATE INDEX law_pieces_embedding_idx ON law_pieces USING hnsw (embedding vector_cosine_ops);
+-- Vectors for semantic search. Model: bge-m3 (1024 dims, multilingual RU/DE/EN), filled by
+-- scripts/laws/embed-neon.mjs. load-neon.mjs re-inserts pieces of changed slots, so their
+-- embedding becomes NULL and the next embed run picks up only them.
+-- Changing the model means re-embedding everything: vectors of different models don't mix.
+CREATE EXTENSION IF NOT EXISTS vector;
+ALTER TABLE law_pieces
+  ADD COLUMN IF NOT EXISTS embedding       vector(1024),
+  ADD COLUMN IF NOT EXISTS embedding_model text;          -- e.g. bge-m3
+CREATE INDEX IF NOT EXISTS law_pieces_embedding_idx ON law_pieces USING hnsw (embedding vector_cosine_ops);

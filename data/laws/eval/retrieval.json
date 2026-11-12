@@ -1,0 +1,23 @@
+[
+  { "id": "ru-penalty-daily", "jurisdiction": "RU", "query": "Арендатор уплачивает пеню в размере 1% от суммы долга за каждый день просрочки.", "expect": ["ru:gk:333", "ru:gk:330"] },
+  { "id": "ru-penalty-plus-losses", "jurisdiction": "RU", "query": "Неустойка взыскивается в полном объёме сверх возмещения убытков.", "expect": ["ru:gk:394"] },
+  { "id": "ru-unilateral-exit", "jurisdiction": "RU", "query": "Покупатель вправе в любое время в одностороннем порядке отказаться от договора, уведомив Продавца за 3 дня.", "expect": ["ru:gk:310", "ru:gk:450.1"] },
+  { "id": "ru-no-liability-intent", "jurisdiction": "RU", "query": "Исполнитель не несёт никакой ответственности за нарушение договора, в том числе умышленное.", "expect": ["ru:gk:401"] },
+  { "id": "ru-sublease", "jurisdiction": "RU", "query": "Арендатор вправе передавать помещение в субаренду третьим лицам без согласия Арендодателя.", "expect": ["ru:gk:615"] },
+  { "id": "ru-retention", "jurisdiction": "RU", "query": "Подрядчик вправе удерживать результат работ до полной оплаты Заказчиком.", "expect": ["ru:gk:712", "ru:gk:359"] },
+  { "id": "ru-limitation-period", "jurisdiction": "RU", "query": "Стороны договорились, что срок исковой давности по требованиям из настоящего договора составляет 6 месяцев.", "expect": ["ru:gk:198"] },
+  { "id": "ru-late-interest", "jurisdiction": "RU", "query": "За просрочку оплаты Покупатель уплачивает проценты на сумму долга.", "expect": ["ru:gk:395"] },
+  { "id": "ru-deposit", "jurisdiction": "RU", "query": "Покупатель вносит задаток 10%; при отказе Покупателя от сделки задаток остаётся у Продавца.", "expect": ["ru:gk:380", "ru:gk:381"] },
+  { "id": "ru-force-majeure", "jurisdiction": "RU", "query": "Стороны освобождаются от ответственности, если неисполнение вызвано обстоятельствами непреодолимой силы.", "expect": ["ru:gk:401"] },
+  { "id": "ru-services-exit", "jurisdiction": "RU", "query": "Заказчик вправе отказаться от услуг, оплатив Исполнителю фактически понесённые расходы.", "expect": ["ru:gk:782"] },
+  { "id": "ru-quality-warranty", "jurisdiction": "RU", "query": "Продавец гарантирует качество товара в течение 12 месяцев с даты передачи.", "expect": ["ru:gk:470"] },
+  { "id": "ru-assignment-ban", "jurisdiction": "RU", "query": "Поставщик не вправе уступать права требования по договору третьим лицам без согласия Покупателя.", "expect": ["ru:gk:382", "ru:gk:388"] },
+  { "id": "de-penalty-daily", "jurisdiction": "DE", "query": "Bei Lieferverzug zahlt der Auftragnehmer eine Vertragsstrafe von 5 % des Auftragswerts pro Tag.", "expect": ["de:bgb:339", "de:bgb:343"] },
+  { "id": "de-no-liability-intent", "jurisdiction": "DE", "query": "Die Haftung des Lieferanten ist ausgeschlossen, auch für vorsätzliche Pflichtverletzungen.", "expect": ["de:bgb:276", "de:bgb:309"] },
+  { "id": "de-penalty-ru-query", "jurisdiction": "DE", "query": "Неустойка за просрочку явно несоразмерна, должник просит суд её уменьшить.", "expect": ["de:bgb:343"] },
+  { "id": "de-default-en-query", "jurisdiction": "DE", "query": "The buyer is in default if payment is not made within 30 days after receiving the invoice.", "expect": ["de:bgb:286"] },
+  { "id": "eu-payment-120d", "jurisdiction": "EU", "query": "Payment shall be made within 120 days from the date of receipt of the invoice.", "expect": ["eu:2011-7:3", "eu:2011-7:7"] },
+  { "id": "eu-payment-120d-ru-query", "jurisdiction": "EU", "query": "Покупатель оплачивает поставку в течение 120 дней с даты получения счёта.", "expect": ["eu:2011-7:3", "eu:2011-7:7"] },
+  { "id": "ny-liquidated-damages", "jurisdiction": "US-NY", "query": "If Buyer cancels, Seller shall retain 50% of the purchase price as liquidated damages.", "expect": ["us-ny:ucc:2-718"] },
+  { "id": "ny-warranty-disclaimer", "jurisdiction": "US-NY", "query": "Seller makes no warranty of merchantability, and all implied warranties are excluded.", "expect": ["us-ny:ucc:2-316"] }
+]

@@ -1,0 +1,717 @@
+{
+  "model": "bge-m3",
+  "k": 5,
+  "ranAt": "2026-11-12T15:08:53.609Z",
+  "summary": {
+    "fts": {
+      "recall": 0.333,
+      "mrr": 0.184,
+      "hits": 7,
+      "total": 21
+    },
+    "vector": {
+      "recall": 0.714,
+      "mrr": 0.517,
+      "hits": 15,
+      "total": 21
+    },
+    "hybrid": {
+      "recall": 0.619,
+      "mrr": 0.434,
+      "hits": 13,
+      "total": 21
+    }
+  },
+  "results": [
+    {
+      "id": "ru-penalty-daily",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:333",
+        "ru:gk:330"
+      ],
+      "fts": null,
+      "vector": null,
+      "hybrid": null,
+      "top": {
+        "fts": [
+          "ru:gk:521",
+          "ru:gk:395:1",
+          "ru:gk:838:1",
+          "ru:gk:811:1",
+          "ru:gk:991:1"
+        ],
+        "vector": [
+          "ru:gk:614:1",
+          "ru:gk:588",
+          "ru:gk:612:1",
+          "ru:gk:629:1",
+          "ru:gk:612:1"
+        ],
+        "hybrid": [
+          "ru:gk:811:1",
+          "ru:gk:612:1",
+          "ru:gk:395:1",
+          "ru:gk:590:1",
+          "ru:gk:521"
+        ]
+      }
+    },
+    {
+      "id": "ru-penalty-plus-losses",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:394"
+      ],
+      "fts": 1,
+      "vector": 1,
+      "hybrid": 1,
+      "top": {
+        "fts": [
+          "ru:gk:394:1",
+          "ru:gk:965",
+          "ru:gk:393:5",
+          "ru:gk:1064:1",
+          "ru:gk:1083:2"
+        ],
+        "vector": [
+          "ru:gk:394:1",
+          "ru:gk:622",
+          "ru:gk:394:2",
+          "ru:gk:330:1",
+          "ru:gk:395:2"
+        ],
+        "hybrid": [
+          "ru:gk:394:1",
+          "ru:gk:394:2",
+          "ru:gk:15:1",
+          "ru:gk:622",
+          "ru:gk:393:5"
+        ]
+      }
+    },
+    {
+      "id": "ru-unilateral-exit",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:310",
+        "ru:gk:450.1"
+      ],
+      "fts": null,
+      "vector": null,
+      "hybrid": null,
+      "top": {
+        "fts": [
+          "ru:gk:523",
+          "ru:gk:684",
+          "ru:gk:496",
+          "ru:gk:807:3",
+          "ru:gk:1037:1"
+        ],
+        "vector": [
+          "ru:gk:627:3",
+          "ru:gk:511:3",
+          "ru:gk:977:3",
+          "ru:gk:699:1",
+          "ru:gk:699:2"
+        ],
+        "hybrid": [
+          "ru:gk:1037:1",
+          "ru:gk:807:3",
+          "ru:gk:523",
+          "ru:gk:627:3",
+          "ru:gk:684"
+        ]
+      }
+    },
+    {
+      "id": "ru-no-liability-intent",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:401"
+      ],
+      "fts": null,
+      "vector": 3,
+      "hybrid": null,
+      "top": {
+        "fts": [
+          "ru:gk:702",
+          "ru:gk:1005",
+          "ru:gk:684",
+          "ru:gk:782",
+          "ru:gk:523"
+        ],
+        "vector": [
+          "ru:gk:777:1",
+          "ru:gk:577:3",
+          "ru:gk:401:4",
+          "ru:gk:27:2",
+          "ru:gk:330:2"
+        ],
+        "hybrid": [
+          "ru:gk:777:1",
+          "ru:gk:777:2",
+          "ru:gk:702",
+          "ru:gk:1005",
+          "ru:gk:577:3"
+        ]
+      }
+    },
+    {
+      "id": "ru-sublease",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:615"
+      ],
+      "fts": null,
+      "vector": 5,
+      "hybrid": 1,
+      "top": {
+        "fts": [
+          "ru:gk:895",
+          "ru:gk:173.1:1",
+          "ru:gk:157.1:2",
+          "ru:gk:53.1:1",
+          "ru:gk:51:2"
+        ],
+        "vector": [
+          "ru:gk:638:1",
+          "ru:gk:647:1",
+          "ru:gk:660",
+          "ru:gk:652:3",
+          "ru:gk:615:2"
+        ],
+        "hybrid": [
+          "ru:gk:615:2",
+          "ru:gk:613",
+          "ru:gk:615",
+          "ru:gk:615",
+          "ru:gk:638:2"
+        ]
+      }
+    },
+    {
+      "id": "ru-retention",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:712",
+        "ru:gk:359"
+      ],
+      "fts": null,
+      "vector": 1,
+      "hybrid": 2,
+      "top": {
+        "fts": [
+          "ru:gk:729",
+          "ru:gk:737:2",
+          "ru:gk:761",
+          "ru:gk:723",
+          "ru:gk:737"
+        ],
+        "vector": [
+          "ru:gk:712",
+          "ru:gk:746:2",
+          "ru:gk:729",
+          "ru:gk:718:2",
+          "ru:gk:772:2"
+        ],
+        "hybrid": [
+          "ru:gk:729",
+          "ru:gk:712",
+          "ru:gk:720:6",
+          "ru:gk:709:5",
+          "ru:gk:723:1"
+        ]
+      }
+    },
+    {
+      "id": "ru-limitation-period",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:198"
+      ],
+      "fts": null,
+      "vector": null,
+      "hybrid": null,
+      "top": {
+        "fts": [
+          "ru:gk:725",
+          "ru:gk:202:4",
+          "ru:gk:200:2",
+          "ru:gk:610",
+          "ru:gk:621:1"
+        ],
+        "vector": [
+          "ru:gk:200:2",
+          "ru:gk:196:1",
+          "ru:gk:966:1",
+          "ru:gk:165:4",
+          "ru:gk:181:2"
+        ],
+        "hybrid": [
+          "ru:gk:202:4",
+          "ru:gk:202:2",
+          "ru:gk:181:1",
+          "ru:gk:200:2",
+          "ru:gk:181:2"
+        ]
+      }
+    },
+    {
+      "id": "ru-late-interest",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:395"
+      ],
+      "fts": null,
+      "vector": 2,
+      "hybrid": 3,
+      "top": {
+        "fts": [
+          "ru:gk:487:4",
+          "ru:gk:488:4",
+          "ru:gk:486",
+          "ru:gk:462",
+          "ru:gk:522:2"
+        ],
+        "vector": [
+          "ru:gk:488:4",
+          "ru:gk:395:1",
+          "ru:gk:588",
+          "ru:gk:811:1",
+          "ru:gk:405:1"
+        ],
+        "hybrid": [
+          "ru:gk:488:4",
+          "ru:gk:487:4",
+          "ru:gk:395:1",
+          "ru:gk:588",
+          "ru:gk:852:1"
+        ]
+      }
+    },
+    {
+      "id": "ru-deposit",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:380",
+        "ru:gk:381"
+      ],
+      "fts": null,
+      "vector": 2,
+      "hybrid": 5,
+      "top": {
+        "fts": [
+          "ru:gk:462",
+          "ru:gk:496",
+          "ru:gk:502:1",
+          "ru:gk:458:1",
+          "ru:gk:475"
+        ],
+        "vector": [
+          "ru:gk:448:5",
+          "ru:gk:381:2",
+          "ru:gk:350.2:5",
+          "ru:gk:334:3",
+          "ru:gk:487:4"
+        ],
+        "hybrid": [
+          "ru:gk:496",
+          "ru:gk:556:1",
+          "ru:gk:462",
+          "ru:gk:448:5",
+          "ru:gk:381:2"
+        ]
+      }
+    },
+    {
+      "id": "ru-force-majeure",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:401"
+      ],
+      "fts": 5,
+      "vector": 1,
+      "hybrid": 1,
+      "top": {
+        "fts": [
+          "ru:gk:381:2",
+          "ru:gk:406.1:1",
+          "ru:gk:178:6",
+          "ru:gk:806",
+          "ru:gk:401:3"
+        ],
+        "vector": [
+          "ru:gk:401:3",
+          "ru:gk:1098",
+          "ru:gk:416:1",
+          "ru:gk:781:3",
+          "ru:gk:401:1"
+        ],
+        "hybrid": [
+          "ru:gk:401:3",
+          "ru:gk:381:2",
+          "ru:gk:794:2",
+          "ru:gk:1098",
+          "ru:gk:453:4"
+        ]
+      }
+    },
+    {
+      "id": "ru-services-exit",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:782"
+      ],
+      "fts": 2,
+      "vector": 1,
+      "hybrid": 1,
+      "top": {
+        "fts": [
+          "ru:gk:781",
+          "ru:gk:782",
+          "ru:gk:779",
+          "ru:gk:776",
+          "ru:gk:782:1"
+        ],
+        "vector": [
+          "ru:gk:782:1",
+          "ru:gk:731:2",
+          "ru:gk:782:2",
+          "ru:gk:737:3",
+          "ru:gk:781:3"
+        ],
+        "hybrid": [
+          "ru:gk:782:1",
+          "ru:gk:781:3",
+          "ru:gk:731:1",
+          "ru:gk:782",
+          "ru:gk:717"
+        ]
+      }
+    },
+    {
+      "id": "ru-quality-warranty",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:470"
+      ],
+      "fts": null,
+      "vector": 1,
+      "hybrid": null,
+      "top": {
+        "fts": [
+          "ru:gk:458:1",
+          "ru:gk:504:2",
+          "ru:gk:475",
+          "ru:gk:480",
+          "ru:gk:469:2"
+        ],
+        "vector": [
+          "ru:gk:470:2",
+          "ru:gk:477:5",
+          "ru:gk:469:1",
+          "ru:gk:470:1",
+          "ru:gk:476:2"
+        ],
+        "hybrid": [
+          "ru:gk:469:2",
+          "ru:gk:476:2",
+          "ru:gk:477:5",
+          "ru:gk:502:1",
+          "ru:gk:503:1"
+        ]
+      }
+    },
+    {
+      "id": "ru-assignment-ban",
+      "jurisdiction": "RU",
+      "expect": [
+        "ru:gk:382",
+        "ru:gk:388"
+      ],
+      "fts": null,
+      "vector": null,
+      "hybrid": null,
+      "top": {
+        "fts": [
+          "ru:gk:895",
+          "ru:gk:460:1",
+          "ru:gk:520",
+          "ru:gk:934:2",
+          "ru:gk:383"
+        ],
+        "vector": [
+          "ru:gk:460:1",
+          "ru:gk:559:3",
+          "ru:gk:491",
+          "ru:gk:509:3",
+          "ru:gk:515:2"
+        ],
+        "hybrid": [
+          "ru:gk:460:1",
+          "ru:gk:895",
+          "ru:gk:694",
+          "ru:gk:520:1",
+          "ru:gk:559:3"
+        ]
+      }
+    },
+    {
+      "id": "de-penalty-daily",
+      "jurisdiction": "DE",
+      "expect": [
+        "de:bgb:339",
+        "de:bgb:343"
+      ],
+      "fts": null,
+      "vector": 3,
+      "hybrid": null,
+      "top": {
+        "fts": [
+          "de:bgb:193",
+          "de:bgb:188:2",
+          "de:bgb:187:2",
+          "de:bgb:312g:2:5",
+          "de:bgb:621:1"
+        ],
+        "vector": [
+          "de:bgb:650f:5",
+          "de:bgb:288:5",
+          "de:bgb:339",
+          "de:bgb:309:6",
+          "de:bgb:286:3"
+        ],
+        "hybrid": [
+          "de:bgb:650f:5",
+          "de:bgb:193",
+          "de:bgb:188:2",
+          "de:bgb:288:5",
+          "de:bgb:187:2"
+        ]
+      }
+    },
+    {
+      "id": "de-no-liability-intent",
+      "jurisdiction": "DE",
+      "expect": [
+        "de:bgb:276",
+        "de:bgb:309"
+      ],
+      "fts": 3,
+      "vector": null,
+      "hybrid": 3,
+      "top": {
+        "fts": [
+          "de:bgb:1480",
+          "de:bgb:2383:1",
+          "de:bgb:309:7:b",
+          "de:bgb:31a:1",
+          "de:bgb:309:7:a"
+        ],
+        "vector": [
+          "de:bgb:645:2",
+          "de:bgb:1088:2",
+          "de:bgb:639",
+          "de:bgb:676c:2",
+          "de:bgb:813:2"
+        ],
+        "hybrid": [
+          "de:bgb:1088:2",
+          "de:bgb:1826:1",
+          "de:bgb:309:7:b",
+          "de:bgb:1794:1",
+          "de:bgb:2382:2"
+        ]
+      }
+    },
+    {
+      "id": "de-penalty-ru-query",
+      "jurisdiction": "DE",
+      "expect": [
+        "de:bgb:343"
+      ],
+      "fts": null,
+      "vector": null,
+      "hybrid": null,
+      "top": {
+        "fts": [],
+        "vector": [
+          "de:bgb:1382:1",
+          "de:bgb:497:1",
+          "de:bgb:498:2",
+          "de:bgb:498:1:2",
+          "de:bgb:288:1"
+        ],
+        "hybrid": [
+          "de:bgb:1382:1",
+          "de:bgb:497:1",
+          "de:bgb:498:2",
+          "de:bgb:498:1:2",
+          "de:bgb:288:1"
+        ]
+      }
+    },
+    {
+      "id": "de-default-en-query",
+      "jurisdiction": "DE",
+      "expect": [
+        "de:bgb:286"
+      ],
+      "fts": 3,
+      "vector": 1,
+      "hybrid": 1,
+      "top": {
+        "fts": [
+          "de:bgb:594b",
+          "de:bgb:544",
+          "de:bgb:286:3",
+          "de:bgb:308:1a",
+          "de:bgb:927:1"
+        ],
+        "vector": [
+          "de:bgb:286:3",
+          "de:bgb:308:1a",
+          "de:bgb:271a:1",
+          "de:bgb:308:1b",
+          "de:bgb:650b:2"
+        ],
+        "hybrid": [
+          "de:bgb:286:3",
+          "de:bgb:308:1a",
+          "de:bgb:650b:2",
+          "de:bgb:650g:4",
+          "de:bgb:594b"
+        ]
+      }
+    },
+    {
+      "id": "eu-payment-120d",
+      "jurisdiction": "EU",
+      "expect": [
+        "eu:2011-7:3",
+        "eu:2011-7:7"
+      ],
+      "fts": 2,
+      "vector": 1,
+      "hybrid": 1,
+      "top": {
+        "fts": [
+          "eu:2011-7@en:12:1",
+          "eu:2011-7@en:3:3:b:ii",
+          "eu:2011-7@en:4:3:a:ii",
+          "eu:2011-7@en:7:1",
+          "eu:2011-7@en:4:3:a:iii"
+        ],
+        "vector": [
+          "eu:2011-7@en:3:3:b:i",
+          "eu:2011-7@en:4:3:a:i",
+          "eu:2011-7@en:3:3:b:iii",
+          "eu:2011-7@en:4:3:a:iii",
+          "eu:2011-7@de:3:3:b:i"
+        ],
+        "hybrid": [
+          "eu:2011-7@en:3:3:b:ii",
+          "eu:2011-7@en:4:3:a:iii",
+          "eu:2011-7@en:3:3:b:i",
+          "eu:2011-7@en:4:3:a:ii",
+          "eu:2011-7@en:3:3:b:iv"
+        ]
+      }
+    },
+    {
+      "id": "eu-payment-120d-ru-query",
+      "jurisdiction": "EU",
+      "expect": [
+        "eu:2011-7:3",
+        "eu:2011-7:7"
+      ],
+      "fts": null,
+      "vector": 2,
+      "hybrid": 2,
+      "top": {
+        "fts": [],
+        "vector": [
+          "eu:2011-7@en:4:3:a:i",
+          "eu:2011-7@de:3:3:b:iii",
+          "eu:2011-7@de:3:3:b:i",
+          "eu:2011-7@en:3:3:b:i",
+          "eu:2011-7@de:4:3:a:iii"
+        ],
+        "hybrid": [
+          "eu:2011-7@en:4:3:a:i",
+          "eu:2011-7@de:3:3:b:iii",
+          "eu:2011-7@de:3:3:b:i",
+          "eu:2011-7@en:3:3:b:i",
+          "eu:2011-7@de:4:3:a:iii"
+        ]
+      }
+    },
+    {
+      "id": "ny-liquidated-damages",
+      "jurisdiction": "US-NY",
+      "expect": [
+        "us-ny:ucc:2-718"
+      ],
+      "fts": null,
+      "vector": 2,
+      "hybrid": 4,
+      "top": {
+        "fts": [
+          "us-ny:gob:5-1311:1:a",
+          "us-ny:gob:5-327:2",
+          "us-ny:ucc:2-713:1",
+          "us-ny:gob:11-104:6",
+          "us-ny:ucc:2-708:1"
+        ],
+        "vector": [
+          "us-ny:ucc:2-717",
+          "us-ny:ucc:2-718:2:b",
+          "us-ny:ucc:2-712:2",
+          "us-ny:ucc:2-711:1",
+          "us-ny:ucc:2-718:4"
+        ],
+        "hybrid": [
+          "us-ny:ucc:2-706:1",
+          "us-ny:gob:5-1311:1:a",
+          "us-ny:ucc:2-711:1",
+          "us-ny:ucc:2-718:4",
+          "us-ny:ucc:2-713:1"
+        ]
+      }
+    },
+    {
+      "id": "ny-warranty-disclaimer",
+      "jurisdiction": "US-NY",
+      "expect": [
+        "us-ny:ucc:2-316"
+      ],
+      "fts": 1,
+      "vector": 1,
+      "hybrid": 1,
+      "top": {
+        "fts": [
+          "us-ny:ucc:2-316:2",
+          "us-ny:ucc:2-A-214:2",
+          "us-ny:ucc:2-A-216",
+          "us-ny:ucc:2-318",
+          "us-ny:ucc:2-314:1"
+        ],
+        "vector": [
+          "us-ny:ucc:2-316:3:a",
+          "us-ny:ucc:2-A-214:3:a",
+          "us-ny:ucc:2-316:2",
+          "us-ny:ucc:2-A-214:2",
+          "us-ny:ucc:2-314:1"
+        ],
+        "hybrid": [
+          "us-ny:ucc:2-316:2",
+          "us-ny:ucc:2-A-214:2",
+          "us-ny:ucc:2-A-214:3:a",
+          "us-ny:ucc:2-316:3:a",
+          "us-ny:ucc:2-314:1"
+        ]
+      }
+    }
+  ]
+}
