@@ -3,6 +3,10 @@
   "src": "Liability",
   "out": "Odgovornost"
  },
+ "03e8a5b7e89149511b9027d9": {
+  "src": "The Contractor may change the fee unilaterally by notifying the Client by email.",
+  "out": "Izvoditelj može jednostrano promijeniti naknadu obavještavajući Naručitelja e-poštom."
+ },
  "0603756749d7eac7ee33e80c": {
   "src": "The Contractor may withdraw from this Agreement at any time without giving a reason. The Client may terminate only in the event of a material breach.",
   "out": "Izvoditelj može odstupiti od ovog Ugovora u bilo kojem trenutku bez navođenja razloga. Naručitelj može raskinuti Ugovor samo u slučaju bitne povrede."
@@ -19,9 +23,21 @@
   "src": "The Contractor begins providing services within 3 business days of receiving the Client's request.",
   "out": "Izvoditelj počinje pružati usluge u roku od 3 radna dana od primitka zahtjeva Naručitelja."
  },
+ "1378cb6e0ea36e1cfb21f50a": {
+  "src": "Client: Meridian Partners d.o.o., registered office: Zagreb, OIB 25115875177, MBS 485259204.",
+  "out": "Naručitelj: Meridian Partners d.o.o., sjedište: Zagreb, OIB 25115875177, MBS 485259204."
+ },
+ "171928d3f99f2711dd598b88": {
+  "src": "The Contractor shall provide cleaning of office premises services, and the Client shall accept and pay for them.",
+  "out": "Izvoditelj će pružati usluge čišćenja poslovnih prostora, a Naručitelj će ih prihvaćati i za njih plaćati."
+ },
  "19a3d02a8a628e3674c3530b": {
   "src": "SERVICE AGREEMENT No. 83/26",
   "out": "UGOVOR O PRUŽANJU USLUGA br. 83/26"
+ },
+ "1a0622ae12e73b25308cb862": {
+  "src": "Vector Trade d.o.o. (the \"Contractor\") and Meridian Partners d.o.o. (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Vector Trade d.o.o. (dalje u tekstu: \"Izvoditelj\") i Meridian Partners d.o.o. (dalje u tekstu: \"Naručitelj\"), zajedno \"Ugovorne strane\", sporazumno su se dogovorili kako slijedi."
  },
  "1ac5f64eaa8689db533cfb0f": {
   "src": "Orion Group (the \"Contractor\") and Meridian Partners (the \"Client\"), together the \"Parties\", agree as follows.",
@@ -59,6 +75,10 @@
   "src": "Details of the Parties",
   "out": "Podaci o Ugovornim stranama"
  },
+ "6d31e64a81da954faf88b22a": {
+  "src": "Zagreb, 21 February 2026",
+  "out": "Zagreb, 21. veljače 2026."
+ },
  "6e578c1383c339ad9781eee3": {
   "src": "A dispute that the Parties cannot settle by negotiation is referred to the competent court.",
   "out": "Spor koji Ugovorne strane ne mogu riješiti pregovorima upućuje se nadležnom sudu."
@@ -71,6 +91,14 @@
   "src": "Fees and payment",
   "out": "Naknada i plaćanje"
  },
+ "72484abaa9b62d4498e96484": {
+  "src": "Contractor: Vector Trade d.o.o., registered office: Zagreb, OIB 39111575502, MBS 137138468.",
+  "out": "Izvoditelj: Vector Trade d.o.o., sjedište: Zagreb, OIB 39111575502, MBS 137138468."
+ },
+ "73a947cc760f62338428ed2c": {
+  "src": "The fee is EUR 8,000 per month.",
+  "out": "Naknada iznosi EUR 8.000 mjesečno."
+ },
  "7a31eb62f9192a4a04c2ce2c": {
   "src": "The Contractor shall provide copywriting services, and the Client shall accept and pay for them.",
   "out": "Izvoditelj pruža usluge copywritinga, a Naručitelj ih prihvaća i plaća."
@@ -78,6 +106,10 @@
  "89af50ad82b66d2101d7bf4f": {
   "src": "Either Party may assign its right to payment to a third party after notifying the other Party in writing.",
   "out": "Svaka Ugovorna strana može svoje pravo na plaćanje ustupiti trećoj osobi nakon pisanog obavješćivanja druge Ugovorne strane."
+ },
+ "8a8ad8656668e99ff87842e4": {
+  "src": "SERVICE AGREEMENT No. 15/26",
+  "out": "UGOVOR O USLUGAMA br. 15/26"
  },
  "8d80f646c8ca61a8570d057a": {
   "src": "This Agreement is valid for 12 months from the date of signing.",
@@ -106,6 +138,10 @@
  "ac88af415c2ffd7258592724": {
   "src": "Term",
   "out": "Trajanje"
+ },
+ "b1d5deed680ea6450c37de35": {
+  "src": "Either Party may terminate this Agreement with 30 days' written notice.",
+  "out": "Svaka Ugovorna strana može raskinuti ovaj Ugovor pisanom obaviješću s otkaznim rokom od 30 dana."
  },
  "b42468fe623494e61992b8be": {
   "src": "Claims under this Agreement are subject to the statutory limitation period.",

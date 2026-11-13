@@ -31,12 +31,11 @@ export async function embed(texts: string[]): Promise<number[][]> {
 }
 
 /**
- * Top `k` pieces for each query, in one round trip. `jurisdictions` empty = search everywhere.
+ * Top `k` pieces for each query vector, in one round trip. `jurisdictions` empty = search everywhere.
  * iterative_scan keeps the HNSW index from returning fewer rows when the filter drops neighbours.
  */
-export async function searchLaw(queries: string[], jurisdictions: string[], k = 5): Promise<LawHit[][]> {
-  if (queries.length === 0) return [];
-  const vectors = await embed(queries);
+export async function searchByVectors(vectors: number[][], jurisdictions: string[], k = 5): Promise<LawHit[][]> {
+  if (vectors.length === 0) return [];
   const sql = neon(process.env.DATABASE_URL!, { fetchOptions: { cache: "no-store" } });
   const [, rows] = await sql.transaction([
     sql.query("SET LOCAL hnsw.iterative_scan = relaxed_order"),
@@ -56,8 +55,44 @@ export async function searchLaw(queries: string[], jurisdictions: string[], k = 
       [vectors.map((v) => JSON.stringify(v)), jurisdictions]
     ),
   ]);
-  const out: LawHit[][] = queries.map(() => []);
-  for (const r of rows as Array<Record<string, unknown>>) {
+  return groupRows(rows as Array<Record<string, unknown>>, vectors.length);
+}
+
+/** Vector search for plain text queries */
+export async function searchLaw(queries: string[], jurisdictions: string[], k = 5): Promise<LawHit[][]> {
+  if (queries.length === 0) return [];
+  return searchByVectors(await embed(queries), jurisdictions, k);
+}
+
+/**
+ * Direct lookup of articles named by the model (ids like ru:gk:333, de:bgb:276, eu:2011-7:7):
+ * for each request, the `k` pieces of that article (its points included) closest to the vector.
+ * Unknown articles simply return nothing, so a hallucinated reference cannot enter the prompt.
+ */
+export async function lookupArticles(requests: Array<{ article: string; vector: number[] }>, k = 2): Promise<LawHit[][]> {
+  if (requests.length === 0) return [];
+  const sql = neon(process.env.DATABASE_URL!, { fetchOptions: { cache: "no-store" } });
+  const rows = await sql.query(
+    `SELECT q.i::int AS i, h.*
+       FROM unnest($1::text[], $2::text[]) WITH ORDINALITY AS q(a, v, i),
+       LATERAL (
+         SELECT p.slot_id, p.piece_id, p.text, p.jurisdiction, s.article_title,
+                (p.embedding <=> q.v::vector) AS distance
+           FROM law_pieces p JOIN law_slots s ON s.slot_id = p.slot_id
+          WHERE p.embedding IS NOT NULL AND NOT s.repealed
+            AND (p.slot_id = q.a OR p.slot_id LIKE q.a || ':%')
+          ORDER BY p.embedding <=> q.v::vector
+          LIMIT ${Math.max(1, Math.min(5, k))}
+       ) h
+      ORDER BY q.i, h.distance`,
+    [requests.map((r) => r.article), requests.map((r) => JSON.stringify(r.vector))]
+  );
+  return groupRows(rows as Array<Record<string, unknown>>, requests.length);
+}
+
+function groupRows(rows: Array<Record<string, unknown>>, n: number): LawHit[][] {
+  const out: LawHit[][] = Array.from({ length: n }, () => []);
+  for (const r of rows) {
     out[Number(r.i) - 1].push({
       slotId: String(r.slot_id),
       pieceId: String(r.piece_id),

@@ -1,0 +1,3012 @@
+{
+  "ranAt": "2026-11-13T14:14:38.229Z",
+  "provider": "claude",
+  "summary": {
+    "cases": 40,
+    "errors": 0,
+    "guess": {
+      "byVisibility": {
+        "explicit": {
+          "hit": 12,
+          "total": 12
+        },
+        "indirect": {
+          "hit": 12,
+          "total": 12
+        },
+        "hidden": {
+          "hit": 9,
+          "total": 12
+        },
+        "all": {
+          "hit": 33,
+          "total": 36
+        }
+      },
+      "none": {
+        "hit": 4,
+        "total": 4
+      },
+      "confusion": {
+        "RU": {
+          "RU": 9
+        },
+        "DE": {
+          "DE": 9
+        },
+        "EU": {
+          "EU": 9
+        },
+        "US-NY": {
+          "US-NY": 6,
+          "unknown": 3
+        },
+        "none": {
+          "unknown": 4
+        }
+      }
+    },
+    "legal": {
+      "recall": {
+        "hit": 25,
+        "total": 52
+      },
+      "recallByVisibility": {
+        "explicit": {
+          "hit": 12,
+          "total": 18
+        },
+        "indirect": {
+          "hit": 8,
+          "total": 18
+        },
+        "hidden": {
+          "hit": 5,
+          "total": 16
+        }
+      },
+      "recallByJurisdiction": {
+        "RU": {
+          "hit": 9,
+          "total": 19
+        },
+        "DE": {
+          "hit": 7,
+          "total": 16
+        },
+        "EU": {
+          "hit": 7,
+          "total": 7
+        },
+        "US-NY": {
+          "hit": 2,
+          "total": 10
+        }
+      },
+      "retrievalRecall": {
+        "hit": 23,
+        "total": 47
+      },
+      "modelRecallGivenRetrieved": {
+        "hit": 18,
+        "total": 23
+      },
+      "flipFalsePositives": {
+        "hit": 1,
+        "total": 14
+      },
+      "unmatchedLegalFindings": 24,
+      "perDefect": {
+        "L1": {
+          "violating": 12,
+          "caught": 5,
+          "flaggedNoCite": 4,
+          "retrievable": 12,
+          "retrieved": 2,
+          "lawful": 0,
+          "falsePositive": 0
+        },
+        "L8": {
+          "violating": 5,
+          "caught": 1,
+          "flaggedNoCite": 3,
+          "retrievable": 5,
+          "retrieved": 1,
+          "lawful": 0,
+          "falsePositive": 0
+        },
+        "L2": {
+          "violating": 4,
+          "caught": 3,
+          "flaggedNoCite": 0,
+          "retrievable": 4,
+          "retrieved": 3,
+          "lawful": 7,
+          "falsePositive": 1
+        },
+        "L3": {
+          "violating": 10,
+          "caught": 4,
+          "flaggedNoCite": 2,
+          "retrievable": 5,
+          "retrieved": 2,
+          "lawful": 0,
+          "falsePositive": 0
+        },
+        "L5": {
+          "violating": 1,
+          "caught": 1,
+          "flaggedNoCite": 0,
+          "retrievable": 1,
+          "retrieved": 0,
+          "lawful": 2,
+          "falsePositive": 0
+        },
+        "L6": {
+          "violating": 9,
+          "caught": 1,
+          "flaggedNoCite": 2,
+          "retrievable": 9,
+          "retrieved": 5,
+          "lawful": 0,
+          "falsePositive": 0
+        },
+        "L7": {
+          "violating": 7,
+          "caught": 7,
+          "flaggedNoCite": 0,
+          "retrievable": 7,
+          "retrieved": 6,
+          "lawful": 2,
+          "falsePositive": 0
+        },
+        "L4": {
+          "violating": 4,
+          "caught": 3,
+          "flaggedNoCite": 0,
+          "retrievable": 4,
+          "retrieved": 4,
+          "lawful": 3,
+          "falsePositive": 0
+        }
+      }
+    },
+    "general": {
+      "hit": 104,
+      "total": 114
+    },
+    "costUsd": 0.1981,
+    "avgCheckSec": 38.8
+  },
+  "results": [
+    {
+      "case": {
+        "jurisdiction": "RU",
+        "visibility": "explicit",
+        "seed": 5000,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "ru",
+      "country": "RU",
+      "guess": {
+        "jurisdiction": "RU",
+        "country": null,
+        "confidence": 0.95,
+        "evidence": [
+          "Настоящий договор регулируется законодательством Российской Федерации.",
+          "Арбитражного суда Санкт-Петербурга",
+          "ООО «Дельта Ритейл»",
+          "ОГРН 10078542443576, ИНН 7843826747, КПП 786801001",
+          "230 000 RUB в месяц"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "RU"
+      ],
+      "lawStatus": "done",
+      "norms": 37,
+      "legal": [
+        {
+          "id": "L1",
+          "clause": "4.1",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:333:1",
+            "ru:gk:333:2"
+          ],
+          "flagged": true,
+          "caught": false,
+          "retrieved": false,
+          "cited": [
+            "ru:gk:330:1"
+          ]
+        },
+        {
+          "id": "L8",
+          "clause": "5.1",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:782:1",
+            "ru:gk:782:2"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D1",
+        "D2",
+        "D4",
+        "D5"
+      ],
+      "generalFound": [
+        "D1",
+        "D2",
+        "D4",
+        "D5"
+      ],
+      "costUsd": 0.003755,
+      "checkMs": 28825,
+      "genMs": 3855,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "RU",
+        "visibility": "explicit",
+        "seed": 5001,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "ru",
+      "country": "RU",
+      "guess": {
+        "jurisdiction": "RU",
+        "country": null,
+        "confidence": 0.97,
+        "evidence": [
+          "Казань, 10 сентября 2026 г.",
+          "ООО «Меридиан Групп»",
+          "RUB 300 000 в месяц",
+          "Настоящий договор регулируется законодательством Российской Федерации.",
+          "Арбитражный суд Республики Татарстан"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "RU"
+      ],
+      "lawStatus": "done",
+      "norms": 45,
+      "legal": [
+        {
+          "id": "L1",
+          "clause": "4.1",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:333:1",
+            "ru:gk:333:2"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        },
+        {
+          "id": "L2",
+          "clause": "8.3",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:198"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "ru:gk:198"
+          ]
+        },
+        {
+          "id": "L3",
+          "clause": "4.3",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:401:4"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "ru:gk:401:4"
+          ]
+        },
+        {
+          "id": "L8",
+          "clause": "5.1",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:782:1",
+            "ru:gk:782:2"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "ru:gk:782:1"
+          ]
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D1",
+        "D2"
+      ],
+      "generalFound": [
+        "D1",
+        "D2"
+      ],
+      "costUsd": 0.004813,
+      "checkMs": 36783,
+      "genMs": 3860,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "RU",
+        "visibility": "explicit",
+        "seed": 5002,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "ru",
+      "country": "RU",
+      "guess": {
+        "jurisdiction": "RU",
+        "country": null,
+        "confidence": 0.97,
+        "evidence": [
+          "регулируется законодательством Российской Федерации",
+          "Арбитражного суда Екатеринбурга",
+          "RUB 480 000 в месяц",
+          "ОГРН 19666751866752",
+          "ИНН 6684044085"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "RU"
+      ],
+      "lawStatus": "done",
+      "norms": 43,
+      "legal": [
+        {
+          "id": "L1",
+          "clause": "4.1",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:333:1",
+            "ru:gk:333:2"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "ru:gk:333:1",
+            "ru:gk:330:1"
+          ]
+        },
+        {
+          "id": "L8",
+          "clause": "5.1",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:782:1",
+            "ru:gk:782:2"
+          ],
+          "flagged": true,
+          "caught": false,
+          "retrieved": false,
+          "cited": [
+            "ru:gk:731:2"
+          ]
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D1",
+        "D2",
+        "D3",
+        "D5"
+      ],
+      "generalFound": [
+        "D1",
+        "D2",
+        "D3",
+        "D5"
+      ],
+      "costUsd": 0.005397,
+      "checkMs": 40251,
+      "genMs": 4734,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "RU",
+        "visibility": "indirect",
+        "seed": 5010,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "ru",
+      "country": "RU",
+      "guess": {
+        "jurisdiction": "RU",
+        "country": null,
+        "confidence": 0.95,
+        "evidence": [
+          "Санкт-Петербург, 8 июля 2026 г.",
+          "230 000 RUB в месяц",
+          "ООО «Вектор»",
+          "ОГРН 15078988693072, ИНН 7896798774, КПП 781301001",
+          "передаётся в компетентный суд"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "RU"
+      ],
+      "lawStatus": "done",
+      "norms": 45,
+      "legal": [
+        {
+          "id": "L2",
+          "clause": "8.3",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:198"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        },
+        {
+          "id": "L5",
+          "clause": "3.3",
+          "violatesHere": false,
+          "keySlots": [
+            "ru:gk:310:1",
+            "ru:gk:310:2"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [
+        {
+          "clause": "4.4",
+          "slots": [
+            "ru:gk:395:4"
+          ],
+          "title": "Проценты наряду с неустойкой за одну и ту же просрочку"
+        }
+      ],
+      "generalKey": [
+        "D3",
+        "D5",
+        "D6"
+      ],
+      "generalFound": [
+        "D3",
+        "D5",
+        "D6"
+      ],
+      "costUsd": 0.005212,
+      "checkMs": 40228,
+      "genMs": 3651,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "RU",
+        "visibility": "indirect",
+        "seed": 5011,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "ru",
+      "country": "RU",
+      "guess": {
+        "jurisdiction": "RU",
+        "country": null,
+        "confidence": 0.97,
+        "evidence": [
+          "Екатеринбург, 3 августа 2026 г.",
+          "ООО «Квант Системс»",
+          "ООО «Альфа Сервис»",
+          "RUB 760 000 в месяц",
+          "ОГРН 11866725501841, ИНН 6653547916, КПП 669601001"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "RU"
+      ],
+      "lawStatus": "done",
+      "norms": 44,
+      "legal": [
+        {
+          "id": "L2",
+          "clause": "8.3",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:198"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "ru:gk:198"
+          ]
+        },
+        {
+          "id": "L6",
+          "clause": "8.4",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:388:3"
+          ],
+          "flagged": true,
+          "caught": false,
+          "retrieved": true,
+          "cited": [
+            "ru:gk:828:1",
+            "ru:gk:828:2"
+          ]
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D5",
+        "D7"
+      ],
+      "generalFound": [
+        "D5",
+        "D7"
+      ],
+      "costUsd": 0.004341,
+      "checkMs": 37122,
+      "genMs": 2542,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "RU",
+        "visibility": "indirect",
+        "seed": 5012,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "ru",
+      "country": "RU",
+      "guess": {
+        "jurisdiction": "RU",
+        "country": null,
+        "confidence": 0.95,
+        "evidence": [
+          "Москва, 17 апреля 2026 г.",
+          "ООО «Орион Трейд»",
+          "ООО «Меридиан Групп»",
+          "230 000 RUB в месяц",
+          "ОГРН 17477825924654, ИНН 7734683616, КПП 777301001"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "RU"
+      ],
+      "lawStatus": "done",
+      "norms": 38,
+      "legal": [
+        {
+          "id": "L2",
+          "clause": "8.3",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:198"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "ru:gk:198"
+          ]
+        },
+        {
+          "id": "L6",
+          "clause": "8.4",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:388:3"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "ru:gk:388:3"
+          ]
+        }
+      ],
+      "unmatchedLegal": [
+        {
+          "clause": "4.4",
+          "slots": [
+            "ru:gk:395:4",
+            "ru:gk:395:1"
+          ],
+          "title": "Проценты наряду с неустойкой за просрочку оплаты"
+        }
+      ],
+      "generalKey": [
+        "D3",
+        "D7"
+      ],
+      "generalFound": [
+        "D3",
+        "D7"
+      ],
+      "costUsd": 0.004888,
+      "checkMs": 36432,
+      "genMs": 3524,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "RU",
+        "visibility": "hidden",
+        "seed": 5020,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "ru",
+      "country": "RU",
+      "guess": {
+        "jurisdiction": "RU",
+        "country": null,
+        "confidence": 0.45,
+        "evidence": [
+          "установленного законом срока исковой давности",
+          "компетентный суд",
+          "дополнительным соглашением, подписанным обеими Сторонами"
+        ]
+      },
+      "guessOk": true,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 45,
+      "legal": [
+        {
+          "id": "L7",
+          "clause": "4.4",
+          "violatesHere": false,
+          "keySlots": [
+            "ru:gk:395:1"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": true,
+          "cited": []
+        },
+        {
+          "id": "L8",
+          "clause": "5.1",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:782:1",
+            "ru:gk:782:2"
+          ],
+          "flagged": true,
+          "caught": false,
+          "retrieved": false,
+          "cited": [
+            "ru:gk:716:3"
+          ]
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D2",
+        "D3",
+        "D5"
+      ],
+      "generalFound": [
+        "D2",
+        "D3",
+        "D5"
+      ],
+      "costUsd": 0.004882,
+      "checkMs": 37598,
+      "genMs": 2230,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "RU",
+        "visibility": "hidden",
+        "seed": 5021,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "ru",
+      "country": "RU",
+      "guess": {
+        "jurisdiction": "RU",
+        "country": null,
+        "confidence": 0.45,
+        "evidence": [
+          "Исполнитель оказывает услуги по бухгалтерскому учёту",
+          "акта сдачи-приёмки",
+          "дополнительным соглашением",
+          "компетентный суд"
+        ]
+      },
+      "guessOk": true,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 45,
+      "legal": [
+        {
+          "id": "L1",
+          "clause": "4.1",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:333:1",
+            "ru:gk:333:2"
+          ],
+          "flagged": true,
+          "caught": false,
+          "retrieved": false,
+          "cited": [
+            "ru:gk:330:1"
+          ]
+        },
+        {
+          "id": "L3",
+          "clause": "4.3",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:401:4"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        },
+        {
+          "id": "L4",
+          "clause": "3.2",
+          "violatesHere": false,
+          "keySlots": [],
+          "flagged": false,
+          "caught": false,
+          "retrieved": null,
+          "cited": []
+        },
+        {
+          "id": "L8",
+          "clause": "5.1",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:782:1",
+            "ru:gk:782:2"
+          ],
+          "flagged": true,
+          "caught": false,
+          "retrieved": false,
+          "cited": [
+            "ru:gk:731:2"
+          ]
+        }
+      ],
+      "unmatchedLegal": [
+        {
+          "clause": "3.1",
+          "slots": [
+            "ru:gk:317:2"
+          ],
+          "title": "Неопределённая валюта вознаграждения"
+        }
+      ],
+      "generalKey": [
+        "D1",
+        "D2"
+      ],
+      "generalFound": [
+        "D1",
+        "D2"
+      ],
+      "costUsd": 0.006129,
+      "checkMs": 46805,
+      "genMs": 2545,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "RU",
+        "visibility": "hidden",
+        "seed": 5022,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "ru",
+      "country": "RU",
+      "guess": {
+        "jurisdiction": "RU",
+        "country": null,
+        "confidence": 0.45,
+        "evidence": [
+          "Дата: 13 февраля 2026 года",
+          "Исполнитель оказывает услуги по уборке офисных помещений",
+          "в порядке, предусмотренном законом",
+          "Окончательный расчёт за месяц производится на основании подписанного акта сдачи-приёмки",
+          "Требования по настоящему договору подлежат рассмотрению с учётом установленного законом срока исковой давности"
+        ]
+      },
+      "guessOk": true,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 45,
+      "legal": [
+        {
+          "id": "L1",
+          "clause": "4.1",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:333:1",
+            "ru:gk:333:2"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "ru:gk:333:1",
+            "ru:gk:330:1"
+          ]
+        },
+        {
+          "id": "L3",
+          "clause": "4.3",
+          "violatesHere": true,
+          "keySlots": [
+            "ru:gk:401:4"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "ru:gk:401:4"
+          ]
+        },
+        {
+          "id": "L5",
+          "clause": "3.3",
+          "violatesHere": false,
+          "keySlots": [
+            "ru:gk:310:1",
+            "ru:gk:310:2"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D1",
+        "D3",
+        "D6"
+      ],
+      "generalFound": [
+        "D1",
+        "D3",
+        "D6"
+      ],
+      "costUsd": 0.005074,
+      "checkMs": 43271,
+      "genMs": 3337,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "DE",
+        "visibility": "explicit",
+        "seed": 5101,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "de",
+      "country": "DE",
+      "guess": {
+        "jurisdiction": "DE",
+        "country": "DE",
+        "confidence": 0.95,
+        "evidence": [
+          "München, 8. September 2026",
+          "Kvant Systeme GmbH (der \"Auftragnehmer\")",
+          "Nordwerk GmbH (der \"Auftraggeber\")",
+          "Dieser Vertrag unterliegt dem Recht der Bundesrepublik Deutschland.",
+          "Streitigkeiten, die die Parteien nicht durch Verhandlung beilegen können, werden an das Landgericht München verwiesen."
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "DE"
+      ],
+      "lawStatus": "done",
+      "norms": 35,
+      "legal": [
+        {
+          "id": "L1",
+          "clause": "4.1",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:343:1",
+            "de:bgb:307:1"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": false,
+          "cited": [
+            "de:bgb:307:1",
+            "de:bgb:309:6"
+          ]
+        },
+        {
+          "id": "L5",
+          "clause": "3.3",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:315:1",
+            "de:bgb:315:3",
+            "de:bgb:307:1"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": false,
+          "cited": [
+            "de:bgb:307:1"
+          ]
+        },
+        {
+          "id": "L7",
+          "clause": "4.4",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:288:6"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "de:bgb:288:6"
+          ]
+        }
+      ],
+      "unmatchedLegal": [
+        {
+          "clause": "3.2",
+          "slots": [
+            "de:bgb:271a:3"
+          ],
+          "title": "Zahlungsfrist abhängig von unbefristeter Abnahme"
+        },
+        {
+          "clause": "4.2",
+          "slots": [
+            "de:bgb:307:1",
+            "de:bgb:306:1"
+          ],
+          "title": "Unbegrenzte Haftung für alle Schäden"
+        }
+      ],
+      "generalKey": [
+        "D1",
+        "D5",
+        "D6"
+      ],
+      "generalFound": [
+        "D1",
+        "D5",
+        "D6"
+      ],
+      "costUsd": 0.00564,
+      "checkMs": 41810,
+      "genMs": 4583,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "DE",
+        "visibility": "explicit",
+        "seed": 5100,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "de",
+      "country": "DE",
+      "guess": {
+        "jurisdiction": "DE",
+        "country": "DE",
+        "confidence": 0.97,
+        "evidence": [
+          "Dieser Vertrag unterliegt dem Recht der Bundesrepublik Deutschland.",
+          "Streitigkeiten, die die Parteien nicht durch Verhandlung beilegen können, werden an das Landgericht München verwiesen.",
+          "Elbtor Digital GmbH, Sitz: München, HRB 731548, Amtsgericht München, USt-IdNr. DE232281217.",
+          "Isartal Partner GmbH, Sitz: München, HRB 420751, Amtsgericht München, USt-IdNr. DE476011579."
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "DE"
+      ],
+      "lawStatus": "done",
+      "norms": 30,
+      "legal": [
+        {
+          "id": "L1",
+          "clause": "4.1",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:343:1",
+            "de:bgb:307:1"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": false,
+          "cited": [
+            "de:bgb:307:1",
+            "de:bgb:309:6"
+          ]
+        }
+      ],
+      "unmatchedLegal": [
+        {
+          "clause": "5.1",
+          "slots": [
+            "de:bgb:314:1",
+            "de:bgb:648a:1",
+            "de:bgb:307:1"
+          ],
+          "title": "Einseitiges jederzeitiges Rücktrittsrecht des Auftraggebers"
+        }
+      ],
+      "generalKey": [
+        "D1",
+        "D2",
+        "D3",
+        "D7"
+      ],
+      "generalFound": [
+        "D1",
+        "D2",
+        "D3",
+        "D7"
+      ],
+      "costUsd": 0.007032,
+      "checkMs": 55620,
+      "genMs": 6365,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "DE",
+        "visibility": "explicit",
+        "seed": 5102,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "de",
+      "country": "DE",
+      "guess": {
+        "jurisdiction": "DE",
+        "country": "DE",
+        "confidence": 0.97,
+        "evidence": [
+          "Dieser Vertrag unterliegt dem Recht der Bundesrepublik Deutschland.",
+          "Streitigkeiten, die die Parteien nicht durch Verhandlung beilegen können, werden an das Landgericht München verwiesen.",
+          "München, 14. März 2026",
+          "Isartal Partner GmbH",
+          "Elbtor Digital GmbH"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "DE"
+      ],
+      "lawStatus": "done",
+      "norms": 40,
+      "legal": [
+        {
+          "id": "L1",
+          "clause": "4.1",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:343:1",
+            "de:bgb:307:1"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": false,
+          "cited": [
+            "de:bgb:307:1"
+          ]
+        },
+        {
+          "id": "L6",
+          "clause": "8.4",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:399"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": true,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [
+        {
+          "clause": "4.2",
+          "slots": [
+            "de:bgb:307:1",
+            "de:bgb:310:1"
+          ],
+          "title": "Unbegrenzte Haftung für alle Schäden"
+        }
+      ],
+      "generalKey": [
+        "D1",
+        "D4",
+        "D5"
+      ],
+      "generalFound": [
+        "D1",
+        "D4",
+        "D5"
+      ],
+      "costUsd": 0.00555,
+      "checkMs": 46259,
+      "genMs": 4795,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "DE",
+        "visibility": "indirect",
+        "seed": 5111,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "de",
+      "country": "DE",
+      "guess": {
+        "jurisdiction": "DE",
+        "country": "DE",
+        "confidence": 0.95,
+        "evidence": [
+          "München, 20. Juni 2026",
+          "Isartal Partner GmbH (der \"Auftragnehmer\")",
+          "Amtsgericht München, USt-IdNr. DE497928239",
+          "Die Vergütung beträgt EUR 3.200 pro Monat.",
+          "Für jeden Verzug zahlt der Auftragnehmer an den Auftraggeber eine Vertragsstrafe von 1 % der Jahresvergütung für jeden Tag des Verzugs."
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "DE"
+      ],
+      "lawStatus": "done",
+      "norms": 31,
+      "legal": [
+        {
+          "id": "L1",
+          "clause": "4.1",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:343:1",
+            "de:bgb:307:1"
+          ],
+          "flagged": true,
+          "caught": false,
+          "retrieved": false,
+          "cited": [
+            "de:bgb:310:1",
+            "de:bgb:309:6"
+          ]
+        },
+        {
+          "id": "L7",
+          "clause": "4.4",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:288:6"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "de:bgb:288:6"
+          ]
+        }
+      ],
+      "unmatchedLegal": [
+        {
+          "clause": "5.1",
+          "slots": [
+            "de:bgb:671:1",
+            "de:bgb:648"
+          ],
+          "title": "Einseitiges Kündigungsrecht zugunsten des Auftraggebers"
+        }
+      ],
+      "generalKey": [
+        "D1",
+        "D2",
+        "D5"
+      ],
+      "generalFound": [
+        "D1",
+        "D2",
+        "D5"
+      ],
+      "costUsd": 0.005424,
+      "checkMs": 38198,
+      "genMs": 3049,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "DE",
+        "visibility": "indirect",
+        "seed": 5110,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "de",
+      "country": "DE",
+      "guess": {
+        "jurisdiction": "DE",
+        "country": "DE",
+        "confidence": 0.95,
+        "evidence": [
+          "Köln, 3. Dezember 2026",
+          "Elbtor Digital GmbH (der \"Auftragnehmer\")",
+          "Hellweg Service GmbH (der \"Auftraggeber\")",
+          "Amtsgericht Köln, USt-IdNr. DE602879985",
+          "HRB 422301, Amtsgericht Köln"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "DE"
+      ],
+      "lawStatus": "done",
+      "norms": 42,
+      "legal": [
+        {
+          "id": "L2",
+          "clause": "8.3",
+          "violatesHere": false,
+          "keySlots": [
+            "de:bgb:202:1"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        },
+        {
+          "id": "L4",
+          "clause": "3.2",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:271a:1"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": true,
+          "cited": []
+        },
+        {
+          "id": "L6",
+          "clause": "8.4",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:399"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": true,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D3"
+      ],
+      "generalFound": [
+        "D3"
+      ],
+      "costUsd": 0.00639,
+      "checkMs": 48422,
+      "genMs": 5109,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "DE",
+        "visibility": "indirect",
+        "seed": 5112,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "de",
+      "country": "DE",
+      "guess": {
+        "jurisdiction": "DE",
+        "country": "DE",
+        "confidence": 0.95,
+        "evidence": [
+          "München, 2. August 2026",
+          "Hellweg Service GmbH (der „Auftragnehmer“)",
+          "Rheinlogik GmbH (der „Auftraggeber“)",
+          "HRB 356529, Amtsgericht München",
+          "USt-IdNr. DE004593710"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "DE"
+      ],
+      "lawStatus": "done",
+      "norms": 39,
+      "legal": [
+        {
+          "id": "L3",
+          "clause": "4.3",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:276:3"
+          ],
+          "flagged": true,
+          "caught": false,
+          "retrieved": false,
+          "cited": [
+            "de:bgb:639"
+          ]
+        },
+        {
+          "id": "L6",
+          "clause": "8.4",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:399"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": true,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [
+        {
+          "clause": "5.1",
+          "slots": [
+            "de:bgb:314:1",
+            "de:bgb:648a:1"
+          ],
+          "title": "Einseitiges Kündigungsrecht ohne wichtigen Grund für den Auftraggeber beschränkt"
+        },
+        {
+          "clause": "8.2",
+          "slots": [
+            "de:bgb:309:9:b"
+          ],
+          "title": "Automatische Verlängerung mit 60-Tage-Kündigungsfrist"
+        }
+      ],
+      "generalKey": [
+        "D2",
+        "D3"
+      ],
+      "generalFound": [
+        "D2",
+        "D3"
+      ],
+      "costUsd": 0.006146,
+      "checkMs": 48085,
+      "genMs": 4046,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "DE",
+        "visibility": "hidden",
+        "seed": 5120,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "de",
+      "country": "DE",
+      "guess": {
+        "jurisdiction": "DE",
+        "country": "DE",
+        "confidence": 0.45,
+        "evidence": [
+          "Datum: 17. Juli 2026",
+          "Vertragsstrafe von 0,1 % des ausstehenden Betrags pro Tag",
+          "innerhalb von 10 Werktagen nach Unterzeichnung des Abnahmeprotokolls",
+          "Der Auftraggeber haftet nicht für eine Nichterfüllung dieses Vertrags, einschließlich einer vorsätzlichen."
+        ]
+      },
+      "guessOk": true,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 44,
+      "legal": [
+        {
+          "id": "L3",
+          "clause": "4.3",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:276:3"
+          ],
+          "flagged": true,
+          "caught": false,
+          "retrieved": false,
+          "cited": [
+            "de:bgb:639"
+          ]
+        },
+        {
+          "id": "L6",
+          "clause": "8.4",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:399"
+          ],
+          "flagged": true,
+          "caught": false,
+          "retrieved": false,
+          "cited": [
+            "de:bgb:496:1"
+          ]
+        }
+      ],
+      "unmatchedLegal": [
+        {
+          "clause": "3.2",
+          "slots": [
+            "de:bgb:271a:3",
+            "de:bgb:308:1a"
+          ],
+          "title": "Zahlungsfrist abhängig von unbefristeter Abnahme"
+        }
+      ],
+      "generalKey": [
+        "D4",
+        "D5"
+      ],
+      "generalFound": [
+        "D4",
+        "D5"
+      ],
+      "costUsd": 0.006229,
+      "checkMs": 46186,
+      "genMs": 3721,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "DE",
+        "visibility": "hidden",
+        "seed": 5121,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "de",
+      "country": "DE",
+      "guess": {
+        "jurisdiction": "DE",
+        "country": "DE",
+        "confidence": 0.4,
+        "evidence": [
+          "Datum: 28. Januar 2026",
+          "Die Vergütung beträgt 3.200 in der Währung, die in der Rechnung angegeben ist, pro Monat.",
+          "Der Auftraggeber zahlt innerhalb von 10 Werktagen nach Unterzeichnung des Abnahmeprotokolls.",
+          "Die Vergütung kann nur durch eine von beiden Parteien unterzeichnete Änderungsvereinbarung geändert werden.",
+          "Eine Streitigkeit, die die Parteien nicht durch Verhandlungen beilegen können, wird an das zuständige Gericht verwiesen."
+        ]
+      },
+      "guessOk": true,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 43,
+      "legal": [
+        {
+          "id": "L2",
+          "clause": "8.3",
+          "violatesHere": false,
+          "keySlots": [
+            "de:bgb:202:1"
+          ],
+          "flagged": true,
+          "caught": false,
+          "retrieved": false,
+          "cited": [
+            "de:bgb:309"
+          ]
+        },
+        {
+          "id": "L7",
+          "clause": "4.4",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:288:6"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "de:bgb:288:6"
+          ]
+        }
+      ],
+      "unmatchedLegal": [
+        {
+          "clause": "5.1",
+          "slots": [
+            "de:bgb:314:1"
+          ],
+          "title": "Einseitiges Kündigungsrecht des Auftragnehmers"
+        },
+        {
+          "clause": "4.2",
+          "slots": [
+            "de:bgb:309:7:a",
+            "de:bgb:309:7:b"
+          ],
+          "title": "Haftungsobergrenze ohne Ausnahmen"
+        }
+      ],
+      "generalKey": [
+        "D2",
+        "D4"
+      ],
+      "generalFound": [
+        "D2",
+        "D4"
+      ],
+      "costUsd": 0.006927,
+      "checkMs": 50086,
+      "genMs": 2540,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "DE",
+        "visibility": "hidden",
+        "seed": 5122,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "de",
+      "country": "DE",
+      "guess": {
+        "jurisdiction": "DE",
+        "country": "DE",
+        "confidence": 0.4,
+        "evidence": [
+          "Datum: 2. September 2026",
+          "North Works (der „Auftragnehmer“) und Delta Retail (der „Auftraggeber“)",
+          "Der Auftraggeber zahlt innerhalb von 10 Werktagen nach Unterzeichnung des Abnahmeprotokolls.",
+          "Für jeden Tag des Verzugs zahlt der Auftraggeber dem Auftragnehmer eine Vertragsstrafe von 1 % der Jahresvergütung.",
+          "Die Gesamthaftung jeder Partei ist auf die für die letzten drei Monate gezahlten Vergütungen begrenzt."
+        ]
+      },
+      "guessOk": true,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 45,
+      "legal": [
+        {
+          "id": "L1",
+          "clause": "4.1",
+          "violatesHere": true,
+          "keySlots": [
+            "de:bgb:343:1",
+            "de:bgb:307:1"
+          ],
+          "flagged": true,
+          "caught": false,
+          "retrieved": false,
+          "cited": [
+            "de:bgb:309:6",
+            "eu:2011-7@de:7:1"
+          ]
+        },
+        {
+          "id": "L2",
+          "clause": "8.3",
+          "violatesHere": false,
+          "keySlots": [
+            "de:bgb:202:1"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [
+        {
+          "clause": "4.2",
+          "slots": [
+            "de:bgb:309:7:b"
+          ],
+          "title": "Haftungsbegrenzung ohne Ausnahme für grobes Verschulden"
+        },
+        {
+          "clause": "5.1",
+          "slots": [
+            "de:bgb:314:1",
+            "de:bgb:648a:1"
+          ],
+          "title": "Einseitig eingeschränktes Kündigungsrecht des Auftraggebers"
+        },
+        {
+          "clause": "9.2",
+          "slots": [
+            "de:bgb:309:14"
+          ],
+          "title": "Gerichtsweg erst nach gescheiterten Verhandlungen"
+        }
+      ],
+      "generalKey": [
+        "D1",
+        "D2",
+        "D7"
+      ],
+      "generalFound": [
+        "D1",
+        "D2"
+      ],
+      "costUsd": 0.007528,
+      "checkMs": 56237,
+      "genMs": 1971,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "EU",
+        "visibility": "explicit",
+        "seed": 5200,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "hu",
+      "country": "HU",
+      "guess": {
+        "jurisdiction": "EU",
+        "country": "HU",
+        "confidence": 0.9,
+        "evidence": [
+          "9.1. Ez a szerződés a magyar jog hatálya alá tartozik.",
+          "9.2. A szerződő felek tárgyalás útján nem rendezhető vitáit a szegedi illetékes bíróság elé kell terjeszteni.",
+          "3.1. A díj havonta 1 300 000 HUF.",
+          "Kvant Systems Kft.",
+          "Cg. 01-09-096918"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "EU"
+      ],
+      "lawStatus": "done",
+      "norms": 23,
+      "legal": [],
+      "unmatchedLegal": [
+        {
+          "clause": "4.1",
+          "slots": [
+            "eu:2011-7@en:7:1",
+            "eu:2011-7@en:7:1:c"
+          ],
+          "title": "Késedelmi kötbér mértéke"
+        },
+        {
+          "clause": "4.2",
+          "slots": [
+            "eu:2011-7@en:7:1",
+            "eu:2011-7@en:6:1"
+          ],
+          "title": "Általános felelősségi korlát a késedelmi kárra is"
+        }
+      ],
+      "generalKey": [
+        "D2",
+        "D3",
+        "D4",
+        "D7"
+      ],
+      "generalFound": [
+        "D2",
+        "D3",
+        "D4"
+      ],
+      "costUsd": 0.005426,
+      "checkMs": 43665,
+      "genMs": 10702,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "EU",
+        "visibility": "explicit",
+        "seed": 5201,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "lt",
+      "country": "LT",
+      "guess": {
+        "jurisdiction": "EU",
+        "country": "LT",
+        "confidence": 0.95,
+        "evidence": [
+          "Šiai Sutarčiai taikomi Lietuvos Respublikos teisės aktai.",
+          "Orion Group UAB",
+          "Delta Retail UAB",
+          "įmonės kodas 555098787"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "EU"
+      ],
+      "lawStatus": "done",
+      "norms": 25,
+      "legal": [
+        {
+          "id": "L4",
+          "clause": "3.2",
+          "violatesHere": true,
+          "keySlots": [
+            "eu:2011-7@en:3:5",
+            "eu:2011-7@en:7:1"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "eu:2011-7@en:7:1",
+            "eu:2011-7@en:3:4"
+          ]
+        },
+        {
+          "id": "L7",
+          "clause": "4.4",
+          "violatesHere": true,
+          "keySlots": [
+            "eu:2011-7@en:7:2"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": false,
+          "cited": [
+            "eu:2011-7@en:7:2"
+          ]
+        }
+      ],
+      "unmatchedLegal": [
+        {
+          "clause": "4.2",
+          "slots": [
+            "eu:2011-7@en:6:1",
+            "eu:2011-7@en:7:1"
+          ],
+          "title": "Atsakomybės riba ir kompensacija už išieškojimo išlaidas"
+        }
+      ],
+      "generalKey": [
+        "D2",
+        "D6"
+      ],
+      "generalFound": [
+        "D2",
+        "D6"
+      ],
+      "costUsd": 0.004863,
+      "checkMs": 38990,
+      "genMs": 15324,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "EU",
+        "visibility": "explicit",
+        "seed": 5202,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "ro",
+      "country": "RO",
+      "guess": {
+        "jurisdiction": "EU",
+        "country": "RO",
+        "confidence": 0.95,
+        "evidence": [
+          "Prezentul Contract este guvernat de legislația României.",
+          "Remunerația este de RON 40.000 pe lună.",
+          "Orice litigiu pe care Părțile nu îl pot soluționa pe cale amiabilă este supus instanței competente din Cluj-Napoca.",
+          "CUI RO63959215"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "EU"
+      ],
+      "lawStatus": "done",
+      "norms": 24,
+      "legal": [],
+      "unmatchedLegal": [
+        {
+          "clause": "4.2",
+          "slots": [
+            "eu:2011-7@en:7:1",
+            "eu:2011-7@en:6:1"
+          ],
+          "title": "Plafon general al răspunderii"
+        },
+        {
+          "clause": "3.2",
+          "slots": [
+            "eu:2011-7@en:3:4",
+            "eu:2011-7@en:7:1"
+          ],
+          "title": "Termen de plată legat de recepție fără termen limită"
+        }
+      ],
+      "generalKey": [
+        "D1",
+        "D3",
+        "D6",
+        "D7"
+      ],
+      "generalFound": [
+        "D1",
+        "D3",
+        "D6"
+      ],
+      "costUsd": 0.005273,
+      "checkMs": 43882,
+      "genMs": 9159,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "EU",
+        "visibility": "indirect",
+        "seed": 5210,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "sl",
+      "country": "SI",
+      "guess": {
+        "jurisdiction": "EU",
+        "country": "SI",
+        "confidence": 0.9,
+        "evidence": [
+          "Ljubljana, 6. maj 2026",
+          "Vector Trade d.o.o.",
+          "Alpha Service d.o.o.",
+          "Honorar znaša 2.400 EUR na mesec.",
+          "ID za DDV SI94960188"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "EU"
+      ],
+      "lawStatus": "done",
+      "norms": 24,
+      "legal": [
+        {
+          "id": "L7",
+          "clause": "4.4",
+          "violatesHere": true,
+          "keySlots": [
+            "eu:2011-7@en:7:2"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "eu:2011-7@en:7:1",
+            "eu:2011-7@en:3:1",
+            "eu:2011-7@en:7:1:c"
+          ]
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D1",
+        "D5",
+        "D7"
+      ],
+      "generalFound": [
+        "D1",
+        "D5"
+      ],
+      "costUsd": 0.004126,
+      "checkMs": 33592,
+      "genMs": 12460,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "EU",
+        "visibility": "indirect",
+        "seed": 5211,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "bg",
+      "country": "BG",
+      "guess": {
+        "jurisdiction": "EU",
+        "country": "BG",
+        "confidence": 0.9,
+        "evidence": [
+          "Пловдив, 17 май 2026 г.",
+          "Делта Ритейл ООД",
+          "Норт Уоркс ООД",
+          "ЕИК 403738694",
+          "EUR 8 000 на месец"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "EU"
+      ],
+      "lawStatus": "done",
+      "norms": 28,
+      "legal": [
+        {
+          "id": "L4",
+          "clause": "3.2",
+          "violatesHere": true,
+          "keySlots": [
+            "eu:2011-7@en:3:5",
+            "eu:2011-7@en:7:1"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "eu:2011-7@en:3:5",
+            "eu:2011-7@en:7:1"
+          ]
+        },
+        {
+          "id": "L7",
+          "clause": "4.4",
+          "violatesHere": true,
+          "keySlots": [
+            "eu:2011-7@en:7:2"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "eu:2011-7@en:7:1",
+            "eu:2011-7@en:3:3:a"
+          ]
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D1",
+        "D5"
+      ],
+      "generalFound": [
+        "D1",
+        "D5"
+      ],
+      "costUsd": 0.004738,
+      "checkMs": 37669,
+      "genMs": 8484,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "EU",
+        "visibility": "indirect",
+        "seed": 5212,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "hr",
+      "country": "HR",
+      "guess": {
+        "jurisdiction": "EU",
+        "country": "HR",
+        "confidence": 0.95,
+        "evidence": [
+          "Zagreb, 21. veljače 2026.",
+          "Vector Trade d.o.o.",
+          "Meridian Partners d.o.o.",
+          "OIB 39111575502, MBS 137138468",
+          "EUR 8.000 mjesečno"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "EU"
+      ],
+      "lawStatus": "done",
+      "norms": 26,
+      "legal": [],
+      "unmatchedLegal": [
+        {
+          "clause": "4.1",
+          "slots": [
+            "eu:2011-7@en:7:1"
+          ],
+          "title": "Ugovorna kazna za kašnjenje"
+        }
+      ],
+      "generalKey": [
+        "D1",
+        "D5",
+        "D6",
+        "D7"
+      ],
+      "generalFound": [
+        "D1",
+        "D5",
+        "D6"
+      ],
+      "costUsd": 0.00463,
+      "checkMs": 36400,
+      "genMs": 4527,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "EU",
+        "visibility": "hidden",
+        "seed": 5220,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "bg",
+      "country": "BG",
+      "guess": {
+        "jurisdiction": "EU",
+        "country": "BG",
+        "confidence": 0.45,
+        "evidence": [
+          "Изпълнител",
+          "Възложител",
+          "законоустановената давност",
+          "компетентния съд",
+          "Протокола за приемане"
+        ]
+      },
+      "guessOk": true,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 41,
+      "legal": [],
+      "unmatchedLegal": [
+        {
+          "clause": "5.1",
+          "slots": [
+            "eu:93-13@en:annex:2:a"
+          ],
+          "title": "Едностранно право на прекратяване само за Възложителя"
+        }
+      ],
+      "generalKey": [
+        "D1",
+        "D2",
+        "D3",
+        "D6"
+      ],
+      "generalFound": [
+        "D1",
+        "D2",
+        "D3",
+        "D6"
+      ],
+      "costUsd": 0.004458,
+      "checkMs": 35174,
+      "genMs": 6136,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "EU",
+        "visibility": "hidden",
+        "seed": 5222,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "lt",
+      "country": "LT",
+      "guess": {
+        "jurisdiction": "EU",
+        "country": "LT",
+        "confidence": 0.5,
+        "evidence": [
+          "Delta Retail (toliau – Rangovas) ir Meridian Partners (toliau – Klientas)",
+          "Už pavėluotą mokėjimą Klientas moka 0,1 % nesumokėtos sumos baudą už kiekvieną dieną, tačiau ne daugiau kaip 10 % tos sumos.",
+          "Klientas atsako už visus Rangovo nuostolius, tiek tiesioginius, tiek netiesioginius, be apribojimo.",
+          "Atsakomybė už tyčinį pažeidimą šia Sutartimi neribojama.",
+          "Rangovas gali bet kada nutraukti šią Sutartį be priežasties nurodymo."
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "EU"
+      ],
+      "lawStatus": "done",
+      "norms": 28,
+      "legal": [],
+      "unmatchedLegal": [
+        {
+          "clause": "4.1",
+          "slots": [
+            "eu:2011-7@en:7:1"
+          ],
+          "title": "Per diem delay penalty may be grossly unfair"
+        }
+      ],
+      "generalKey": [
+        "D2",
+        "D3",
+        "D5",
+        "D7"
+      ],
+      "generalFound": [
+        "D2",
+        "D3",
+        "D5",
+        "D7"
+      ],
+      "costUsd": 0.004168,
+      "checkMs": 32135,
+      "genMs": 5966,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "EU",
+        "visibility": "hidden",
+        "seed": 5221,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "sl",
+      "country": "SI",
+      "guess": {
+        "jurisdiction": "EU",
+        "country": "SI",
+        "confidence": 0.45,
+        "evidence": [
+          "v nadaljevanju: »izvajalec«",
+          "pristojnemu sodišču",
+          "zakonsko določenega zastaralnega roka",
+          "Datum: 18. november 2026"
+        ]
+      },
+      "guessOk": true,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 45,
+      "legal": [
+        {
+          "id": "L4",
+          "clause": "3.2",
+          "violatesHere": true,
+          "keySlots": [
+            "eu:2011-7@en:3:5",
+            "eu:2011-7@en:7:1"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "eu:2011-7@en:3:5"
+          ]
+        },
+        {
+          "id": "L7",
+          "clause": "4.4",
+          "violatesHere": true,
+          "keySlots": [
+            "eu:2011-7@en:7:2"
+          ],
+          "flagged": true,
+          "caught": true,
+          "retrieved": true,
+          "cited": [
+            "eu:2011-7@en:7:2"
+          ]
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D3",
+        "D6"
+      ],
+      "generalFound": [
+        "D3",
+        "D6"
+      ],
+      "costUsd": 0.006038,
+      "checkMs": 46793,
+      "genMs": 5006,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "US-NY",
+        "visibility": "explicit",
+        "seed": 5300,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "en",
+      "country": "US",
+      "guess": {
+        "jurisdiction": "US-NY",
+        "country": null,
+        "confidence": 0.95,
+        "evidence": [
+          "This Agreement is governed by the laws of the State of New York.",
+          "Any dispute that the Parties cannot settle by negotiation is referred to the state and federal courts located in Albany, NY.",
+          "Albany, NY, 9 September 2026"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "US-NY"
+      ],
+      "lawStatus": "done",
+      "norms": 33,
+      "legal": [
+        {
+          "id": "L2",
+          "clause": "8.3",
+          "violatesHere": false,
+          "keySlots": [
+            "us-ny:ucc:2-725:1"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": true,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D4",
+        "D5",
+        "D7"
+      ],
+      "generalFound": [
+        "D4",
+        "D5"
+      ],
+      "costUsd": 0.003502,
+      "checkMs": 30247,
+      "genMs": 210,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "US-NY",
+        "visibility": "explicit",
+        "seed": 5301,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "en",
+      "country": "US",
+      "guess": {
+        "jurisdiction": "US-NY",
+        "country": null,
+        "confidence": 0.95,
+        "evidence": [
+          "This Agreement is governed by the laws of the State of New York.",
+          "Any dispute that the Parties cannot settle by negotiation is referred to the state and federal courts located in Albany, NY.",
+          "NY DOS ID 9863140"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "US-NY"
+      ],
+      "lawStatus": "done",
+      "norms": 28,
+      "legal": [
+        {
+          "id": "L4",
+          "clause": "3.2",
+          "violatesHere": false,
+          "keySlots": [],
+          "flagged": false,
+          "caught": false,
+          "retrieved": null,
+          "cited": []
+        },
+        {
+          "id": "L6",
+          "clause": "8.4",
+          "violatesHere": true,
+          "keySlots": [
+            "us-ny:ucc:9-406"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D2",
+        "D6"
+      ],
+      "generalFound": [
+        "D2",
+        "D6"
+      ],
+      "costUsd": 0.003948,
+      "checkMs": 31419,
+      "genMs": 202,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "US-NY",
+        "visibility": "explicit",
+        "seed": 5302,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "en",
+      "country": "US",
+      "guess": {
+        "jurisdiction": "US-NY",
+        "country": null,
+        "confidence": 0.95,
+        "evidence": [
+          "This Agreement is governed by the laws of the State of New York.",
+          "Any dispute that the Parties cannot settle by negotiation is referred to the state and federal courts located in Albany, NY.",
+          "Albany, NY, 24 November 2026",
+          "USD 3,500 per month",
+          "EIN 92-6538567"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "US-NY"
+      ],
+      "lawStatus": "done",
+      "norms": 38,
+      "legal": [
+        {
+          "id": "L2",
+          "clause": "8.3",
+          "violatesHere": false,
+          "keySlots": [
+            "us-ny:ucc:2-725:1"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": true,
+          "cited": []
+        },
+        {
+          "id": "L3",
+          "clause": "4.3",
+          "violatesHere": true,
+          "keySlots": [],
+          "flagged": true,
+          "caught": true,
+          "retrieved": null,
+          "cited": [
+            "us-ny:gob:5-323",
+            "us-ny:gob:5-322.1"
+          ]
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D4",
+        "D5"
+      ],
+      "generalFound": [
+        "D4",
+        "D5"
+      ],
+      "costUsd": 0.004749,
+      "checkMs": 38133,
+      "genMs": 191,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "US-NY",
+        "visibility": "indirect",
+        "seed": 5310,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "en",
+      "country": "US",
+      "guess": {
+        "jurisdiction": "US-NY",
+        "country": null,
+        "confidence": 0.9,
+        "evidence": [
+          "Rochester, NY, 10 March 2026",
+          "USD 2,600 per month",
+          "NY DOS ID 8291565",
+          "registered office: Rochester, NY"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "US-NY"
+      ],
+      "lawStatus": "done",
+      "norms": 35,
+      "legal": [
+        {
+          "id": "L3",
+          "clause": "4.3",
+          "violatesHere": true,
+          "keySlots": [],
+          "flagged": true,
+          "caught": true,
+          "retrieved": null,
+          "cited": [
+            "us-ny:gob:5-322.1"
+          ]
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D2",
+        "D6",
+        "D7"
+      ],
+      "generalFound": [
+        "D2",
+        "D6"
+      ],
+      "costUsd": 0.004091,
+      "checkMs": 36261,
+      "genMs": 209,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "US-NY",
+        "visibility": "indirect",
+        "seed": 5311,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "en",
+      "country": "US",
+      "guess": {
+        "jurisdiction": "US-NY",
+        "country": null,
+        "confidence": 0.9,
+        "evidence": [
+          "New York, NY, 17 October 2026",
+          "USD 2,600 per month",
+          "NY DOS ID 1042204",
+          "NY DOS ID 6030654"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "US-NY"
+      ],
+      "lawStatus": "done",
+      "norms": 31,
+      "legal": [
+        {
+          "id": "L1",
+          "clause": "4.1",
+          "violatesHere": true,
+          "keySlots": [
+            "us-ny:ucc:2-718:1"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        },
+        {
+          "id": "L4",
+          "clause": "3.2",
+          "violatesHere": false,
+          "keySlots": [],
+          "flagged": false,
+          "caught": false,
+          "retrieved": null,
+          "cited": []
+        },
+        {
+          "id": "L6",
+          "clause": "8.4",
+          "violatesHere": true,
+          "keySlots": [
+            "us-ny:ucc:9-406"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D1",
+        "D3"
+      ],
+      "generalFound": [
+        "D1",
+        "D3"
+      ],
+      "costUsd": 0.004856,
+      "checkMs": 38117,
+      "genMs": 205,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "US-NY",
+        "visibility": "indirect",
+        "seed": 5312,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "en",
+      "country": "US",
+      "guess": {
+        "jurisdiction": "US-NY",
+        "country": null,
+        "confidence": 0.9,
+        "evidence": [
+          "Buffalo, NY, 20 March 2026",
+          "The fee is USD 1,700 per month.",
+          "NY DOS ID 1593521",
+          "NY DOS ID 2727738"
+        ]
+      },
+      "guessOk": true,
+      "searched": [
+        "US-NY"
+      ],
+      "lawStatus": "done",
+      "norms": 44,
+      "legal": [
+        {
+          "id": "L2",
+          "clause": "8.3",
+          "violatesHere": false,
+          "keySlots": [
+            "us-ny:ucc:2-725:1"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": true,
+          "cited": []
+        },
+        {
+          "id": "L3",
+          "clause": "4.3",
+          "violatesHere": true,
+          "keySlots": [],
+          "flagged": false,
+          "caught": false,
+          "retrieved": null,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D4",
+        "D6"
+      ],
+      "generalFound": [
+        "D4",
+        "D6"
+      ],
+      "costUsd": 0.003402,
+      "checkMs": 25406,
+      "genMs": 208,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "US-NY",
+        "visibility": "hidden",
+        "seed": 5320,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "en",
+      "country": "US",
+      "guess": {
+        "jurisdiction": "unknown",
+        "country": null,
+        "confidence": 0,
+        "evidence": [
+          "in the currency stated in the invoice",
+          "A dispute that the Parties cannot settle by negotiation is referred to the competent court.",
+          "Claims under this Agreement are subject to the statutory limitation period."
+        ]
+      },
+      "guessOk": false,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 43,
+      "legal": [
+        {
+          "id": "L3",
+          "clause": "4.3",
+          "violatesHere": true,
+          "keySlots": [],
+          "flagged": false,
+          "caught": false,
+          "retrieved": null,
+          "cited": []
+        },
+        {
+          "id": "L7",
+          "clause": "4.4",
+          "violatesHere": false,
+          "keySlots": [],
+          "flagged": false,
+          "caught": false,
+          "retrieved": null,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D3",
+        "D6"
+      ],
+      "generalFound": [
+        "D3",
+        "D6"
+      ],
+      "costUsd": 0.004169,
+      "checkMs": 31898,
+      "genMs": 196,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "US-NY",
+        "visibility": "hidden",
+        "seed": 5322,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "en",
+      "country": "US",
+      "guess": {
+        "jurisdiction": "unknown",
+        "country": null,
+        "confidence": 0,
+        "evidence": [
+          "the competent court"
+        ]
+      },
+      "guessOk": false,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 45,
+      "legal": [
+        {
+          "id": "L1",
+          "clause": "4.1",
+          "violatesHere": true,
+          "keySlots": [
+            "us-ny:ucc:2-718:1"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        },
+        {
+          "id": "L2",
+          "clause": "8.3",
+          "violatesHere": false,
+          "keySlots": [
+            "us-ny:ucc:2-725:1"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": true,
+          "cited": []
+        },
+        {
+          "id": "L6",
+          "clause": "8.4",
+          "violatesHere": true,
+          "keySlots": [
+            "us-ny:ucc:9-406"
+          ],
+          "flagged": false,
+          "caught": false,
+          "retrieved": false,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D1",
+        "D2"
+      ],
+      "generalFound": [
+        "D1",
+        "D2"
+      ],
+      "costUsd": 0.003955,
+      "checkMs": 30470,
+      "genMs": 72,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "US-NY",
+        "visibility": "hidden",
+        "seed": 5321,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "en",
+      "country": "US",
+      "guess": {
+        "jurisdiction": "unknown",
+        "country": null,
+        "confidence": 0,
+        "evidence": [
+          "the competent court",
+          "in the currency stated in the invoice",
+          "Either Party may terminate this Agreement with 30 days' written notice"
+        ]
+      },
+      "guessOk": false,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 42,
+      "legal": [
+        {
+          "id": "L3",
+          "clause": "4.3",
+          "violatesHere": true,
+          "keySlots": [],
+          "flagged": false,
+          "caught": false,
+          "retrieved": null,
+          "cited": []
+        }
+      ],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D3",
+        "D6",
+        "D7"
+      ],
+      "generalFound": [
+        "D3",
+        "D6"
+      ],
+      "costUsd": 0.004357,
+      "checkMs": 35003,
+      "genMs": 185,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "none",
+        "visibility": "hidden",
+        "seed": 5900,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "en",
+      "country": null,
+      "guess": {
+        "jurisdiction": "unknown",
+        "country": null,
+        "confidence": 0,
+        "evidence": [
+          "in the currency stated in the invoice",
+          "referred to the competent court"
+        ]
+      },
+      "guessOk": true,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 42,
+      "legal": [],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D2",
+        "D3",
+        "D5",
+        "D7"
+      ],
+      "generalFound": [
+        "D2",
+        "D3",
+        "D5"
+      ],
+      "costUsd": 0.003986,
+      "checkMs": 30888,
+      "genMs": 202,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "none",
+        "visibility": "hidden",
+        "seed": 5901,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "en",
+      "country": null,
+      "guess": {
+        "jurisdiction": "unknown",
+        "country": null,
+        "confidence": 0,
+        "evidence": [
+          "the competent court",
+          "signed acceptance certificate",
+          "as provided by law",
+          "statutory limitation period"
+        ]
+      },
+      "guessOk": true,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 34,
+      "legal": [],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D3",
+        "D4",
+        "D5",
+        "D6"
+      ],
+      "generalFound": [
+        "D3",
+        "D4",
+        "D5",
+        "D6"
+      ],
+      "costUsd": 0.003055,
+      "checkMs": 25012,
+      "genMs": 209,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "none",
+        "visibility": "hidden",
+        "seed": 5902,
+        "level": 4,
+        "beneficiary": "client"
+      },
+      "language": "en",
+      "country": null,
+      "guess": {
+        "jurisdiction": "unknown",
+        "country": null,
+        "confidence": 0,
+        "evidence": [
+          "referred to the competent court",
+          "in the currency stated in the invoice"
+        ]
+      },
+      "guessOk": true,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 45,
+      "legal": [],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D1",
+        "D2",
+        "D3",
+        "D6"
+      ],
+      "generalFound": [
+        "D1",
+        "D2",
+        "D3",
+        "D6"
+      ],
+      "costUsd": 0.004469,
+      "checkMs": 35474,
+      "genMs": 73,
+      "error": null
+    },
+    {
+      "case": {
+        "jurisdiction": "none",
+        "visibility": "hidden",
+        "seed": 5903,
+        "level": 4,
+        "beneficiary": "contractor"
+      },
+      "language": "en",
+      "country": null,
+      "guess": {
+        "jurisdiction": "unknown",
+        "country": null,
+        "confidence": 0,
+        "evidence": [
+          "The fee is 1,500, in the currency stated in the invoice, per month.",
+          "A dispute that the Parties cannot settle by negotiation is referred to the competent court."
+        ]
+      },
+      "guessOk": true,
+      "searched": [],
+      "lawStatus": "done",
+      "norms": 43,
+      "legal": [],
+      "unmatchedLegal": [],
+      "generalKey": [
+        "D1",
+        "D4",
+        "D6",
+        "D7"
+      ],
+      "generalFound": [
+        "D1",
+        "D4",
+        "D6"
+      ],
+      "costUsd": 0.004521,
+      "checkMs": 35449,
+      "genMs": 190,
+      "error": null
+    }
+  ]
+}

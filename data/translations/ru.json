@@ -1,4 +1,8 @@
 {
+ "00d76d8834c43a46311ded1d": {
+  "src": "Contractor: ООО «Северные Работы», registered office: Yekaterinburg, ОГРН 19666751866752, ИНН 6684044085, КПП 661901001.",
+  "out": "Исполнитель: ООО «Северные Работы», юридический адрес: Екатеринбург, ОГРН 19666751866752, ИНН 6684044085, КПП 661901001."
+ },
  "01668bb417a640572344cae3": {
   "src": "Any dispute that the Parties cannot settle by negotiation is referred to the Arbitrazh Court of Saint Petersburg.",
   "out": "Любой спор, который Стороны не могут урегулировать путём переговоров, передаётся на рассмотрение Арбитражного суда Санкт-Петербурга."
@@ -15,9 +19,21 @@
   "src": "Client: ООО «Северные Работы», registered office: Kazan, ОГРН 10616638091467, ИНН 1647692990, КПП 163701001.",
   "out": "Заказчик: ООО «Северные Работы», место нахождения: Казань, ОГРН 10616638091467, ИНН 1647692990, КПП 163701001."
  },
+ "0a861d24cd2ec035177e574e": {
+  "src": "A dispute that the Parties cannot settle by negotiation is referred to the competent court.",
+  "out": "Спор, который Стороны не могут урегулировать путём переговоров, передаётся в компетентный суд."
+ },
  "0bf9ef8c7d0f6a75b71c2658": {
   "src": "SERVICE AGREEMENT No. 68/26",
   "out": "ДОГОВОР ОКАЗАНИЯ УСЛУГ № 68/26"
+ },
+ "0ce1c38cdad1bab88f9943d2": {
+  "src": "ООО «Вектор» (the \"Contractor\") and ООО «Альфа Сервис» (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "ООО «Вектор» (далее — «Исполнитель») и ООО «Альфа Сервис» (далее — «Заказчик»), далее совместно именуемые «Стороны», согласовали следующее."
+ },
+ "0edcc7b753152a45a02d61c3": {
+  "src": "Kazan, 10 September 2026",
+  "out": "Казань, 10 сентября 2026 г."
  },
  "0f9dbb7d16f33c7c78275c4f": {
   "src": "Yekaterinburg, 5 July 2026",
@@ -31,6 +47,10 @@
   "src": "Miscellaneous",
   "out": "Прочие условия"
  },
+ "1102ae270574d89477a04aca": {
+  "src": "Client: ООО «Альфа Сервис», registered office: Saint Petersburg, ОГРН 15478877541642, ИНН 7808820020, КПП 782701001.",
+  "out": "Заказчик: ООО «Альфа Сервис», юридический адрес: Санкт-Петербург, ОГРН 15478877541642, ИНН 7808820020, КПП 782701001."
+ },
  "14845281afdd5de4985fd239": {
   "src": "SERVICE AGREEMENT No. 57/26",
   "out": "ДОГОВОР ОКАЗАНИЯ УСЛУГ № 57/26"
@@ -43,6 +63,14 @@
   "src": "Liability",
   "out": "Ответственность"
  },
+ "16710e273e8f54435f98b304": {
+  "src": "SERVICE AGREEMENT No. 50/26",
+  "out": "ДОГОВОР ОБ ОКАЗАНИИ УСЛУГ № 50/26"
+ },
+ "1733833126c6a5674030ea0c": {
+  "src": "The fee is 5,000, in the currency stated in the invoice, per month.",
+  "out": "Вознаграждение составляет 5 000 в валюте, указанной в счёте, в месяц."
+ },
  "1b8ba8dbc986d4f714c9ed41": {
   "src": "Contractor: ООО «Дельта Ритейл», registered office: Yekaterinburg, ОГРН 16466834981193, ИНН 6621516165, КПП 669301001.",
   "out": "Исполнитель: ООО «Дельта Ритейл», юридический адрес: Екатеринбург, ОГРН 16466834981193, ИНН 6621516165, КПП 669301001."
@@ -51,9 +79,17 @@
   "src": "The fee is RUB 230,000 per month.",
   "out": "Вознаграждение составляет 230 000 RUB в месяц."
  },
+ "1cbe1fde4bd1bd23e74ba171": {
+  "src": "SERVICE AGREEMENT No. 34/26",
+  "out": "ДОГОВОР ОБ ОКАЗАНИИ УСЛУГ No. 34/26"
+ },
  "1e098a17d31cbb22537d26d1": {
   "src": "The fee may be changed only by an amendment signed by both Parties.",
   "out": "Вознаграждение может быть изменено только дополнительным соглашением, подписанным обеими Сторонами."
+ },
+ "2177d2416ecc9b00eaf05e82": {
+  "src": "Yekaterinburg, 3 August 2026",
+  "out": "Екатеринбург, 3 августа 2026 г."
  },
  "250a0ebe9bfeb76df75dcb69": {
   "src": "This Agreement is governed by the laws of the Russian Federation.",
@@ -66,6 +102,14 @@
  "2be9aabcfe1561ad0c4378ac": {
   "src": "Client: ООО «Северные Работы», registered office: Kazan, ОГРН 1663800091467, ИНН 7747692990, КПП 773719001.",
   "out": "Заказчик: ООО «Северные Работы», юридический адрес: Казань, ОГРН 1663800091467, ИНН 7747692990, КПП 773719001."
+ },
+ "2c296fdfdeb5c6c80134bd3c": {
+  "src": "SERVICE AGREEMENT No. 46/26",
+  "out": "ДОГОВОР ОКАЗАНИЯ УСЛУГ № 46/26"
+ },
+ "2d143b7e16aa36b09ca92919": {
+  "src": "The fee is RUB 480,000 per month.",
+  "out": "Вознаграждение составляет RUB 480 000 в месяц."
  },
  "30f2080376713c9c2042066d": {
   "src": "ООО «Квант Системс» (the \"Contractor\") and ООО «Альфа Сервис» (the \"Client\"), together the \"Parties\", agree as follows.",
@@ -83,9 +127,29 @@
   "src": "The Client is not liable for any failure to perform this Agreement, including an intentional one.",
   "out": "Заказчик не несёт ответственности за любое неисполнение настоящего Договора, в том числе умышленное."
  },
+ "3892a8019f25e2cf64183d78": {
+  "src": "ООО «Северные Работы» (the \"Contractor\") and ООО «Дельта Ритейл» (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "ООО «Северные Работы» (далее — «Исполнитель») и ООО «Дельта Ритейл» (далее — «Заказчик»), совместно именуемые «Стороны», согласились о нижеследующем."
+ },
+ "3b42cc506026b371258933b4": {
+  "src": "For any delay, the Client pays the Contractor a penalty of 1% of the annual fee for each day of delay.",
+  "out": "За любую просрочку Заказчик уплачивает Исполнителю неустойку в размере 1% от годового вознаграждения за каждый день просрочки."
+ },
+ "3f389c4312b829f08aecdfe1": {
+  "src": "Yekaterinburg, 24 March 2026",
+  "out": "Екатеринбург, 24 марта 2026 г."
+ },
+ "45c3b67ea9780ff3a484bbcf": {
+  "src": "Client: ООО «Северные Работы», registered office: Kazan, ОГРН 18616601098963, ИНН 1605561967, КПП 161001001.",
+  "out": "Заказчик: ООО «Северные Работы», юридический адрес: Казань, ОГРН 18616601098963, ИНН 1605561967, КПП 161001001."
+ },
  "47282528a4809d2d66c773ee": {
   "src": "Either Party may terminate this Agreement with 30 days' written notice.",
   "out": "Любая из Сторон вправе расторгнуть настоящий Договор, направив другой Стороне письменное уведомление за 30 дней."
+ },
+ "47471e83937a07c12c5259fc": {
+  "src": "Bright Line (the \"Contractor\") and Delta Retail (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Bright Line (далее — «Исполнитель») и Delta Retail (далее — «Заказчик»), именуемые совместно «Стороны», договорились о нижеследующем."
  },
  "47d3c222ca48f0781fcaa13d": {
   "src": "This Agreement is valid for 12 months from the date of signing.",
@@ -95,9 +159,17 @@
   "src": "Client: ООО «Вектор», registered office: Yekaterinburg, ОГРН 15966161674169, ИНН 6670245359, КПП 663201001.",
   "out": "Заказчик: ООО «Вектор», юридический адрес: Екатеринбург, ОГРН 15966161674169, ИНН 6670245359, КПП 663201001."
  },
+ "4cfca2ff2a9bdec4feb3aad5": {
+  "src": "Date: 13 February 2026",
+  "out": "Дата: 13 февраля 2026 года"
+ },
  "505f6e7d90a20a60f0884a2c": {
   "src": "The fee is RUB 760,000 per month.",
   "out": "Вознаграждение составляет RUB 760 000 в месяц."
+ },
+ "52dcc24f0fcf1741cc0e7293": {
+  "src": "Delta Retail (the \"Contractor\") and Kvant Systems (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Delta Retail (далее — \"Исполнитель\") и Kvant Systems (далее — \"Заказчик\", вместе — \"Стороны\") заключили настоящий Договор о нижеследующем."
  },
  "539058cc247fa8f70bc2f246": {
   "src": "Contractor: ООО «Дельта Ритейл», registered office: Kazan, ОГРН 19316782611212, ИНН 1611445493, КПП 161801001.",
@@ -107,13 +179,37 @@
   "src": "Each Party's total liability is capped at the fees paid for the last three months.",
   "out": "Общий размер ответственности каждой Стороны ограничивается вознаграждением, уплаченным за последние три месяца."
  },
+ "575b2ffd82d8359192c363f4": {
+  "src": "Contractor: Delta Retail. Signature: ____________",
+  "out": "Исполнитель: Delta Retail. Подпись: ____________"
+ },
+ "5b2f3740c9b413e54ca3b01f": {
+  "src": "Client: ООО «Меридиан Групп», registered office: Moscow, ОГРН 12877998880469, ИНН 7729289435, КПП 770301001.",
+  "out": "Заказчик: ООО «Меридиан Групп», юридический адрес: Москва, ОГРН 12877998880469, ИНН 7729289435, КПП 770301001."
+ },
  "5c6bb7fdebd96232a69a1623": {
   "src": "Final settlement for the month is made on the basis of the signed acceptance certificate.",
   "out": "Окончательный расчёт за месяц производится на основании подписанного акта сдачи-приёмки."
  },
+ "5dc1b39e4a9a5dce53737f2f": {
+  "src": "Client: Alpha Service. Signature: ____________",
+  "out": "Заказчик: Alpha Service. Подпись: ____________"
+ },
+ "61a83cb2125318d7acb65148": {
+  "src": "Contractor: ООО «Орион Трейд», registered office: Moscow, ОГРН 17477825924654, ИНН 7734683616, КПП 777301001.",
+  "out": "Исполнитель: ООО «Орион Трейд», юридический адрес: Москва, ОГРН 17477825924654, ИНН 7734683616, КПП 777301001."
+ },
  "6322aef12ff52ff4592016d5": {
   "src": "For any delay, the Contractor pays the Client a penalty of 1% of the annual fee for each day of delay.",
   "out": "За любую просрочку Исполнитель уплачивает Заказчику штраф в размере 1% от годового вознаграждения за каждый день просрочки."
+ },
+ "6803f651549aa8d103782ed6": {
+  "src": "Contractor: Bright Line. Signature: ____________",
+  "out": "Исполнитель: Bright Line. Подпись: ____________"
+ },
+ "68435a8f8d7ed972d384a5cf": {
+  "src": "The Parties will try to settle any dispute by negotiation.",
+  "out": "Стороны будут стремиться урегулировать любой спор путём переговоров."
  },
  "6b561491c6d01cf874236d6a": {
   "src": "The Client may change the fee unilaterally by notifying the Contractor by email.",
@@ -135,6 +231,10 @@
   "src": "The Client pays within 10 business days of signing the acceptance certificate.",
   "out": "Заказчик производит оплату в течение 10 рабочих дней с даты подписания акта сдачи-приёмки."
  },
+ "742f8b50f2041501ff30b70f": {
+  "src": "Moscow, 17 April 2026",
+  "out": "Москва, 17 апреля 2026 г."
+ },
  "78c6b98526f07303a0649cb8": {
   "src": "Any dispute that the Parties cannot settle by negotiation is referred to the Arbitrazh Court of Moscow.",
   "out": "Любой спор, который Стороны не могут урегулировать путём переговоров, передаётся на рассмотрение в Арбитражный суд города Москвы."
@@ -143,9 +243,17 @@
   "src": "Term",
   "out": "Срок действия"
  },
+ "7a6eb6c5c225130e6584df99": {
+  "src": "SERVICE AGREEMENT No. 25/26",
+  "out": "ДОГОВОР ОКАЗАНИЯ УСЛУГ № 25/26"
+ },
  "7c801d13f1a0050f1a5964cc": {
   "src": "Neither Party may assign any right under this Agreement, including the right to payment, without the other Party's written consent; an assignment made without consent is void.",
   "out": "Ни одна из Сторон не вправе уступать какое-либо право по настоящему Договору, включая право на получение платежа, без письменного согласия другой Стороны; уступка, совершённая без такого согласия, является ничтожной."
+ },
+ "7de30153b8488d81e9e1c958": {
+  "src": "The fee is RUB 300,000 per month.",
+  "out": "Вознаграждение составляет RUB 300 000 в месяц."
  },
  "8004efbfef24f35da5d37ed0": {
   "src": "The Contractor waives any interest for late payment by the Client.",
@@ -158,6 +266,10 @@
  "834229d5ec3e680e55f7059c": {
   "src": "ООО «Меридиан Групп» (the \"Contractor\") and ООО «Вектор» (the \"Client\"), together the \"Parties\", agree as follows.",
   "out": "ООО «Меридиан Групп» (далее — «Исполнитель») и ООО «Вектор» (далее — «Заказчик»), далее совместно именуемые «Стороны», согласовали нижеследующее."
+ },
+ "86861db8a41b5f0c3342555f": {
+  "src": "Client: ООО «Альфа Сервис», registered office: Yekaterinburg, ОГРН 12366151404752, ИНН 6606821064, КПП 665401001.",
+  "out": "Заказчик: ООО «Альфа Сервис», местонахождение: Екатеринбург, ОГРН 12366151404752, ИНН 6606821064, КПП 665401001."
  },
  "86f1faafcb440ee774b8c844": {
   "src": "Timelines",
@@ -175,6 +287,14 @@
   "src": "The Client may withdraw from this Agreement at any time without giving a reason. The Contractor may terminate only in the event of a material breach.",
   "out": "Заказчик вправе отказаться от настоящего договора в любое время без указания причины. Исполнитель вправе расторгнуть договор только в случае существенного нарушения."
  },
+ "96bfe8de966d52133ccec601": {
+  "src": "Delta Retail (the \"Contractor\") and Alpha Service (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Delta Retail (далее — «Исполнитель») и Alpha Service (далее — «Заказчик»), вместе именуемые «Стороны», согласовали следующее."
+ },
+ "9882346a82e0ec967ce893b1": {
+  "src": "The Contractor is not liable for any failure to perform this Agreement, including an intentional one.",
+  "out": "Исполнитель не несёт ответственности за любое неисполнение настоящего Договора, включая умышленное."
+ },
  "a2d94c039bcc7905ff6b3603": {
   "src": "Client: ООО «Вектор», registered office: Saint Petersburg, ОГРН 11478555123528, ИНН 7864225740, КПП 782701001.",
   "out": "Заказчик: ООО «Вектор», юридический адрес: Санкт-Петербург, ОГРН 11478555123528, ИНН 7864225740, КПП 782701001."
@@ -182,6 +302,10 @@
  "a484e1ff12953ec62c03befd": {
   "src": "Subject",
   "out": "Предмет договора"
+ },
+ "a7d153b141ee2d037fcc177d": {
+  "src": "Contractor: ООО «Меридиан Групп», registered office: Kazan, ОГРН 17016377428932, ИНН 1633482549, КПП 161301001.",
+  "out": "Исполнитель: ООО «Меридиан Групп», юридический адрес: Казань, ОГРН 17016377428932, ИНН 1633482549, КПП 161301001."
  },
  "abeafedace7d1d76c63241e7": {
   "src": "Fees and payment",
@@ -203,9 +327,21 @@
   "src": "Either Party may assign its right to payment to a third party after notifying the other Party in writing.",
   "out": "Любая из Сторон вправе уступить свое право требования оплаты третьему лицу после письменного уведомления другой Стороны."
  },
+ "b5f396e4d88aad64eb901ab6": {
+  "src": "Client: Kvant Systems. Signature: ____________",
+  "out": "Заказчик: Kvant Systems. Подпись: ____________"
+ },
  "b69b2a6d6c6e00159ebd9aaa": {
   "src": "Termination",
   "out": "Расторжение"
+ },
+ "be75045c864defc9b5f82220": {
+  "src": "SERVICE AGREEMENT No. 69/26",
+  "out": "ДОГОВОР ОКАЗАНИЯ УСЛУГ № 69/26"
+ },
+ "c25cc3b5c2bfa1a4b9ce76aa": {
+  "src": "Client: Delta Retail. Signature: ____________",
+  "out": "Заказчик: Delta Retail. Подпись: ____________"
  },
  "c6521f43dfde7bc595e37591": {
   "src": "Contractor: ООО «Меридиан Групп», registered office: Saint Petersburg, ОГРН 13678727550347, ИНН 7887645211, КПП 785501001.",
@@ -223,6 +359,18 @@
   "src": "All notices are sent by email to the addresses the Parties have given each other in writing.",
   "out": "Все уведомления направляются по электронной почте на адреса, которые Стороны письменно сообщили друг другу."
  },
+ "cc72aa9667f2bb83d07eef83": {
+  "src": "Date: 12 September 2026",
+  "out": "Дата: 12 сентября 2026 года"
+ },
+ "cc918121981fbd417fcba9d5": {
+  "src": "The fee is 1,500, in the currency stated in the invoice, per month.",
+  "out": "Вознаграждение составляет 1 500 в валюте, указанной в счёте, в месяц."
+ },
+ "d0104ec73bfbd83ac71ecad1": {
+  "src": "ООО «Меридиан Групп» (the \"Contractor\") and ООО «Северные Работы» (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "ООО «Меридиан Групп» (далее — «Исполнитель») и ООО «Северные Работы» (далее — «Заказчик»), далее совместно именуемые «Стороны», заключили настоящий Договор о нижеследующем."
+ },
  "d1f27c74fa88a6c578a6733c": {
   "src": "Disputes",
   "out": "Разрешение споров"
@@ -230,6 +378,10 @@
  "d365d87d2241222ded4f569a": {
   "src": "The Contractor shall provide bookkeeping services, and the Client shall accept and pay for them.",
   "out": "Исполнитель оказывает услуги по бухгалтерскому учёту, а Заказчик принимает и оплачивает их."
+ },
+ "d3e306e93cec87b6b9490cb5": {
+  "src": "SERVICE AGREEMENT No. 83/26",
+  "out": "ДОГОВОР ОБ ОКАЗАНИИ УСЛУГ № 83/26"
  },
  "d4ea3cbe06f614650f067247": {
   "src": "Any dispute that the Parties cannot settle by negotiation is referred to the Arbitrazh Court of Kazan.",
@@ -243,13 +395,29 @@
   "src": "The Contractor begins providing services within a reasonable time after receiving the Client's request.",
   "out": "Исполнитель приступает к оказанию услуг в разумный срок после получения запроса Заказчика."
  },
+ "d8b670bd61f2927235c0d5c6": {
+  "src": "SERVICE AGREEMENT No. 78/26",
+  "out": "ДОГОВОР ОКАЗАНИЯ УСЛУГ № 78/26"
+ },
  "db5e62bda7a1e019713ef479": {
   "src": "Saint Petersburg, 2 April 2026",
   "out": "Санкт-Петербург, 2 апреля 2026 г."
  },
+ "dc8d02bcb6d916bd60da7a42": {
+  "src": "Contractor: ООО «Вектор», registered office: Saint Petersburg, ОГРН 15078988693072, ИНН 7896798774, КПП 781301001.",
+  "out": "Исполнитель: ООО «Вектор», юридический адрес: Санкт-Петербург, ОГРН 15078988693072, ИНН 7896798774, КПП 781301001."
+ },
  "defd6b716172f4a1d7e3091e": {
   "src": "SERVICE AGREEMENT No. 15/26",
   "out": "ДОГОВОР ОКАЗАНИЯ УСЛУГ № 15/26"
+ },
+ "e17d74cf5e33aa6ac6416ac5": {
+  "src": "The Contractor shall provide IT infrastructure support services, and the Client shall accept and pay for them.",
+  "out": "Исполнитель обязуется оказывать услуги по поддержке ИТ-инфраструктуры, а Заказчик обязуется принимать и оплачивать их."
+ },
+ "e351109f4e21668b6eb2257d": {
+  "src": "Client: ООО «Дельта Ритейл», registered office: Yekaterinburg, ОГРН 14366380516296, ИНН 6656435614, КПП 665101001.",
+  "out": "Заказчик: ООО «Дельта Ритейл», юридический адрес: Екатеринбург, ОГРН 14366380516296, ИНН 6656435614, КПП 665101001."
  },
  "e40d0c102cc6a3f14addf81b": {
   "src": "Any claim under this Agreement must be brought within one year after it arises; after that the claim is barred.",
@@ -263,16 +431,44 @@
   "src": "Kazan, 21 October 2026",
   "out": "Казань, 21 октября 2026 г."
  },
+ "e8a7f979445581cbc4f51989": {
+  "src": "The Contractor shall provide website support services, and the Client shall accept and pay for them.",
+  "out": "Исполнитель обязуется оказывать услуги по поддержке веб-сайта, а Заказчик обязуется принимать и оплачивать их."
+ },
+ "ecb92ccdca0c76f80cb33b2d": {
+  "src": "ООО «Орион Трейд» (the \"Contractor\") and ООО «Меридиан Групп» (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "ООО «Орион Трейд» («Исполнитель») и ООО «Меридиан Групп» («Заказчик»), далее совместно именуемые «Стороны», согласовали следующее."
+ },
  "ef55a599cffc9936468b2eda": {
   "src": "For late payment, the Client pays a penalty of 0.1% of the unpaid amount per day, capped at 10% of that amount.",
   "out": "За просрочку оплаты Заказчик уплачивает штраф в размере 0,1% неоплаченной суммы за каждый день, но не более 10% от этой суммы."
+ },
+ "f12f847329b59ecbe641c773": {
+  "src": "Date: 21 December 2026",
+  "out": "Дата: 21 декабря 2026 г."
  },
  "f169b8f144e9acbc4061dcac": {
   "src": "Claims under this Agreement are subject to the statutory limitation period.",
   "out": "Требования по настоящему договору подлежат рассмотрению с учётом установленного законом срока исковой давности."
  },
+ "f20655e12224c25860925bac": {
+  "src": "SERVICE AGREEMENT No. 55/26",
+  "out": "ДОГОВОР ОБ ОКАЗАНИИ УСЛУГ № 55/26"
+ },
+ "f56777b9058ae7d7cc588d2e": {
+  "src": "Contractor: ООО «Квант Системс», registered office: Yekaterinburg, ОГРН 11866725501841, ИНН 6653547916, КПП 669601001.",
+  "out": "Исполнитель: ООО «Квант Системс», местонахождение: Екатеринбург, ОГРН 11866725501841, ИНН 6653547916, КПП 669601001."
+ },
  "f6e109e5d3456f14a2878fbf": {
   "src": "Settlement",
   "out": "Расчёты"
+ },
+ "fa664e75f1250ccf23defcd7": {
+  "src": "This Agreement is deemed renewed for the same term unless either Party gives notice 60 days before it expires.",
+  "out": "Настоящий Договор считается продлённым на тот же срок, если ни одна из Сторон не направит уведомление за 60 дней до его истечения."
+ },
+ "fcce5825c0460364bc7ad03f": {
+  "src": "Saint Petersburg, 8 July 2026",
+  "out": "Санкт-Петербург, 8 июля 2026 г."
  }
 }

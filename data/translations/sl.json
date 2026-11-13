@@ -1,0 +1,210 @@
+{
+ "0041a1237d27066f7ebaf79f": {
+  "src": "Fees and payment",
+  "out": "Honorar in plačilo"
+ },
+ "03320fe8d695be25048d3329": {
+  "src": "All notices are sent by email to the addresses the Parties have given each other in writing.",
+  "out": "Vsa obvestila se pošiljajo po elektronski pošti na naslove, ki sta si jih pogodbeni stranki pisno sporočili."
+ },
+ "084b0773b3c7c8c0d45cfbf0": {
+  "src": "Contractor: Vector Trade d.o.o., registered office: Ljubljana, matična št. 9678518000, ID za DDV SI94960188.",
+  "out": "Izvajalec: Vector Trade d.o.o., sedež: Ljubljana, matična št. 9678518000, ID za DDV SI94960188."
+ },
+ "0ad89a7705931536f4a1d143": {
+  "src": "The Client may change the fee unilaterally by notifying the Contractor by email.",
+  "out": "Naročnik lahko honorar enostransko spremeni, tako da o tem izvajalca obvesti po elektronski pošti."
+ },
+ "0e082652219f6e0ee6f2c03b": {
+  "src": "Each Party's total liability is capped at the fees paid for the last three months.",
+  "out": "Skupna odgovornost vsake pogodbene stranke je omejena na honorarje, plačane za zadnje tri mesece."
+ },
+ "1b12e8356f4b1f51e44af890": {
+  "src": "Party / Parties",
+  "out": "pogodbena stranka / pogodbeni stranki"
+ },
+ "1bed9e4b342d9bd97e2f7a71": {
+  "src": "Term",
+  "out": "Trajanje"
+ },
+ "242f7745a0e3e84b7d1ffcde": {
+  "src": "SERVICE AGREEMENT No. 73/26",
+  "out": "POGODBA O STORITVAH št. 73/26"
+ },
+ "2882e762533e8e8bf24e927a": {
+  "src": "This Agreement is deemed renewed for the same term unless either Party gives notice 60 days before it expires.",
+  "out": "Ta pogodba se šteje za obnovljeno za enak čas, razen če katera od pogodbenih strank poda odpoved 60 dni pred iztekom."
+ },
+ "2d5a95eb7280cb8636b607c7": {
+  "src": "Vector Trade d.o.o. (the \"Contractor\") and Alpha Service d.o.o. (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Vector Trade d.o.o. (v nadaljevanju »izvajalec«) in Alpha Service d.o.o. (v nadaljevanju »naročnik«), skupaj »pogodbeni stranki«, se dogovorita, kot sledi."
+ },
+ "2f28a2711fdbfd711b1eab14": {
+  "src": "acceptance certificate",
+  "out": "primopredajni zapisnik"
+ },
+ "3b6c47425602b0e331b66e68": {
+  "src": "Timelines",
+  "out": "Roki"
+ },
+ "41ab6323c41f1e7b2d8d2716": {
+  "src": "The Contractor waives any interest for late payment by the Client.",
+  "out": "Izvajalec se odpove vsem obrestim za zamudo plačila naročnika."
+ },
+ "4a5e2635f9e1042945e50f16": {
+  "src": "Settlement",
+  "out": "Poravnava"
+ },
+ "4b6eca542aa913f806fb5e65": {
+  "src": "Miscellaneous",
+  "out": "Razno"
+ },
+ "5114e36ce5089415b511a7e3": {
+  "src": "Details of the Parties",
+  "out": "Podatki o pogodbenih strankah"
+ },
+ "51efdabd3fe0b309902d5a99": {
+  "src": "Alpha Service (the \"Contractor\") and Delta Retail (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Alpha Service (v nadaljevanju: »izvajalec«) in Delta Retail (v nadaljevanju: »naročnik«), skupaj »pogodbeni stranki«, se dogovorita, kot sledi."
+ },
+ "5dcd66c7a3df75bf48815337": {
+  "src": "SERVICE AGREEMENT No. 76/26",
+  "out": "POGODBA O STORITVAH št. 76/26"
+ },
+ "6095526f62ce0da39e623e12": {
+  "src": "Liability",
+  "out": "Odgovornost"
+ },
+ "65873c635d089ec6c3ac9994": {
+  "src": "Termination",
+  "out": "Odpoved"
+ },
+ "66540e39345c29e011be935a": {
+  "src": "Either Party may assign its right to payment to a third party after notifying the other Party in writing.",
+  "out": "Vsaka pogodbena stranka lahko svojo terjatev do plačila prenese na tretjo osebo, potem ko o tem pisno obvesti drugo pogodbeno stranko."
+ },
+ "715e8076ea49fb53fa1fb1d7": {
+  "src": "A dispute that the Parties cannot settle by negotiation is referred to the competent court.",
+  "out": "Spor, ki ga pogodbeni stranki s pogajanji ne moreta rešiti, se predloži pristojnemu sodišču."
+ },
+ "798e7ed29b3f4313e4268db0": {
+  "src": "Liability for intentional breach is not limited by this Agreement.",
+  "out": "Odgovornost za namerno kršitev ta pogodba ne omejuje."
+ },
+ "82c847d31ca9b8f1cc34f0b0": {
+  "src": "Final settlement for the month is made no later than 30 calendar days after the acceptance certificate is signed.",
+  "out": "Končna poravnava za mesec se opravi najpozneje 30 koledarskih dni po podpisu primopredajnega zapisnika."
+ },
+ "8d6150fd7be8f9c4841b2cd7": {
+  "src": "The Parties will try to settle any dispute by negotiation.",
+  "out": "Pogodbeni stranki bosta poskušali vsak spor rešiti s pogajanji."
+ },
+ "9273da4c7205b3a2abf79056": {
+  "src": "The Contractor shall provide website support services, and the Client shall accept and pay for them.",
+  "out": "Izvajalec zagotavlja storitve podpore spletni strani, naročnik pa jih sprejme in plača."
+ },
+ "92c40b72dc35a37a563431d6": {
+  "src": "Client",
+  "out": "naročnik"
+ },
+ "98d593caaa52da20d8a01ed7": {
+  "src": "fee",
+  "out": "honorar"
+ },
+ "99e38894202e8cfb7ece6521": {
+  "src": "The fee may be changed only by an amendment signed by both Parties.",
+  "out": "Honorar se lahko spremeni samo z dodatkom, ki ga podpišeta obe pogodbeni stranki."
+ },
+ "9c678a6682e76005f190d04a": {
+  "src": "The fee is EUR 2,400 per month.",
+  "out": "Honorar znaša 2.400 EUR na mesec."
+ },
+ "9fb113ca6765fbf3b5957a9a": {
+  "src": "The Contractor is liable for all losses of the Client, direct and indirect, without limit.",
+  "out": "Izvajalec odgovarja za vso škodo naročnika, neposredno in posredno, brez omejitve."
+ },
+ "a28e311e0b9bcab601deb6b0": {
+  "src": "Client: Delta Retail. Signature: ____________",
+  "out": "Naročnik: Delta Retail. Podpis: ____________"
+ },
+ "a57fd9fa11a7abd1dbec4eb9": {
+  "src": "Date: 18 November 2026",
+  "out": "Datum: 18. november 2026"
+ },
+ "a5dc089396dd2b0eac0128d6": {
+  "src": "Ljubljana, 6 May 2026",
+  "out": "Ljubljana, 6. maj 2026"
+ },
+ "add78b958baea86fc747dfcf": {
+  "src": "This Agreement is valid for 12 months from the date of signing.",
+  "out": "Ta pogodba velja 12 mesecev od dneva podpisa."
+ },
+ "afc9ec5cc78c92cc3dc1970e": {
+  "src": "Any extension of this Agreement is made by a separate signed amendment.",
+  "out": "Vsak podaljšek te pogodbe se opravi z ločenim podpisanim dodatkom."
+ },
+ "b25c5276c0223c65eb3ba444": {
+  "src": "Agreement",
+  "out": "pogodba"
+ },
+ "b39d1f218783d26f804a3a6c": {
+  "src": "The Contractor shall provide IT infrastructure support services, and the Client shall accept and pay for them.",
+  "out": "Izvajalec zagotavlja storitve podpore IT infrastrukture, naročnik pa jih sprejme in plača."
+ },
+ "b46604f6c0eea8666e625859": {
+  "src": "Disputes",
+  "out": "Spori"
+ },
+ "bff12f83e67f8a8233b65c4b": {
+  "src": "Claims under this Agreement are subject to the statutory limitation period.",
+  "out": "Terjatve iz te pogodbe so predmet zakonsko določenega zastaralnega roka."
+ },
+ "c0edc83d65e435db5ab3cda0": {
+  "src": "Contractor: Alpha Service. Signature: ____________",
+  "out": "Izvajalec: Alpha Service. Podpis: ____________"
+ },
+ "c49d3b2bf0ca0ed21e229d3b": {
+  "src": "Contractor",
+  "out": "izvajalec"
+ },
+ "c821709cb35fdff549728d5b": {
+  "src": "For any delay, the Contractor pays the Client a penalty of 1% of the annual fee for each day of delay.",
+  "out": "Za kakršno koli zamudo izvajalec naročniku plača kazen v višini 1 % letnega honorarja za vsak dan zamude."
+ },
+ "cb634896884f77651cb59b52": {
+  "src": "The Client pays within 10 business days of signing the acceptance certificate.",
+  "out": "Naročnik plača v 10 delovnih dneh po podpisu primopredajnega zapisnika."
+ },
+ "d3894224884432da98ad9a7b": {
+  "src": "The Contractor begins providing services within 3 business days of receiving the Client's request.",
+  "out": "Izvajalec začne izvajati storitve v 3 delovnih dneh po prejemu naročnikove zahteve."
+ },
+ "db68ad3dce35010966db4430": {
+  "src": "The fee is 3,200, in the currency stated in the invoice, per month.",
+  "out": "Honorar znaša 3.200 v valuti, navedeni na računu, na mesec."
+ },
+ "dd1cacb10cb16a2fb0126d80": {
+  "src": "Either Party may terminate this Agreement with 30 days' written notice.",
+  "out": "Vsaka pogodbena stranka lahko to pogodbo odpove s 30-dnevnim pisnim odpovednim rokom."
+ },
+ "e2a633d278b2d2442b002943": {
+  "src": "The Client pays within 120 calendar days of signing the acceptance certificate.",
+  "out": "Naročnik plača v 120 koledarskih dneh od podpisa primopredajnega zapisnika."
+ },
+ "f1ea02ffafee59cd7faa40ad": {
+  "src": "For late payment, the Client pays a penalty of 0.1% of the unpaid amount per day, capped at 10% of that amount.",
+  "out": "Za zamudo s plačilom naročnik plača kazen v višini 0,1 % neplačanega zneska na dan, vendar največ do 10 % tega zneska."
+ },
+ "f46878199357ec83091ee6dc": {
+  "src": "Final settlement for the month is made on the basis of the signed acceptance certificate.",
+  "out": "Končni obračun za mesec se opravi na podlagi podpisanega primopredajnega zapisnika."
+ },
+ "fb376086afc3d6c09bb334ca": {
+  "src": "Client: Alpha Service d.o.o., registered office: Ljubljana, matična št. 2318472000, ID za DDV SI68701715.",
+  "out": "Naročnik: Alpha Service d.o.o., sedež: Ljubljana, matična št. 2318472000, ID za DDV SI68701715."
+ },
+ "fbea5b9b207047856c0e29f4": {
+  "src": "Subject",
+  "out": "Predmet"
+ }
+}

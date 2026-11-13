@@ -4,6 +4,7 @@ import {
   buildLawCheckMessages,
   buildPrepareMessages,
   contractClauses,
+  normalizeArticle,
   parseLawFindings,
   parsePrepare,
   pickNorms,
@@ -72,7 +73,7 @@ describe("pickNorms", () => {
     const hits = queries.map((_, i) => [0, 1, 2].map((r) => hit(`s:${i}:${r}`, (i === 0 ? 0.1 : 0.5) + r / 100)));
     const { retrieved } = pickNorms(queries, hits);
     expect(retrieved.every((r) => r.slotIds.length >= 1)).toBe(true);
-    expect(retrieved.reduce((n, r) => n + r.slotIds.length, 0)).toBe(45);
+    expect(retrieved.reduce((n, r) => n + r.slotIds.length, 0)).toBe(50);
   });
 });
 
@@ -97,6 +98,29 @@ describe("parseLawFindings", () => {
 
   it("returns null for non-JSON", () => {
     expect(parseLawFindings("sorry", TEXT, norms)).toBeNull();
+  });
+});
+
+describe("named articles", () => {
+  it("normalizes ids and drops anything that is not a known law", () => {
+    expect(normalizeArticle("ru:gk:333")).toBe("ru:gk:333");
+    expect(normalizeArticle("DE:BGB:276")).toBe("de:bgb:276");
+    expect(normalizeArticle("de:bgb:271a")).toBe("de:bgb:271a");
+    expect(normalizeArticle("us-ny:ucc:2-718")).toBe("us-ny:ucc:2-718");
+    expect(normalizeArticle("eu:2011-7:7")).toBe("eu:2011-7@en:7");
+    expect(normalizeArticle("fr:cc:1231-5")).toBeNull();
+    expect(normalizeArticle("ru:gk:333'; drop table")).toBeNull();
+    const p = parsePrepare('{"jurisdiction":"DE","confidence":0.9,"queries":[{"clause":"4.4","query":"q","articles":["de:bgb:288","x","de:bgb:288"]}]}', TEXT)!;
+    expect(p.queries[0].articles).toEqual(["de:bgb:288"]);
+  });
+
+  it("puts named articles first and records where each slot came from", () => {
+    const { retrieved } = pickNorms([{ clause: "4.4", query: "a" }], [
+      { name: "named", hits: [[hit("de:bgb:288:6", 0.4)]], take: 2 },
+      { name: "question", hits: [[hit("de:bgb:289", 0.2), hit("de:bgb:288:6", 0.3)]], take: 3 },
+      { name: "clause", hits: [[hit("de:bgb:301", 0.5)]], take: 1 },
+    ]);
+    expect(retrieved[0]).toEqual({ clause: "4.4", query: "a", slotIds: ["de:bgb:288:6", "de:bgb:289", "de:bgb:301"], named: ["de:bgb:288:6"], vector: ["de:bgb:289", "de:bgb:301"] });
   });
 });
 

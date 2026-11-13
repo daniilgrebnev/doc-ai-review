@@ -7,25 +7,65 @@
   "src": "Term",
   "out": "Laufzeit"
  },
+ "0afa9cf436f1eea676db7fad": {
+  "src": "Date: 17 July 2026",
+  "out": "Datum: 17. Juli 2026"
+ },
+ "0cb3c612037e060832a69ad1": {
+  "src": "Delta Retail (the \"Contractor\") and Orion Group (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Delta Retail (der \"Auftragnehmer\") und Orion Group (der \"Auftraggeber\"), zusammen die \"Parteien\", vereinbaren Folgendes."
+ },
  "0e3b62d4c7cf29e9451e52ec": {
   "src": "For late payment, the Client pays a penalty of 0.1% of the unpaid amount per day, capped at 10% of that amount.",
   "out": "Für verspätete Zahlung zahlt der Auftraggeber eine Vertragsstrafe von 0,1 % des ausstehenden Betrags pro Tag, begrenzt auf 10 % dieses Betrags."
+ },
+ "0e9ad42d8a73f655513ef6aa": {
+  "src": "Munich, 8 September 2026",
+  "out": "München, 8. September 2026"
  },
  "109ff9fd9f457816cfc5e4e7": {
   "src": "Rheinlogik GmbH (the \"Contractor\") and Alpenblick Handel GmbH (the \"Client\"), together the \"Parties\", agree as follows.",
   "out": "Rheinlogik GmbH (der „Auftragnehmer“) und Alpenblick Handel GmbH (der „Auftraggeber“), zusammen die „Parteien“, vereinbaren Folgendes."
  },
+ "1723eac837b4b8c78540dbe7": {
+  "src": "SERVICE AGREEMENT No. 29/26",
+  "out": "DIENSTLEISTUNGSVERTRAG Nr. 29/26"
+ },
  "180f9658f232eb852b7baccf": {
   "src": "SERVICE AGREEMENT No. 71/26",
   "out": "DIENSTLEISTUNGSVERTRAG Nr. 71/26"
+ },
+ "1a65d13fbfcd1403a5459815": {
+  "src": "The Contractor is not liable for any failure to perform this Agreement, including an intentional one.",
+  "out": "Der Auftragnehmer haftet nicht für die Nichterfüllung dieses Vertrags, auch nicht für eine vorsätzliche."
  },
  "1b3263f9ffebd8486be8af1b": {
   "src": "The Contractor waives any interest for late payment by the Client.",
   "out": "Der Auftragnehmer verzichtet auf jegliche Verzugszinsen für verspätete Zahlungen des Auftraggebers."
  },
+ "1c7407e10e42be6ce9e6a99b": {
+  "src": "Any extension of this Agreement is made by a separate signed amendment.",
+  "out": "Eine Verlängerung dieses Vertrags erfolgt durch einen gesonderten, unterzeichneten Nachtrag."
+ },
+ "1ee999307b13464f64ee9ae5": {
+  "src": "The Contractor shall provide website support services, and the Client shall accept and pay for them.",
+  "out": "Der Auftragnehmer erbringt Website-Support-Dienstleistungen, und der Auftraggeber nimmt diese ab und zahlt dafür."
+ },
+ "203e67c78a1af6d93cf100fa": {
+  "src": "Neither Party may assign any right under this Agreement, including the right to payment, without the other Party's written consent; an assignment made without consent is void.",
+  "out": "Keine Partei darf ohne die schriftliche Zustimmung der anderen Partei Rechte aus diesem Vertrag abtreten, einschließlich des Zahlungsanspruchs; eine ohne Zustimmung erfolgte Abtretung ist nichtig."
+ },
+ "2243b4a14b5ef2cc8a69134b": {
+  "src": "The fee is EUR 8,000 per month.",
+  "out": "Die Vergütung beträgt EUR 8.000 pro Monat."
+ },
  "246307bc49552998b81ea2f7": {
   "src": "The Contractor is liable for all losses of the Client, direct and indirect, without limit.",
   "out": "Der Auftragnehmer haftet für sämtliche Schäden des Auftraggebers, unmittelbare und mittelbare, ohne Begrenzung."
+ },
+ "252a9dd48a36429a7c813e00": {
+  "src": "Contractor: Isartal Partner GmbH, registered office: Munich, HRB 091573, Amtsgericht Munich, USt-IdNr. DE691128409.",
+  "out": "Auftragnehmer: Isartal Partner GmbH, Sitz: München, HRB 091573, Amtsgericht München, USt-IdNr. DE691128409."
  },
  "2acf15f393d1350c468a4850": {
   "src": "Contractor: Rheinlogik GmbH, registered office: Munich, HRB 659509, Amtsgericht Munich, USt-IdNr. DE791307567.",
@@ -35,9 +75,33 @@
   "src": "Claims under this Agreement are subject to the statutory limitation period.",
   "out": "Ansprüche aus diesem Vertrag unterliegen der gesetzlichen Verjährungsfrist."
  },
+ "2dbd8bc7d3f672e55c9e544d": {
+  "src": "Client: Nordwerk GmbH, registered office: Munich, HRB 598229, Amtsgericht Munich, USt-IdNr. DE083849677.",
+  "out": "Auftraggeber: Nordwerk GmbH, Sitz: München, HRB 598229, Amtsgericht München, USt-IdNr. DE083849677."
+ },
+ "30ab713f51ed3a26902ae39a": {
+  "src": "Contractor: Isartal Partner GmbH, registered office: Munich, HRB 995986, Amtsgericht Munich, USt-IdNr. DE497928239.",
+  "out": "Auftragnehmer: Isartal Partner GmbH, Sitz: München, HRB 995986, Amtsgericht München, USt-IdNr. DE497928239."
+ },
+ "3162bda22f79058c6634be73": {
+  "src": "The fee is EUR 2,400 per month.",
+  "out": "Die Vergütung beträgt EUR 2.400 pro Monat."
+ },
+ "318208cd6e5e04c2ea0a8f1d": {
+  "src": "SERVICE AGREEMENT No. 36/26",
+  "out": "DIENSTLEISTUNGSVERTRAG Nr. 36/26"
+ },
+ "318e9c1d0c4b6a00d6b01904": {
+  "src": "SERVICE AGREEMENT No. 32/26",
+  "out": "DIENSTLEISTUNGSVERTRAG Nr. 32/26"
+ },
  "368514c2ba6dc5f49e4e6949": {
   "src": "Details of the Parties",
   "out": "Angaben zu den Parteien"
+ },
+ "39654512cfb849fe70e9a40b": {
+  "src": "Client: Isartal Partner GmbH, registered office: Munich, HRB 420751, Amtsgericht Munich, USt-IdNr. DE476011579.",
+  "out": "Auftraggeber: Isartal Partner GmbH, Sitz: München, HRB 420751, Amtsgericht München, USt-IdNr. DE476011579."
  },
  "3a963201f96b44091642c30e": {
   "src": "Disputes",
@@ -51,21 +115,101 @@
   "src": "Miscellaneous",
   "out": "Sonstiges"
  },
+ "3d6c09c8a1502cd07bb6b4b7": {
+  "src": "Elbtor Digital GmbH (the \"Contractor\") and Isartal Partner GmbH (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Elbtor Digital GmbH (der „Auftragnehmer“) und Isartal Partner GmbH (der „Auftraggeber“), zusammen die „Parteien“, vereinbaren Folgendes."
+ },
  "3f487cdc9b12b1ffc82bf169": {
   "src": "Either Party may terminate this Agreement with 30 days' written notice.",
   "out": "Jede Partei kann diesen Vertrag mit einer Frist von 30 Tagen schriftlich kündigen."
+ },
+ "466fb2d21ac2dfec56f9adff": {
+  "src": "Client: Delta Retail. Signature: ____________",
+  "out": "Auftraggeber: Delta Retail. Unterschrift: ____________"
+ },
+ "4790b1566544e016b07eeadb": {
+  "src": "SERVICE AGREEMENT No. 75/26",
+  "out": "DIENSTLEISTUNGSVERTRAG Nr. 75/26"
+ },
+ "48d5902af7b3232f2ba03304": {
+  "src": "Contractor: Hellweg Service GmbH, registered office: Munich, HRB 356529, Amtsgericht Munich, USt-IdNr. DE004593710.",
+  "out": "Auftragnehmer: Hellweg Service GmbH, Sitz: München, HRB 356529, Amtsgericht München, USt-IdNr. DE004593710."
+ },
+ "4b7e38a0360b685f0a9aae57": {
+  "src": "The Contractor may withdraw from this Agreement at any time without giving a reason. The Client may terminate only in the event of a material breach.",
+  "out": "Der Auftragnehmer kann von diesem Vertrag jederzeit ohne Angabe von Gründen zurücktreten. Der Auftraggeber kann nur im Fall einer wesentlichen Vertragsverletzung kündigen."
+ },
+ "4d6cc90440d9af7b63947807": {
+  "src": "The fee is 8,000, in the currency stated in the invoice, per month.",
+  "out": "Die Vergütung beträgt 8.000, in der in der Rechnung angegebenen Währung, pro Monat."
+ },
+ "4dca524a7bd6f9bad6786637": {
+  "src": "SERVICE AGREEMENT No. 55/26",
+  "out": "DIENSTLEISTUNGSVERTRAG Nr. 55/26"
+ },
+ "4e3ec8c6fb3f4c05804c95d7": {
+  "src": "Final settlement for the month is made on the basis of the signed acceptance certificate.",
+  "out": "Die Endabrechnung für den Monat erfolgt auf Grundlage des unterzeichneten Abnahmeprotokolls."
+ },
+ "535ca7d40a1f272da4487f8f": {
+  "src": "Contractor: Elbtor Digital GmbH, registered office: Munich, HRB 731548, Amtsgericht Munich, USt-IdNr. DE232281217.",
+  "out": "Auftragnehmer: Elbtor Digital GmbH, Sitz: München, HRB 731548, Amtsgericht München, USt-IdNr. DE232281217."
+ },
+ "56db818cb34dcb65b3a01937": {
+  "src": "Any dispute that the Parties cannot settle by negotiation is referred to the Regional Court (Landgericht) of Munich.",
+  "out": "Streitigkeiten, die die Parteien nicht durch Verhandlung beilegen können, werden an das Landgericht München verwiesen."
+ },
+ "5cb8175a2928c6a4b3e77c0d": {
+  "src": "Kvant Systeme GmbH (the \"Contractor\") and Nordwerk GmbH (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Kvant Systeme GmbH (der \"Auftragnehmer\") und Nordwerk GmbH (der \"Auftraggeber\"), zusammen die \"Parteien\", vereinbaren Folgendes."
  },
  "619b0a153af8eb2279e24bdd": {
   "src": "The fee is EUR 5,000 per month.",
   "out": "Die Vergütung beträgt EUR 5.000 pro Monat."
  },
+ "627bdf4d30fea497240bf6b3": {
+  "src": "This Agreement is governed by the laws of the Federal Republic of Germany.",
+  "out": "Dieser Vertrag unterliegt dem Recht der Bundesrepublik Deutschland."
+ },
+ "62b9f2be4af1708007dd4f4a": {
+  "src": "Date: 28 January 2026",
+  "out": "Datum: 28. Januar 2026"
+ },
+ "68e1ba19a6d50ccbea963984": {
+  "src": "Contractor: Delta Retail. Signature: ____________",
+  "out": "Auftragnehmer: Delta Retail. Unterschrift: ____________"
+ },
  "6be7840d3513fb9f5d677315": {
   "src": "Timelines",
   "out": "Fristen"
  },
+ "7079e0bafebbe5e7da6d5f87": {
+  "src": "The fee is EUR 3,200 per month.",
+  "out": "Die Vergütung beträgt EUR 3.200 pro Monat."
+ },
+ "7119941f81fb4c11a7db2988": {
+  "src": "Contractor: Elbtor Digital GmbH, registered office: Cologne, HRB 723048, Amtsgericht Cologne, USt-IdNr. DE602879985.",
+  "out": "Auftragnehmer: Elbtor Digital GmbH, Sitz: Köln, HRB 723048, Amtsgericht Köln, USt-IdNr. DE602879985."
+ },
+ "71f49fc0904850dad6692ea7": {
+  "src": "Contractor: North Works. Signature: ____________",
+  "out": "Auftragnehmer: North Works. Unterschrift: ____________"
+ },
+ "73eb612e478ab37c10d9c72c": {
+  "src": "For any delay, the Client pays the Contractor a penalty of 1% of the annual fee for each day of delay.",
+  "out": "Für jeden Tag des Verzugs zahlt der Auftraggeber dem Auftragnehmer eine Vertragsstrafe von 1 % der Jahresvergütung."
+ },
+ "741b4c78f812b65c33de85a4": {
+  "src": "The Contractor begins providing services within a reasonable time after receiving the Client's request.",
+  "out": "Der Auftragnehmer beginnt innerhalb einer angemessenen Frist nach Eingang der Anforderung des Auftraggebers mit der Erbringung der Dienstleistungen."
+ },
  "7781b3d9d121dee2d71db7cb": {
   "src": "The Parties will try to settle any dispute by negotiation.",
   "out": "Die Parteien werden versuchen, jede Streitigkeit durch Verhandlungen beizulegen."
+ },
+ "7b9af0bb2717199177afdaf7": {
+  "src": "Client: Orion Group. Signature: ____________",
+  "out": "Auftraggeber: Orion Group. Unterschrift: ____________"
  },
  "7f8324d4cb951e6663419d90": {
   "src": "This Agreement is valid for 12 months from the date of signing.",
@@ -75,9 +219,57 @@
   "src": "The Client pays within 10 business days of signing the acceptance certificate.",
   "out": "Der Auftraggeber zahlt innerhalb von 10 Werktagen nach Unterzeichnung des Abnahmeprotokolls."
  },
+ "80f99c77fe185cb9873e6692": {
+  "src": "The fee is EUR 1,500 per month.",
+  "out": "Die Vergütung beträgt EUR 1.500 pro Monat."
+ },
+ "82c51d5bed12a8d5e2c40f1d": {
+  "src": "Munich, 14 March 2026",
+  "out": "München, 14. März 2026"
+ },
+ "8444589f58f59dc432d13207": {
+  "src": "Cologne, 3 December 2026",
+  "out": "Köln, 3. Dezember 2026"
+ },
+ "84f446484fe9636da153a31f": {
+  "src": "Client: Rheinlogik GmbH, registered office: Munich, HRB 459618, Amtsgericht Munich, USt-IdNr. DE241899435.",
+  "out": "Auftraggeber: Rheinlogik GmbH, Sitz: München, HRB 459618, Amtsgericht München, USt-IdNr. DE241899435."
+ },
+ "87055b85ce51c0129b1eed33": {
+  "src": "Isartal Partner GmbH (the \"Contractor\") and Elbtor Digital GmbH (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Isartal Partner GmbH (der \"Auftragnehmer\") und Elbtor Digital GmbH (der \"Auftraggeber\"), gemeinsam die \"Parteien\", vereinbaren Folgendes."
+ },
+ "8aa7e8c6614c845c2d6de80a": {
+  "src": "The Contractor shall provide copywriting services, and the Client shall accept and pay for them.",
+  "out": "Der Auftragnehmer erbringt Texterstellungsleistungen (Copywriting), und der Auftraggeber nimmt diese ab und zahlt dafür."
+ },
+ "8ab82b2eb70c5aaece79b744": {
+  "src": "SERVICE AGREEMENT No. 63/26",
+  "out": "DIENSTLEISTUNGSVERTRAG Nr. 63/26"
+ },
+ "8b88b92ee12e0f0020ce9d7d": {
+  "src": "The fee is 3,200, in the currency stated in the invoice, per month.",
+  "out": "Die Vergütung beträgt 3.200 in der Währung, die in der Rechnung angegeben ist, pro Monat."
+ },
  "9074e9454ca9ffa328c3ab16": {
   "src": "Termination",
   "out": "Kündigung"
+ },
+ "95473890ad919754ee3a908e": {
+  "src": "The Client pays within 120 calendar days of signing the acceptance certificate.",
+  "out": "Der Auftraggeber zahlt innerhalb von 120 Kalendertagen nach Unterzeichnung des Abnahmeprotokolls."
+ },
+ "95e8d5a2b82dd2c8802789a2": {
+  "src": "The Contractor shall provide bookkeeping services, and the Client shall accept and pay for them.",
+  "out": "Der Auftragnehmer erbringt Buchhaltungsdienstleistungen, und der Auftraggeber nimmt diese ab und zahlt dafür."
+ },
+ "a114864620a3ad10f010087a": {
+  "src": "Hellweg Service GmbH (the \"Contractor\") and Rheinlogik GmbH (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Hellweg Service GmbH (der „Auftragnehmer“) und Rheinlogik GmbH (der „Auftraggeber“), zusammen die „Parteien“, vereinbaren Folgendes."
+ },
+ "a917992f4d145d883017a7e2": {
+  "src": "SERVICE AGREEMENT No. 62/26",
+  "out": "DIENSTLEISTUNGSVERTRAG Nr. 62/26"
  },
  "ab855282221df47614fd2ce0": {
   "src": "Client: Alpenblick Handel GmbH, registered office: Munich, HRB 050264, Amtsgericht Munich, USt-IdNr. DE006364496.",
@@ -87,21 +279,73 @@
   "src": "The fee may be changed only by an amendment signed by both Parties.",
   "out": "Die Vergütung kann nur durch eine von beiden Parteien unterzeichnete Änderungsvereinbarung geändert werden."
  },
+ "b017249a720fc56af775cfb8": {
+  "src": "Any claim under this Agreement must be brought within one year after it arises; after that the claim is barred.",
+  "out": "Jeder Anspruch aus diesem Vertrag muss innerhalb eines Jahres nach seiner Entstehung geltend gemacht werden; danach ist der Anspruch ausgeschlossen."
+ },
+ "b1d4d3da8d506fcfc455297c": {
+  "src": "North Works (the \"Contractor\") and Delta Retail (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "North Works (der „Auftragnehmer“) und Delta Retail (der „Auftraggeber“), zusammen die „Parteien“, vereinbaren Folgendes."
+ },
  "b47fa4d4eceb82d0f9e2f713": {
   "src": "Either Party may assign its right to payment to a third party after notifying the other Party in writing.",
   "out": "Jede Partei kann ihren Zahlungsanspruch nach schriftlicher Benachrichtigung der anderen Partei an einen Dritten abtreten."
+ },
+ "b5cd94a58de939acb5f332ab": {
+  "src": "Munich, 11 June 2026",
+  "out": "München, 11. Juni 2026"
+ },
+ "b725b03f6a669ce986637974": {
+  "src": "For late payment, the Client also owes interest on the overdue amount as provided by law.",
+  "out": "Bei verspäteter Zahlung schuldet der Auftraggeber zusätzlich Zinsen auf den überfälligen Betrag, wie gesetzlich vorgesehen."
+ },
+ "ba236d91bc6dfd10d7fb2a2c": {
+  "src": "SERVICE AGREEMENT No. 78/26",
+  "out": "DIENSTLEISTUNGSVERTRAG Nr. 78/26"
+ },
+ "bc661d9c52f20e8bb0e72d09": {
+  "src": "Munich, 20 June 2026",
+  "out": "München, 20. Juni 2026"
  },
  "bfb1acfe068d3ebcce4b7962": {
   "src": "Liability",
   "out": "Haftung"
  },
+ "c25abc25ecfccbd0840bec9f": {
+  "src": "The Client may withdraw from this Agreement at any time without giving a reason. The Contractor may terminate only in the event of a material breach.",
+  "out": "Der Auftraggeber kann von diesem Vertrag jederzeit ohne Angabe von Gründen zurücktreten. Der Auftragnehmer darf nur im Falle einer wesentlichen Pflichtverletzung kündigen."
+ },
+ "c5122eddb96c271cb4f7e64f": {
+  "src": "The Client is liable for all losses of the Contractor, direct and indirect, without limit.",
+  "out": "Der Auftraggeber haftet für alle Schäden des Auftragnehmers, unmittelbare und mittelbare, ohne Begrenzung."
+ },
+ "c56304cdf98ada27c8d078f8": {
+  "src": "Contractor: Kvant Systeme GmbH, registered office: Munich, HRB 588111, Amtsgericht Munich, USt-IdNr. DE445824482.",
+  "out": "Auftragnehmer: Kvant Systeme GmbH, Sitz: München, HRB 588111, Amtsgericht München, USt-IdNr. DE445824482."
+ },
  "c6b3968a579e83a7878af6e9": {
   "src": "This Agreement is deemed renewed for the same term unless either Party gives notice 60 days before it expires.",
   "out": "Dieser Vertrag verlängert sich automatisch um dieselbe Laufzeit, sofern nicht eine Partei 60 Tage vor Ablauf kündigt."
  },
+ "c729335751883f9d50a180ad": {
+  "src": "SERVICE AGREEMENT No. 42/26",
+  "out": "DIENSTLEISTUNGSVERTRAG Nr. 42/26"
+ },
  "cd50f709341c066aeebe7407": {
   "src": "Munich, 20 November 2026",
   "out": "München, 20. November 2026"
+ },
+ "d1bbba8331c38c21d685d3b4": {
+  "src": "Client: Hellweg Service GmbH, registered office: Cologne, HRB 422301, Amtsgericht Cologne, USt-IdNr. DE032054284.",
+  "out": "Auftraggeber: Hellweg Service GmbH, Sitz: Köln, HRB 422301, Amtsgericht Köln, USt-IdNr. DE032054284."
+ },
+ "d28a309716d55eb9cba6c647": {
+  "src": "Meridian Partners (the \"Contractor\") and Orion Group (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Meridian Partners (der \"Auftragnehmer\") und Orion Group (der \"Auftraggeber\"), zusammen die \"Parteien\", vereinbaren Folgendes."
+ },
+ "d2b4f68420ebc159042060f6": {
+  "src": "For any delay, the Contractor pays the Client a penalty of 1% of the annual fee for each day of delay.",
+  "out": "Für jeden Verzug zahlt der Auftragnehmer an den Auftraggeber eine Vertragsstrafe von 1 % der Jahresvergütung für jeden Tag des Verzugs."
  },
  "d37e0b1977843cafd758d0f7": {
   "src": "Subject",
@@ -111,6 +355,10 @@
   "src": "The Contractor shall provide IT infrastructure support services, and the Client shall accept and pay for them.",
   "out": "Der Auftragnehmer erbringt IT-Infrastruktur-Supportleistungen, und der Auftraggeber nimmt diese ab und zahlt dafür."
  },
+ "d91ca9157642113d55fb78bc": {
+  "src": "Date: 2 September 2026",
+  "out": "Datum: 2. September 2026"
+ },
  "dd4fa9fe581b5dc639680c46": {
   "src": "Final settlement for the month is made no later than 30 calendar days after the acceptance certificate is signed.",
   "out": "Die Schlussabrechnung für den Monat erfolgt spätestens 30 Kalendertage nach Unterzeichnung des Abnahmeprotokolls."
@@ -119,9 +367,21 @@
   "src": "All notices are sent by email to the addresses the Parties have given each other in writing.",
   "out": "Sämtliche Mitteilungen werden per E-Mail an die Adressen versandt, die die Parteien einander schriftlich mitgeteilt haben."
  },
+ "e0804751f65d5e7b8e464fb7": {
+  "src": "Munich, 2 August 2026",
+  "out": "München, 2. August 2026"
+ },
  "e78254c7b7a5f5335f7a60c0": {
   "src": "The Contractor begins providing services within 3 business days of receiving the Client's request.",
   "out": "Der Auftragnehmer beginnt innerhalb von 3 Werktagen nach Eingang der Anfrage des Auftraggebers mit der Leistungserbringung."
+ },
+ "e817f18d965931cf13819488": {
+  "src": "The Client may change the fee unilaterally by notifying the Contractor by email.",
+  "out": "Der Auftraggeber kann die Vergütung einseitig ändern, indem er den Auftragnehmer per E-Mail benachrichtigt."
+ },
+ "e899508dd57c6c662049f8f1": {
+  "src": "Client: Elbtor Digital GmbH, registered office: Munich, HRB 792941, Amtsgericht Munich, USt-IdNr. DE835709933.",
+  "out": "Auftraggeber: Elbtor Digital GmbH, Sitz: München, HRB 792941, Amtsgericht München, USt-IdNr. DE835709933."
  },
  "e8b18647c8962001ba3aa07a": {
   "src": "Liability for intentional breach is not limited by this Agreement.",
@@ -130,5 +390,25 @@
  "eef2b15483a8555c42aadffb": {
   "src": "A dispute that the Parties cannot settle by negotiation is referred to the competent court.",
   "out": "Eine Streitigkeit, die die Parteien nicht durch Verhandlungen beilegen können, wird an das zuständige Gericht verwiesen."
+ },
+ "f07d614a54152833367455ef": {
+  "src": "The Client is not liable for any failure to perform this Agreement, including an intentional one.",
+  "out": "Der Auftraggeber haftet nicht für eine Nichterfüllung dieses Vertrags, einschließlich einer vorsätzlichen."
+ },
+ "f232fd7d40d302fb20fc73bf": {
+  "src": "Contractor: Meridian Partners. Signature: ____________",
+  "out": "Auftragnehmer: Meridian Partners. Unterschrift: ____________"
+ },
+ "f5547ab5ea832ad2bf6bcc2b": {
+  "src": "Client: Elbtor Digital GmbH, registered office: Munich, HRB 188252, Amtsgericht Munich, USt-IdNr. DE714037456.",
+  "out": "Auftraggeber: Elbtor Digital GmbH, Sitz: München, HRB 188252, Amtsgericht München, USt-IdNr. DE714037456."
+ },
+ "f5c2a3a33db01f528b9144cd": {
+  "src": "Elbtor Digital GmbH (the \"Contractor\") and Hellweg Service GmbH (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Elbtor Digital GmbH (der \"Auftragnehmer\") und Hellweg Service GmbH (der \"Auftraggeber\"), zusammen die \"Parteien\", vereinbaren Folgendes."
+ },
+ "fd65f33980076e38092ddf8c": {
+  "src": "Each Party's total liability is capped at the fees paid for the last three months.",
+  "out": "Die Gesamthaftung jeder Partei ist auf die für die letzten drei Monate gezahlten Vergütungen begrenzt."
  }
 }

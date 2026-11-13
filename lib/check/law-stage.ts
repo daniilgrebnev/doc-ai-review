@@ -5,7 +5,9 @@
  */
 import { getLadder, isCascadeEnabled } from "@/lib/check/cascade";
 import {
+  articleJurisdiction,
   buildLawCheckMessages,
+  contractClauses,
   buildPrepareMessages,
   fallbackQueries,
   HITS_PER_QUERY,
@@ -13,13 +15,14 @@ import {
   parsePrepare,
   pickNorms,
   searchScope,
+  type Channel,
   type JurisdictionGuess,
   type LawState,
   type LegalFinding,
 } from "@/lib/check/law";
 import type { CheckEvent } from "@/lib/check/types";
 import { computeCostUsd } from "@/lib/db/pricing";
-import { searchLaw } from "@/lib/law/search";
+import { embed, lookupArticles, searchByVectors } from "@/lib/law/search";
 import { llmComplete } from "@/lib/llm/complete";
 import { getProviderModel } from "@/lib/llm/providers";
 import type { ProviderId } from "@/lib/llm/types";
@@ -81,8 +84,8 @@ export async function runLawStage(
     // ----- 2. Vector search -----
     const scope = law.searched.length ? law.searched.map((j) => JURISDICTION_NAMES[j] ?? j).join(", ") : "all jurisdictions";
     send({ type: "step", step: { id: "law-search", text: `Law · Search ${queries.length} clauses in ${scope}`, status: "running" } });
-    const hits = await withTimeout(searchLaw(queries.map((q) => q.query), law.searched, HITS_PER_QUERY), timeoutMs);
-    const { norms, retrieved } = pickNorms(queries, hits);
+    const channels = await withTimeout(retrieve(text, queries, law.searched), timeoutMs);
+    const { norms, retrieved } = pickNorms(queries, channels);
     law.retrieved = retrieved;
     law.norms = norms.length;
     emit();
@@ -115,4 +118,36 @@ export async function runLawStage(
     if (process.env.NODE_ENV === "development") console.error("[check] law", error);
     return { law, findings: [] };
   }
+}
+
+/**
+ * Three retrieval channels per clause, all checked against the law base:
+ *  - named: articles the prepare model named, looked up directly (points closest to the question);
+ *  - question: vector search with the plain-language validity question;
+ *  - clause: vector search with the clause text itself.
+ * Named articles outside the searched jurisdiction are dropped when the search is scoped.
+ */
+async function retrieve(text: string, queries: Array<{ clause: string; query: string; articles?: string[] }>, scope: string[]): Promise<Channel[]> {
+  const clauseText = new Map(contractClauses(text).map((c) => [c.clause, c.text]));
+  const vectors = await embed([...queries.map((q) => q.query), ...queries.map((q) => clauseText.get(q.clause) ?? q.query)]);
+  const qVec = vectors.slice(0, queries.length);
+  const cVec = vectors.slice(queries.length);
+  const requests: Array<{ i: number; article: string; vector: number[] }> = [];
+  queries.forEach((q, i) => {
+    for (const a of q.articles ?? []) {
+      if (scope.length === 0 || scope.includes(articleJurisdiction(a))) requests.push({ i, article: a, vector: qVec[i] });
+    }
+  });
+  const [question, clause, lookedUp] = await Promise.all([
+    searchByVectors(qVec, scope, HITS_PER_QUERY),
+    searchByVectors(cVec, scope, 3),
+    lookupArticles(requests.map(({ article, vector }) => ({ article, vector })), 2),
+  ]);
+  const named = queries.map(() => [] as typeof lookedUp[number]);
+  requests.forEach((r, k) => named[r.i].push(...lookedUp[k]));
+  return [
+    { name: "named", hits: named, take: 2 },
+    { name: "question", hits: question, take: 3 },
+    { name: "clause", hits: clause, take: 1 },
+  ];
 }
