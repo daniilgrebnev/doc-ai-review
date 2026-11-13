@@ -8,6 +8,7 @@ import { getDefect } from "@/lib/check/catalog";
 import { getExample } from "@/lib/check/examples";
 import { spansOverlap } from "@/lib/check/spans";
 import type { CascadeState } from "@/lib/check/cascade";
+import { articleOf, type LawState, type LegalFinding } from "@/lib/check/law";
 import type { CheckEvent, CheckStep, Finding } from "@/lib/check/types";
 import type { AnswerKeyItem } from "@/lib/generator";
 import { getLegalDefect } from "@/lib/generator/legal-defects";
@@ -55,6 +56,8 @@ export function LiveRun({ title, subtitle, text, exampleId, answerKey, localKey,
   const [error, setError] = useState<{ kind: string; message: string } | null>(null);
   const [meta, setMeta] = useState<DoneMeta | null>(null);
   const [cascade, setCascade] = useState<CascadeState | null>(null);
+  const [law, setLaw] = useState<LawState | null>(null);
+  const [legal, setLegal] = useState<LegalFinding[]>([]);
   const [selected, setSelected] = useState<string | null>(null);
   const [elapsed, setElapsed] = useState(0);
   const [run, setRun] = useState(0);
@@ -70,6 +73,8 @@ export function LiveRun({ title, subtitle, text, exampleId, answerKey, localKey,
     setError(null);
     setMeta(null);
     setCascade(null);
+    setLaw(null);
+    setLegal([]);
     setSelected(null);
     const t0 = Date.now();
     const tick = setInterval(() => setElapsed(Date.now() - t0), 100);
@@ -85,6 +90,10 @@ export function LiveRun({ title, subtitle, text, exampleId, answerKey, localKey,
         });
       } else if (e.type === "cascade") {
         setCascade(e.cascade);
+      } else if (e.type === "law") {
+        setLaw(e.law);
+      } else if (e.type === "legal-finding") {
+        setLegal((prev) => [...prev, e.finding]);
       } else if (e.type === "finding") {
         setFindings((prev) => [...prev, e.finding]);
       } else if (e.type === "done") {
@@ -156,11 +165,14 @@ export function LiveRun({ title, subtitle, text, exampleId, answerKey, localKey,
 
   const finished = status === "done" || status === "skipped";
   const extraMarks = useMemo<ExtraMark[]>(() => {
-    if (!answerKey || !finished) return [];
-    return answerKey
+    const lawMarks: ExtraMark[] = legal.flatMap((f) =>
+      f.spans.map((span) => ({ span, className: `hl-${f.verdict}`, title: `Law: ${f.title} · ${f.legalBasis.map((b) => b.articleTitle).join("; ")}` }))
+    );
+    if (!answerKey || !finished) return lawMarks;
+    return lawMarks.concat(answerKey
       .filter((k) => status === "skipped" || !keyFound(k, findings))
-      .flatMap((k) => k.spans.map((span) => ({ span, className: status === "skipped" ? "hl-risk" : "hl-missed", title: `${k.defect} ${getDefect(k.defect)?.name ?? ""}` })));
-  }, [answerKey, findings, finished, status]);
+      .flatMap((k) => k.spans.map((span) => ({ span, className: status === "skipped" ? "hl-risk" : "hl-missed", title: `${k.defect} ${getDefect(k.defect)?.name ?? ""}` }))));
+  }, [answerKey, findings, finished, status, legal]);
 
   const sec = (ms: number) => `${(ms / 1000).toFixed(1)} s`;
   const statusText =
@@ -251,8 +263,10 @@ export function LiveRun({ title, subtitle, text, exampleId, answerKey, localKey,
               </section>
             )}
 
+            {law && status !== "skipped" && <LawPanel law={law} findings={legal} />}
+
             {answerKey && finished && <AnswerKeyBox answerKey={answerKey} findings={findings} skipped={status === "skipped"} />}
-            {localKey && finished && <JurisdictionKeyBox localKey={localKey} findings={findings} skipped={status === "skipped"} />}
+            {localKey && finished && <JurisdictionKeyBox localKey={localKey} findings={findings} law={law} legal={legal} skipped={status === "skipped"} />}
 
             {finished && findings.length > 0 && (
               <section className="flex flex-col gap-2">
@@ -317,14 +331,82 @@ function AnswerKeyBox({ answerKey, findings, skipped }: { answerKey: AnswerKeyIt
 const JURISDICTION_NAMES: Record<string, string> = { none: "None", RU: "Russia", DE: "Germany", EU: "EU", "US-NY": "New York" };
 
 /** Some non-compliant finding overlaps the clause */
-function clauseFlagged(d: KeyDefect, findings: Finding[]): boolean {
+function clauseFlagged(d: KeyDefect, findings: Array<Pick<Finding, "spans"> & { verdict: string }>): boolean {
   const span = d.span;
   return span !== null && findings.some((f) => f.verdict !== "compliant" && f.spans.some((s) => spansOverlap(s, span)));
 }
 
+/** A law finding on the clause cites the same article as the key */
+function citedRight(d: KeyDefect, legal: LegalFinding[]): boolean {
+  const want = new Set(d.slotIds.map(articleOf));
+  const span = d.span;
+  return (
+    span !== null &&
+    legal.some((f) => f.spans.some((s) => spansOverlap(s, span)) && f.legalBasis.some((b) => want.has(articleOf(b.slotId))))
+  );
+}
+
+const GUESS_NAMES: Record<string, string> = { RU: "Russia", DE: "Germany", EU: "EU", "US-NY": "New York", unknown: "unknown" };
+
+/** The law stage of the run: governing-law guess, search, findings with the cited articles */
+function LawPanel({ law, findings }: { law: LawState; findings: LegalFinding[] }) {
+  const g = law.guess;
+  return (
+    <section className="flex flex-col gap-2 rounded-lg border border-line bg-white p-4">
+      <div className="flex items-baseline gap-2.5">
+        <strong className="text-[16px]">Law check</strong>
+        <span className="text-[13px] text-muted">
+          {law.status === "running" ? "running…" : law.status === "failed" ? `failed · ${law.error ?? ""}` : `${findings.length} conflict${findings.length === 1 ? "" : "s"}`}
+        </span>
+      </div>
+      {g && (
+        <span className="text-sm text-ink-2">
+          Governing law, guessed from the text: <strong>{GUESS_NAMES[g.jurisdiction] ?? g.jurisdiction}</strong>
+          {g.jurisdiction === "EU" && g.country ? ` (${g.country})` : ""}
+          {g.jurisdiction !== "unknown" ? ` · ${Math.round(g.confidence * 100)}%` : ""}
+          {law.searched ? ` · searched ${law.searched.length ? law.searched.map((j) => GUESS_NAMES[j] ?? j).join(", ") : "all jurisdictions"}` : ""}
+          {law.norms != null ? ` · ${law.norms} provisions` : ""}
+        </span>
+      )}
+      {g && g.evidence.length > 0 && <span className="text-[13px] text-muted">Cues: {g.evidence.map((e) => `“${e}”`).join(" · ")}</span>}
+      {findings.length > 0 && (
+        <ul className="flex flex-col text-sm">
+          {findings.map((f) => (
+            <li key={f.id} className="flex flex-col gap-0.5 border-t border-line py-2">
+              <span className="flex gap-2.5">
+                <span className={cn("w-[74px] flex-none font-semibold", f.verdict === "violation" ? "text-bad" : "text-ink-2")}>{f.verdict === "violation" ? "Violation" : "Risk"}</span>
+                <span className="font-mono text-xs leading-5 text-muted">§{f.clause}</span>
+                <span>{f.title}</span>
+              </span>
+              <span className="text-[13px] text-ink-2">{f.reason}</span>
+              <span className="text-[13px] text-muted">{f.legalBasis.map((b) => `${b.articleTitle} [${b.slotId}]`).join(" · ")}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+  );
+}
+
 /** Reveal of the localized key: where the contract was placed and the law-specific traps */
-function JurisdictionKeyBox({ localKey, findings, skipped }: { localKey: LocalizedKey; findings: Finding[]; skipped: boolean }) {
+function JurisdictionKeyBox({
+  localKey,
+  findings,
+  law,
+  legal: legalFindings,
+  skipped,
+}: {
+  localKey: LocalizedKey;
+  findings: Finding[];
+  law: LawState | null;
+  legal: LegalFinding[];
+  skipped: boolean;
+}) {
   const legal = localKey.defects.filter((d) => d.kind === "legal");
+  // With the law stage, legal entries are judged by its findings; without it, by any finding on the clause
+  const lawRan = law?.status === "done";
+  const guess = law?.guess;
+  const guessedRight = guess ? guess.jurisdiction === (localKey.jurisdiction === "none" ? "unknown" : localKey.jurisdiction) : null;
   const cues = Array.from(new Set(localKey.cues.filter((c) => c.type !== "language").map((c) => `${c.type}: ${c.value}`)));
   return (
     <section className="flex flex-col gap-2 rounded-lg border border-line bg-white p-4">
@@ -339,13 +421,24 @@ function JurisdictionKeyBox({ localKey, findings, skipped }: { localKey: Localiz
         <dd className="m-0 font-mono text-xs leading-5">{localKey.language}</dd>
         <dt className="text-muted">Visibility</dt>
         <dd className="m-0">{localKey.visibility}</dd>
+        {guess && !skipped && (
+          <>
+            <dt className="text-muted">Agent guessed</dt>
+            <dd className={cn("m-0 font-semibold", guessedRight ? "text-ok" : "text-bad")}>
+              {guessedRight ? "✓ " : "✕ "}
+              {GUESS_NAMES[guess.jurisdiction] ?? guess.jurisdiction}
+              {guess.jurisdiction !== "unknown" ? ` · ${Math.round(guess.confidence * 100)}%` : ""}
+            </dd>
+          </>
+        )}
         <dt className="text-muted">Cues</dt>
         <dd className="m-0">{cues.length ? cues.join(" · ") : "none besides the language"}</dd>
       </dl>
       {legal.length > 0 ? (
         <ul className="flex flex-col text-sm">
           {legal.map((d) => {
-            const flagged = clauseFlagged(d, findings);
+            const flagged = clauseFlagged(d, lawRan ? legalFindings : findings);
+            const cited = lawRan && citedRight(d, legalFindings);
             // A lawful clause (violatesHere = false) is a distractor: flagging it is not a hit,
             // unless the clause is also a general trap (annotation), where a flag is expected anyway
             const general = getLegalDefect(d.id)?.general;
@@ -368,7 +461,8 @@ function JurisdictionKeyBox({ localKey, findings, skipped }: { localKey: Localiz
                   </span>
                 </span>
                 <span className="text-[13px] text-muted">
-                  {d.slotIds.length ? d.slotIds.join(", ") : "no slot"} · {d.note}
+                  {d.slotIds.length ? d.slotIds.join(", ") : "no slot"}
+                  {lawRan && d.violatesHere && flagged ? (cited ? " · cited the right article" : " · cited another article") : ""} · {d.note}
                   {d.confidence === "low" ? " (low confidence)" : ""}
                 </span>
               </li>
@@ -379,7 +473,11 @@ function JurisdictionKeyBox({ localKey, findings, skipped }: { localKey: Localiz
         <span className="text-sm text-ink-2">No law-specific traps in this contract.</span>
       )}
       {!skipped && legal.length > 0 && (
-        <span className="text-[13px] text-muted">Flagged means some finding overlaps the clause; a lawful clause should be left alone on legal grounds.</span>
+        <span className="text-[13px] text-muted">
+          {lawRan
+            ? "Flagged means a law-check finding overlaps the clause; a lawful clause should be left alone."
+            : "Flagged means some finding overlaps the clause; a lawful clause should be left alone on legal grounds."}
+        </span>
       )}
     </section>
   );

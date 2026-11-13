@@ -17,7 +17,9 @@ import {
   type CascadeState,
 } from "@/lib/check/cascade";
 import { buildCheckMessages, CHECK_SYSTEM_PROMPT, pickCheckInput } from "@/lib/check/prompt";
+import { runLawStage } from "@/lib/check/law-stage";
 import { parseFindings } from "@/lib/check/parse";
+import { isLawSearchConfigured } from "@/lib/law/search";
 import type { CheckEvent, Finding } from "@/lib/check/types";
 import { llmComplete } from "@/lib/llm/complete";
 import { logCheckRun, type CheckRunLog, type RunAttempt } from "@/lib/db/runs";
@@ -28,7 +30,7 @@ import { getProvidersForRequest, resolveProvider } from "@/lib/llm/providers";
 import type { ProviderId } from "@/lib/llm/types";
 
 export const dynamic = "force-dynamic";
-export const maxDuration = 120;
+export const maxDuration = 180;
 
 /** About 5 pages of contract text */
 const CHECK_MAX_CHARS = 15_000;
@@ -290,6 +292,18 @@ export async function POST(request: Request) {
 
         for (const finding of findings) send({ type: "finding", finding });
 
+        // ----- Law check: guess the governing law, vector search, check against the found provisions -----
+        let lawLog: unknown;
+        if (isLawSearchConfigured()) {
+          const stage = await runLawStage(text, used, send, since, MODEL_TIMEOUT_MS);
+          inputTokens += stage.law.inputTokens ?? 0;
+          outputTokens += stage.law.outputTokens ?? 0;
+          if (cascade?.totalCostUsd != null) {
+            cascade.totalCostUsd = stage.law.costUsd == null ? null : Math.round((cascade.totalCostUsd + stage.law.costUsd) * 1e6) / 1e6;
+          }
+          lawLog = { ...stage.law, cited: stage.findings.map((f) => ({ clause: f.clause, verdict: f.verdict, slotIds: f.legalBasis.map((b) => b.slotId), exact: f.exact })) };
+        }
+
         const exact = findings.filter((f) => f.exact).length;
         Object.assign(run, {
           status: "ok",
@@ -301,7 +315,8 @@ export async function POST(request: Request) {
           inputTokens,
           outputTokens,
           costUsd: cascade ? cascade.totalCostUsd : undefined,
-          cascade: cascade ?? undefined,
+          // check_runs has no law column yet: the law stage is logged inside the cascade jsonb
+          cascade: cascade || lawLog ? { ...(cascade ?? {}), ...(lawLog ? { law: lawLog } : {}) } : undefined,
           modelMs: attempts.filter((a) => a.ok).reduce((n, a) => n + a.ms, 0),
         });
         send({ type: "step", step: { id: "verify", text: `Verify quotes against the text · ${exact} of ${findings.length} exact`, status: "done", ms: since() } });

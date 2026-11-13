@@ -11,6 +11,10 @@
   "src": "The Contractor shall provide cleaning of office premises services, and the Client shall accept and pay for them.",
   "out": "Исполнитель оказывает услуги по уборке офисных помещений, а Заказчик принимает и оплачивает их."
  },
+ "0951cbfb5ca127190daa185d": {
+  "src": "Client: ООО «Северные Работы», registered office: Kazan, ОГРН 10616638091467, ИНН 1647692990, КПП 163701001.",
+  "out": "Заказчик: ООО «Северные Работы», место нахождения: Казань, ОГРН 10616638091467, ИНН 1647692990, КПП 163701001."
+ },
  "0bf9ef8c7d0f6a75b71c2658": {
   "src": "SERVICE AGREEMENT No. 68/26",
   "out": "ДОГОВОР ОКАЗАНИЯ УСЛУГ № 68/26"
@@ -95,6 +99,10 @@
   "src": "The fee is RUB 760,000 per month.",
   "out": "Вознаграждение составляет RUB 760 000 в месяц."
  },
+ "539058cc247fa8f70bc2f246": {
+  "src": "Contractor: ООО «Дельта Ритейл», registered office: Kazan, ОГРН 19316782611212, ИНН 1611445493, КПП 161801001.",
+  "out": "Исполнитель: ООО «Дельта Ритейл», место нахождения: Казань, ОГРН 19316782611212, ИНН 1611445493, КПП 161801001."
+ },
  "55aaaa250950e2b0e3be0584": {
   "src": "Each Party's total liability is capped at the fees paid for the last three months.",
   "out": "Общий размер ответственности каждой Стороны ограничивается вознаграждением, уплаченным за последние три месяца."
@@ -102,6 +110,10 @@
  "5c6bb7fdebd96232a69a1623": {
   "src": "Final settlement for the month is made on the basis of the signed acceptance certificate.",
   "out": "Окончательный расчёт за месяц производится на основании подписанного акта сдачи-приёмки."
+ },
+ "6322aef12ff52ff4592016d5": {
+  "src": "For any delay, the Contractor pays the Client a penalty of 1% of the annual fee for each day of delay.",
+  "out": "За любую просрочку Исполнитель уплачивает Заказчику штраф в размере 1% от годового вознаграждения за каждый день просрочки."
  },
  "6b561491c6d01cf874236d6a": {
   "src": "The Client may change the fee unilaterally by notifying the Contractor by email.",
@@ -242,6 +254,10 @@
  "e40d0c102cc6a3f14addf81b": {
   "src": "Any claim under this Agreement must be brought within one year after it arises; after that the claim is barred.",
   "out": "Любой иск по настоящему Договору должен быть предъявлен в течение одного года с момента его возникновения; по истечении этого срока иск не подлежит рассмотрению."
+ },
+ "e4a8760e7475bce19e06635f": {
+  "src": "The Contractor is liable for all losses of the Client, direct and indirect, without limit.",
+  "out": "Исполнитель несёт ответственность за все убытки Заказчика, как прямые, так и косвенные, без ограничения размера."
  },
  "e881ceef59772c91f36f2c8c": {
   "src": "Kazan, 21 October 2026",

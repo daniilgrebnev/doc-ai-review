@@ -1,5 +1,6 @@
 /** Contract Check: data model of a finding (see ТЗ, F2) */
 import type { CascadeState } from "@/lib/check/cascade";
+import type { LawState, LegalFinding } from "@/lib/check/law";
 
 export type FindingVerdict = "violation" | "risk" | "compliant";
 
@@ -39,6 +40,9 @@ export type CheckEvent =
   | { type: "step"; step: CheckStep }
   | { type: "finding"; finding: Finding }
   | { type: "cascade"; cascade: CascadeState }
+  /** Law check stage: governing-law guess, search, check against the found provisions */
+  | { type: "law"; law: LawState }
+  | { type: "legal-finding"; finding: LegalFinding }
   | {
       type: "done";
       provider: string;
