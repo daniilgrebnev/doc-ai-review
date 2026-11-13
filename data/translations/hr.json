@@ -1,0 +1,158 @@
+{
+ "02f33327d725771a8280e776": {
+  "src": "Liability",
+  "out": "Odgovornost"
+ },
+ "0603756749d7eac7ee33e80c": {
+  "src": "The Contractor may withdraw from this Agreement at any time without giving a reason. The Client may terminate only in the event of a material breach.",
+  "out": "Izvoditelj može odstupiti od ovog Ugovora u bilo kojem trenutku bez navođenja razloga. Naručitelj može raskinuti Ugovor samo u slučaju bitne povrede."
+ },
+ "079845ac93dceef17fa6e642": {
+  "src": "Contractor",
+  "out": "Izvoditelj"
+ },
+ "1086bcf078ba034c5e924fa2": {
+  "src": "Agreement",
+  "out": "Ugovor"
+ },
+ "10ebf905eea5c264c2db7de1": {
+  "src": "The Contractor begins providing services within 3 business days of receiving the Client's request.",
+  "out": "Izvoditelj počinje pružati usluge u roku od 3 radna dana od primitka zahtjeva Naručitelja."
+ },
+ "19a3d02a8a628e3674c3530b": {
+  "src": "SERVICE AGREEMENT No. 83/26",
+  "out": "UGOVOR O PRUŽANJU USLUGA br. 83/26"
+ },
+ "1ac5f64eaa8689db533cfb0f": {
+  "src": "Orion Group (the \"Contractor\") and Meridian Partners (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Orion Group (dalje u tekstu: \"Izvoditelj\") i Meridian Partners (dalje u tekstu: \"Naručitelj\"), zajedno \"Ugovorne strane\", sporazumno utvrđuju sljedeće."
+ },
+ "25338c8f0d6afe6fc0a759b9": {
+  "src": "Disputes",
+  "out": "Sporovi"
+ },
+ "318771d99e23c8f5f3b2f2f0": {
+  "src": "The Client is liable for all losses of the Contractor, direct and indirect, without limit.",
+  "out": "Naručitelj odgovara za sve gubitke Izvoditelja, izravne i neizravne, bez ograničenja."
+ },
+ "35e0c6e256df8fe6aa0431d2": {
+  "src": "Settlement",
+  "out": "Namira"
+ },
+ "38fb7a737717b3089a310b31": {
+  "src": "Miscellaneous",
+  "out": "Razno"
+ },
+ "3d02da6a6c3e18b7d37c9999": {
+  "src": "Date: 25 February 2026",
+  "out": "Datum: 25. veljače 2026."
+ },
+ "6597f7d0b4a7b150db6743ef": {
+  "src": "For late payment, the Client also owes interest on the overdue amount as provided by law.",
+  "out": "Za zakašnjelo plaćanje Naručitelj također duguje kamatu na dospjeli iznos, kako je propisano zakonom."
+ },
+ "6769d2c770193fd1b7dca453": {
+  "src": "Liability for intentional breach is not limited by this Agreement.",
+  "out": "Odgovornost za namjernu povredu ovim Ugovorom nije ograničena."
+ },
+ "6b1d233310d1a7aed90fc6cd": {
+  "src": "Details of the Parties",
+  "out": "Podaci o Ugovornim stranama"
+ },
+ "6e578c1383c339ad9781eee3": {
+  "src": "A dispute that the Parties cannot settle by negotiation is referred to the competent court.",
+  "out": "Spor koji Ugovorne strane ne mogu riješiti pregovorima upućuje se nadležnom sudu."
+ },
+ "7095cd0ef157c0e7deff1e5f": {
+  "src": "fee",
+  "out": "Naknada"
+ },
+ "71e641c2f546f037fe5ce7b0": {
+  "src": "Fees and payment",
+  "out": "Naknada i plaćanje"
+ },
+ "7a31eb62f9192a4a04c2ce2c": {
+  "src": "The Contractor shall provide copywriting services, and the Client shall accept and pay for them.",
+  "out": "Izvoditelj pruža usluge copywritinga, a Naručitelj ih prihvaća i plaća."
+ },
+ "89af50ad82b66d2101d7bf4f": {
+  "src": "Either Party may assign its right to payment to a third party after notifying the other Party in writing.",
+  "out": "Svaka Ugovorna strana može svoje pravo na plaćanje ustupiti trećoj osobi nakon pisanog obavješćivanja druge Ugovorne strane."
+ },
+ "8d80f646c8ca61a8570d057a": {
+  "src": "This Agreement is valid for 12 months from the date of signing.",
+  "out": "Ovaj Ugovor vrijedi 12 mjeseci od datuma potpisivanja."
+ },
+ "957ab8eda06396a097eae7b5": {
+  "src": "Party / Parties",
+  "out": "Ugovorna strana / Ugovorne strane"
+ },
+ "9584b17cc15cef6615deb000": {
+  "src": "Subject",
+  "out": "Predmet"
+ },
+ "989657de3fe5e65bc328b1f3": {
+  "src": "Any extension of this Agreement is made by a separate signed amendment.",
+  "out": "Svako produljenje ovog Ugovora čini se zasebnom potpisanom izmjenom."
+ },
+ "aa4ed841f2d9d07dba9e8a16": {
+  "src": "Timelines",
+  "out": "Rokovi"
+ },
+ "ab7a08744f4aa085b48b9115": {
+  "src": "Termination",
+  "out": "Raskid"
+ },
+ "ac88af415c2ffd7258592724": {
+  "src": "Term",
+  "out": "Trajanje"
+ },
+ "b42468fe623494e61992b8be": {
+  "src": "Claims under this Agreement are subject to the statutory limitation period.",
+  "out": "Potraživanja na temelju ovog Ugovora podliježu zakonskom roku zastare."
+ },
+ "b4e50434b41b889bc430a366": {
+  "src": "Client",
+  "out": "Naručitelj"
+ },
+ "b6768732aa0a00e2bec3029c": {
+  "src": "Contractor: Orion Group. Signature: ____________",
+  "out": "Izvoditelj: Orion Group. Potpis: ____________"
+ },
+ "cadb03320aed26f6137b298a": {
+  "src": "All notices are sent by email to the addresses the Parties have given each other in writing.",
+  "out": "Sve obavijesti šalju se e-poštom na adrese koje su Ugovorne strane međusobno pisanim putem dostavile."
+ },
+ "cedc5653447afca6c5cf6a0e": {
+  "src": "The fee is 2,400, in the currency stated in the invoice, per month.",
+  "out": "Naknada iznosi 2.400, u valuti navedenoj na računu, mjesečno."
+ },
+ "cf24e2df62d54a48b737498c": {
+  "src": "The fee may be changed only by an amendment signed by both Parties.",
+  "out": "Naknada se može mijenjati samo izmjenom Ugovora potpisanom od obiju Ugovornih strana."
+ },
+ "d3c5ec7a8def4aa94e861d63": {
+  "src": "The Client pays within 10 business days of signing the acceptance certificate.",
+  "out": "Naručitelj plaća u roku od 10 radnih dana od potpisivanja Potvrde o prihvaćanju."
+ },
+ "d8314a5ea262751debc4a85e": {
+  "src": "For any delay, the Client pays the Contractor a penalty of 1% of the annual fee for each day of delay.",
+  "out": "Za svako kašnjenje Naručitelj plaća Izvoditelju ugovornu kaznu u iznosu od 1% godišnje naknade za svaki dan kašnjenja."
+ },
+ "d866c28809bf337fdca1e9b4": {
+  "src": "Client: Meridian Partners. Signature: ____________",
+  "out": "Naručitelj: Meridian Partners. Potpis: ____________"
+ },
+ "d94e0750a8620058b9c34f74": {
+  "src": "Final settlement for the month is made no later than 30 calendar days after the acceptance certificate is signed.",
+  "out": "Konačna namira za mjesec obavlja se najkasnije 30 kalendarskih dana nakon potpisivanja Potvrde o prihvaćanju."
+ },
+ "dfd8a72a29229411c076e332": {
+  "src": "acceptance certificate",
+  "out": "Potvrda o prihvaćanju"
+ },
+ "f88ff559f02f5b56f089af46": {
+  "src": "The Parties will try to settle any dispute by negotiation.",
+  "out": "Ugovorne strane će nastojati riješiti svaki spor pregovorima."
+ }
+}

@@ -1,7 +1,10 @@
 /**
  * POST /api/generate — a contract with known traps, written by the selected model.
- * Body: { level: 0..5, beneficiary: "contractor" | "client", defects?: DefectCode[], seed?: number, provider?: ProviderId }
+ * Body: { level: 0..5, beneficiary: "contractor" | "client", defects?: DefectCode[], seed?: number, provider?: ProviderId,
+ *         jurisdiction?: "none" | "RU" | "DE" | "EU" | "US-NY", visibility?: "explicit" | "indirect" | "hidden", legal?: boolean }
  * Response: GenerateResponse (below). Same provider choice, geo lock and fallback order as /api/check.
+ * With `jurisdiction` the contract comes from the localized template (lib/generator/localized.ts):
+ * deterministic by seed, the model only translates it; the answer key is in `localized.key`.
  */
 import { NextResponse } from "next/server";
 import type { DefectCode } from "@/lib/check/types";
@@ -15,6 +18,9 @@ import {
   type ParsedGeneration,
 } from "@/lib/generator/llm";
 import type { CompleteResult } from "@/lib/claude/types";
+import { isJurisdiction, isVisibility } from "@/lib/generator/jurisdictions";
+import { generateLocalized, type LocalizedGeneration } from "@/lib/generator/localized";
+import { cacheOnlyTranslator, llmTranslator } from "@/lib/generator/translate";
 import { llmComplete } from "@/lib/llm/complete";
 import { getClientHash, getQuota, LIMIT_MESSAGE } from "@/lib/db/quota";
 import { getRequestCountry } from "@/lib/llm/geo";
@@ -28,8 +34,10 @@ const MODEL_TIMEOUT_MS = 120_000;
 
 export interface GenerateResponse {
   contract: GeneratedContract;
-  /** "model" — written by the LLM; "template" — fallback to the built-in template generator */
-  source: "model" | "template";
+  /** "model" — written by the LLM; "template" — fallback to the built-in template generator; "localized" — jurisdiction template */
+  source: "model" | "template" | "localized";
+  /** Localized contract with its full answer key (jurisdiction, cues, legal defects); only with `jurisdiction` */
+  localized?: LocalizedGeneration;
   provider?: ProviderId;
   model?: string;
   fallbackFrom?: ProviderId;
@@ -94,6 +102,58 @@ export async function POST(request: Request) {
     }
 
     const { providers } = getProvidersForRequest(headers);
+
+    if (body.jurisdiction !== undefined) {
+      if (!isJurisdiction(body.jurisdiction)) return NextResponse.json({ error: "Unknown jurisdiction." }, { status: 400 });
+      const visibility = isVisibility(body.visibility) ? body.visibility : "explicit";
+      const translators =
+        resolution.kind === "provider"
+          ? [resolution.provider, ...providers.filter((p) => p.available && p.id !== resolution.provider).map((p) => p.id)]
+          : [];
+      let localized: LocalizedGeneration;
+      try {
+        localized = await generateLocalized(
+          { ...params, jurisdiction: body.jurisdiction, visibility, legal: body.legal !== false },
+          translators.length ? llmTranslator(translators) : cacheOnlyTranslator
+        );
+      } catch (error) {
+        run.error = error instanceof Error ? error.message.slice(0, 300) : "translation failed";
+        if (process.env.NODE_ENV === "development") console.error("[generate] localized", error);
+        return NextResponse.json({ error: "Could not translate the contract. Try another model or seed." }, { status: 502 });
+      }
+      const generalKey = localized.key.defects
+        .filter((d) => d.kind === "general")
+        .map((d) => {
+          const parts = [d, ...(d.also ?? [])];
+          return {
+            defect: d.id as DefectCode,
+            quotes: parts.map((p) => p.quote),
+            spans: parts.map((p) => p.span).filter((x): x is [number, number] => x !== null),
+          };
+        });
+      contractText = localized.contract.text;
+      Object.assign(run, {
+        status: "ok",
+        error: undefined,
+        clauses: localized.contract.clauses.length,
+        findingsCount: localized.key.defects.length,
+        findingsExact: localized.key.defects.filter((d) => d.span).length,
+      });
+      const res: GenerateResponse = {
+        contract: {
+          title: localized.contract.title,
+          text: localized.contract.text,
+          key: generalKey,
+          params: { level: localized.key.level, beneficiary, defects, seed },
+        },
+        source: "localized",
+        localized,
+        missing: [],
+        ms: Date.now() - t0,
+      };
+      return NextResponse.json(res);
+    }
+
     const order: ProviderId[] =
       resolution.kind === "provider"
         ? [resolution.provider, ...providers.filter((p) => p.available && p.id !== resolution.provider).map((p) => p.id)]

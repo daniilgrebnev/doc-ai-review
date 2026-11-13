@@ -1,7 +1,8 @@
 /**
  * POST /api/check — live contract check.
  * Streams NDJSON: agent steps, then findings, then "done" (or "error").
- * Body: { text: string, provider?: ProviderId }
+ * Body: { text: string, provider?: ProviderId }. Any other field is dropped (pickCheckInput):
+ * the checker never sees how a generated contract was made.
  */
 import {
   buildEscalation,
@@ -15,7 +16,7 @@ import {
   triage,
   type CascadeState,
 } from "@/lib/check/cascade";
-import { buildCheckUserMessage, CHECK_SYSTEM_PROMPT } from "@/lib/check/prompt";
+import { buildCheckMessages, CHECK_SYSTEM_PROMPT, pickCheckInput } from "@/lib/check/prompt";
 import { parseFindings } from "@/lib/check/parse";
 import type { CheckEvent, Finding } from "@/lib/check/types";
 import { llmComplete } from "@/lib/llm/complete";
@@ -46,13 +47,14 @@ function withTimeout<T>(p: Promise<T>, ms: number): Promise<T> {
 }
 
 export async function POST(request: Request) {
-  let body: { text?: unknown; provider?: unknown };
+  let raw: unknown;
   try {
-    body = await request.json();
+    raw = await request.json();
   } catch {
-    body = {};
+    raw = {};
   }
-  const text = typeof body.text === "string" ? body.text.trim() : "";
+  const body = pickCheckInput(raw);
+  const text = body.text;
   const headers = request.headers;
 
   const stream = new ReadableStream<Uint8Array>({
@@ -151,10 +153,7 @@ export async function POST(request: Request) {
             answer = await withTimeout(
               llmComplete(
                 provider,
-                [
-                  { role: "system", text: CHECK_SYSTEM_PROMPT },
-                  { role: "user", text: buildCheckUserMessage(text) },
-                ],
+                buildCheckMessages(text),
                 { purpose: "analyze", temperature: 0.1, ...(cascadeOn ? { model: l1.model, effort: l1.effort } : {}) }
               ),
               MODEL_TIMEOUT_MS

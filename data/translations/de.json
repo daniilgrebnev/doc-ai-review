@@ -1,0 +1,134 @@
+{
+ "02fb9ef9a22c84a48c38b5f8": {
+  "src": "Settlement",
+  "out": "Abrechnung"
+ },
+ "0862fb2a4dd48d158048eba7": {
+  "src": "Term",
+  "out": "Laufzeit"
+ },
+ "0e3b62d4c7cf29e9451e52ec": {
+  "src": "For late payment, the Client pays a penalty of 0.1% of the unpaid amount per day, capped at 10% of that amount.",
+  "out": "Für verspätete Zahlung zahlt der Auftraggeber eine Vertragsstrafe von 0,1 % des ausstehenden Betrags pro Tag, begrenzt auf 10 % dieses Betrags."
+ },
+ "109ff9fd9f457816cfc5e4e7": {
+  "src": "Rheinlogik GmbH (the \"Contractor\") and Alpenblick Handel GmbH (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "Rheinlogik GmbH (der „Auftragnehmer“) und Alpenblick Handel GmbH (der „Auftraggeber“), zusammen die „Parteien“, vereinbaren Folgendes."
+ },
+ "180f9658f232eb852b7baccf": {
+  "src": "SERVICE AGREEMENT No. 71/26",
+  "out": "DIENSTLEISTUNGSVERTRAG Nr. 71/26"
+ },
+ "1b3263f9ffebd8486be8af1b": {
+  "src": "The Contractor waives any interest for late payment by the Client.",
+  "out": "Der Auftragnehmer verzichtet auf jegliche Verzugszinsen für verspätete Zahlungen des Auftraggebers."
+ },
+ "246307bc49552998b81ea2f7": {
+  "src": "The Contractor is liable for all losses of the Client, direct and indirect, without limit.",
+  "out": "Der Auftragnehmer haftet für sämtliche Schäden des Auftraggebers, unmittelbare und mittelbare, ohne Begrenzung."
+ },
+ "2acf15f393d1350c468a4850": {
+  "src": "Contractor: Rheinlogik GmbH, registered office: Munich, HRB 659509, Amtsgericht Munich, USt-IdNr. DE791307567.",
+  "out": "Auftragnehmer: Rheinlogik GmbH, Sitz: München, HRB 659509, Amtsgericht München, USt-IdNr. DE791307567."
+ },
+ "2bd6666b04451e6efc9f7f23": {
+  "src": "Claims under this Agreement are subject to the statutory limitation period.",
+  "out": "Ansprüche aus diesem Vertrag unterliegen der gesetzlichen Verjährungsfrist."
+ },
+ "368514c2ba6dc5f49e4e6949": {
+  "src": "Details of the Parties",
+  "out": "Angaben zu den Parteien"
+ },
+ "3a963201f96b44091642c30e": {
+  "src": "Disputes",
+  "out": "Streitigkeiten"
+ },
+ "3b6c797a43c52ae5269f03b0": {
+  "src": "Fees and payment",
+  "out": "Vergütung und Zahlung"
+ },
+ "3b8494dfc21c41fbe7b9a2a9": {
+  "src": "Miscellaneous",
+  "out": "Sonstiges"
+ },
+ "3f487cdc9b12b1ffc82bf169": {
+  "src": "Either Party may terminate this Agreement with 30 days' written notice.",
+  "out": "Jede Partei kann diesen Vertrag mit einer Frist von 30 Tagen schriftlich kündigen."
+ },
+ "619b0a153af8eb2279e24bdd": {
+  "src": "The fee is EUR 5,000 per month.",
+  "out": "Die Vergütung beträgt EUR 5.000 pro Monat."
+ },
+ "6be7840d3513fb9f5d677315": {
+  "src": "Timelines",
+  "out": "Fristen"
+ },
+ "7781b3d9d121dee2d71db7cb": {
+  "src": "The Parties will try to settle any dispute by negotiation.",
+  "out": "Die Parteien werden versuchen, jede Streitigkeit durch Verhandlungen beizulegen."
+ },
+ "7f8324d4cb951e6663419d90": {
+  "src": "This Agreement is valid for 12 months from the date of signing.",
+  "out": "Dieser Vertrag gilt für 12 Monate ab dem Datum der Unterzeichnung."
+ },
+ "80ce51d44432aa8a9afaa79e": {
+  "src": "The Client pays within 10 business days of signing the acceptance certificate.",
+  "out": "Der Auftraggeber zahlt innerhalb von 10 Werktagen nach Unterzeichnung des Abnahmeprotokolls."
+ },
+ "9074e9454ca9ffa328c3ab16": {
+  "src": "Termination",
+  "out": "Kündigung"
+ },
+ "ab855282221df47614fd2ce0": {
+  "src": "Client: Alpenblick Handel GmbH, registered office: Munich, HRB 050264, Amtsgericht Munich, USt-IdNr. DE006364496.",
+  "out": "Auftraggeber: Alpenblick Handel GmbH, Sitz: München, HRB 050264, Amtsgericht München, USt-IdNr. DE006364496."
+ },
+ "afc5e0e4eecc976c98dc5aff": {
+  "src": "The fee may be changed only by an amendment signed by both Parties.",
+  "out": "Die Vergütung kann nur durch eine von beiden Parteien unterzeichnete Änderungsvereinbarung geändert werden."
+ },
+ "b47fa4d4eceb82d0f9e2f713": {
+  "src": "Either Party may assign its right to payment to a third party after notifying the other Party in writing.",
+  "out": "Jede Partei kann ihren Zahlungsanspruch nach schriftlicher Benachrichtigung der anderen Partei an einen Dritten abtreten."
+ },
+ "bfb1acfe068d3ebcce4b7962": {
+  "src": "Liability",
+  "out": "Haftung"
+ },
+ "c6b3968a579e83a7878af6e9": {
+  "src": "This Agreement is deemed renewed for the same term unless either Party gives notice 60 days before it expires.",
+  "out": "Dieser Vertrag verlängert sich automatisch um dieselbe Laufzeit, sofern nicht eine Partei 60 Tage vor Ablauf kündigt."
+ },
+ "cd50f709341c066aeebe7407": {
+  "src": "Munich, 20 November 2026",
+  "out": "München, 20. November 2026"
+ },
+ "d37e0b1977843cafd758d0f7": {
+  "src": "Subject",
+  "out": "Gegenstand"
+ },
+ "d832751cb14fc5a0e3d00135": {
+  "src": "The Contractor shall provide IT infrastructure support services, and the Client shall accept and pay for them.",
+  "out": "Der Auftragnehmer erbringt IT-Infrastruktur-Supportleistungen, und der Auftraggeber nimmt diese ab und zahlt dafür."
+ },
+ "dd4fa9fe581b5dc639680c46": {
+  "src": "Final settlement for the month is made no later than 30 calendar days after the acceptance certificate is signed.",
+  "out": "Die Schlussabrechnung für den Monat erfolgt spätestens 30 Kalendertage nach Unterzeichnung des Abnahmeprotokolls."
+ },
+ "debbb323b8792c717518a2a9": {
+  "src": "All notices are sent by email to the addresses the Parties have given each other in writing.",
+  "out": "Sämtliche Mitteilungen werden per E-Mail an die Adressen versandt, die die Parteien einander schriftlich mitgeteilt haben."
+ },
+ "e78254c7b7a5f5335f7a60c0": {
+  "src": "The Contractor begins providing services within 3 business days of receiving the Client's request.",
+  "out": "Der Auftragnehmer beginnt innerhalb von 3 Werktagen nach Eingang der Anfrage des Auftraggebers mit der Leistungserbringung."
+ },
+ "e8b18647c8962001ba3aa07a": {
+  "src": "Liability for intentional breach is not limited by this Agreement.",
+  "out": "Die Haftung für vorsätzliche Vertragsverletzung wird durch diesen Vertrag nicht beschränkt."
+ },
+ "eef2b15483a8555c42aadffb": {
+  "src": "A dispute that the Parties cannot settle by negotiation is referred to the competent court.",
+  "out": "Eine Streitigkeit, die die Parteien nicht durch Verhandlungen beilegen können, wird an das zuständige Gericht verwiesen."
+ }
+}

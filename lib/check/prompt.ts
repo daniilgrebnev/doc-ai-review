@@ -4,6 +4,7 @@
  * so the demo works end to end and gives evals a first baseline.
  */
 import { DEFECTS, REQUIREMENTS } from "@/lib/check/catalog";
+import type { LlmMessage } from "@/lib/claude/types";
 
 export const CHECK_SYSTEM_PROMPT = `You check contracts for traps that hurt one of the parties.
 
@@ -26,4 +27,22 @@ Return ONLY JSON, no markdown:
 
 export function buildCheckUserMessage(text: string): string {
   return `<contract>\n${text}\n</contract>`;
+}
+
+/** Messages of the level 1 check: the system prompt and the contract text, nothing else */
+export function buildCheckMessages(text: string): LlmMessage[] {
+  return [
+    { role: "system", text: CHECK_SYSTEM_PROMPT },
+    { role: "user", text: buildCheckUserMessage(text) },
+  ];
+}
+
+/**
+ * The only fields POST /api/check takes from the request body. The checker must stay blind
+ * to how a contract was generated (jurisdiction, language, visibility, answer key), so
+ * everything else a client may send is dropped here.
+ */
+export function pickCheckInput(body: unknown): { text: string; provider: unknown } {
+  const b = typeof body === "object" && body !== null ? (body as Record<string, unknown>) : {};
+  return { text: typeof b.text === "string" ? b.text.trim() : "", provider: b.provider };
 }

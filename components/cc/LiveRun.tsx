@@ -10,6 +10,8 @@ import { spansOverlap } from "@/lib/check/spans";
 import type { CascadeState } from "@/lib/check/cascade";
 import type { CheckEvent, CheckStep, Finding } from "@/lib/check/types";
 import type { AnswerKeyItem } from "@/lib/generator";
+import { getLegalDefect } from "@/lib/generator/legal-defects";
+import type { KeyDefect, LocalizedKey } from "@/lib/generator/localized";
 import { formatModelLabel } from "@/lib/llm/model-label";
 import { cn } from "@/lib/utils";
 import { DocumentView, scrollToFinding, type ExtraMark } from "@/components/cc/DocumentView";
@@ -26,6 +28,8 @@ export interface LiveRunProps {
   exampleId?: string;
   /** Answer key of a generated contract */
   answerKey?: AnswerKeyItem[];
+  /** Full key of a localized contract (jurisdiction, cues, legal defects); shown only after the run */
+  localKey?: LocalizedKey;
   onBack: () => void;
 }
 
@@ -43,7 +47,7 @@ function keyFound(k: AnswerKeyItem, findings: Finding[]): boolean {
   return findings.some((f) => f.defect === k.defect && f.spans.some((s) => k.spans.some((ks) => spansOverlap(s, ks))));
 }
 
-export function LiveRun({ title, subtitle, text, exampleId, answerKey, onBack }: LiveRunProps) {
+export function LiveRun({ title, subtitle, text, exampleId, answerKey, localKey, onBack }: LiveRunProps) {
   const provider = useAgentFlowStore((s) => s.provider);
   const [steps, setSteps] = useState<CheckStep[]>([]);
   const [findings, setFindings] = useState<Finding[]>([]);
@@ -248,6 +252,7 @@ export function LiveRun({ title, subtitle, text, exampleId, answerKey, onBack }:
             )}
 
             {answerKey && finished && <AnswerKeyBox answerKey={answerKey} findings={findings} skipped={status === "skipped"} />}
+            {localKey && finished && <JurisdictionKeyBox localKey={localKey} findings={findings} skipped={status === "skipped"} />}
 
             {finished && findings.length > 0 && (
               <section className="flex flex-col gap-2">
@@ -304,6 +309,77 @@ function AnswerKeyBox({ answerKey, findings, skipped }: { answerKey: AnswerKeyIt
           {found.length < answerKey.length ? "Missed traps are outlined in red in the text. " : ""}
           {extra > 0 ? `${extra} finding${extra > 1 ? "s" : ""} not in the key.` : ""}
         </span>
+      )}
+    </section>
+  );
+}
+
+const JURISDICTION_NAMES: Record<string, string> = { none: "None", RU: "Russia", DE: "Germany", EU: "EU", "US-NY": "New York" };
+
+/** Some non-compliant finding overlaps the clause */
+function clauseFlagged(d: KeyDefect, findings: Finding[]): boolean {
+  const span = d.span;
+  return span !== null && findings.some((f) => f.verdict !== "compliant" && f.spans.some((s) => spansOverlap(s, span)));
+}
+
+/** Reveal of the localized key: where the contract was placed and the law-specific traps */
+function JurisdictionKeyBox({ localKey, findings, skipped }: { localKey: LocalizedKey; findings: Finding[]; skipped: boolean }) {
+  const legal = localKey.defects.filter((d) => d.kind === "legal");
+  const cues = Array.from(new Set(localKey.cues.filter((c) => c.type !== "language").map((c) => `${c.type}: ${c.value}`)));
+  return (
+    <section className="flex flex-col gap-2 rounded-lg border border-line bg-white p-4">
+      <strong className="text-[16px]">Jurisdiction key</strong>
+      <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm">
+        <dt className="text-muted">Jurisdiction</dt>
+        <dd className="m-0">
+          {JURISDICTION_NAMES[localKey.jurisdiction] ?? localKey.jurisdiction}
+          {localKey.jurisdiction === "EU" && localKey.country ? ` · ${localKey.country}` : ""}
+        </dd>
+        <dt className="text-muted">Language</dt>
+        <dd className="m-0 font-mono text-xs leading-5">{localKey.language}</dd>
+        <dt className="text-muted">Visibility</dt>
+        <dd className="m-0">{localKey.visibility}</dd>
+        <dt className="text-muted">Cues</dt>
+        <dd className="m-0">{cues.length ? cues.join(" · ") : "none besides the language"}</dd>
+      </dl>
+      {legal.length > 0 ? (
+        <ul className="flex flex-col text-sm">
+          {legal.map((d) => {
+            const flagged = clauseFlagged(d, findings);
+            // A lawful clause (violatesHere = false) is a distractor: flagging it is not a hit,
+            // unless the clause is also a general trap (annotation), where a flag is expected anyway
+            const general = getLegalDefect(d.id)?.general;
+            const neutral = !d.violatesHere && Boolean(general);
+            const ok = d.violatesHere ? flagged : !flagged;
+            return (
+              <li key={d.id} className="flex flex-col gap-0.5 border-t border-line py-2">
+                <span className="flex gap-2.5">
+                  {!skipped && (
+                    <span className={cn("w-[74px] flex-none font-semibold", neutral ? "text-muted" : ok ? "text-ok" : "text-bad")}>
+                      {neutral ? (flagged ? "Flagged" : "Left") : d.violatesHere ? (flagged ? "✓ Flagged" : "✕ Missed") : flagged ? "✕ Flagged" : "✓ Left"}
+                    </span>
+                  )}
+                  <span className="font-mono text-xs leading-5 text-muted">
+                    {d.id} · §{d.clauseId}
+                  </span>
+                  <span>
+                    {getLegalDefect(d.id)?.title} · {d.violatesHere ? "unlawful here" : "lawful here"}
+                    {general ? ` · same clause as ${general}` : ""}
+                  </span>
+                </span>
+                <span className="text-[13px] text-muted">
+                  {d.slotIds.length ? d.slotIds.join(", ") : "no slot"} · {d.note}
+                  {d.confidence === "low" ? " (low confidence)" : ""}
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+      ) : (
+        <span className="text-sm text-ink-2">No law-specific traps in this contract.</span>
+      )}
+      {!skipped && legal.length > 0 && (
+        <span className="text-[13px] text-muted">Flagged means some finding overlaps the clause; a lawful clause should be left alone on legal grounds.</span>
       )}
     </section>
   );
