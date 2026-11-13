@@ -4,17 +4,48 @@ import type { DefectCode, Finding, FindingVerdict, RequirementId } from "@/lib/c
 
 const VERDICTS: FindingVerdict[] = ["violation", "risk", "compliant"];
 
-function extractJson(raw: string): unknown {
+function tryParse(s: string): unknown {
+  try {
+    return JSON.parse(s);
+  } catch {
+    return undefined;
+  }
+}
+
+/**
+ * Pulls the findings array out of a model answer. Models do not always follow the
+ * {"findings":[...]} shape: YandexGPT Lite sometimes answers with a bare array of findings
+ * or wraps the object in an array, so all three shapes are accepted.
+ */
+function extractFindings(raw: string): unknown[] | null {
   const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)```/);
   const body = (fenced ? fenced[1] : raw).trim();
-  const start = body.indexOf("{");
-  const end = body.lastIndexOf("}");
-  if (start < 0 || end <= start) return null;
-  try {
-    return JSON.parse(body.slice(start, end + 1));
-  } catch {
+  const candidates: unknown[] = [];
+  const objStart = body.indexOf("{");
+  const objEnd = body.lastIndexOf("}");
+  const arrStart = body.indexOf("[");
+  const arrEnd = body.lastIndexOf("]");
+  // The outermost bracket decides which shape to try first
+  if (arrStart >= 0 && arrEnd > arrStart && (objStart < 0 || arrStart < objStart)) candidates.push(tryParse(body.slice(arrStart, arrEnd + 1)));
+  if (objStart >= 0 && objEnd > objStart) candidates.push(tryParse(body.slice(objStart, objEnd + 1)));
+  for (const data of candidates) {
+    const findings = findingsOf(data);
+    if (findings) return findings;
+  }
+  return null;
+}
+
+function findingsOf(data: unknown): unknown[] | null {
+  if (Array.isArray(data)) {
+    if (data.length === 1 && findingsOf(data[0])) return findingsOf(data[0]);
+    // A bare array of findings (an empty one means "no findings")
+    if (data.every((x) => typeof x === "object" && x !== null && "verdict" in x)) return data;
     return null;
   }
+  if (typeof data === "object" && data !== null && Array.isArray((data as { findings?: unknown }).findings)) {
+    return (data as { findings: unknown[] }).findings;
+  }
+  return null;
 }
 
 function str(v: unknown): string {
@@ -23,11 +54,11 @@ function str(v: unknown): string {
 
 /** Parses the model answer into findings and checks every quote against the text */
 export function parseFindings(raw: string, text: string): Finding[] | null {
-  const data = extractJson(raw) as { findings?: unknown } | null;
-  if (!data || !Array.isArray(data.findings)) return null;
+  const items = extractFindings(raw);
+  if (!items) return null;
 
   const out: Finding[] = [];
-  data.findings.forEach((item: Record<string, unknown>, i: number) => {
+  (items as Array<Record<string, unknown>>).forEach((item, i) => {
     if (!item || typeof item !== "object") return;
     const verdict = str(item.verdict).toLowerCase() as FindingVerdict;
     if (!VERDICTS.includes(verdict)) return;

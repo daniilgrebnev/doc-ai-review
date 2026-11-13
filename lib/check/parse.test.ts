@@ -20,6 +20,13 @@ describe("parseFindings", () => {
     expect(f[0].exact).toBe(false);
   });
 
+  it("accepts a bare array of findings and an object wrapped in an array (YandexGPT Lite)", () => {
+    const item = '{"verdict":"violation","defect":"D6","requirement":"R6","clause":"3.3","title":"Price","quotes":["may change the fee unilaterally"],"reason":"bad","confidence":0.9}';
+    expect(parseFindings("```\n[" + item + ",\n" + item + "]\n```", TEXT)).toHaveLength(2);
+    expect(parseFindings('[{"findings":[' + item + "]}]", TEXT)).toHaveLength(1);
+    expect(parseFindings("[]", TEXT)).toEqual([]);
+  });
+
   it("returns null for non-JSON", () => {
     expect(parseFindings("sorry", TEXT)).toBeNull();
   });

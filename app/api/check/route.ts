@@ -60,7 +60,16 @@ export async function POST(request: Request) {
   const stream = new ReadableStream<Uint8Array>({
     async start(controller) {
       const enc = new TextEncoder();
-      const send = (e: CheckEvent) => controller.enqueue(enc.encode(JSON.stringify(e) + "\n"));
+      let closed = false;
+      // The client may go away mid-run (Skip, New check): stop writing instead of throwing
+      const send = (e: CheckEvent) => {
+        if (closed) return;
+        try {
+          controller.enqueue(enc.encode(JSON.stringify(e) + "\n"));
+        } catch {
+          closed = true;
+        }
+      };
       const t0 = Date.now();
       const since = () => Date.now() - t0;
       // Итог запуска для лога в БД, дописывается по ходу
@@ -312,7 +321,13 @@ export async function POST(request: Request) {
         run.error = error instanceof Error ? error.message.slice(0, 300) : "internal error";
         send({ type: "error", kind: "failed", message: "Internal error." });
       } finally {
-        controller.close();
+        if (!closed) {
+          try {
+            controller.close();
+          } catch {
+            // already closed by the client
+          }
+        }
         await logCheckRun({ ...run, attempts: attempts.length ? attempts : undefined, durationMs: since() });
       }
     },

@@ -15,6 +15,14 @@
   "src": "SERVICE AGREEMENT No. 68/26",
   "out": "ДОГОВОР ОКАЗАНИЯ УСЛУГ № 68/26"
  },
+ "0f9dbb7d16f33c7c78275c4f": {
+  "src": "Yekaterinburg, 5 July 2026",
+  "out": "Екатеринбург, 5 июля 2026 года"
+ },
+ "0fd0afb22bf1888b54629816": {
+  "src": "Any dispute that the Parties cannot settle by negotiation is referred to the Arbitrazh Court of Yekaterinburg.",
+  "out": "Любой спор, который Стороны не смогут урегулировать путём переговоров, передаётся на рассмотрение Арбитражного суда Екатеринбурга."
+ },
  "10691eb06f1cfda77cbfe459": {
   "src": "Miscellaneous",
   "out": "Прочие условия"
@@ -23,9 +31,17 @@
   "src": "SERVICE AGREEMENT No. 57/26",
   "out": "ДОГОВОР ОКАЗАНИЯ УСЛУГ № 57/26"
  },
+ "1599d9dcc346103d6f804719": {
+  "src": "Final settlement for the month is made no later than 30 calendar days after the acceptance certificate is signed.",
+  "out": "Окончательный расчёт за месяц производится не позднее 30 календарных дней с даты подписания акта сдачи-приёмки."
+ },
  "15e21949883e2e36d0c9319d": {
   "src": "Liability",
   "out": "Ответственность"
+ },
+ "1b8ba8dbc986d4f714c9ed41": {
+  "src": "Contractor: ООО «Дельта Ритейл», registered office: Yekaterinburg, ОГРН 16466834981193, ИНН 6621516165, КПП 669301001.",
+  "out": "Исполнитель: ООО «Дельта Ритейл», юридический адрес: Екатеринбург, ОГРН 16466834981193, ИНН 6621516165, КПП 669301001."
  },
  "1c2d4e52f45c0d8f6ccb7f34": {
   "src": "The fee is RUB 230,000 per month.",
@@ -47,6 +63,10 @@
   "src": "Client: ООО «Северные Работы», registered office: Kazan, ОГРН 1663800091467, ИНН 7747692990, КПП 773719001.",
   "out": "Заказчик: ООО «Северные Работы», юридический адрес: Казань, ОГРН 1663800091467, ИНН 7747692990, КПП 773719001."
  },
+ "30f2080376713c9c2042066d": {
+  "src": "ООО «Квант Системс» (the \"Contractor\") and ООО «Альфа Сервис» (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "ООО «Квант Системс» (далее — «Исполнитель») и ООО «Альфа Сервис» (далее — «Заказчик»), совместно именуемые «Стороны», договариваются о нижеследующем."
+ },
  "32618f589d38f5b5d222faa3": {
   "src": "ООО «Дельта Ритейл» (the \"Contractor\") and ООО «Северные Работы» (the \"Client\"), together the \"Parties\", agree as follows.",
   "out": "ООО «Дельта Ритейл» («Исполнитель») и ООО «Северные Работы» («Заказчик»), далее совместно именуемые «Стороны», согласовали следующее."
@@ -67,6 +87,14 @@
   "src": "This Agreement is valid for 12 months from the date of signing.",
   "out": "Настоящий договор действует в течение 12 месяцев с даты его подписания."
  },
+ "48625e78d731815eef9075b4": {
+  "src": "Client: ООО «Вектор», registered office: Yekaterinburg, ОГРН 15966161674169, ИНН 6670245359, КПП 663201001.",
+  "out": "Заказчик: ООО «Вектор», юридический адрес: Екатеринбург, ОГРН 15966161674169, ИНН 6670245359, КПП 663201001."
+ },
+ "505f6e7d90a20a60f0884a2c": {
+  "src": "The fee is RUB 760,000 per month.",
+  "out": "Вознаграждение составляет RUB 760 000 в месяц."
+ },
  "55aaaa250950e2b0e3be0584": {
   "src": "Each Party's total liability is capped at the fees paid for the last three months.",
   "out": "Общий размер ответственности каждой Стороны ограничивается вознаграждением, уплаченным за последние три месяца."
@@ -83,9 +111,21 @@
   "src": "Details of the Parties",
   "out": "Реквизиты Сторон"
  },
+ "6fc0a98e084094a9e90e8410": {
+  "src": "Moscow, 7 July 2026",
+  "out": "Москва, 7 июля 2026 года"
+ },
+ "739fe012f12275222b8020b2": {
+  "src": "The Contractor may withdraw from this Agreement at any time without giving a reason. The Client may terminate only in the event of a material breach.",
+  "out": "Исполнитель вправе отказаться от исполнения настоящего Договора в любое время без указания причин. Заказчик вправе расторгнуть Договор только в случае существенного нарушения."
+ },
  "73b6d9da8412cb6db2b5044f": {
   "src": "The Client pays within 10 business days of signing the acceptance certificate.",
   "out": "Заказчик производит оплату в течение 10 рабочих дней с даты подписания акта сдачи-приёмки."
+ },
+ "78c6b98526f07303a0649cb8": {
+  "src": "Any dispute that the Parties cannot settle by negotiation is referred to the Arbitrazh Court of Moscow.",
+  "out": "Любой спор, который Стороны не могут урегулировать путём переговоров, передаётся на рассмотрение в Арбитражный суд города Москвы."
  },
  "78d942335bc018e826d63f62": {
   "src": "Term",
@@ -99,6 +139,10 @@
   "src": "The Contractor waives any interest for late payment by the Client.",
   "out": "Исполнитель отказывается от любых процентов за просрочку оплаты со стороны Заказчика."
  },
+ "82997a1f61c3a8fe5598d4f5": {
+  "src": "The Contractor shall provide copywriting services, and the Client shall accept and pay for them.",
+  "out": "Исполнитель обязуется оказывать услуги по копирайтингу, а Заказчик обязуется принимать их и оплачивать."
+ },
  "834229d5ec3e680e55f7059c": {
   "src": "ООО «Меридиан Групп» (the \"Contractor\") and ООО «Вектор» (the \"Client\"), together the \"Parties\", agree as follows.",
   "out": "ООО «Меридиан Групп» (далее — «Исполнитель») и ООО «Вектор» (далее — «Заказчик»), далее совместно именуемые «Стороны», согласовали нижеследующее."
@@ -106,6 +150,10 @@
  "86f1faafcb440ee774b8c844": {
   "src": "Timelines",
   "out": "Сроки"
+ },
+ "8eed0bc0039c6c49a7a86d4d": {
+  "src": "The Client is liable for all losses of the Contractor, direct and indirect, without limit.",
+  "out": "Заказчик несёт ответственность за все убытки Исполнителя, как прямые, так и косвенные, без ограничения размера."
  },
  "951edd1e888ad3159696f7c7": {
   "src": "The Client pays within 120 calendar days of signing the acceptance certificate.",
@@ -127,6 +175,14 @@
   "src": "Fees and payment",
   "out": "Вознаграждение и порядок оплаты"
  },
+ "ac8006a3573bb56937c7fdcb": {
+  "src": "Client: ООО «Альфа Сервис», registered office: Moscow, ОГРН 15477125037927, ИНН 7742677796, КПП 776101001.",
+  "out": "Заказчик: ООО «Альфа Сервис», юридический адрес: Москва, ОГРН 15477125037927, ИНН 7742677796, КПП 776101001."
+ },
+ "ae86b46602ebae0782235e41": {
+  "src": "The Contractor may change the fee unilaterally by notifying the Client by email.",
+  "out": "Исполнитель вправе изменить вознаграждение в одностороннем порядке, уведомив Заказчика по электронной почте."
+ },
  "b01d8e6eb2f4a973bbaa7c6f": {
   "src": "The Contractor begins providing services within 3 business days of receiving the Client's request.",
   "out": "Исполнитель приступает к оказанию услуг в течение 3 рабочих дней с момента получения запроса Заказчика."
@@ -147,6 +203,10 @@
   "src": "Contractor: ООО «Дельта Ритейл», registered office: Kazan, ОГРН 1937820061121, ИНН 7721144549, КПП 773180001.",
   "out": "Исполнитель: ООО «Дельта Ритейл», юридический адрес: Казань, ОГРН 1937820061121, ИНН 7721144549, КПП 773180001."
  },
+ "c91efb3cfe7835e80bd20ba8": {
+  "src": "Contractor: ООО «Квант Системс», registered office: Moscow, ОГРН 12977675236137, ИНН 7718830305, КПП 779801001.",
+  "out": "Исполнитель: ООО «Квант Системс», юридический адрес: Москва, ОГРН 12977675236137, ИНН 7718830305, КПП 779801001."
+ },
  "cb393d61d7f4c9afc53c0ca9": {
   "src": "All notices are sent by email to the addresses the Parties have given each other in writing.",
   "out": "Все уведомления направляются по электронной почте на адреса, которые Стороны письменно сообщили друг другу."
@@ -163,6 +223,10 @@
   "src": "Any dispute that the Parties cannot settle by negotiation is referred to the Arbitrazh Court of Kazan.",
   "out": "Любой спор, который Стороны не смогут урегулировать путём переговоров, передаётся в Арбитражный суд Республики Татарстан."
  },
+ "d61a9580102337168e7d4ca0": {
+  "src": "ООО «Дельта Ритейл» (the \"Contractor\") and ООО «Вектор» (the \"Client\"), together the \"Parties\", agree as follows.",
+  "out": "ООО «Дельта Ритейл» (далее — «Исполнитель») и ООО «Вектор» (далее — «Заказчик»), именуемые совместно «Стороны», заключили настоящий Договор о нижеследующем."
+ },
  "d624d2534e337d3ebaecdc04": {
   "src": "The Contractor begins providing services within a reasonable time after receiving the Client's request.",
   "out": "Исполнитель приступает к оказанию услуг в разумный срок после получения запроса Заказчика."
@@ -170,6 +234,14 @@
  "db5e62bda7a1e019713ef479": {
   "src": "Saint Petersburg, 2 April 2026",
   "out": "Санкт-Петербург, 2 апреля 2026 г."
+ },
+ "defd6b716172f4a1d7e3091e": {
+  "src": "SERVICE AGREEMENT No. 15/26",
+  "out": "ДОГОВОР ОКАЗАНИЯ УСЛУГ № 15/26"
+ },
+ "e40d0c102cc6a3f14addf81b": {
+  "src": "Any claim under this Agreement must be brought within one year after it arises; after that the claim is barred.",
+  "out": "Любой иск по настоящему Договору должен быть предъявлен в течение одного года с момента его возникновения; по истечении этого срока иск не подлежит рассмотрению."
  },
  "e881ceef59772c91f36f2c8c": {
   "src": "Kazan, 21 October 2026",
